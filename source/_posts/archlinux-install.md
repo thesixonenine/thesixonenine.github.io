@@ -13,7 +13,7 @@ description: archlinux 安装
 
 ```bash
 # 设置字体
-# setfont /usr/share/kbd/consolefonts/LatGrkCyr
+# setfont /usr/share/kbd/consolefonts/LatGrkCyr-12×22.psfu.gz
 ```
 
 #### 连接网络
