@@ -12,8 +12,7 @@ description: archlinux 安装
 #### 设置字体
 
 ```bash
-# 设置字体
-# setfont /usr/share/kbd/consolefonts/LatGrkCyr-12×22.psfu.gz
+setfont /usr/share/kbd/consolefonts/LatGrkCyr-12×22.psfu.gz
 ```
 
 #### 连接网络
@@ -21,7 +20,6 @@ description: archlinux 安装
 **静态IP**
 
 ```bash
-# 设置静态IP
 cd /etc/systemd/network
 touch eth0.network
 echo '[Match]' >> eth0.network
@@ -36,7 +34,6 @@ systemctl reenable systemd-networkd
 #### 更新系统时间
 
 ```bash
-# 更新系统时间
 timedatectl set-ntp true
 ```
 
