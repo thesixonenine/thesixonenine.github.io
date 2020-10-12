@@ -171,7 +171,7 @@ grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 **安装程序**
 
 ```bash
-pacman -S vim zsh
+pacman -S vim git zsh
 ```
 
 **重启系统**
