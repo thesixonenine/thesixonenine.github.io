@@ -222,6 +222,26 @@ systemctl enable sshd
 > 使用`echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config`允许root用户远程登陆
 
 
+
+#### 安装oh-my-zsh
+
+| Method    | Command                                                      |
+| --------- | ------------------------------------------------------------ |
+| **curl**  | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
+| **wget**  | `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
+| **fetch** | `sh -c "$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
+
+修改主题
+
+```bash
+vim ~/.zshrc
+ZSH_THEME="agnoster"
+```
+
+
+
+
+
 ## 文件权限
 
 #### 类型区分
