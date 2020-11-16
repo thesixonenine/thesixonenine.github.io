@@ -1,6 +1,8 @@
 ---
 title: archlinux_install
 date: 2020-10-08 13:37:34
+categories:
+- Linux
 tags: archlinux
 keywords: archlinux
 description: archlinux 安装 

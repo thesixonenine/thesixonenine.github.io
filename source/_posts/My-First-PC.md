@@ -1,7 +1,8 @@
 ---
 title: My First PC
 date: 2019-12-13 14:43:28
-tags:
+categories:
+- MyPC
 ---
 
 #### 购买详情

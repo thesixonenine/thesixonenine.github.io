@@ -1,7 +1,9 @@
 ---
 title: spring-cache
 date: 2020-10-09 22:44:06
-tags: Spring
+categories:
+- Spring
+tags: SpringCache
 keywords: Spring Cache
 description: Spring Cache
 ---
