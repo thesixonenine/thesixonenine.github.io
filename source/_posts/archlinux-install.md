@@ -9,15 +9,16 @@ description: archlinux 安装
 ---
 
 ## 安装
+
 参考[官方Wiki](https://wiki.archlinux.org/index.php/Installation_guide)
 
-#### 设置字体
+### 设置字体
 
 ```bash
 setfont /usr/share/kbd/consolefonts/LatGrkCyr-12×22.psfu.gz
 ```
 
-#### 连接网络
+### 连接网络
 
 **静态IP**
 
@@ -33,13 +34,13 @@ echo 'DNS=223.5.5.5' >> eth0.network
 systemctl reenable systemd-networkd
 ```
 
-#### 更新系统时间
+### 更新系统时间
 
 ```bash
 timedatectl set-ntp true
 ```
 
-#### 分区
+### 分区
 
 ```bash
 # 查看分区
@@ -80,7 +81,7 @@ fdisk /dev/sda
 3. `mkswap /dev/sda3` 格式化编号为3的swap分区
 4. `swapon /dev/sda3` 打开swap
 
-#### 设置pacman的镜像源
+### 设置pacman的镜像源
 
 ```bash
 vim /etc/pacman.d/mirrorlist
@@ -88,19 +89,19 @@ vim /etc/pacman.d/mirrorlist
 
 在第一行新增`Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch`
 
-#### 挂载镜像
+### 挂载镜像
 
 1. `mount /dev/sda2 /mnt` 将根目录挂载到`/mnt`
 2. `mkdir /mnt/boot`创建EFI系统分区需要挂载的目录
 3. `mount /dev/sda1 /mnt/boot` 将EFI系统分区挂载到`/mnt/boot`
 
-#### 安装必须的软件包
+### 安装必须的软件包
 
 ```bash
 pacstrap /mnt base linux linux-firmware
 ```
 
-#### 配置系统
+### 配置系统
 
 **生成fstab文件**
 
@@ -191,7 +192,7 @@ shutdown -h now
 
 网络配置与远程登陆
 
-#### 设置网络
+### 设置网络
 
 ```bash
 # 启用网络
@@ -211,7 +212,7 @@ systemctl enable systemd-resolved
 systemctl enable systemd-networkd
 ```
 
-#### 安装SSH
+### 安装SSH
 
 ```bash
 pacman -S openssh
@@ -225,7 +226,7 @@ systemctl enable sshd
 
 
 
-#### 安装oh-my-zsh
+### 安装oh-my-zsh
 
 | Method    | Command                                                      |
 | --------- | ------------------------------------------------------------ |
@@ -246,7 +247,7 @@ ZSH_THEME="agnoster"
 
 ## 文件权限
 
-#### 类型区分
+### 类型区分
 
 - `-` 普通文件
 - `d` 目录文件
@@ -255,7 +256,7 @@ ZSH_THEME="agnoster"
 - `c` 字符设备文件
 - `p` 管道文件
 
-#### 操作理解
+### 操作理解
 
 **文件**
 
