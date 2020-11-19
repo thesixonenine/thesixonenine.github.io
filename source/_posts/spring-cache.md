@@ -5,7 +5,6 @@ categories:
 - Spring
 tags: SpringCache
 keywords: Spring Cache
-description: Spring Cache
 ---
 
 #### 参考文档
