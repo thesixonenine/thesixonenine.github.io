@@ -37,3 +37,4 @@ $ hexo deploy
 ```
 
 More info: [Deployment](https://hexo.io/zh-cn/docs/deployment.html)
+**使用github action在提交develop分支时自己触发构建并push到master**
