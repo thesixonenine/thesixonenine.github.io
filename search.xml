@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>My First PC</title>
+    <url>/2019/12/13/My-First-PC/</url>
+    <content><![CDATA[<h4 id="购买详情"><a href="#购买详情" class="headerlink" title="购买详情"></a>购买详情</h4><p>昨天凌晨趁着双十二在京东下单, 准备组装自己的第一台PC. 具体价格如下</p>
+<table>
+<thead>
+<tr>
+<th>商品</th>
+<th>价格</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>金士顿16GBUSB3.0的U盘</td>
+<td>24.9元</td>
+<td><a href="https://item.jd.com/854804.html" target="_blank" rel="noopener">U盘</a></td>
+</tr>
+<tr>
+<td>航嘉金牌600W电源</td>
+<td>329元</td>
+<td><a href="https://item.jd.com/100004924768.html" target="_blank" rel="noopener">电源</a></td>
+</tr>
+<tr>
+<td>三星28寸4K显示器</td>
+<td>1699元</td>
+<td><a href="https://item.jd.com/2114169.html" target="_blank" rel="noopener">显示器</a></td>
+</tr>
+<tr>
+<td>华硕Prime Z390-A主板</td>
+<td>1429元</td>
+<td><a href="https://item.jd.com/100000542145.html" target="_blank" rel="noopener">主板</a></td>
+</tr>
+<tr>
+<td>先马黑洞中塔式机箱</td>
+<td>249元</td>
+<td><a href="https://item.jd.com/1842778.html" target="_blank" rel="noopener">机箱</a></td>
+</tr>
+<tr>
+<td>九州风神大霜塔CPU散热器</td>
+<td><strong>以下一起6526元</strong></td>
+<td><a href="https://item.jd.com/689273.html" target="_blank" rel="noopener">散热器</a></td>
+</tr>
+<tr>
+<td>Intel i7-9700k CPU</td>
+<td></td>
+<td><a href="https://item.jd.com/100000634417.html" target="_blank" rel="noopener">CPU</a></td>
+</tr>
+<tr>
+<td>美商海盗船DDR4 3200 32GB(16GB*2)复仇者LPX</td>
+<td></td>
+<td><a href="https://item.jd.com/3064213.html" target="_blank" rel="noopener">内存条</a></td>
+</tr>
+<tr>
+<td>三星970PRO M.2(NVMe) SSD 512GB</td>
+<td></td>
+<td><a href="https://item.jd.com/7233972.html" target="_blank" rel="noopener">SSD</a></td>
+</tr>
+<tr>
+<td>蓝宝石RX590 8G D5 超白金特别版</td>
+<td></td>
+<td><a href="https://item.jd.com/100001800296.html" target="_blank" rel="noopener">显卡</a></td>
+</tr>
+<tr>
+<td>总计</td>
+<td>10256.9元</td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h4 id="回顾以前我用过的电脑"><a href="#回顾以前我用过的电脑" class="headerlink" title="回顾以前我用过的电脑"></a>回顾以前我用过的电脑</h4><ol>
+<li><p>上大学之前我爸从亲戚那以3000块的价格买的<strong>联想G470e</strong>. 一直用到大学毕业, 支撑我写完毕业论文, 后面上班后的几个月还在用, 再后面就给我爸用了. 这个笔电总体来说性能比较辣鸡, 大学时还在上面折腾过黑苹果, 虽然如此, 这款笔电还是完成了我对拥有一台属于自己的电脑的渴望.</p>
+</li>
+<li><p>上班后几个月, 公司就给我配置了一台笔电, 当时问我要什么类型的, 由于我之前在大学时已经折腾过自己加装SSD, 知道了SSD对电脑使用带来的提升, 于是就提出, 就选要固态硬盘的, 然后就领到了Dell Vostro 14-5480, 256的固态. 开始用起来还觉得空间还可以, 能用, 后面随着装的东西多了, 感觉容量还是有点小, 至于开机速度倒是一直挺快. 这台笔电我现在都还在用, 不过可能随着这次双十二买台式机就慢慢不用了.</p>
+</li>
+<li><p>但是我心里还是对大学时折腾的黑苹果念念不忘, 于是在2017年4月, 我在京东买了自己的第一台Mac, 当时我记得关注了很久, 突然有天十二点后看到价格降了好多, 比官网便宜好多. 就有点控制不住自己, 给亲亲打电话, 想给自己吃颗定心丸, 最后终于买了, 虽然是MacBook Air最低配128GB版. 后面我还又买了128GB的SD扩展卡. 后面还陆陆续续买了一些DP线之类的. 一直作为我上班开发的主力机.</p>
+</li>
+<li><p>在if走后, 他留下了一台主机给我, 性能也不行, 具体配置下次补上吧, 我平时就放在公司用来下东西之类的, 使用就很少了.</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>MyPC</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>archlinux_install</title>
+    <url>/2020/10/08/archlinux-install/</url>
+    <content><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>参考<a href="https://wiki.archlinux.org/index.php/Installation_guide" target="_blank" rel="noopener">官方Wiki</a></p>
+<h3 id="设置字体"><a href="#设置字体" class="headerlink" title="设置字体"></a>设置字体</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">setfont /usr/share/kbd/consolefonts/LatGrkCyr-12×22.psfu.gz</span><br></pre></td></tr></table></figure>
+
+<h3 id="连接网络"><a href="#连接网络" class="headerlink" title="连接网络"></a>连接网络</h3><p><strong>静态IP</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> /etc/systemd/network</span><br><span class="line">touch eth0.network</span><br><span class="line"><span class="built_in">echo</span> <span class="string">'[Match]'</span> &gt;&gt; eth0.network</span><br><span class="line"><span class="built_in">echo</span> <span class="string">'Name=eth0'</span> &gt;&gt; eth0.network</span><br><span class="line"><span class="built_in">echo</span> <span class="string">'[Network]'</span> &gt;&gt; eth0.network</span><br><span class="line"><span class="built_in">echo</span> <span class="string">'Address=192.168.137.12'</span> &gt;&gt; eth0.network</span><br><span class="line"><span class="built_in">echo</span> <span class="string">'Gateway=192.168.137.1'</span> &gt;&gt; eth0.network</span><br><span class="line"><span class="built_in">echo</span> <span class="string">'DNS=223.5.5.5'</span> &gt;&gt; eth0.network</span><br><span class="line">systemctl reenable systemd-networkd</span><br></pre></td></tr></table></figure>
+
+<h3 id="更新系统时间"><a href="#更新系统时间" class="headerlink" title="更新系统时间"></a>更新系统时间</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">timedatectl <span class="built_in">set</span>-ntp <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="分区"><a href="#分区" class="headerlink" title="分区"></a>分区</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看分区</span></span><br><span class="line">fdisk -l</span><br></pre></td></tr></table></figure>
+
+<p><strong>BIOS 与 MBR</strong></p>
+<table>
+<thead>
+<tr>
+<th>挂载点</th>
+<th>分区</th>
+<th>分区类型</th>
+<th>建议大小</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>/mnt</code></td>
+<td><code>/dev/sdX1</code></td>
+<td>Linux</td>
+<td>剩余空间</td>
+</tr>
+<tr>
+<td><code>[SWAP]</code></td>
+<td><code>dev/sdX2</code></td>
+<td>Linux swap(交换空间)</td>
+<td>大于512M</td>
+</tr>
+</tbody></table>
+<p><strong>UEFI 与 GPT</strong></p>
+<table>
+<thead>
+<tr>
+<th>挂载点</th>
+<th>分区</th>
+<th>分区类型</th>
+<th>建议大小</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>/mnt/boot</code>或<code>/mnt/efi</code></td>
+<td><code>/dev/sdX1</code></td>
+<td>EFI系统分区</td>
+<td>260-512M</td>
+</tr>
+<tr>
+<td><code>/mnt</code></td>
+<td><code>/dev/sdX2</code></td>
+<td>Linux x86-64 根目录(/)</td>
+<td>剩余空间</td>
+</tr>
+<tr>
+<td><code>[SWAP]</code></td>
+<td><code>/dev/sdX3</code></td>
+<td>Linux swap(交换空间)</td>
+<td>大于512M</td>
+</tr>
+</tbody></table>
+<p><strong>建立磁盘分区</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 进入磁盘</span></span><br><span class="line">fdisk /dev/sda</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><code>g</code>创建一个空的gpt分区</li>
+<li><code>n</code>创建新分区(编号1), 大小为512M, 用作系统引导</li>
+<li><code>n</code>创建新分区(编号3), 与内存一样(4G), 用作SWAP</li>
+<li><code>n</code>创建新分区(编号2), 使用剩下所有的空间, 用作主分区(/)</li>
+<li><code>w</code>写入并退出</li>
+</ol>
+<p><strong>格式化分区</strong></p>
+<ol>
+<li><code>mkfs.fat -F32 /dev/sda1</code> 格式化编号为1的引导分区(EFI系统分区)</li>
+<li><code>mkfs.ext4 /dev/sda2</code> 格式化编号为2的根分区(/)</li>
+<li><code>mkswap /dev/sda3</code> 格式化编号为3的swap分区</li>
+<li><code>swapon /dev/sda3</code> 打开swap</li>
+</ol>
+<h3 id="设置pacman的镜像源"><a href="#设置pacman的镜像源" class="headerlink" title="设置pacman的镜像源"></a>设置pacman的镜像源</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vim /etc/pacman.d/mirrorlist</span><br></pre></td></tr></table></figure>
+
+<p>在第一行新增<code>Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch</code></p>
+<h3 id="挂载镜像"><a href="#挂载镜像" class="headerlink" title="挂载镜像"></a>挂载镜像</h3><ol>
+<li><code>mount /dev/sda2 /mnt</code> 将根目录挂载到<code>/mnt</code></li>
+<li><code>mkdir /mnt/boot</code>创建EFI系统分区需要挂载的目录</li>
+<li><code>mount /dev/sda1 /mnt/boot</code> 将EFI系统分区挂载到<code>/mnt/boot</code></li>
+</ol>
+<h3 id="安装必须的软件包"><a href="#安装必须的软件包" class="headerlink" title="安装必须的软件包"></a>安装必须的软件包</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pacstrap /mnt base linux linux-firmware</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置系统"><a href="#配置系统" class="headerlink" title="配置系统"></a>配置系统</h3><p><strong>生成fstab文件</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</span><br></pre></td></tr></table></figure>
+
+<p><strong>切换到新安装的系统</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">arch-chroot /mnt</span><br></pre></td></tr></table></figure>
+
+<p><strong>设置时区并同步系统时间</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</span><br><span class="line">hwclock --systohc</span><br></pre></td></tr></table></figure>
+
+<p><strong>修改时区</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 退出新安装的系统, 回到ISO中, 因为新安装的系统中连vim都没</span></span><br><span class="line"><span class="built_in">exit</span></span><br><span class="line">vim /etc/locale.gen</span><br><span class="line"><span class="comment"># 取消 en_US.UTF-8 UTF-8 这一行的注释</span></span><br><span class="line"><span class="comment"># 切换到新安装的系统</span></span><br><span class="line">arch-chroot /mnt</span><br><span class="line"><span class="comment"># 生成 locale 信息</span></span><br><span class="line">locale-gen</span><br><span class="line"><span class="comment"># 再次退出</span></span><br><span class="line"><span class="built_in">exit</span></span><br><span class="line"><span class="comment"># 设置本地语言配置文件</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">'LANG=en_US.UTF-8'</span> &gt;&gt; /mnt/etc/locale.conf</span><br></pre></td></tr></table></figure>
+
+<p><strong>网络配置</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 配置计算机名称</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">'12'</span> &gt;&gt; /mnt/etc/hostname</span><br><span class="line"><span class="built_in">echo</span> <span class="string">'127.0.0.1	localhost'</span> &gt;&gt; /mnt/etc/hosts</span><br><span class="line"><span class="built_in">echo</span> <span class="string">'::1       localhost'</span> &gt;&gt; /mnt/etc/hosts</span><br><span class="line"><span class="comment"># 固定IP可以写入 echo '192.168.137.12 12' &gt;&gt; /mnt/etc/hosts</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>修改root密码</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 切换到新安装的系统</span></span><br><span class="line">arch-chroot /mnt</span><br><span class="line">passwd</span><br></pre></td></tr></table></figure>
+
+<p><strong>安装引导程序</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pacman -S grub efibootmgr intel-ucode os-prober</span><br></pre></td></tr></table></figure>
+
+<p><strong>配置GRUB</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir /boot/grub</span><br><span class="line">grub-mkconfig &gt; /boot/grub/grub.cfg</span><br><span class="line">grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB</span><br></pre></td></tr></table></figure>
+
+<p><strong>安装程序</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pacman -S vim git zsh</span><br></pre></td></tr></table></figure>
+
+<p><strong>重启系统</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 退出新安装的系统, 回到ISO中</span></span><br><span class="line"><span class="built_in">exit</span></span><br><span class="line"><span class="comment"># 关机</span></span><br><span class="line">shutdown -h now</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>网络配置与远程登陆</p>
+<h3 id="设置网络"><a href="#设置网络" class="headerlink" title="设置网络"></a>设置网络</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 启用网络</span></span><br><span class="line">ip link <span class="built_in">set</span> eth0 up</span><br><span class="line"><span class="comment"># 设置静态IP</span></span><br><span class="line"><span class="built_in">cd</span> /etc/systemd/network</span><br><span class="line">touch eth0.network</span><br><span class="line"><span class="built_in">echo</span> <span class="string">'[Match]'</span> &gt;&gt; eth0.network</span><br><span class="line"><span class="built_in">echo</span> <span class="string">'Name=eth0'</span> &gt;&gt; eth0.network</span><br><span class="line"><span class="built_in">echo</span> <span class="string">'[Network]'</span> &gt;&gt; eth0.network</span><br><span class="line"><span class="built_in">echo</span> <span class="string">'Address=192.168.137.12'</span> &gt;&gt; eth0.network</span><br><span class="line"><span class="built_in">echo</span> <span class="string">'Gateway=192.168.137.1'</span> &gt;&gt; eth0.network</span><br><span class="line"><span class="built_in">echo</span> <span class="string">'DNS=223.5.5.5'</span> &gt;&gt; eth0.network</span><br><span class="line">systemctl restart systemd-resolved</span><br><span class="line">systemctl restart systemd-networkd</span><br><span class="line">systemctl <span class="built_in">enable</span> systemd-resolved</span><br><span class="line">systemctl <span class="built_in">enable</span> systemd-networkd</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装SSH"><a href="#安装SSH" class="headerlink" title="安装SSH"></a>安装SSH</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pacman -S openssh</span><br><span class="line">systemctl start sshd</span><br><span class="line">systemctl <span class="built_in">enable</span> sshd</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>默认是禁止root用户远程登录的</p>
+<p>使用<code>echo &#39;PermitRootLogin yes&#39; &gt;&gt; /etc/ssh/sshd_config</code>允许root用户远程登陆</p>
+</blockquote>
+<h3 id="安装oh-my-zsh"><a href="#安装oh-my-zsh" class="headerlink" title="安装oh-my-zsh"></a>安装oh-my-zsh</h3><table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>curl</strong></td>
+<td><code>sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;</code></td>
+</tr>
+<tr>
+<td><strong>wget</strong></td>
+<td><code>sh -c &quot;$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;</code></td>
+</tr>
+<tr>
+<td><strong>fetch</strong></td>
+<td><code>sh -c &quot;$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;</code></td>
+</tr>
+</tbody></table>
+<p>修改主题</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vim ~/.zshrc</span><br><span class="line">ZSH_THEME=<span class="string">"agnoster"</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="文件权限"><a href="#文件权限" class="headerlink" title="文件权限"></a>文件权限</h2><h3 id="类型区分"><a href="#类型区分" class="headerlink" title="类型区分"></a>类型区分</h3><ul>
+<li><code>-</code> 普通文件</li>
+<li><code>d</code> 目录文件</li>
+<li><code>l</code> 链接文件</li>
+<li><code>b</code> 块设备文件</li>
+<li><code>c</code> 字符设备文件</li>
+<li><code>p</code> 管道文件</li>
+</ul>
+<h3 id="操作理解"><a href="#操作理解" class="headerlink" title="操作理解"></a>操作理解</h3><p><strong>文件</strong></p>
+<table>
+<thead>
+<tr>
+<th>权限</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>读(r-4)</td>
+<td>读取文件内容</td>
+</tr>
+<tr>
+<td>写(w-2)</td>
+<td>修改文件内容(新增/修改/删除)</td>
+</tr>
+<tr>
+<td>执行(x-1)</td>
+<td>执行脚本文件</td>
+</tr>
+</tbody></table>
+<p><strong>目录</strong></p>
+<table>
+<thead>
+<tr>
+<th>权限</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>读(r-4)</td>
+<td>读取目录内的文件列表</td>
+</tr>
+<tr>
+<td>写(w-2)</td>
+<td>可在目录内新增/删除/重命名文件</td>
+</tr>
+<tr>
+<td>执行(x-1)</td>
+<td>进入目录</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>archlinux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World !</title>
+    <url>/2019/01/01/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/zh-cn/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.Good Luck!</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/zh-cn/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/zh-cn/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/zh-cn/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/zh-cn/docs/deployment.html" target="_blank" rel="noopener">Deployment</a><br><strong>使用github action在提交develop分支时自己触发构建并push到master</strong></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>spring-cache</title>
+    <url>/2020/10/09/spring-cache/</url>
+    <content><![CDATA[<h4 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h4><p><a href="https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/integration.html#cache" target="_blank" rel="noopener">spring-framework-reference</a></p>
+<h4 id="缓存抽象"><a href="#缓存抽象" class="headerlink" title="缓存抽象"></a>缓存抽象</h4><ul>
+<li><code>org.springframework.cache.Cache</code></li>
+<li><code>org.springframework.cache.CacheManager</code></li>
+</ul>
+<p><strong>CacheManager</strong>的作用</p>
+<ul>
+<li>区分不同的缓存存储(<code>ConcurrentMapCacheManager</code>, <code>RedisCacheManager</code>)</li>
+<li>管理同一缓存存储下的多个<code>Cache</code></li>
+</ul>
+<h4 id="缓存注解"><a href="#缓存注解" class="headerlink" title="缓存注解"></a>缓存注解</h4><ul>
+<li><code>@Cacheable</code> 缓存数据</li>
+<li><code>@CacheEvict</code> 删除缓存</li>
+<li><code>@CachePut</code> 更新缓存(不影响方法执行)</li>
+<li><code>@Caching</code> 组合多个缓存操作</li>
+<li><code>@CacheConfig</code> 在类级别共享一些与缓存相关的配置</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Spring</category>
+      </categories>
+      <tags>
+        <tag>SpringCache</tag>
+      </tags>
+  </entry>
+</search>
