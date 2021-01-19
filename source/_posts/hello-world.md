@@ -1,5 +1,6 @@
 ---
 title: Hello World !
+date: 2019-01-01 00:00:00
 description: Hello Hexo
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/zh-cn/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/zh-cn/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).Good Luck!
