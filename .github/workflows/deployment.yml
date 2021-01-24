@@ -21,7 +21,6 @@ jobs:
         node-version: '12.18.3'
     - name: Install dependencies & Generate static files
       run: |
-        node -v
         npm i -g hexo-cli
         npm i
         hexo clean
