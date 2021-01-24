@@ -1,7 +1,7 @@
 ---
 title: archlinux_install
 date: 2020-10-08 13:37:34
-updated: 2020-10-08 14:00:00
+updated: 2020-10-09 14:00:00
 categories:
 - Linux
 tags: archlinux
