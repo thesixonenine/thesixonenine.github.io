@@ -1,7 +1,7 @@
 ---
 title: My First PC
 date: 2019-12-13 14:43:28
-updated: 2019-12-13 14:43:28
+updated: 2019-12-14 14:43:28
 categories:
 - MyPC
 description: 我的第一台组装PC
