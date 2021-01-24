@@ -1,6 +1,7 @@
 ---
 title: spring-cache
 date: 2020-10-09 22:44:06
+updated: 2020-10-13 14:43:28
 categories:
 - Spring
 tags: SpringCache
