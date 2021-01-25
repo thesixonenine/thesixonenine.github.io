@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>My First PC</title>
-    <url>/2019/12/13/My-First-PC/</url>
+    <url>/p/My-First-PC.html</url>
     <content><![CDATA[<h4 id="购买详情"><a href="#购买详情" class="headerlink" title="购买详情"></a>购买详情</h4><p>昨天凌晨趁着双十二在京东下单, 准备组装自己的第一台PC. 具体价格如下</p>
 <table>
 <thead>
@@ -86,7 +86,7 @@
   </entry>
   <entry>
     <title>archlinux_install</title>
-    <url>/2020/10/08/archlinux-install/</url>
+    <url>/p/archlinux-install.html</url>
     <content><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>参考<a href="https://wiki.archlinux.org/index.php/Installation_guide" target="_blank" rel="noopener">官方Wiki</a></p>
 <h3 id="设置字体"><a href="#设置字体" class="headerlink" title="设置字体"></a>设置字体</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">setfont /usr/share/kbd/consolefonts/LatGrkCyr-12×22.psfu.gz</span><br></pre></td></tr></table></figure>
 
@@ -298,7 +298,7 @@
   </entry>
   <entry>
     <title>Hello World !</title>
-    <url>/2019/01/01/hello-world/</url>
+    <url>/p/hello-world.html</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/zh-cn/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.Good Luck!</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
@@ -316,7 +316,7 @@
   </entry>
   <entry>
     <title>spring-cache</title>
-    <url>/2020/10/09/spring-cache/</url>
+    <url>/p/spring-cache.html</url>
     <content><![CDATA[<h4 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h4><p><a href="https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/integration.html#cache" target="_blank" rel="noopener">spring-framework-reference</a></p>
 <h4 id="缓存抽象"><a href="#缓存抽象" class="headerlink" title="缓存抽象"></a>缓存抽象</h4><ul>
 <li><code>org.springframework.cache.Cache</code></li>

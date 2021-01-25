@@ -23,20 +23,20 @@
     var CONFIG = {"hostname":"thesixonenine.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="我的第一台组装PC">
-<meta name="keywords" content="Java JVM SpringBoot SpringCloud MyBatis MySQL">
+  <meta name="description" content="参考文档spring-framework-reference 缓存抽象 org.springframework.cache.Cache org.springframework.cache.CacheManager  CacheManager的作用  区分不同的缓存存储(ConcurrentMapCacheManager, RedisCacheManager) 管理同一缓存存储下的多个Cache">
+<meta name="keywords" content="Spring Cache">
 <meta property="og:type" content="article">
-<meta property="og:title" content="My First PC">
-<meta property="og:url" content="https://thesixonenine.github.io/2019/12/13/My-First-PC/index.html">
+<meta property="og:title" content="spring-cache">
+<meta property="og:url" content="https://thesixonenine.github.io/p/spring-cache.html">
 <meta property="og:site_name" content="Simple">
-<meta property="og:description" content="我的第一台组装PC">
+<meta property="og:description" content="参考文档spring-framework-reference 缓存抽象 org.springframework.cache.Cache org.springframework.cache.CacheManager  CacheManager的作用  区分不同的缓存存储(ConcurrentMapCacheManager, RedisCacheManager) 管理同一缓存存储下的多个Cache">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-14T06:43:28.000Z">
+<meta property="og:updated_time" content="2020-10-13T06:43:28.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="My First PC">
-<meta name="twitter:description" content="我的第一台组装PC">
+<meta name="twitter:title" content="spring-cache">
+<meta name="twitter:description" content="参考文档spring-framework-reference 缓存抽象 org.springframework.cache.Cache org.springframework.cache.CacheManager  CacheManager的作用  区分不同的缓存存储(ConcurrentMapCacheManager, RedisCacheManager) 管理同一缓存存储下的多个Cache">
 
-<link rel="canonical" href="https://thesixonenine.github.io/2019/12/13/My-First-PC/">
+<link rel="canonical" href="https://thesixonenine.github.io/p/spring-cache.html">
 
 
 <script id="page-configurations">
@@ -49,7 +49,7 @@
   };
 </script>
 
-  <title>My First PC | Simple</title>
+  <title>spring-cache | Simple</title>
   
 
 
@@ -196,7 +196,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://thesixonenine.github.io/2019/12/13/My-First-PC/">
+    <link itemprop="mainEntityOfPage" href="https://thesixonenine.github.io/p/spring-cache.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/touxiang.png">
@@ -209,7 +209,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          My First PC
+          spring-cache
         </h1>
 
         <div class="post-meta">
@@ -219,14 +219,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-12-13 14:43:28" itemprop="dateCreated datePublished" datetime="2019-12-13T14:43:28+08:00">2019-12-13</time>
+              <time title="创建时间：2020-10-09 22:44:06" itemprop="dateCreated datePublished" datetime="2020-10-09T22:44:06+08:00">2020-10-09</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-14 14:43:28" itemprop="dateModified" datetime="2019-12-14T14:43:28+08:00">2019-12-14</time>
+                <time title="修改时间：2020-10-13 14:43:28" itemprop="dateModified" datetime="2020-10-13T14:43:28+08:00">2020-10-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -234,7 +234,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/MyPC/" itemprop="url" rel="index"><span itemprop="name">MyPC</span></a>
+                  <a href="/categories/Spring/" itemprop="url" rel="index"><span itemprop="name">Spring</span></a>
                 </span>
             </span>
 
@@ -246,7 +246,6 @@
               <span class="post-meta-item-text">阅读次数：</span>
               <span id="busuanzi_value_page_pv"></span>
             </span>
-            <div class="post-description">我的第一台组装PC</div>
 
         </div>
       </header>
@@ -257,82 +256,23 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h4 id="购买详情"><a href="#购买详情" class="headerlink" title="购买详情"></a>购买详情</h4><p>昨天凌晨趁着双十二在京东下单, 准备组装自己的第一台PC. 具体价格如下</p>
-<table>
-<thead>
-<tr>
-<th>商品</th>
-<th>价格</th>
-<th>链接</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>金士顿16GBUSB3.0的U盘</td>
-<td>24.9元</td>
-<td><a href="https://item.jd.com/854804.html" target="_blank" rel="noopener">U盘</a></td>
-</tr>
-<tr>
-<td>航嘉金牌600W电源</td>
-<td>329元</td>
-<td><a href="https://item.jd.com/100004924768.html" target="_blank" rel="noopener">电源</a></td>
-</tr>
-<tr>
-<td>三星28寸4K显示器</td>
-<td>1699元</td>
-<td><a href="https://item.jd.com/2114169.html" target="_blank" rel="noopener">显示器</a></td>
-</tr>
-<tr>
-<td>华硕Prime Z390-A主板</td>
-<td>1429元</td>
-<td><a href="https://item.jd.com/100000542145.html" target="_blank" rel="noopener">主板</a></td>
-</tr>
-<tr>
-<td>先马黑洞中塔式机箱</td>
-<td>249元</td>
-<td><a href="https://item.jd.com/1842778.html" target="_blank" rel="noopener">机箱</a></td>
-</tr>
-<tr>
-<td>九州风神大霜塔CPU散热器</td>
-<td><strong>以下一起6526元</strong></td>
-<td><a href="https://item.jd.com/689273.html" target="_blank" rel="noopener">散热器</a></td>
-</tr>
-<tr>
-<td>Intel i7-9700k CPU</td>
-<td></td>
-<td><a href="https://item.jd.com/100000634417.html" target="_blank" rel="noopener">CPU</a></td>
-</tr>
-<tr>
-<td>美商海盗船DDR4 3200 32GB(16GB*2)复仇者LPX</td>
-<td></td>
-<td><a href="https://item.jd.com/3064213.html" target="_blank" rel="noopener">内存条</a></td>
-</tr>
-<tr>
-<td>三星970PRO M.2(NVMe) SSD 512GB</td>
-<td></td>
-<td><a href="https://item.jd.com/7233972.html" target="_blank" rel="noopener">SSD</a></td>
-</tr>
-<tr>
-<td>蓝宝石RX590 8G D5 超白金特别版</td>
-<td></td>
-<td><a href="https://item.jd.com/100001800296.html" target="_blank" rel="noopener">显卡</a></td>
-</tr>
-<tr>
-<td>总计</td>
-<td>10256.9元</td>
-<td></td>
-</tr>
-</tbody></table>
-<hr>
-<h4 id="回顾以前我用过的电脑"><a href="#回顾以前我用过的电脑" class="headerlink" title="回顾以前我用过的电脑"></a>回顾以前我用过的电脑</h4><ol>
-<li><p>上大学之前我爸从亲戚那以3000块的价格买的<strong>联想G470e</strong>. 一直用到大学毕业, 支撑我写完毕业论文, 后面上班后的几个月还在用, 再后面就给我爸用了. 这个笔电总体来说性能比较辣鸡, 大学时还在上面折腾过黑苹果, 虽然如此, 这款笔电还是完成了我对拥有一台属于自己的电脑的渴望.</p>
-</li>
-<li><p>上班后几个月, 公司就给我配置了一台笔电, 当时问我要什么类型的, 由于我之前在大学时已经折腾过自己加装SSD, 知道了SSD对电脑使用带来的提升, 于是就提出, 就选要固态硬盘的, 然后就领到了Dell Vostro 14-5480, 256的固态. 开始用起来还觉得空间还可以, 能用, 后面随着装的东西多了, 感觉容量还是有点小, 至于开机速度倒是一直挺快. 这台笔电我现在都还在用, 不过可能随着这次双十二买台式机就慢慢不用了.</p>
-</li>
-<li><p>但是我心里还是对大学时折腾的黑苹果念念不忘, 于是在2017年4月, 我在京东买了自己的第一台Mac, 当时我记得关注了很久, 突然有天十二点后看到价格降了好多, 比官网便宜好多. 就有点控制不住自己, 给亲亲打电话, 想给自己吃颗定心丸, 最后终于买了, 虽然是MacBook Air最低配128GB版. 后面我还又买了128GB的SD扩展卡. 后面还陆陆续续买了一些DP线之类的. 一直作为我上班开发的主力机.</p>
-</li>
-<li><p>在if走后, 他留下了一台主机给我, 性能也不行, 具体配置下次补上吧, 我平时就放在公司用来下东西之类的, 使用就很少了.</p>
-</li>
-</ol>
+        <h4 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h4><p><a href="https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/integration.html#cache" target="_blank" rel="noopener">spring-framework-reference</a></p>
+<h4 id="缓存抽象"><a href="#缓存抽象" class="headerlink" title="缓存抽象"></a>缓存抽象</h4><ul>
+<li><code>org.springframework.cache.Cache</code></li>
+<li><code>org.springframework.cache.CacheManager</code></li>
+</ul>
+<p><strong>CacheManager</strong>的作用</p>
+<ul>
+<li>区分不同的缓存存储(<code>ConcurrentMapCacheManager</code>, <code>RedisCacheManager</code>)</li>
+<li>管理同一缓存存储下的多个<code>Cache</code></li>
+</ul>
+<h4 id="缓存注解"><a href="#缓存注解" class="headerlink" title="缓存注解"></a>缓存注解</h4><ul>
+<li><code>@Cacheable</code> 缓存数据</li>
+<li><code>@CacheEvict</code> 删除缓存</li>
+<li><code>@CachePut</code> 更新缓存(不影响方法执行)</li>
+<li><code>@Caching</code> 组合多个缓存操作</li>
+<li><code>@CacheConfig</code> 在类级别共享一些与缓存相关的配置</li>
+</ul>
 
     </div>
 
@@ -341,6 +281,9 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/SpringCache/" rel="tag"># SpringCache</a>
+          </div>
 
         
 
@@ -348,13 +291,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2019/01/01/hello-world/" rel="prev" title="Hello World !">
-      <i class="fa fa-chevron-left"></i> Hello World !
+    <a href="/p/archlinux-install.html" rel="prev" title="archlinux_install">
+      <i class="fa fa-chevron-left"></i> archlinux_install
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/10/08/archlinux-install/" rel="next" title="archlinux_install">
-      archlinux_install <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -413,7 +353,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#购买详情"><span class="nav-text">购买详情</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#回顾以前我用过的电脑"><span class="nav-text">回顾以前我用过的电脑</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#参考文档"><span class="nav-text">参考文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#缓存抽象"><span class="nav-text">缓存抽象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#缓存注解"><span class="nav-text">缓存注解</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
