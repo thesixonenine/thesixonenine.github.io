@@ -81,3 +81,13 @@ theme: next #landscape
 #   repo: https://github.com/thesixonenine/thesixonenine.github.io
 #   branch: master
 #   message: Site updated at {{ now('YYYY-MM-DD HH:mm:ss') }})
+Plugins:
+- hexo-generator-feed
+# - hexo-generator-sitemap
+#- hexo-generator-cname
+
+# RSS订阅插件
+feed:
+  type: atom
+  path: atom.xml
+  limit: 0
