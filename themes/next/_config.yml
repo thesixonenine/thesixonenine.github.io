@@ -181,6 +181,7 @@ site_state: true
 social:
   GitHub: https://github.com/thesixonenine || fab fa-github
   E-Mail: mailto:thesixonenine@outlook.com || fa fa-envelope
+  RSS: https://thesixonenine.github.io/atom.xml || fa-rss-square
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
