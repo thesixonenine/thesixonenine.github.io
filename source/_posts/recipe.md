@@ -12,3 +12,4 @@ description: 自己可以做的菜
 
 1. [蒜苔炒鸡蛋](https://www.xiachufang.com/recipe/106121401/)
 2. [蒜苔火腿土豆条](https://www.xiachufang.com/recipe/104693430/)
+3. [五花肉炒花菜](https://www.xiachufang.com/recipe/106118052/)
