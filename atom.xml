@@ -6,7 +6,7 @@
   <link href="https://thesixonenine.github.io/atom.xml" rel="self"/>
   
   <link href="https://thesixonenine.github.io/"/>
-  <updated>2021-01-25T06:23:28.000Z</updated>
+  <updated>2021-02-18T07:20:27.000Z</updated>
   <id>https://thesixonenine.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>recipe</title>
+    <link href="https://thesixonenine.github.io/p/recipe.html"/>
+    <id>https://thesixonenine.github.io/p/recipe.html</id>
+    <published>2021-02-18T07:20:27.000Z</published>
+    <updated>2021-02-18T07:20:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li><a href="https://www.xiachufang.com/recipe/106121401/" target="_blank" rel="noopener">蒜苔炒鸡蛋</a></li><li><a href="https://www.xiachufang.com/recipe/104693430/" target="_blank" rel="noopener">蒜苔火腿土豆条</a></li></ol>]]></content>
+    
+    
+    <summary type="html">自己可以做的菜</summary>
+    
+    
+    
+    
+    <category term="life" scheme="https://thesixonenine.github.io/tags/life/"/>
+    
+  </entry>
   
   <entry>
     <title>spring-cache</title>

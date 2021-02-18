@@ -315,6 +315,18 @@
 ]]></content>
   </entry>
   <entry>
+    <title>recipe</title>
+    <url>/p/recipe.html</url>
+    <content><![CDATA[<ol>
+<li><a href="https://www.xiachufang.com/recipe/106121401/" target="_blank" rel="noopener">蒜苔炒鸡蛋</a></li>
+<li><a href="https://www.xiachufang.com/recipe/104693430/" target="_blank" rel="noopener">蒜苔火腿土豆条</a></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>life</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>spring-cache</title>
     <url>/p/spring-cache.html</url>
     <content><![CDATA[<h4 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h4><p><a href="https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/integration.html#cache" target="_blank" rel="noopener">spring-framework-reference</a></p>
