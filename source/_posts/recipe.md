@@ -8,5 +8,7 @@ keywords: 菜谱
 description: 自己可以做的菜
 ---
 
+![蒜苔炒鸡蛋](./recipe/1_1.jpg)
+
 1. [蒜苔炒鸡蛋](https://www.xiachufang.com/recipe/106121401/)
 2. [蒜苔火腿土豆条](https://www.xiachufang.com/recipe/104693430/)
