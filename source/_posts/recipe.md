@@ -2,8 +2,8 @@
 title: recipe
 date: 2021-02-18 15:20:27
 updated: 2021-02-18 15:20:27
-tags: life
-categories:
+tags: 美食
+categories: life
 keywords: 菜谱
 description: 自己可以做的菜
 ---
