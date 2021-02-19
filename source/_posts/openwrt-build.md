@@ -13,9 +13,9 @@ description: OpenWrt 构建
 
 1. 安装Ubuntu
 2. 安装工具
-    ```bash
-    sudo apt-get install g++ libncurses5-dev zlib1g-dev bison flex unzip autoconf gawk make gettext gcc binutils patch bzip2 libz-dev asciidoc subversion sphinxsearch libtool sphinx-common
-    ```
+```bash
+sudo apt-get install g++ libncurses5-dev zlib1g-dev bison flex unzip autoconf gawk make gettext gcc binutils patch bzip2 libz-dev asciidoc subversion sphinxsearch libtool sphinx-common
+```
 3. 下载OpenWrt源码并编译
 ```bash
 mkdir openwrt
