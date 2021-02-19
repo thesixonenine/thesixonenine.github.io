@@ -322,7 +322,7 @@
 <li><p>安装Ubuntu</p>
 </li>
 <li><p>安装工具</p>
- <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install g++ libncurses5-dev zlib1g-dev bison flex unzip autoconf gawk make gettext gcc binutils patch bzip2 libz-dev asciidoc subversion sphinxsearch libtool sphinx-common</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install g++ libncurses5-dev zlib1g-dev bison flex unzip autoconf gawk make gettext gcc binutils patch bzip2 libz-dev asciidoc subversion sphinxsearch libtool sphinx-common</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>下载OpenWrt源码并编译</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir openwrt</span><br><span class="line">sudo chmod 777 openwrt</span><br><span class="line"><span class="built_in">cd</span> openwrt</span><br><span class="line"></span><br><span class="line">svn co svn://svn.openwrt.org/openwrt/branches/backfire/</span><br><span class="line"></span><br><span class="line">cp feeds.conf.default feeds.conf</span><br><span class="line">./scripts/feeds update -a</span><br><span class="line">./scripts/feeds install -a</span><br><span class="line"></span><br><span class="line">make defconfig</span><br><span class="line">make menuconfig</span><br></pre></td></tr></table></figure>
