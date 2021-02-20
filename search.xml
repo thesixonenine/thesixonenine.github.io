@@ -315,6 +315,36 @@
 ]]></content>
   </entry>
   <entry>
+    <title>keep-your-fork-synced</title>
+    <url>/p/keep-your-fork-synced.html</url>
+    <content><![CDATA[<p><a href="https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#keep-your-fork-synced" target="_blank" rel="noopener">参考链接</a></p>
+<ol>
+<li>Set up Git</li>
+<li>Create a local clone of your fork</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/YOUR-USERNAME/REPO_NAME.git</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>Configure Git to sync your fork with the original repository</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># check the current configured remote repository for your fork.</span></span><br><span class="line">git remote -v</span><br><span class="line"><span class="comment"># add upstream</span></span><br><span class="line">git remote add upstream https://github.com/ORIGINAL-USERNAME/REPO_NAME.git</span><br><span class="line"><span class="comment"># verify the new upstream repository</span></span><br><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>Fetch and merge original repository into your local repository</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git fetch upstream</span><br><span class="line">git merge upstream/master</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>push to your remote fork repo</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+  </entry>
+  <entry>
     <title>openwrt-build</title>
     <url>/p/openwrt-build.html</url>
     <content><![CDATA[<p><a href="https://zhidx.com/p/186.html" target="_blank" rel="noopener">参考链接</a></p>
