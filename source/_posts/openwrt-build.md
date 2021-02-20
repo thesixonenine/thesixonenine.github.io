@@ -23,7 +23,7 @@ sudo chmod 777 openwrt
 cd openwrt
 
 svn co svn://svn.openwrt.org/openwrt/branches/backfire/
-
+# https://github.com/openwrt/openwrt.git
 cp feeds.conf.default feeds.conf
 ./scripts/feeds update -a
 ./scripts/feeds install -a
