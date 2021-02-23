@@ -85,6 +85,14 @@
       </categories>
   </entry>
   <entry>
+    <title>My-ITX-PC</title>
+    <url>/p/My-ITX-PC.html</url>
+    <content><![CDATA[<h4 id="购买详情"><a href="#购买详情" class="headerlink" title="购买详情"></a>购买详情</h4>]]></content>
+      <categories>
+        <category>MyPC</category>
+      </categories>
+  </entry>
+  <entry>
     <title>archlinux_install</title>
     <url>/p/archlinux-install.html</url>
     <content><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>参考<a href="https://wiki.archlinux.org/index.php/Installation_guide" target="_blank" rel="noopener">官方Wiki</a></p>

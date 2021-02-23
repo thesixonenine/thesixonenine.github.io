@@ -6,7 +6,7 @@
   <link href="https://thesixonenine.github.io/atom.xml" rel="self"/>
   
   <link href="https://thesixonenine.github.io/"/>
-  <updated>2021-02-22T01:56:21.000Z</updated>
+  <updated>2021-02-23T01:51:53.000Z</updated>
   <id>https://thesixonenine.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>My-ITX-PC</title>
+    <link href="https://thesixonenine.github.io/p/My-ITX-PC.html"/>
+    <id>https://thesixonenine.github.io/p/My-ITX-PC.html</id>
+    <published>2021-02-23T01:51:53.000Z</published>
+    <updated>2021-02-23T01:51:53.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="购买详情"><a href="#购买详情" class="headerlink" title="购买详情"></a>购买详情</h4>]]></content>
+    
+    
+    <summary type="html">我的第二台组装PC</summary>
+    
+    
+    
+    <category term="MyPC" scheme="https://thesixonenine.github.io/categories/MyPC/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>keep-your-fork-synced</title>
