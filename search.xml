@@ -87,7 +87,26 @@
   <entry>
     <title>My-ITX-PC</title>
     <url>/p/My-ITX-PC.html</url>
-    <content><![CDATA[<h4 id="购买详情"><a href="#购买详情" class="headerlink" title="购买详情"></a>购买详情</h4>]]></content>
+    <content><![CDATA[<h4 id="购买详情"><a href="#购买详情" class="headerlink" title="购买详情"></a>购买详情</h4><table>
+<thead>
+<tr>
+<th>商品</th>
+<th>价格</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+]]></content>
       <categories>
         <category>MyPC</category>
       </categories>
@@ -396,7 +415,7 @@
 <li><a href="https://www.xiachufang.com/recipe/106121401/" target="_blank" rel="noopener">蒜苔炒鸡蛋</a></li>
 <li><a href="https://www.xiachufang.com/recipe/104693430/" target="_blank" rel="noopener">蒜苔火腿土豆条</a></li>
 <li><a href="https://www.xiachufang.com/recipe/106118052/" target="_blank" rel="noopener">五花肉炒花菜</a></li>
-<li><a href="https://www.xiachufang.com/recipe/104656914/" target="_blank" rel="noopener">莴笋炒蛋</a></li>
+<li><del><a href="https://www.xiachufang.com/recipe/104656914/" target="_blank" rel="noopener">莴笋炒蛋</a></del></li>
 </ol>
 ]]></content>
       <categories>
