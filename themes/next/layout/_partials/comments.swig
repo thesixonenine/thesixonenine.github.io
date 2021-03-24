@@ -81,3 +81,11 @@
     });
   }
 </script>
+<script src="https://beaudar.lipk.org/client.js"
+        repo="https://github.com/thesixonenine/thesixonenine.github.io"
+        issue-term="og:title"
+        label="beaudar"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
