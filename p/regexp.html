@@ -243,7 +243,7 @@
 
       
         <p><strong>转载自<a href="http://github.com/ziishaned/learn-regex" target="_blank" rel="noopener">http://github.com/ziishaned/learn-regex</a></strong></p>
-<h1 id="什么是正则表达式？"><a href="#什么是正则表达式？" class="headerlink" title="什么是正则表达式？"></a>什么是正则表达式？</h1><blockquote>
+<h2 id="什么是正则表达式？"><a href="#什么是正则表达式？" class="headerlink" title="什么是正则表达式？"></a>什么是正则表达式？</h2><blockquote>
 <p>正则表达式是一组由字母和符号组成的特殊文本，它可以用来从文本中找出满足你想要的格式的句子。</p>
 </blockquote>
 <p>一个正则表达式是一种从左到右匹配主体字符串的模式。<br>“Regular expression”这个词比较拗口，我们常使用缩写的术语“regex”或“regexp”。<br>正则表达式可以从一个基础字符串中根据一定的匹配模式替换文本中的字符串、验证表单、提取字符串等等。</p>
@@ -252,62 +252,49 @@
 
 <p>以上的正则表达式可以接受 <code>john_doe</code>、<code>jo-hn_doe</code>、<code>john12_as</code>。<br>但不匹配<code>Jo</code>，因为它包含了大写的字母而且太短了。</p>
 <h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><ul>
+<li><a href="#目录">目录</a><ul>
 <li><a href="#1-基本匹配">1. 基本匹配</a></li>
 <li><a href="#2-元字符">2. 元字符</a><ul>
-<li><a href="#21-点运算符-">2.1 点运算符 .</a></li>
-<li><a href="#22-字符集">2.2 字符集</a><ul>
-<li><a href="#221-否定字符集">2.2.1 否定字符集</a><ul>
-<li><a href="#23-重复次数">2.3 重复次数</a></li>
-</ul>
-</li>
-<li><a href="#231--号">2.3.1 * 号</a></li>
-<li><a href="#232--号">2.3.2 + 号</a></li>
-<li><a href="#233--号">2.3.3 ? 号</a><ul>
-<li><a href="#24--号">2.4 {} 号</a></li>
-<li><a href="#25--特征标群">2.5 (…) 特征标群</a></li>
-<li><a href="#26--或运算符">2.6 | 或运算符</a></li>
-<li><a href="#27-转码特殊字符">2.7 转码特殊字符</a></li>
-<li><a href="#28-锚点">2.8 锚点</a></li>
-</ul>
-</li>
-<li><a href="#281--号">2.8.1 ^ 号</a></li>
-<li><a href="#282--号">2.8.2 $ 号</a><ul>
-<li><a href="#什么是正则表达式">什么是正则表达式？</a></li>
-<li><a href="#目录">目录</a></li>
-<li><a href="#1-基本匹配">1. 基本匹配</a></li>
-<li><a href="#2-元字符">2. 元字符</a></li>
 <li><a href="#21-点运算符-">2.1 点运算符 <code>.</code></a></li>
-<li><a href="#22-字符集">2.2 字符集</a></li>
+<li><a href="#22-字符集">2.2 字符集</a><ul>
 <li><a href="#221-否定字符集">2.2.1 否定字符集</a></li>
-<li><a href="#23-重复次数">2.3 重复次数</a></li>
+</ul>
+</li>
+<li><a href="#23-重复次数">2.3 重复次数</a><ul>
 <li><a href="#231--号">2.3.1 <code>*</code> 号</a></li>
 <li><a href="#232--号">2.3.2 <code>+</code> 号</a></li>
 <li><a href="#233--号">2.3.3 <code>?</code> 号</a></li>
+</ul>
+</li>
 <li><a href="#24--号">2.4 <code>{}</code> 号</a></li>
 <li><a href="#25--特征标群">2.5 <code>(...)</code> 特征标群</a></li>
 <li><a href="#26--或运算符">2.6 <code>|</code> 或运算符</a></li>
 <li><a href="#27-转码特殊字符">2.7 转码特殊字符</a></li>
-<li><a href="#28-锚点">2.8 锚点</a></li>
+<li><a href="#28-锚点">2.8 锚点</a><ul>
 <li><a href="#281--号">2.8.1 <code>^</code> 号</a></li>
 <li><a href="#282--号">2.8.2 <code>$</code> 号</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a href="#3-简写字符集">3. 简写字符集</a></li>
-<li><a href="#4-零宽度断言前后预查">4. 零宽度断言（前后预查）</a></li>
+<li><a href="#4-零宽度断言前后预查">4. 零宽度断言（前后预查）</a><ul>
 <li><a href="#41--正先行断言">4.1 <code>?=...</code> 正先行断言</a></li>
 <li><a href="#42--负先行断言">4.2 <code>?!...</code> 负先行断言</a></li>
 <li><a href="#43---正后发断言">4.3 <code>?&lt;= ...</code> 正后发断言</a></li>
 <li><a href="#44--负后发断言">4.4 <code>?&lt;!...</code> 负后发断言</a></li>
-<li><a href="#5-标志">5. 标志</a></li>
+</ul>
+</li>
+<li><a href="#5-标志">5. 标志</a><ul>
 <li><a href="#51-忽略大小写-case-insensitive">5.1 忽略大小写 (Case Insensitive)</a></li>
 <li><a href="#52-全局搜索-global-search">5.2 全局搜索 (Global search)</a></li>
 <li><a href="#53-多行修饰符-multiline">5.3 多行修饰符 (Multiline)</a></li>
+</ul>
+</li>
 <li><a href="#6-贪婪匹配与惰性匹配-greedy-vs-lazy-matching">6. 贪婪匹配与惰性匹配 (Greedy vs lazy matching)</a></li>
+</ul>
+</li>
 <li><a href="#额外补充">额外补充</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 <h2 id="1-基本匹配"><a href="#1-基本匹配" class="headerlink" title="1. 基本匹配"></a>1. 基本匹配</h2><p>正则表达式其实就是在执行搜索时的格式，它由一些字母和数字组合而成。<br>例如：一个正则表达式 <code>the</code>，它表示一个规则：由字母<code>t</code>开始，接着是<code>h</code>，再接着是<code>e</code>。</p>
 <pre>
@@ -680,7 +667,7 @@
 
 
 
-<h1 id="额外补充"><a href="#额外补充" class="headerlink" title="额外补充"></a>额外补充</h1><ul>
+<h2 id="额外补充"><a href="#额外补充" class="headerlink" title="额外补充"></a>额外补充</h2><ul>
 <li><em>正整数</em>: <code>^\d+$</code></li>
 <li><em>负整数</em>: <code>^-\d+$</code></li>
 <li><em>手机国家号</em>: <code>^+?[\d\s]{3,}$</code></li>
@@ -787,7 +774,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是正则表达式？"><span class="nav-text">什么是正则表达式？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#目录"><span class="nav-text">目录</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-基本匹配"><span class="nav-text">1. 基本匹配</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-元字符"><span class="nav-text">2. 元字符</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-点运算符"><span class="nav-text">2.1 点运算符 .</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-字符集"><span class="nav-text">2.2 字符集</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-1-否定字符集"><span class="nav-text">2.2.1 否定字符集</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-重复次数"><span class="nav-text">2.3 重复次数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-1-号"><span class="nav-text">2.3.1 * 号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-2-号"><span class="nav-text">2.3.2 + 号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-3-号"><span class="nav-text">2.3.3 ? 号</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-号"><span class="nav-text">2.4 {} 号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-特征标群"><span class="nav-text">2.5 (...) 特征标群</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-6-或运算符"><span class="nav-text">2.6 | 或运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-7-转码特殊字符"><span class="nav-text">2.7 转码特殊字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-8-锚点"><span class="nav-text">2.8 锚点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-8-1-号"><span class="nav-text">2.8.1 ^ 号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-8-2-号"><span class="nav-text">2.8.2 $ 号</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-简写字符集"><span class="nav-text">3. 简写字符集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-零宽度断言（前后预查）"><span class="nav-text">4. 零宽度断言（前后预查）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-正先行断言"><span class="nav-text">4.1 ?=... 正先行断言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-负先行断言"><span class="nav-text">4.2 ?!... 负先行断言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-lt-正后发断言"><span class="nav-text">4.3 ?&lt;= ... 正后发断言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-lt-负后发断言"><span class="nav-text">4.4 ?&lt;!... 负后发断言</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-标志"><span class="nav-text">5. 标志</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-忽略大小写-Case-Insensitive"><span class="nav-text">5.1 忽略大小写 (Case Insensitive)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2-全局搜索-Global-search"><span class="nav-text">5.2 全局搜索 (Global search)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3-多行修饰符-Multiline"><span class="nav-text">5.3 多行修饰符 (Multiline)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-贪婪匹配与惰性匹配-Greedy-vs-lazy-matching"><span class="nav-text">6. 贪婪匹配与惰性匹配 (Greedy vs lazy matching)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#额外补充"><span class="nav-text">额外补充</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是正则表达式？"><span class="nav-text">什么是正则表达式？</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#目录"><span class="nav-text">目录</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-基本匹配"><span class="nav-text">1. 基本匹配</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-元字符"><span class="nav-text">2. 元字符</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-点运算符"><span class="nav-text">2.1 点运算符 .</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-字符集"><span class="nav-text">2.2 字符集</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-1-否定字符集"><span class="nav-text">2.2.1 否定字符集</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-重复次数"><span class="nav-text">2.3 重复次数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-1-号"><span class="nav-text">2.3.1 * 号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-2-号"><span class="nav-text">2.3.2 + 号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-3-号"><span class="nav-text">2.3.3 ? 号</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-号"><span class="nav-text">2.4 {} 号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-特征标群"><span class="nav-text">2.5 (...) 特征标群</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-6-或运算符"><span class="nav-text">2.6 | 或运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-7-转码特殊字符"><span class="nav-text">2.7 转码特殊字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-8-锚点"><span class="nav-text">2.8 锚点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-8-1-号"><span class="nav-text">2.8.1 ^ 号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-8-2-号"><span class="nav-text">2.8.2 $ 号</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-简写字符集"><span class="nav-text">3. 简写字符集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-零宽度断言（前后预查）"><span class="nav-text">4. 零宽度断言（前后预查）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-正先行断言"><span class="nav-text">4.1 ?=... 正先行断言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-负先行断言"><span class="nav-text">4.2 ?!... 负先行断言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-lt-正后发断言"><span class="nav-text">4.3 ?&lt;= ... 正后发断言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-lt-负后发断言"><span class="nav-text">4.4 ?&lt;!... 负后发断言</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-标志"><span class="nav-text">5. 标志</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-忽略大小写-Case-Insensitive"><span class="nav-text">5.1 忽略大小写 (Case Insensitive)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2-全局搜索-Global-search"><span class="nav-text">5.2 全局搜索 (Global search)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3-多行修饰符-Multiline"><span class="nav-text">5.3 多行修饰符 (Multiline)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-贪婪匹配与惰性匹配-Greedy-vs-lazy-matching"><span class="nav-text">6. 贪婪匹配与惰性匹配 (Greedy vs lazy matching)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#额外补充"><span class="nav-text">额外补充</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
