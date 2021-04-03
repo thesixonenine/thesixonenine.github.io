@@ -23,32 +23,33 @@
     var CONFIG = {"hostname":"thesixonenine.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="独怆然而涕下">
+  <meta name="description" content="转载自http://github.com/ziishaned/learn-regex 什么是正则表达式？ 正则表达式是一组由字母和符号组成的特殊文本，它可以用来从文本中找出满足你想要的格式的句子。  一个正则表达式是一种从左到右匹配主体字符串的模式。“Regular expression”这个词比较拗口，我们常使用缩写的术语“regex”或“regexp”。正则表达式可以从一个基础字符串中根据一定">
 <meta name="keywords" content="Java JVM SpringBoot SpringCloud MyBatis MySQL">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Simple">
-<meta property="og:url" content="https://thesixonenine.github.io/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="regexp">
+<meta property="og:url" content="https://thesixonenine.github.io/p/regexp.html">
 <meta property="og:site_name" content="Simple">
-<meta property="og:description" content="独怆然而涕下">
+<meta property="og:description" content="转载自http://github.com/ziishaned/learn-regex 什么是正则表达式？ 正则表达式是一组由字母和符号组成的特殊文本，它可以用来从文本中找出满足你想要的格式的句子。  一个正则表达式是一种从左到右匹配主体字符串的模式。“Regular expression”这个词比较拗口，我们常使用缩写的术语“regex”或“regexp”。正则表达式可以从一个基础字符串中根据一定">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2021-04-03T16:04:36.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Simple">
-<meta name="twitter:description" content="独怆然而涕下">
+<meta name="twitter:title" content="regexp">
+<meta name="twitter:description" content="转载自http://github.com/ziishaned/learn-regex 什么是正则表达式？ 正则表达式是一组由字母和符号组成的特殊文本，它可以用来从文本中找出满足你想要的格式的句子。  一个正则表达式是一种从左到右匹配主体字符串的模式。“Regular expression”这个词比较拗口，我们常使用缩写的术语“regex”或“regexp”。正则表达式可以从一个基础字符串中根据一定">
 
-<link rel="canonical" href="https://thesixonenine.github.io/">
+<link rel="canonical" href="https://thesixonenine.github.io/p/regexp.html">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title> thesixonenine - Simple</title>
+  <title>regexp | Simple</title>
   
 
 
@@ -189,9 +190,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -207,10 +209,9 @@
       <meta itemprop="name" content="Simple">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/p/regexp.html" class="post-title-link" itemprop="url">regexp</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          regexp
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -223,6 +224,13 @@
             </span>
 
           
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
 
         </div>
       </header>
@@ -233,7 +241,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><strong>转载自<a href="http://github.com/ziishaned/learn-regex" target="_blank" rel="noopener">http://github.com/ziishaned/learn-regex</a></strong></p>
+        <p><strong>转载自<a href="http://github.com/ziishaned/learn-regex" target="_blank" rel="noopener">http://github.com/ziishaned/learn-regex</a></strong></p>
 <h2 id="什么是正则表达式？"><a href="#什么是正则表达式？" class="headerlink" title="什么是正则表达式？"></a>什么是正则表达式？</h2><blockquote>
 <p>正则表达式是一组由字母和符号组成的特殊文本，它可以用来从文本中找出满足你想要的格式的句子。</p>
 </blockquote>
@@ -691,646 +699,30 @@
 <li><em>MasterCard 信用卡号</em>: <code>^(5[1-5][0-9]{14})*$</code></li>
 </ul>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://thesixonenine.github.io/p/My-ITX-PC.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.png">
-      <meta itemprop="name" content="Simple">
-      <meta itemprop="description" content="独怆然而涕下">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Simple">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/p/My-ITX-PC.html" class="post-title-link" itemprop="url">My-ITX-PC</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-02-23 09:51:53" itemprop="dateCreated datePublished" datetime="2021-02-23T09:51:53+08:00">2021-02-23</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/MyPC/" itemprop="url" rel="index"><span itemprop="name">MyPC</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>我的第二台组装PC</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/p/My-ITX-PC.html">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://thesixonenine.github.io/p/keep-your-fork-synced.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.png">
-      <meta itemprop="name" content="Simple">
-      <meta itemprop="description" content="独怆然而涕下">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Simple">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/p/keep-your-fork-synced.html" class="post-title-link" itemprop="url">keep-your-fork-synced</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-02-20 11:20:21" itemprop="dateCreated datePublished" datetime="2021-02-20T11:20:21+08:00">2021-02-20</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-02-22 09:56:21" itemprop="dateModified" datetime="2021-02-22T09:56:21+08:00">2021-02-22</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Git/" itemprop="url" rel="index"><span itemprop="name">Git</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>fork项目后与原项目保持同步</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/p/keep-your-fork-synced.html">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/p/My-ITX-PC.html" rel="prev" title="My-ITX-PC">
+      <i class="fa fa-chevron-left"></i> My-ITX-PC
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://thesixonenine.github.io/p/openwrt-build.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.png">
-      <meta itemprop="name" content="Simple">
-      <meta itemprop="description" content="独怆然而涕下">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Simple">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/p/openwrt-build.html" class="post-title-link" itemprop="url">openwrt-build</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-02-19 15:37:56" itemprop="dateCreated datePublished" datetime="2021-02-19T15:37:56+08:00">2021-02-19</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OpenWrt/" itemprop="url" rel="index"><span itemprop="name">OpenWrt</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>OpenWrt 构建</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/p/openwrt-build.html">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://thesixonenine.github.io/p/recipe.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.png">
-      <meta itemprop="name" content="Simple">
-      <meta itemprop="description" content="独怆然而涕下">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Simple">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/p/recipe.html" class="post-title-link" itemprop="url">recipe</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-02-18 15:20:27" itemprop="dateCreated datePublished" datetime="2021-02-18T15:20:27+08:00">2021-02-18</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-02-22 16:02:27" itemprop="dateModified" datetime="2021-02-22T16:02:27+08:00">2021-02-22</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/life/" itemprop="url" rel="index"><span itemprop="name">life</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>自己可以做的菜</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/p/recipe.html">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://thesixonenine.github.io/p/spring-cache.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.png">
-      <meta itemprop="name" content="Simple">
-      <meta itemprop="description" content="独怆然而涕下">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Simple">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/p/spring-cache.html" class="post-title-link" itemprop="url">spring-cache</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-10-09 22:44:06" itemprop="dateCreated datePublished" datetime="2020-10-09T22:44:06+08:00">2020-10-09</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-01-25 14:23:28" itemprop="dateModified" datetime="2021-01-25T14:23:28+08:00">2021-01-25</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Spring/" itemprop="url" rel="index"><span itemprop="name">Spring</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Spring Cache相关</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/p/spring-cache.html">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://thesixonenine.github.io/p/archlinux-install.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.png">
-      <meta itemprop="name" content="Simple">
-      <meta itemprop="description" content="独怆然而涕下">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Simple">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/p/archlinux-install.html" class="post-title-link" itemprop="url">archlinux_install</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-10-08 13:37:34" itemprop="dateCreated datePublished" datetime="2020-10-08T13:37:34+08:00">2020-10-08</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-09 14:00:00" itemprop="dateModified" datetime="2020-10-09T14:00:00+08:00">2020-10-09</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>archlinux 安装</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/p/archlinux-install.html">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://thesixonenine.github.io/p/My-First-PC.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.png">
-      <meta itemprop="name" content="Simple">
-      <meta itemprop="description" content="独怆然而涕下">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Simple">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/p/My-First-PC.html" class="post-title-link" itemprop="url">My First PC</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-12-13 14:43:28" itemprop="dateCreated datePublished" datetime="2019-12-13T14:43:28+08:00">2019-12-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-14 14:43:28" itemprop="dateModified" datetime="2019-12-14T14:43:28+08:00">2019-12-14</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/MyPC/" itemprop="url" rel="index"><span itemprop="name">MyPC</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>我的第一台组装PC</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/p/My-First-PC.html">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://thesixonenine.github.io/p/hello-world.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.png">
-      <meta itemprop="name" content="Simple">
-      <meta itemprop="description" content="独怆然而涕下">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Simple">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/p/hello-world.html" class="post-title-link" itemprop="url">Hello World !</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-01-01 00:00:00" itemprop="dateCreated datePublished" datetime="2019-01-01T00:00:00+08:00">2019-01-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-01-02 00:00:00" itemprop="dateModified" datetime="2019-01-02T00:00:00+08:00">2019-01-02</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Hello Hexo</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/p/hello-world.html">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -1393,6 +785,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是正则表达式？"><span class="nav-text">什么是正则表达式？</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#目录"><span class="nav-text">目录</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-基本匹配"><span class="nav-text">1. 基本匹配</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-元字符"><span class="nav-text">2. 元字符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-点运算符"><span class="nav-text">2.1 点运算符 .</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-字符集"><span class="nav-text">2.2 字符集</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-1-否定字符集"><span class="nav-text">2.2.1 否定字符集</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-重复次数"><span class="nav-text">2.3 重复次数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-1-号"><span class="nav-text">2.3.1 * 号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-2-号"><span class="nav-text">2.3.2 + 号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-3-号"><span class="nav-text">2.3.3 ? 号</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4-号"><span class="nav-text">2.4 {} 号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-5-特征标群"><span class="nav-text">2.5 (...) 特征标群</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-6-或运算符"><span class="nav-text">2.6 | 或运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-7-转码特殊字符"><span class="nav-text">2.7 转码特殊字符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-8-锚点"><span class="nav-text">2.8 锚点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-8-1-号"><span class="nav-text">2.8.1 ^ 号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-8-2-号"><span class="nav-text">2.8.2 $ 号</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-简写字符集"><span class="nav-text">3. 简写字符集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-零宽度断言（前后预查）"><span class="nav-text">4. 零宽度断言（前后预查）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-正先行断言"><span class="nav-text">4.1 ?=... 正先行断言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-负先行断言"><span class="nav-text">4.2 ?!... 负先行断言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-lt-正后发断言"><span class="nav-text">4.3 ?&lt;= ... 正后发断言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-lt-负后发断言"><span class="nav-text">4.4 ?&lt;!... 负后发断言</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-标志"><span class="nav-text">5. 标志</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-忽略大小写-Case-Insensitive"><span class="nav-text">5.1 忽略大小写 (Case Insensitive)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2-全局搜索-Global-search"><span class="nav-text">5.2 全局搜索 (Global search)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3-多行修饰符-Multiline"><span class="nav-text">5.3 多行修饰符 (Multiline)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-贪婪匹配与惰性匹配-Greedy-vs-lazy-matching"><span class="nav-text">6. 贪婪匹配与惰性匹配 (Greedy vs lazy matching)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#额外补充"><span class="nav-text">额外补充</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
