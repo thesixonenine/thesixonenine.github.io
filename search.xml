@@ -429,7 +429,8 @@
     <title>regexp</title>
     <url>/p/regexp.html</url>
     <content><![CDATA[<p><strong>转载自<a href="http://github.com/ziishaned/learn-regex" target="_blank" rel="noopener">http://github.com/ziishaned/learn-regex</a></strong></p>
-<h2 id="什么是正则表达式？"><a href="#什么是正则表达式？" class="headerlink" title="什么是正则表达式？"></a>什么是正则表达式？</h2><blockquote>
+<p>什么是正则表达式？</p>
+<blockquote>
 <p>正则表达式是一组由字母和符号组成的特殊文本，它可以用来从文本中找出满足你想要的格式的句子。</p>
 </blockquote>
 <p>一个正则表达式是一种从左到右匹配主体字符串的模式。<br>“Regular expression”这个词比较拗口，我们常使用缩写的术语“regex”或“regexp”。<br>正则表达式可以从一个基础字符串中根据一定的匹配模式替换文本中的字符串、验证表单、提取字符串等等。</p>
@@ -478,9 +479,9 @@
 </ul>
 </li>
 <li><a href="#6-贪婪匹配与惰性匹配-greedy-vs-lazy-matching">6. 贪婪匹配与惰性匹配 (Greedy vs lazy matching)</a></li>
+<li><a href="#额外补充">额外补充</a></li>
 </ul>
 </li>
-<li><a href="#额外补充">额外补充</a></li>
 </ul>
 <h2 id="1-基本匹配"><a href="#1-基本匹配" class="headerlink" title="1. 基本匹配"></a>1. 基本匹配</h2><p>正则表达式其实就是在执行搜索时的格式，它由一些字母和数字组合而成。<br>例如：一个正则表达式 <code>the</code>，它表示一个规则：由字母<code>t</code>开始，接着是<code>h</code>，再接着是<code>e</code>。</p>
 <pre>
