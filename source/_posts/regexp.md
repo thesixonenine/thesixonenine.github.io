@@ -11,7 +11,7 @@ description: 正则表达式
 **转载自http://github.com/ziishaned/learn-regex**
 
 
-## 什么是正则表达式？
+什么是正则表达式？
 
 
 > 正则表达式是一组由字母和符号组成的特殊文本，它可以用来从文本中找出满足你想要的格式的句子。
@@ -67,7 +67,7 @@ $:结束标记
     - [5.2 全局搜索 (Global search)](#52-全局搜索-global-search)
     - [5.3 多行修饰符 (Multiline)](#53-多行修饰符-multiline)
   - [6. 贪婪匹配与惰性匹配 (Greedy vs lazy matching)](#6-贪婪匹配与惰性匹配-greedy-vs-lazy-matching)
-- [额外补充](#额外补充)
+  - [额外补充](#额外补充)
 
 ## 1. 基本匹配
 
