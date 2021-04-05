@@ -438,8 +438,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">^[a-z0-9_-]&#123;3,15&#125;$</span><br><span class="line"></span><br><span class="line">其中:</span><br><span class="line">^:开始标记</span><br><span class="line">[a-z0-9_-]:字母(a到z)数字(0到9)下划线中划线</span><br><span class="line">&#123;3,15&#125;:3到15个字符的长度</span><br><span class="line">$:结束标记</span><br></pre></td></tr></table></figure>
 
 <p>以上的正则表达式可以接受 <code>john_doe</code>、<code>jo-hn_doe</code>、<code>john12_as</code>。<br>但不匹配<code>Jo</code>，因为它包含了大写的字母而且太短了。</p>
-<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><ul>
-<li><a href="#目录">目录</a><ul>
+<ul>
 <li><a href="#1-基本匹配">1. 基本匹配</a></li>
 <li><a href="#2-元字符">2. 元字符</a><ul>
 <li><a href="#21-点运算符-">2.1 点运算符 <code>.</code></a></li>
@@ -480,8 +479,6 @@
 </li>
 <li><a href="#6-贪婪匹配与惰性匹配-greedy-vs-lazy-matching">6. 贪婪匹配与惰性匹配 (Greedy vs lazy matching)</a></li>
 <li><a href="#额外补充">额外补充</a></li>
-</ul>
-</li>
 </ul>
 <h2 id="1-基本匹配"><a href="#1-基本匹配" class="headerlink" title="1. 基本匹配"></a>1. 基本匹配</h2><p>正则表达式其实就是在执行搜索时的格式，它由一些字母和数字组合而成。<br>例如：一个正则表达式 <code>the</code>，它表示一个规则：由字母<code>t</code>开始，接着是<code>h</code>，再接着是<code>e</code>。</p>
 <pre>
