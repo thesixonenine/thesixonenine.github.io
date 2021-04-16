@@ -6,7 +6,7 @@
   <link href="https://thesixonenine.github.io/atom.xml" rel="self"/>
   
   <link href="https://thesixonenine.github.io/"/>
-  <updated>2021-04-05T07:14:36.000Z</updated>
+  <updated>2021-04-16T13:26:03.000Z</updated>
   <id>https://thesixonenine.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>read-history</title>
+    <link href="https://thesixonenine.github.io/p/read-history.html"/>
+    <id>https://thesixonenine.github.io/p/read-history.html</id>
+    <published>2021-04-16T13:26:03.000Z</published>
+    <updated>2021-04-16T13:26:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<table><thead><tr><th>时间</th><th>书名</th><th>ISBN</th><th>状态</th></tr></thead><tbody><tr><td></td><td>献给阿尔吉侬的花束</td><td>9787549565115</td><td>已读</td></tr><tr><td></td><td>三体</td><td></td><td>已读</td></tr><tr><td></td><td>1988我想和这个世界谈谈</td><td>9787201081939</td><td>已读</td></tr><tr><td></td><td>乡村教师</td><td>9787535458667</td><td>已读</td></tr><tr><td></td><td>查拉图斯特拉如是说</td><td>9787511364678</td><td>未读完</td></tr><tr><td></td><td>百年孤独</td><td>9787544291170</td><td>已读</td></tr></tbody></table>]]></content>
+    
+    
+    <summary type="html">读书列表</summary>
+    
+    
+    
+    
+    <category term="book" scheme="https://thesixonenine.github.io/tags/book/"/>
+    
+  </entry>
   
   <entry>
     <title>regexp</title>
