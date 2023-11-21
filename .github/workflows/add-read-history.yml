@@ -1,0 +1,57 @@
+name: add-read-history
+on:
+  workflow_dispatch:
+    inputs:
+      read_date:
+        description: '日期'
+        required: true
+        type: string
+      book_name:
+        description: '书名'
+        required: true
+        type: string
+      isbn:
+        description: 'ISBN'
+        required: false
+        type: string
+      read_status:
+        description: '状态'
+        required: true
+        default: '已读完'
+        type: choice
+        options:
+          - 待阅读
+          - 阅读中
+          - 已读完
+
+concurrency:
+  group: 'add-history'
+
+jobs:
+  add-the-history:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+    timeout-minutes: 2
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v3
+        with:
+          ref: 'hugo'
+          submodules: true
+      - name: add history
+        env:
+          GIT_NAME: Simple
+          GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
+          read_date: ${{ inputs.read_date }}
+          book_name: ${{ inputs.book_name }}
+          isbn: ${{ inputs.isbn }}
+          read_status: ${{ inputs.read_status }}
+        run: |
+          sed -i '18i'"| ${read_date} | ${book_name} | ${isbn} | ${read_status} |" ./content/posts/read-history.md
+          # echo -e "| ${read_date} | ${book_name} | ${isbn} | ${read_status} |" >> ./content/posts/read-history.md
+          git add .
+          git config --global user.name $GIT_NAME
+          git config --global user.email $GIT_EMAIL
+          git commit -m "add-read-history"
+          git push

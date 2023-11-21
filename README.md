@@ -1,3 +1,29 @@
+## My Person Blog Source
+
+#### proxy
+
+```bash
+# 设置 proxy
+git config --global http.proxy http://127.0.0.1:10808
+# 取消 proxy
+git config --global --unset http.proxy
+```
+
+#### init project
+
+```bash
+# 第一步 clone 工程
+git clone -b hugo https://github.com/thesixonenine/thesixonenine.github.io.git --recursive
+# 设置 CRLF gpg sign
+# git_CRLF_false
+# git_github
+# 初始化子模块
+git submodule init
+# 更新子模块
+git submodule update --remote
+```
+
+
 <img align="right" width="150" alt="logo" src="https://user-images.githubusercontent.com/5889006/190859553-5b229b4f-c476-4cbd-928f-890f5265ca4c.png">
 
 # Hugo Theme Stack Starter Template
