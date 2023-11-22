@@ -47,8 +47,11 @@ sudo cat > /etc/docker/daemon.json <<EOF
 {
     "registry-mirrors": [
         "https://dockerproxy.com",
+		"https://docker.nju.edu.cn",
+		"https://docker.mirrors.sjtug.sjtu.edu.cn",
+		"https://hub-mirror.c.163.com",
         "https://mirror.baidubce.com",
-        "https://cr.console.aliyun.com/"
+        "https://cr.console.aliyun.com"
     ]
 }
 EOF
