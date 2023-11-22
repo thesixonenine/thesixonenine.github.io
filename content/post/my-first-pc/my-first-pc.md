@@ -1,12 +1,12 @@
 ---
-title: My-First-PC
+title: my-first-pc
 date: 2019-12-13T14:43:28+0800
 updated: 2019-12-14T14:43:28+0800
 tags: ['PC']
 categories:
 - MyPC
 description: 我的第一台组装PC
-url: '/p/My-First-PC.html'
+url: '/p/my-first-pc.html'
 ---
 
 #### 购买详情
