@@ -1,7 +1,7 @@
 # Change baseurl before deploy
 baseurl = "https://blog.thesixonenine.site"
 languageCode = "zh-CN"
-paginate = 5
+paginate = 6
 title = "Simple's blog"
 
 # Theme i18n support
