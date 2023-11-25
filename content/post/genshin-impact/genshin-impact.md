@@ -2,6 +2,7 @@
 title: "genshin-impact"
 date: 2023-10-23T21:53:15+08:00
 updated: 2023-11-10T09:12:15+08:00
+description: 原神,启动!
 url: '/p/genshin-impact.html'
 ---
 

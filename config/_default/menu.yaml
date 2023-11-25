@@ -1,0 +1,25 @@
+# Configure main menu and social menu
+main:
+  - identifier: dashboard
+    name: Dashboard
+    url: https://dashboard.thesixonenine.site
+    params:
+      icon: dashboard
+      newtab: true
+  - identifier: keyboard
+    name: Keyboard
+    url: https://thesixonenine.github.io/keyboard
+    params:
+      icon: keyboard
+      newtab: true
+social:
+  - identifier: github
+    name: GitHub
+    url: https://github.com/thesixonenine
+    params:
+      icon: brand-github
+  - identifier: twitter
+    name: Twitter
+    url: https://twitter.com
+    params:
+      icon: brand-twitter

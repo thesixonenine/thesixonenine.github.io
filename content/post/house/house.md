@@ -1,7 +1,8 @@
 ---
 title: "house"
 date: 2023-10-18T10:21:59+08:00
-updated: 2023-11-23T15:20:59+08:00
+updated: 2023-11-25T15:20:59+08:00
+description: 家庭装修
 url: '/p/house.html'
 ---
 
@@ -32,8 +33,7 @@ url: '/p/house.html'
 - 一个插座
 - 一个单网口面板(通到电视柜里)
 
-
-
+![](./house/水路.png)
 
 # 购买清单
 
