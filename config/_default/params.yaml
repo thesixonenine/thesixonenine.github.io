@@ -57,8 +57,8 @@ imageProcessing:
     enabled: true
 # Comments
 comments:
-  enabled: false
-  provider: disqus
+  enabled: true
+  provider: giscus
   disqusjs:
     shortname: ""
     apiUrl: ""
@@ -104,15 +104,18 @@ comments:
     serverName: cactus.chat
     siteName: ""
   giscus:
-    repo: ""
-    repoID: ""
-    category: ""
-    categoryID: ""
-    mapping: ""
+    repo: "thesixonenine/thesixonenine.github.io"
+    repoID: "R_kgDOKwFLnQ"
+    category: "Announcements"
+    categoryID: "DIC_kwDOKwFLnc4CbQjY"
+    mapping: "og:title"
     lightTheme: ""
     darkTheme: ""
     reactionsEnabled: 1
     emitMetadata: 0
+    strict: 1
+    inputPosition: "top"
+    loading: "lazy"
   gitalk:
     owner: ""
     admin: ""
