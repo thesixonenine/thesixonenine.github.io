@@ -1,7 +1,7 @@
 ---
 title: "genshin-impact"
 date: 2023-10-23T21:53:15+08:00
-updated: 2023-11-10T09:12:15+08:00
+updated: 2023-11-26T13:35:15+08:00
 description: 原神,启动!
 url: '/p/genshin-impact.html'
 ---
@@ -16,4 +16,3 @@ url: '/p/genshin-impact.html'
 | 四方求剑 | 璃月 | - | - |
 | 故人久未归 | 璃月 | 久久望故人 | - |
 | 而尽人事 | 璃月 | 好兆头 | 破坏4个征兆(已炸鱼) |
-| 真相只有一个 | 稻妻 | 收尾工作 | - |
