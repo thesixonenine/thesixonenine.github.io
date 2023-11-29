@@ -6,7 +6,6 @@ tags: ['Python','Linux']
 categories: ['Python','Linux']
 keywords: Python
 description: CentOS 7 Python3安装配置
-url: '/p/python3-install.html'
 ---
 
 ## Python3.9.12 编译安装

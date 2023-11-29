@@ -10,7 +10,6 @@ categories:
 - Windows
 keywords: Hyper-V
 description: Hyper-V 占用端口导致软件无法启动的问题
-url: '/p/hyper-v-dynamic-port-tcp.html'
 ---
 ## 背景和原因
 

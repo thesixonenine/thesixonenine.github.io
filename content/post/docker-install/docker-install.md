@@ -10,7 +10,6 @@ categories:
 - Linux
 keywords:
 description: CentOS 7 docker-ce install; portainer install
-url: '/p/docker-install.html'
 ---
 
 ## docker install

@@ -8,7 +8,6 @@ tags:
 categories: ['Spring']
 keywords: Spring Cache
 description: Spring Cache相关
-url: '/p/spring-cache.html'
 ---
 
 #### 参考文档

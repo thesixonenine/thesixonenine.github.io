@@ -8,7 +8,6 @@ tags:
 categories: ['Life']
 keywords: 菜谱
 description: 自己可以做的菜
-url: '/p/recipe.html'
 ---
 
 ![蒜苔炒鸡蛋](./recipe/1_1.jpg)

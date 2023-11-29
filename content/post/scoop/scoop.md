@@ -10,7 +10,6 @@ categories:
 - Scoop
 keywords: scoop
 description: scoop使用
-url: '/p/scoop.html'
 ---
 
 [`Scoop`](https://scoop.sh/) 是 `Windows` 下的一款软件包管理工具.

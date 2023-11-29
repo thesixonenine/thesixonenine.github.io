@@ -9,7 +9,6 @@ tags:
 categories: ['OpenWrt']
 keywords: OpenWrt build
 description: OpenWrt 构建
-url: '/p/openwrt-build.html'
 ---
 
 

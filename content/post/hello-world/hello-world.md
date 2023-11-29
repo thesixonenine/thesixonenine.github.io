@@ -3,7 +3,6 @@ title: hello-world
 date: 2019-01-01T00:00:00+0800
 updated: 2019-01-02T00:00:00+0800
 description: Hello Hexo
-url: '/p/hello-world.html'
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/zh-cn/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/zh-cn/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).Good Luck!
 

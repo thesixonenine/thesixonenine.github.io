@@ -7,7 +7,6 @@ tags:
 categories: ['Redis']
 keywords: redeem code
 description: 兑换码设计
-url: '/p/redeem-code.html'
 ---
 
 兑换码的设计

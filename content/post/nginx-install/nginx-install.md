@@ -6,7 +6,6 @@ tags: ['Nginx','Linux']
 categories: ['Nginx','Linux']
 keywords: Nginx
 description: CentOS 7 Nginx安装配置
-url: '/p/nginx-install.html'
 ---
 
 ## Nginx 编译安装

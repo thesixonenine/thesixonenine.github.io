@@ -6,7 +6,6 @@ tags: ['Script']
 categories: ['Script']
 keywords: Script
 description: 一些实用的脚本命令
-url: '/p/small-script.html'
 ---
 
 ## PowerShell

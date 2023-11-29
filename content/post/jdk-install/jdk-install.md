@@ -8,7 +8,6 @@ tags:
 categories: ['Linux','Java']
 keywords: jdk
 description: jdk安装配置
-url: '/p/jdk-install.html'
 ---
 
 ## JDK8安装

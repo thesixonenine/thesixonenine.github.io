@@ -8,7 +8,6 @@ categories:
 - Design
 keywords: 设计模式
 description: 设计模式
-url: '/p/design-pattern.html'
 ---
 
 ## 设计模式的六大原则

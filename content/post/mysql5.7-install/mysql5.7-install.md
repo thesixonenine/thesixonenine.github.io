@@ -6,7 +6,6 @@ tags: ['MySQL','Linux']
 categories: ['MySQL','Linux']
 keywords: MySQL
 description: CentOS 7 MySQL5.7安装配置
-url: '/p/mysql5.7-install.html'
 ---
 
 ## MySQL5.7.24安装配置

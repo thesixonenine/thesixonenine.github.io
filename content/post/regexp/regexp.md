@@ -8,7 +8,6 @@ keywords:
 - RE
 - 正则
 description: 正则表达式
-url: '/p/regexp.html'
 ---
 
 **转载自http://github.com/ziishaned/learn-regex**

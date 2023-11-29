@@ -6,7 +6,6 @@ tags: ['RabbitMQ','Linux']
 categories: ['RabbitMQ','Linux']
 keywords: rabbitmq
 description: rabbitmq安装配置
-url: '/p/rabbitmq-install-config.html'
 ---
 
 ## Yum安装

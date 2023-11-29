@@ -10,7 +10,6 @@ categories:
 - Linux
 keywords: Go
 description: Go Intall on Linux
-url: '/p/go-install.html'
 ---
 
 ```bash

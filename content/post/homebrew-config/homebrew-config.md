@@ -8,7 +8,6 @@ tags:
 categories: ['Mac']
 keywords: Homebrew 
 description: Mac安装Homebrew
-url: '/p/homebrew-config.html'
 ---
 参考:
 - [tuna](https://mirror.tuna.tsinghua.edu.cn/help/homebrew)

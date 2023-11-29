@@ -7,7 +7,6 @@ categories:
 - MyPC
 keywords:
 description: 我的第二台组装PC
-url: '/p/my-itx-pc.html'
 ---
 
 #### 购买详情

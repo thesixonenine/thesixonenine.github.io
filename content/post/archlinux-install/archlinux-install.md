@@ -6,7 +6,6 @@ tags: ['Archlinux']
 categories: ['Linux']
 keywords: archlinux
 description: archlinux 安装
-url: '/p/archlinux-install.html'
 ---
 
 ## 安装

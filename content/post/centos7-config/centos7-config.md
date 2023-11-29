@@ -9,7 +9,6 @@ categories:
 - Linux
 keywords:
 description: CentOS7常用配置
-url: '/p/centos7-config.html'
 ---
 
 ## CA证书过期导致yum更新失败

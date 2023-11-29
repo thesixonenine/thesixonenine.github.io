@@ -6,7 +6,6 @@ tags: ['PC']
 categories:
 - MyPC
 description: 我的第一台组装PC
-url: '/p/my-first-pc.html'
 ---
 
 #### 购买详情

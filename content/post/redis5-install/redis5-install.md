@@ -6,7 +6,6 @@ tags: ['Redis','Linux']
 categories: ['Redis','Linux']
 keywords: Redis
 description: CentOS 7 Redis安装配置
-url: '/p/redis5-install.html'
 ---
 
 ## Redis5.0.4安装配置

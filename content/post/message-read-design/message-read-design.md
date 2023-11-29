@@ -8,7 +8,6 @@ tags:
 categories: ['Redis']
 keywords: 公告通知
 description: 简单的公告通知模块的设计
-url: '/p/message-read-design.html'
 ---
 
 ## 需求背景

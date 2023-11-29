@@ -3,7 +3,6 @@ title: "house"
 date: 2023-10-18T10:21:59+08:00
 updated: 2023-11-25T15:20:59+08:00
 description: 家庭装修
-url: '/p/house.html'
 ---
 
 ![](./house/水路.png)

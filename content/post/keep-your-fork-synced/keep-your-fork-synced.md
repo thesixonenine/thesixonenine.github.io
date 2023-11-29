@@ -6,7 +6,6 @@ tags: ['Git']
 categories: ['Git']
 keywords: fork sync
 description: fork项目后与原项目保持同步
-url: '/p/keep-your-fork-synced.html'
 ---
 
 [参考链接](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#keep-your-fork-synced)

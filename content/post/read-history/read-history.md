@@ -8,7 +8,6 @@ tags:
 categories: ['Life']
 keywords: 书籍
 description: 读书列表
-url: '/p/read-history.html'
 ---
 
 
