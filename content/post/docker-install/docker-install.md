@@ -60,6 +60,22 @@ sudo systemctl restart docker
 docker run hello-world
 ```
 
+### mysql安装
+
+```bash
+#!/bin/bash
+docker run -d --name mysql \
+    --network host \
+    --restart unless-stopped \
+    -v /opt/mysql/data:/var/lib/mysql \
+    -e MYSQL_ROOT_PASSWORD=123456 \
+    mysql:8.2.0 \
+    --innodb-dedicated-server=ON \
+    --group-replication-consistency=AFTER \
+    --transaction-isolation=READ-COMMITTED \
+    --lower_case_table_names=1
+```
+
 ## docker 卸载
 
 ```bash
