@@ -9,11 +9,11 @@ categories:
 - Docker
 - Linux
 keywords:
-description: CentOS 7 docker-ce安装, 卸载; portainer安装
+description: CentOS 7 docker-ce install; portainer install
 url: '/p/docker-install.html'
 ---
 
-## docker 安装
+## docker install
 
 ```bash
 #!/bin/bash
@@ -38,10 +38,10 @@ sudo yum install -y docker-ce docker-ce-cli containerd.io
 sudo usermod -aG docker ${USER}
 # 开机启动
 sudo systemctl enable docker
-# 启动docker
+# start docker
 sudo systemctl start docker
 sudo chmod a+rw /var/run/docker.sock
-# 源修改
+# update registry mirrors
 sudo touch /etc/docker/daemon.json
 sudo cat > /etc/docker/daemon.json <<EOF
 {
@@ -56,11 +56,11 @@ sudo cat > /etc/docker/daemon.json <<EOF
 }
 EOF
 sudo systemctl restart docker
-# 验证
+# hello-world
 docker run hello-world
 ```
 
-### mysql安装
+### mysql install
 
 ```bash
 #!/bin/bash
@@ -76,28 +76,28 @@ docker run -d --name mysql \
     --lower_case_table_names=1
 ```
 
-## docker 卸载
+## docker uninstall
 
 ```bash
 #!/bin/bash
-# 卸载
+# docker uninstall
 sudo yum remove docker-ce docker-ce-cli containerd.io
 # delete all images, containers, and volumes
 sudo rm -rf /var/lib/docker
 sudo rm -rf /var/lib/containerd
 ```
 
-## docker compose 安装
+## docker compose install
 
 ```bash
 sudo yum install docker-compose-plugin
 ```
 
-## portainer 安装
+## portainer install
 
 ```bash
 #!/bin/bash
-# portainer安装
+# portainer install
 docker volume create portainer_data
 docker run -d -p 8000:8000 -p 9000:9000 -p 9443:9443 \
 	--name portainer --restart=always \
