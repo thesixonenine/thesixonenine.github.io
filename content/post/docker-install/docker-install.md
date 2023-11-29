@@ -76,6 +76,16 @@ docker run -d --name mysql \
     --lower_case_table_names=1
 ```
 
+### delete unused data
+
+```bash
+#!/bin/bash
+# delete unused image container cache
+docker system prune --all
+# delete unused volume
+docker volume prune
+```
+
 ## docker uninstall
 
 ```bash
