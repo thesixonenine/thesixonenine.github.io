@@ -59,6 +59,19 @@ imageProcessing:
 comments:
   enabled: true
   provider: giscus
+  giscus:
+    repo: "thesixonenine/thesixonenine.github.io"
+    repoID: "R_kgDOKwFLnQ"
+    category: "Announcements"
+    categoryID: "DIC_kwDOKwFLnc4CbQjY"
+    mapping: "og:title"
+    lightTheme: ""
+    darkTheme: ""
+    reactionsEnabled: 1
+    emitMetadata: 0
+    strict: 1
+    inputPosition: "top"
+    loading: "lazy"
   disqusjs:
     shortname: ""
     apiUrl: ""
@@ -103,19 +116,6 @@ comments:
     defaultHomeserverUrl: https://matrix.cactus.chat:8448
     serverName: cactus.chat
     siteName: ""
-  giscus:
-    repo: "thesixonenine/thesixonenine.github.io"
-    repoID: "R_kgDOKwFLnQ"
-    category: "Announcements"
-    categoryID: "DIC_kwDOKwFLnc4CbQjY"
-    mapping: "og:title"
-    lightTheme: ""
-    darkTheme: ""
-    reactionsEnabled: 1
-    emitMetadata: 0
-    strict: 1
-    inputPosition: "top"
-    loading: "lazy"
   gitalk:
     owner: ""
     admin: ""
