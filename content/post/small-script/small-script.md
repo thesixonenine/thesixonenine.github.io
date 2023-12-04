@@ -1,7 +1,7 @@
 ---
 title: small-script
 date: 2021-09-17T15:14:17+0800
-updated: 2022-04-28T10:11:17+0800
+lastmod: 2022-04-28T10:11:17+0800
 tags: ['Script']
 categories: ['Script']
 keywords: Script

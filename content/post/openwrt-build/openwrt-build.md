@@ -1,7 +1,7 @@
 ---
 title: openwrt-build
 date: 2021-02-19T15:37:56+0800
-updated: 2021-02-19T15:37:56+0800
+lastmod: 2021-02-19T15:37:56+0800
 tags:
 - OpenWrt
 - Ubuntu

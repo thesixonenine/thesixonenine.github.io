@@ -1,7 +1,7 @@
 ---
 title: design-pattern
 date: 2023-07-10T11:47:17+0800
-updated: 2023-07-10T11:47:17+0800
+lastmod: 2023-07-10T11:47:17+0800
 tags: 
 - Design
 categories: 

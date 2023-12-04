@@ -1,7 +1,7 @@
 ---
 title: read-history
 date: 2021-04-16T21:26:03+0800
-updated: 2021-04-16T21:26:03+0800
+lastmod: 2021-04-16T21:26:03+0800
 tags: 
 - Book
 - Read

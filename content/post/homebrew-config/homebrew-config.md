@@ -1,7 +1,7 @@
 ---
 title: homebrew-config
 date: 2022-02-22T10:38:36+0800
-updated: 2022-02-22T10:38:36+0800
+lastmod: 2022-02-22T10:38:36+0800
 tags: 
 - Mac
 - Homebrew

@@ -1,7 +1,7 @@
 ---
 title: scoop
 date: 2022-08-08T11:11:21+0800
-updated: 2022-08-31T17:19:21+0800
+lastmod: 2022-08-31T17:19:21+0800
 tags:
 - Windows
 - Scoop

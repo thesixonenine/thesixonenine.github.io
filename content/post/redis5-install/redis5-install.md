@@ -1,7 +1,7 @@
 ---
 title: redis5-install
 date: 2021-12-21T22:40:56+0800
-updated: 2021-12-21T22:40:56+0800
+lastmod: 2021-12-21T22:40:56+0800
 tags: ['Redis','Linux']
 categories: ['Redis','Linux']
 keywords: Redis

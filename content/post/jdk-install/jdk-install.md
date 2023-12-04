@@ -1,7 +1,7 @@
 ---
 title: jdk-install
 date: 2021-12-21T22:35:21+0800
-updated: 2021-12-21T22:35:21+0800
+lastmod: 2021-12-21T22:35:21+0800
 tags: 
 - JDK
 - Java

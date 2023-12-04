@@ -1,7 +1,7 @@
 ---
 title: mysql5.7-install
 date: 2021-12-21T22:38:43+0800
-updated: 2021-12-21T22:38:43+0800
+lastmod: 2021-12-21T22:38:43+0800
 tags: ['MySQL','Linux']
 categories: ['MySQL','Linux']
 keywords: MySQL

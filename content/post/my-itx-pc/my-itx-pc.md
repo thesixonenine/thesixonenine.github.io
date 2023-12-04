@@ -1,7 +1,7 @@
 ---
 title: my-itx-pc
 date: 2021-02-23T09:51:53+0800
-updated: 2021-02-23T09:51:53+0800
+lastmod: 2021-02-23T09:51:53+0800
 tags: ['PC']
 categories:
 - MyPC

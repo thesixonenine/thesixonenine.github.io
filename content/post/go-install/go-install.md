@@ -1,7 +1,7 @@
 ---
 title: go-install
 date: 2022-02-23T16:49:28+0800
-updated: 2023-11-22T14:02:28+0800
+lastmod: 2023-11-22T14:02:28+0800
 tags: 
 - Go
 - Linux

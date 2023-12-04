@@ -1,7 +1,7 @@
 ---
 title: regexp
 date: 2021-04-04T00:04:36+0800
-updated: 2021-04-05T15:14:36+0800
+lastmod: 2021-04-05T15:14:36+0800
 tags: ['RE']
 categories: ['RE']
 keywords:

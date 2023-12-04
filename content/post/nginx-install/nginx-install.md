@@ -1,7 +1,7 @@
 ---
 title: nginx-install
 date: 2022-05-05T14:26:34+0800
-updated: 2022-05-05T14:26:34+0800
+lastmod: 2022-05-05T14:26:34+0800
 tags: ['Nginx','Linux']
 categories: ['Nginx','Linux']
 keywords: Nginx

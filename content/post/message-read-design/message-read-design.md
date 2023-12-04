@@ -1,7 +1,7 @@
 ---
 title: message-read-design
 date: 2022-06-15T11:25:01+0800
-updated: 2022-06-15T16:21:01+0800
+lastmod: 2022-06-15T16:21:01+0800
 tags: 
 - Redis 
 - Bitmap

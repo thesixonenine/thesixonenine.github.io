@@ -1,7 +1,7 @@
 ---
 title: archlinux-install
 date: 2020-10-08T13:37:34+0800
-updated: 2020-10-09T14:00:00+0800
+lastmod: 2020-10-09T14:00:00+0800
 tags: ['Archlinux']
 categories: ['Linux']
 keywords: archlinux

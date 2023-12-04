@@ -1,7 +1,7 @@
 ---
 title: centos7-config
 date: 2022-01-16T15:24:10+0800
-updated: 2022-02-09T14:20:10+0800
+lastmod: 2022-02-09T14:20:10+0800
 tags: 
 - CentOS
 - Linux
