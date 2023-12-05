@@ -5,10 +5,28 @@ lastmod: 2023-11-25T15:20:59+08:00
 description: 家庭装修
 ---
 
+## 水路
+
+<details>
+<summary>查看</summary>
+
 ![](./house/水路.png)
+
+</details>
+
+## 阳台窗帘吊顶
+
+<details>
+<summary>查看</summary>
+
 ![](./house/阳台窗帘吊顶方案.png)
 
-## 网线布线方案
+</details>
+
+## 网线布线
+
+<details>
+<summary>查看</summary>
 
 > HSYPVP-6A 4\*2\*0.57P CAT6A
 > 4对8芯的屏蔽双绞线
@@ -38,6 +56,8 @@ description: 家庭装修
 主卧床头下(350mm)
 - 一个插座
 - 一个单网口面板(通到电视柜里)
+
+</details>
 
 电价: 0.5224
 
@@ -111,7 +131,7 @@ description: 家庭装修
 | 净水器 | 沁园 | - | [`参数`](#净水器-参数),[`查看`](#净水器-查看) |
 | 前置过滤器 | 沁园 | - | [`参数`](#前置过滤器-参数),[`查看`](#前置过滤器-查看) |
 | 扫地机器人 | 石头 | p40pro | [`参数`](#扫地机器人-参数),[`查看`](#扫地机器人-查看) |
-| 洗袜机 | - | - | -[`参数`](#洗袜机-参数),[`查看`](#洗袜机-查看)|
+| 洗袜机 | - | - | [`参数`](#洗袜机-参数),[`查看`](#洗袜机-查看)|
 | 浴霸 | - | - | - |
 | 床 | - | - | - |
 | 沙发 | - | - | - |
@@ -145,7 +165,12 @@ description: 家庭装修
 
 **[`返回`](#卫浴用具)**
 
+<details>
+<summary>查看图片</summary>
+
 ![](./house/次卫蹲便.jpg)
+
+</details>
 
 
 ## 家电-参数
@@ -155,6 +180,9 @@ description: 家庭装修
 #### 冰箱-参数
 
 **[`返回`](#家电)**
+
+<details>
+<summary>查看</summary>
 
 - 尺寸
 - 分区
@@ -178,9 +206,14 @@ description: 家庭装修
 - 双循环是指冷藏室和冷冻室分别用一个循环系统
 - 三循环: 冷藏室 冷冻室 变温室 分别用一个循环系统
 
+</details>
+
 #### 油烟机-参数
 
 **[`返回`](#家电)**
+
+<details>
+<summary>查看</summary>
 
 - 风量
 - 风压
@@ -200,6 +233,8 @@ description: 家庭装修
 
 自清洁,单向排烟
 
+</details>
+
 #### 燃气灶-参数
 
 **[`返回`](#家电)**
@@ -210,6 +245,9 @@ description: 家庭装修
 #### 洗碗机-参数
 
 **[`返回`](#家电)**
+
+<details>
+<summary>查看</summary>
 
 - 类型
   - 嵌入式✔
@@ -226,10 +264,14 @@ description: 家庭装修
 - 容量
   - 12套足够
 
+</details>
 
 #### 洗衣机-参数
 
 **[`返回`](#家电)**
+
+<details>
+<summary>查看</summary>
 
 - 洗净原理
   - 滚桶
@@ -242,6 +284,8 @@ description: 家庭装修
 - 洗净比
 - 其他
   - 杀菌
+
+</details>
 
 #### 烘干机-参数
 
@@ -257,6 +301,9 @@ description: 家庭装修
 
 **[`返回`](#家电)**
 
+<details>
+<summary>查看</summary>
+
 - 升数: 加热25度后每分钟的出水量, 13升足够
 - 水箱材质
   - ~~不锈钢~~
@@ -271,6 +318,8 @@ description: 家庭装修
   - ~~烟道式~~
   - 墙排式 ✔
   - 平衡式
+
+</details>
 
 ## 家电-查看
 
@@ -292,17 +341,26 @@ description: 家庭装修
 - 制冷量: 3匹
 - 系列: 智行
 
+<details>
+<summary>查看图片</summary>
+
 ![](./house/空调-美的-01.jpg)
 ![](./house/空调-美的-02.jpg)
 
+</details>
 
 - 价格: 7899
 - 型号: KFR-72LW/BDN8Y-YB308(1)A
 - 制冷量: 3匹
 - 系列: 舒适星
 
+<details>
+<summary>查看图片</summary>
+
 ![](./house/空调-美的-03.jpg)
 ![](./house/空调-美的-04.jpg)
+
+</details>
 
 **书房**
 **[`返回`](#家电)**
@@ -311,7 +369,12 @@ description: 家庭装修
 - 制冷量: 1匹
 - 系列: 冷静星
 
+<details>
+<summary>查看图片</summary>
+
 ![](./house/空调-美的-05.jpg)
+
+</details>
 
 **主卧**
 **[`返回`](#家电)**
@@ -320,15 +383,24 @@ description: 家庭装修
 - 制冷量: 3匹
 - 系列: 风语者
 
+<details>
+<summary>查看图片</summary>
+
 ![](./house/空调-美的-06.jpg)
 
+</details>
 
 - 价格: 3999
 - 制冷量: 3匹
 - 型号: KFR-35GW/CA1Z
- 
+
+<details>
+<summary>查看图片</summary>
+
 ![](./house/空调-美的-07.jpg)
 ![](./house/空调-美的-08.jpg)
+
+</details>
 
 #### 冰箱-查看
 
@@ -338,14 +410,24 @@ description: 家庭装修
 - 价格: 6500
 - 型号: BCD-505WGHTD14GXU1
 
+<details>
+<summary>查看图片</summary>
+
 ![](./house/冰箱-海尔-01.jpg)
 ![](./house/冰箱-海尔-02.jpg)
+
+</details>
 
 - 价格: 7499
 - 型号: BCD-506WGHTD14S3U1
 
+<details>
+<summary>查看图片</summary>
+
 ![](./house/冰箱-海尔-03.jpg)
 ![](./house/冰箱-海尔-04.jpg)
+
+</details>
 
 #### 油烟机-查看
 
@@ -354,13 +436,23 @@ description: 家庭装修
 
 - 油烟机+燃气灶: 5318
 
+<details>
+<summary>查看图片</summary>
+
 ![](./house/油烟机-老板-01.jpg)
 ![](./house/油烟机-老板-02.jpg)
 
+</details>
+
 - 油烟机+燃气灶: 6280
+
+<details>
+<summary>查看图片</summary>
 
 ![](./house/油烟机-老板-03.jpg)
 ![](./house/油烟机-老板-04.jpg)
+
+</details>
 
 ###### 方太
 **[`返回`](#家电)**
@@ -370,7 +462,12 @@ description: 家庭装修
 - 风量: 20立方/分钟
 - 风压: >=1000Pa
 
+<details>
+<summary>查看图片</summary>
+
 ![](./house/油烟机-方太-01.jpg)
+
+</details>
 
 #### 燃气灶-查看
 
@@ -379,21 +476,36 @@ description: 家庭装修
 
 - 油烟机+燃气灶: 5318
 
+<details>
+<summary>查看图片</summary>
+
 ![](./house/燃气灶-老板-01.jpg)
 ![](./house/燃气灶-老板-02.jpg)
 
+</details>
+
 - 油烟机+燃气灶: 6280
+
+<details>
+<summary>查看图片</summary>
 
 ![](./house/燃气灶-老板-03.jpg)
 ![](./house/燃气灶-老板-04.jpg)
 
+</details>
+
 ###### 方太
 **[`返回`](#家电)**
+
+<details>
+<summary>查看图片</summary>
 
 - 油烟机+燃气灶: 7300
 - 燃气灶型号: JZT-01-TD7B-12T
 
 ![](./house/燃气灶-方太-01.jpg)
+
+</details>
 
 #### 洗碗机-查看
 
@@ -407,7 +519,12 @@ description: 家庭装修
 - 防水等级: IPX1
 - 系列: 智行
 
+<details>
+<summary>查看图片</summary>
+
 ![](./house/洗碗机-美的-01.jpg)
+
+</details>
 
 ###### 老板
 **[`返回`](#家电)**
@@ -423,8 +540,13 @@ description: 家庭装修
 
 - 型号: XQG100-B14376LU1
 
+<details>
+<summary>查看图片</summary>
+
 ![](./house/洗衣机-海尔-01.jpg)
 ![](./house/洗衣机-海尔-02.jpg)
+
+</details>
 
 ###### 小天鹅
 **[`返回`](#家电)**
@@ -433,7 +555,12 @@ description: 家庭装修
 
 42度烘干
 
+<details>
+<summary>查看图片</summary>
+
 ![](./house/洗衣机-小天鹅-01.jpg)
+
+</details>
 
 #### 烘干机-查看
 
@@ -444,15 +571,25 @@ description: 家庭装修
 
 - 型号: HGY100-F376U1
 
+<details>
+<summary>查看图片</summary>
+
 ![](./house/烘干机-海尔-01.jpg)
 ![](./house/烘干机-海尔-02.jpg)
+
+</details>
 
 ###### 小天鹅
 **[`返回`](#家电)**
 
 加[`小天鹅洗衣机`](#洗衣机-查看)一共7499
 
+<details>
+<summary>查看图片</summary>
+
 ![](./house/烘干机-小天鹅-01.jpg)
+
+</details>
 
 #### 管线机-查看
 
@@ -463,8 +600,13 @@ description: 家庭装修
 
 - 型号: CWG-DA03
 
+<details>
+<summary>查看图片</summary>
+
 ![](./house/管线机-美的-01.jpg)
 ![](./house/管线机-美的-02.jpg)
+
+</details>
 
 ###### 沁园
 **[`返回`](#家电)**
@@ -482,8 +624,13 @@ description: 家庭装修
 
 - 型号: CWRC500-B103
 
+<details>
+<summary>查看图片</summary>
+
 ![](./house/净水器-美的-01.jpg)
 ![](./house/净水器-美的-02.jpg)
+
+</details>
 
 ###### 沁园
 **[`返回`](#家电)**
@@ -501,7 +648,12 @@ description: 家庭装修
 
 - 型号: CWQZ-A22
 
+<details>
+<summary>查看图片</summary>
+
 ![](./house/前置过滤器-美的-01.jpg)
+
+</details>
 
 ###### 沁园
 **[`返回`](#家电)**
@@ -519,8 +671,13 @@ description: 家庭装修
 
 - 型号: JSQ30-16QM4
 
+<details>
+<summary>查看图片</summary>
+
 ![](./house/燃气热水器-美的-01.jpg)
 ![](./house/燃气热水器-美的-02.jpg)
+
+</details>
 
 #### 洗袜机-查看
 
@@ -530,8 +687,13 @@ description: 家庭装修
 - 价格: 2000多
 - 型号:
 
+<details>
+<summary>查看图片</summary>
+
 ![](./house/洗袜机-海尔-01.jpg)
 ![](./house/洗袜机-海尔-02.jpg)
+
+</details>
 
 ## 甲醛
 
