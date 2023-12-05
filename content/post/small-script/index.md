@@ -1,7 +1,7 @@
 ---
 title: small-script
 date: 2021-09-17T15:14:17+0800
-lastmod: 2022-04-28T10:11:17+0800
+lastmod: 2023-12-05T16:19:17+0800
 categories: ['Script']
 keywords: Script
 description: 一些实用的脚本命令
@@ -150,6 +150,23 @@ Invoke-WebRequest -o ./ff-installer.exe 'https://download.mozilla.org/?product=f
 curl wttr.in
 ```
 
+### 查询 IP
+
+```bash
+echo "My public IP address is: $(curl -s https://myip.ipip.net)"
+```
+
+### 测试指定端口是否开放
+
+```powershell
+"HOST:PORT", "HOST:PORT" | % { $h, $p = $_.split(':'); $socket = New-Object Net.Sockets.TcpClient; $socket.ReceiveTimeout = 1500; try { $socket.Connect($h, $p); Write-Host "${h}:${p} is open" } catch { Write-Host "${h}:${p} is closed" }; $socket.Close() }
+```
+
+### 定时清除redis的指定前缀的key
+
+```powershell
+while ($true) { redis-cli -a PASSWORD -p PORT -h HOST -n 0 keys 'w*' | ForEach-Object {redis-cli -a PASSWORD -p PORT -h HOST -n 0 del $_} ; Start-Sleep -s 60 }
+```
 
 
 ## Bash
@@ -225,3 +242,49 @@ else
 fi
 ```
 
+### Windows 重启网络
+
+```bash
+net stop winnat
+net start winnat
+```
+
+### 去除视频开头30秒
+
+```bash
+ffmpeg -ss 00:00:30 -i input.mp4 -c:v copy -c:a copy output.mp4
+```
+
+### ffmpeg循环视频推流
+
+```bash
+nohup ffmpeg -re -stream_loop 3 -i FileName.flv -vcodec libx264 -acodec aac -f flv rtmp://live-push.bilivideo.com/live-bvc/?streamname=&key=&schedule=rtmp&pflag=1 1>/dev/null 2>&1 &
+```
+
+### 多个文件中查询指定字符串并输出文件名
+
+```bash
+find . -type f -name "*.out" | xargs grep "220728115133646916" -l
+```
+
+### 替换多个目录中git仓库的地址
+
+```bash
+# 将 192.168.1.1 替换成 192.168.1.2
+sed -i "s/192.168.1.1/192.168.1.2/g" `grep "192.168.1.1" -rl ./*/.git/config`
+```
+
+### adoc转docx
+
+```cmd
+@rem 使用asciidoctor转换adoc为docbook格式
+asciidoctorj -b docbook README.adoc -o README.xml
+@rem 使用pandoc转换为docx格式
+pandoc -f docbook -t docx -o README.docx README.xml
+```
+
+### 测试指定端口是否开放
+
+```bash
+for hostport in HOST:PORT HOST:PORT; do (echo >/dev/tcp/${hostport/:/\/}) >/dev/null 2>&1 || echo "${hostport} is closed"; done
+```
