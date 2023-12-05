@@ -2,10 +2,7 @@
 title: openwrt-build
 date: 2021-02-19T15:37:56+0800
 lastmod: 2021-02-19T15:37:56+0800
-tags:
-- OpenWrt
-- Ubuntu
-- Linux
+tags: ['Ubuntu', 'Linux']
 categories: ['OpenWrt']
 keywords: OpenWrt build
 description: OpenWrt 构建

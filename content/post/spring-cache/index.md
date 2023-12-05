@@ -2,9 +2,7 @@
 title: spring-cache
 date: 2020-10-09T22:44:06+0800
 lastmod: 2021-01-25T14:23:28+0800
-tags:
-- Java
-- Spring
+tags: ['Java']
 categories: ['Spring']
 keywords: Spring Cache
 description: Spring Cache相关

@@ -2,8 +2,6 @@
 title: "windows"
 date: 2023-07-21T10:14:26+08:00
 lastmod: 2023-08-09T17:44:26+08:00
-tags:
-  - Windows
 categories: ['Windows']
 keywords: windows
 description: Windows相关

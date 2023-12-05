@@ -2,8 +2,8 @@
 title: python3-install
 date: 2022-05-05T11:42:26+0800
 lastmod: 2022-05-05T11:42:26+0800
-tags: ['Python','Linux']
-categories: ['Python','Linux']
+tags: ['Linux']
+categories: ['Python']
 keywords: Python
 description: CentOS 7 Python3安装配置
 ---

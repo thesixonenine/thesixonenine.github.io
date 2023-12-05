@@ -2,10 +2,8 @@
 title: message-read-design
 date: 2022-06-15T11:25:01+0800
 lastmod: 2022-06-15T16:21:01+0800
-tags: 
-- Redis 
-- Bitmap
-categories: ['Redis']
+tags: ['Redis', 'Bitmap']
+categories: ['Design']
 keywords: 公告通知
 description: 简单的公告通知模块的设计
 ---

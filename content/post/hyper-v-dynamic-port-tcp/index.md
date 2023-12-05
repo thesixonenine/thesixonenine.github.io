@@ -2,12 +2,8 @@
 title: hyper-v-dynamic-port-tcp
 date: 2022-03-28T09:56:26+0800
 lastmod: 2022-03-28T09:56:26+0800
-tags: 
-- Hyper-V
-- Windows
-categories:
-- Hyper-V
-- Windows
+tags: ['Hyper-V']
+categories: ['Windows']
 keywords: Hyper-V
 description: Hyper-V 占用端口导致软件无法启动的问题
 ---

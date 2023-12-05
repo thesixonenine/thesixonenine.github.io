@@ -2,9 +2,7 @@
 title: read-history
 date: 2021-04-16T21:26:03+0800
 lastmod: 2021-04-16T21:26:03+0800
-tags: 
-- Book
-- Read
+tags: ['Book', 'Read']
 categories: ['Life']
 keywords: 书籍
 description: 读书列表

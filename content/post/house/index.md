@@ -2,6 +2,7 @@
 title: "house"
 date: 2023-10-18T10:21:59+08:00
 lastmod: 2023-11-25T15:20:59+08:00
+categories: ['Life']
 description: 家庭装修
 ---
 

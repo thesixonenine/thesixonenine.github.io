@@ -2,10 +2,8 @@
 title: jdk-install
 date: 2021-12-21T22:35:21+0800
 lastmod: 2021-12-21T22:35:21+0800
-tags: 
-- JDK
-- Java
-categories: ['Linux','Java']
+tags: ['JDK']
+categories: ['Java']
 keywords: jdk
 description: jdk安装配置
 ---

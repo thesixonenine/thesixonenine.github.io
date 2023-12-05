@@ -3,8 +3,7 @@ title: my-first-pc
 date: 2019-12-13T14:43:28+0800
 lastmod: 2019-12-14T14:43:28+0800
 tags: ['PC']
-categories:
-- MyPC
+categories: ['MyPC']
 description: 我的第一台组装PC
 ---
 

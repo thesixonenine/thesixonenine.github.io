@@ -2,9 +2,8 @@
 title: "redeem-code"
 date: 2023-07-31T11:53:33+08:00
 lastmod: 2023-07-31T15:40:33+08:00
-tags:
-  - Redis
-categories: ['Redis']
+tags: ['Redis']
+categories: ['Design']
 keywords: redeem code
 description: 兑换码设计
 ---

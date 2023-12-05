@@ -2,7 +2,6 @@
 title: keep-your-fork-synced
 date: 2021-02-20T11:20:21+0800
 lastmod: 2021-02-22T09:56:21+0800
-tags: ['Git']
 categories: ['Git']
 keywords: fork sync
 description: fork项目后与原项目保持同步

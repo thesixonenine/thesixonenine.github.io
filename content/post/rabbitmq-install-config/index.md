@@ -2,8 +2,8 @@
 title: rabbitmq-install-config
 date: 2021-12-17T17:50:18+0800
 lastmod: 2021-12-17T17:50:18+0800
-tags: ['RabbitMQ','Linux']
-categories: ['RabbitMQ','Linux']
+tags: ['Linux']
+categories: ['RabbitMQ']
 keywords: rabbitmq
 description: rabbitmq安装配置
 ---

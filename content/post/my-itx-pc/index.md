@@ -3,8 +3,7 @@ title: my-itx-pc
 date: 2021-02-23T09:51:53+0800
 lastmod: 2021-02-23T09:51:53+0800
 tags: ['PC']
-categories:
-- MyPC
+categories: ['MyPC']
 keywords:
 description: 我的第二台组装PC
 ---

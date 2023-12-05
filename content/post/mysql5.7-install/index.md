@@ -2,8 +2,8 @@
 title: mysql5.7-install
 date: 2021-12-21T22:38:43+0800
 lastmod: 2021-12-21T22:38:43+0800
-tags: ['MySQL','Linux']
-categories: ['MySQL','Linux']
+tags: ['Linux']
+categories: ['MySQL']
 keywords: MySQL
 description: CentOS 7 MySQL5.7安装配置
 ---

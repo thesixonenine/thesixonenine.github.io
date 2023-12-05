@@ -2,13 +2,9 @@
 title: docker-install
 date: 2022-03-22T18:27:00+0800
 lastmod: 2022-03-22T18:27:00+0800
-tags: 
-- Docker
-- Linux
-categories: 
-- Docker
-- Linux
-keywords:
+tags: ['Linux']
+categories: ['Docker']
+keywords: docker
 description: CentOS 7 docker-ce install; portainer install
 ---
 
