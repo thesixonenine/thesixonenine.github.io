@@ -1,17 +1,16 @@
 ---
 title: homebrew-config
 date: 2022-02-22T10:38:36+0800
-lastmod: 2022-02-22T10:38:36+0800
-tags: 
-- Mac
-- Homebrew
+lastmod: 2023-12-05T15:17:36+0800
+tags: ['Mac', 'Homebrew']
 categories: ['Mac']
 keywords: Homebrew 
 description: Mac安装Homebrew
 ---
+
 参考:
 - [tuna](https://mirror.tuna.tsinghua.edu.cn/help/homebrew)
-- [ustc](http://mirrors.ustc.edu.cn/help/linuxbrew-core.git.html)
+- [ustc](http://mirrors.ustc.edu.cn/help/homebrew-core.git.html)
 - [gitee一键脚本](https://gitee.com/cunkai/HomebrewCN)
 ## Mac
 
