@@ -1,0 +1,14 @@
+<script>
+    (function (){
+        const mydays = document.createElement('div');
+        var nowDate = new Date();
+
+        var loveDate = '2022/11/18 10:00:00';
+        var loveDays = Math.floor((nowDate.getTime() - new Date(loveDate).getTime())/(24*3600*1000));
+
+        var meetDate = '2013/7/16 10:00:00';
+        var meetDays = Math.floor((nowDate.getTime() - new Date(meetDate).getTime())/(24*3600*1000));
+        mydays.innerHTML = '相遇<b>' + meetDays + '</b>天,结婚<b>'+loveDays+'</b>天';
+        document.getElementsByClassName('powerby')[0].prepend(mydays);
+    }());
+</script>
