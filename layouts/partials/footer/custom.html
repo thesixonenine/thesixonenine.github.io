@@ -1,18 +1,31 @@
 <script>
-    (function (){        
-        var nowDate = new Date();
+    (function () {
+        async function getJSON(url) {
+            try {
+                let response = await fetch(url);
+                return await response.json();
+            } catch (error) {
+                console.log('Request Failed', error);
+            }
+        }
 
-        var birthDate = '1994/09/27 19:00:00';
-        var birthDays = Math.floor((nowDate.getTime() - new Date(birthDate).getTime())/(24*3600*1000));
+        function days() {
+            const nowDate = new Date();
 
-        var loveDate = '2022/11/18 10:00:00';
-        var loveDays = Math.floor((nowDate.getTime() - new Date(loveDate).getTime())/(24*3600*1000));
+            const birthDate = '1994/09/27 19:00:00';
+            const birthDays = Math.floor((nowDate.getTime() - new Date(birthDate).getTime()) / (24 * 3600 * 1000));
 
-        var meetDate = '2013/7/16 10:00:00';
-        var meetDays = Math.floor((nowDate.getTime() - new Date(meetDate).getTime())/(24*3600*1000));
+            const loveDate = '2022/11/18 10:00:00';
+            const loveDays = Math.floor((nowDate.getTime() - new Date(loveDate).getTime()) / (24 * 3600 * 1000));
 
-        const days = document.createElement('div');
-        days.innerHTML = `存活<b>${birthDays}</b>天,相遇<b>${meetDays}</b>天,结婚<b>${loveDays}</b>天`
-        document.getElementsByClassName('powerby')[0].prepend(days);
+            const meetDate = '2013/7/16 10:00:00';
+            const meetDays = Math.floor((nowDate.getTime() - new Date(meetDate).getTime()) / (24 * 3600 * 1000));
+
+            return `存活<b>${birthDays}</b>天,相遇<b>${meetDays}</b>天,结婚<b>${loveDays}</b>天`;
+        }
+
+        const daysElement = document.createElement('div');
+        daysElement.innerHTML = days();
+        document.getElementsByClassName('powerby')[0].prepend(daysElement);
     }());
 </script>
