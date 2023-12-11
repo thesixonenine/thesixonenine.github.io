@@ -1,31 +1,70 @@
 <script>
     (function () {
-        function days() {
-            const nowDate = new Date();
-
-            const birthDate = '1994/09/27 19:00:00';
-            const birthDays = Math.floor((nowDate.getTime() - new Date(birthDate).getTime()) / (24 * 3600 * 1000));
-
-            const loveDate = '2022/11/18 10:00:00';
-            const loveDays = Math.floor((nowDate.getTime() - new Date(loveDate).getTime()) / (24 * 3600 * 1000));
-
-            const meetDate = '2013/7/16 10:00:00';
-            const meetDays = Math.floor((nowDate.getTime() - new Date(meetDate).getTime()) / (24 * 3600 * 1000));
-
-            return `存活<b>${birthDays}</b>天,相遇<b>${meetDays}</b>天,结婚<b>${loveDays}</b>天`;
-        }
-
         // 增加 days
-        const daysElement = document.createElement('div');
-        daysElement.innerHTML = days();
-        document.getElementsByClassName('powerby')[0].prepend(daysElement);
-        // 查询本地 JSON 数据
-        fetch('/test.json')
-            .then(function (response) {
-                return response.json();
+        // function days() {
+        //     const nowDate = new Date();
+        //
+        //     const birthDate = '1994/09/27 19:00:00';
+        //     const birthDays = Math.floor((nowDate.getTime() - new Date(birthDate).getTime()) / (24 * 3600 * 1000));
+        //
+        //     const loveDate = '2022/11/18 10:00:00';
+        //     const loveDays = Math.floor((nowDate.getTime() - new Date(loveDate).getTime()) / (24 * 3600 * 1000));
+        //
+        //     const meetDate = '2013/7/16 10:00:00';
+        //     const meetDays = Math.floor((nowDate.getTime() - new Date(meetDate).getTime()) / (24 * 3600 * 1000));
+        //
+        //     return `存活<b>${birthDays}</b>天,相遇<b>${meetDays}</b>天,结婚<b>${loveDays}</b>天`;
+        // }
+        // const daysElement = document.createElement('div');
+        // daysElement.innerHTML = days();
+        // document.getElementsByClassName('powerby')[0].prepend(daysElement);
+
+        fetch('/data/days.json')
+            .then(function (resp) {
+                return resp.json();
             })
-            .then(function (myJson) {
-                console.log('test.json', myJson);
+            .then(function (jsonObj) {
+                const nowDate = new Date();
+
+                const birthDate = jsonObj['birthDate'];
+                const birthDays = Math.floor((nowDate.getTime() - new Date(birthDate).getTime()) / (24 * 3600 * 1000));
+
+                const loveDate = jsonObj['loveDate'];
+                const loveDays = Math.floor((nowDate.getTime() - new Date(loveDate).getTime()) / (24 * 3600 * 1000));
+
+                const meetDate = jsonObj['meetDate'];
+                const meetDays = Math.floor((nowDate.getTime() - new Date(meetDate).getTime()) / (24 * 3600 * 1000));
+
+                const daysElement = document.createElement('div');
+                daysElement.innerHTML = `存活<b>${birthDays}</b>天,相遇<b>${meetDays}</b>天,结婚<b>${loveDays}</b>天`;
+                document.getElementsByClassName('powerby')[0].prepend(daysElement);
             });
+        if (document.URL.indexOf('genshin-impact') > 0) {
+            fetch('/data/star-rail-wish.json')
+                .then(function (resp) {
+                    return resp.json();
+                })
+                .then(function (jsonObj) {
+                    const total11 = jsonObj['11'].length;
+                    const total12 = jsonObj['12'].length;
+                    const total1 = jsonObj['1'].length;
+                    const total2 = jsonObj['2'].length;
+
+                    const element = document.createElement('div');
+                    element.className = "table-wrapper";
+                    element.innerHTML = `<table>
+<thead>
+<tr><th>池子</th><th>抽取数量</th><th>五星</th></tr>
+</thead>
+<tbody>
+<tr><td>角色池</td><td>${total11}</td><td></td></tr>
+<tr><td>武器池</td><td>${total12}</td><td></td></tr>
+<tr><td>常驻池</td><td>${total1}</td><td></td></tr>
+<tr><td>新手池</td><td>${total2}</td><td></td></tr>
+</tbody>
+</table>`;
+                    document.getElementsByClassName('article-content')[0].prepend(element);
+                });
+        }
     }());
 </script>
