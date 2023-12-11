@@ -1,14 +1,5 @@
 <script>
     (function () {
-        async function getJSON(url) {
-            try {
-                let response = await fetch(url);
-                return await response.json();
-            } catch (error) {
-                console.log('Request Failed', error);
-            }
-        }
-
         function days() {
             const nowDate = new Date();
 
@@ -24,8 +15,17 @@
             return `存活<b>${birthDays}</b>天,相遇<b>${meetDays}</b>天,结婚<b>${loveDays}</b>天`;
         }
 
+        // 增加 days
         const daysElement = document.createElement('div');
         daysElement.innerHTML = days();
         document.getElementsByClassName('powerby')[0].prepend(daysElement);
+        // 查询本地 JSON 数据
+        fetch('/test.json')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (myJson) {
+                console.log('test.json', myJson);
+            });
     }());
 </script>
