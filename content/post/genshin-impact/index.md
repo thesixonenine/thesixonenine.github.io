@@ -33,7 +33,7 @@ image: "https://act-webstatic.mihoyo.com/event-static/2023/08/15/cc72ddf351003a4
 - [x] 飞雀扰剑意
 - [ ] 飞雀扰剑意
 - [ ] 飞雀扰剑意
-- [x] 头疼
+- [x] 头疼1
 - [x] 嗓子
 
 **剑去之日**
