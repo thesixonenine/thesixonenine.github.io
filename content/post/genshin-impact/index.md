@@ -1,7 +1,7 @@
 ---
 title: "genshin-impact"
 date: 2023-10-23T21:53:15+08:00
-lastmod: 2023-11-26T13:35:15+08:00
+lastmod: 2023-12-22T17:05:15+08:00
 categories: ['Game']
 description: 原神,启动!
 image: "https://act-webstatic.mihoyo.com/event-static/2023/08/15/cc72ddf351003a4a9b618e5f4697dad0_2771553456903788244.jpg"
@@ -17,11 +17,17 @@ image: "https://act-webstatic.mihoyo.com/event-static/2023/08/15/cc72ddf351003a4
 
 ## 璃月成就
 
-| 成就名 | 每日任务 | 条件与次数 |
-| --- | --- | --- |
-| 行万里路 |||
-| 四方求剑 |||
-| 而尽人事 | 好兆头 | 破坏4个征兆(已炸鱼,已吹落叶,赶走三只狗,赶走一对鸽子) |
+### 而尽人事
+
+**好兆头**
+
+破坏4个征兆
+
+- [ ] 赶走三只狗
+- [ ] 赶走一对鸽子
+- [x] 炸鱼
+- [x] 吹落叶
+
 
 ### 行万里路
 
