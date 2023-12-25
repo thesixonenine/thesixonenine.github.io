@@ -36,7 +36,7 @@
                 const meetDays = Math.floor((nowDate.getTime() - new Date(meetDate).getTime()) / (24 * 3600 * 1000));
 
                 const daysElement = document.createElement('div');
-                daysElement.innerHTML = `存活<b>${birthDays}</b>天,相遇<b>${meetDays}</b>天(${meetDate}),结婚<b>${loveDays}</b>天(${loveDate})`;
+                daysElement.innerHTML = `存活<b>${birthDays}</b>天,相遇<b>${meetDays}</b>天(${meetDate.split(' ')[0]}),结婚<b>${loveDays}</b>天(${loveDate.split(' ')[0]})`;
                 document.getElementsByClassName('powerby')[0].prepend(daysElement);
             });
         if (document.URL.indexOf('genshin-impact') > 0) {
