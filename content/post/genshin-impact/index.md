@@ -37,7 +37,7 @@ image: "https://act-webstatic.mihoyo.com/event-static/2023/08/15/cc72ddf351003a4
 破坏4个征兆
 
 - [ ] 赶走三只狗
-- [ ] 赶走一对鸽子
+- [x] 赶走一对鸽子
 - [x] 炸鱼
 - [x] 吹落叶
 
