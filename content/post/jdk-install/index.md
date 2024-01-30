@@ -12,7 +12,8 @@ description: jdk安装配置
 
 ```bash
 # 手动操作: 上传rpm包到/usr/local下
-# 下载页: https://www.oracle.com/java/technologies/javase/javase8u211-later-archive-downloads.html
+# jdk8下载页: https://www.oracle.com/java/technologies/javase/javase8u211-later-archive-downloads.html
+# jdk17下载页: https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
 cd /usr/local
 
 # 安装
