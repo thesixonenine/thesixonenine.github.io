@@ -14,7 +14,7 @@ description: CentOS 7 Redis安装配置
 #!/bin/bash
 
 # 安装必须工具
-yum install -y gcc wget tar
+yum -q -y install gcc wget tar
 
 cd /usr/local/
 
