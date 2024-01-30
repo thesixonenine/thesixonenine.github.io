@@ -1,5 +1,5 @@
 ---
-title: redis5-install
+title: redis-install
 date: 2021-12-21T22:40:56+0800
 lastmod: 2021-12-21T22:40:56+0800
 tags: ['Linux']
@@ -8,7 +8,7 @@ keywords: Redis
 description: CentOS 7 Redis安装配置
 ---
 
-## Redis5.0.4安装配置
+## Redis安装配置
 
 ```bash
 #!/bin/bash
@@ -18,10 +18,9 @@ yum install -y gcc wget tar
 
 cd /usr/local/
 
-# 下载并解压redis
+# 下载并解压redis, 其他版本替换版本号即可 6.2.14
 wget http://download.redis.io/releases/redis-5.0.4.tar.gz
 tar -zxf redis-5.0.4.tar.gz
-
 cd redis-5.0.4
 
 # 编译和安装redis
