@@ -28,11 +28,4 @@ image: "https://act-webstatic.mihoyo.com/event-static/2023/08/15/cc72ddf351003a4
 直接完成该委托即可
 
 
-## 璃月成就
-
-### 行万里路
-
-**剑去之日**
-
-- [ ] 拍照(璃月门口)获得成就
-
+## 枫丹成就
