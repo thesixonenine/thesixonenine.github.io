@@ -9,12 +9,6 @@ image: "https://act-webstatic.mihoyo.com/event-static/2023/08/15/cc72ddf351003a4
 
 ## 蒙德成就
 
-### 过量的思念
-
-**愿风带走思念**
-
-- [ ] 4/5
-
 ### 您好,亲爱的爸爸
 
 
