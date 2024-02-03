@@ -7,12 +7,4 @@ description: 原神,启动!
 image: "https://act-webstatic.mihoyo.com/event-static/2023/08/15/cc72ddf351003a4a9b618e5f4697dad0_2771553456903788244.jpg"
 ---
 
-## 蒙德成就
-
-### 您好,亲爱的爸爸
-
-**一个男孩的去信**
-
-直接完成该委托即可
-
 ## 枫丹成就
