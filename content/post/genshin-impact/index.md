@@ -30,7 +30,7 @@ image: "https://act-webstatic.mihoyo.com/event-static/2023/08/15/cc72ddf351003a4
 **审美力批判**
 
 - [x] 美学原理批判
-- [ ] 美学原理批判
+- [x] 美学原理批判
 - [ ] 实践创作批判
 - [ ] 自我批判
 
