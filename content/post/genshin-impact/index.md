@@ -30,7 +30,7 @@ image: "https://act-webstatic.mihoyo.com/event-static/2023/08/15/cc72ddf351003a4
 
 **他们的童年**
 
-- [ ] 他们的童年
+- [x] 他们的童年
 - [ ] 他们的童年
 - [ ] 他们的童年-游城记
 
