@@ -40,6 +40,6 @@ image: "https://act-webstatic.mihoyo.com/event-static/2023/08/15/cc72ddf351003a4
 
 - [x] 清爽枫达，畅饮世界！
 - [x] 清爽枫达，畅饮世界！
-- [ ] 清爽枫达，畅饮世界！
+- [x] 清爽枫达，畅饮世界！
 - [ ] 饮品时间
 
