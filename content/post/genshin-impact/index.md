@@ -32,6 +32,7 @@ image: "https://act-webstatic.mihoyo.com/event-static/2023/08/15/cc72ddf351003a4
 
 - [x] 他们的童年
 - [x] 他们的童年
+- [x] 他们的童年-时光不等人
 - [ ] 他们的童年-游城记
 
 ### 新灵感！新产品！
