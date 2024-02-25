@@ -14,7 +14,7 @@ image: "https://act-webstatic.mihoyo.com/event-static/2023/08/15/cc72ddf351003a4
 **总得喝一杯**
 
 - [x] 总得喝一杯
-- [ ] 总得喝一杯
+- [x] 总得喝一杯
 - [ ] 总得喝一杯
 
 ### 在童年
