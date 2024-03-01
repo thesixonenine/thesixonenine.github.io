@@ -9,14 +9,6 @@ image: "https://act-webstatic.mihoyo.com/event-static/2023/08/15/cc72ddf351003a4
 
 ## 枫丹成就
 
-### 优选风味
-
-**总得喝一杯**
-
-- [x] 总得喝一杯
-- [x] 总得喝一杯
-- [ ] 总得喝一杯
-
 ### 在童年
 
 **他们的童年**
