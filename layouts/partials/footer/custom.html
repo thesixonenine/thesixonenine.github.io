@@ -73,15 +73,28 @@
                 .then(function (jsonObj) {
                     console.log("it name start....")
                     const poolCntMap = new Map();
+                    const poolSixCntMap = new Map();
                     jsonObj.map(function (it) {
                         if (poolCntMap.get(it.pool) == null) {
                             poolCntMap.set(it.pool, 1);
                         } else {
                             poolCntMap.set(it.pool, poolCntMap.get(it.pool) + 1);
                         }
+                        it.chars.map(function (char) {
+                            if (char.rarity === 5) {
+                                if (poolSixCntMap.get(it.pool) == null) {
+                                    poolSixCntMap.set(it.pool, `${char.name}`);
+                                } else {
+                                    const pre = poolSixCntMap.get(it.pool);
+                                    poolSixCntMap.set(it.pool, `${pre},${char.name}`);
+                                }
+                            }
+                        });
                     });
-                    poolCntMap.forEach(function (k, v) {
+                    poolCntMap.forEach(function (v, k) {
                         console.log(`Pool[${k}],Count[${v}]`);
+                        const sixChars=poolSixCntMap.get(k) != null ? poolSixCntMap.get(k):'';
+                        console.log(`<tr><td>${k}</td><td>${v}</td><td>${sixChars}</td></tr>`);
                     })
                     console.log("it name end....")
                     const total11 = '11';
