@@ -72,9 +72,17 @@
                 })
                 .then(function (jsonObj) {
                     console.log("it name start....")
-                    jsonObj.forEach(it => {
-                       console.log(it.name);
+                    const poolCntMap = new Map();
+                    jsonObj.map(function (it) {
+                        if (poolCntMap.get(it.pool) == null) {
+                            poolCntMap.set(it.pool, 1);
+                        } else {
+                            poolCntMap.set(it.pool, poolCntMap.get(it.pool) + 1);
+                        }
                     });
+                    poolCntMap.forEach(function (k, v) {
+                        console.log(`Pool[${k}],Count[${v}]`);
+                    })
                     console.log("it name end....")
                     const total11 = '11';
                     const total12 = '12';
