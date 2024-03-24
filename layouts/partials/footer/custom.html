@@ -91,10 +91,11 @@
                             }
                         });
                     });
+                    var tbody = '';
                     poolCntMap.forEach(function (v, k) {
                         console.log(`Pool[${k}],Count[${v}]`);
                         const sixChars=poolSixCntMap.get(k) != null ? poolSixCntMap.get(k):'';
-                        console.log(`<tr><td>${k}</td><td>${v}</td><td>${sixChars}</td></tr>`);
+                        tbody = tbody + `<tr><td>${k}</td><td>${v}</td><td>${sixChars}</td></tr>`;
                     })
                     console.log("it name end....")
                     const total11 = '11';
@@ -110,10 +111,7 @@
 <tr><th>池子</th><th>抽取数量</th><th>六星</th></tr>
 </thead>
 <tbody>
-<tr><td>角色池</td><td>${total11}</td><td></td></tr>
-<tr><td>武器池</td><td>${total12}</td><td></td></tr>
-<tr><td>常驻池</td><td>${total1}</td><td></td></tr>
-<tr><td>新手池</td><td>${total2}</td><td></td></tr>
+${tbody}
 </tbody>
 </table>`;
                     document.getElementsByClassName('article-content')[0].prepend(element);
