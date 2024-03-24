@@ -45,23 +45,71 @@
                     return resp.json();
                 })
                 .then(function (jsonObj) {
-                    const total11 = jsonObj['11'].length;
-                    const total12 = jsonObj['12'].length;
-                    const total1 = jsonObj['1'].length;
-                    const total2 = jsonObj['2'].length;
+                    let json11 = jsonObj['11'];
+                    let json12 = jsonObj['12'];
+                    let json1 = jsonObj['1'];
+                    let json2 = jsonObj['2'];
+
+                    const poolFiveCntMap = new Map();
+                    json11.map(function (it) {
+                        if (it.rank_type === '5') {
+                            if (poolFiveCntMap.get('11') == null) {
+                                poolFiveCntMap.set('11', it.name);
+                            } else {
+                                const p = poolFiveCntMap.get('11');
+                                poolFiveCntMap.set('11', `${p},${it.name}`);
+                            }
+                        }
+                    });
+                    json12.map(function (it) {
+                        if (it.rank_type === '5') {
+                            if (poolFiveCntMap.get('12') == null) {
+                                poolFiveCntMap.set('12', it.name);
+                            } else {
+                                const p = poolFiveCntMap.get('11');
+                                poolFiveCntMap.set('12', `${p},${it.name}`);
+                            }
+                        }
+                    });
+                    json2.map(function (it) {
+                        if (it.rank_type === '5') {
+                            if (poolFiveCntMap.get('2') == null) {
+                                poolFiveCntMap.set('2', it.name);
+                            } else {
+                                const p = poolFiveCntMap.get('11');
+                                poolFiveCntMap.set('2', `${p},${it.name}`);
+                            }
+                        }
+                    });
+                    json1.map(function (it) {
+                        if (it.rank_type === '5') {
+                            if (poolFiveCntMap.get('1') == null) {
+                                poolFiveCntMap.set('1', it.name);
+                            } else {
+                                const p = poolFiveCntMap.get('11');
+                                poolFiveCntMap.set('1', `${p},${it.name}`);
+                            }
+                        }
+                    });
+
+
+                    const total11 = json11.length;
+                    const total12 = json12.length;
+                    const total1 = json1.length;
+                    const total2 = json2.length;
 
                     const element = document.createElement('div');
                     element.className = "table-wrapper";
-                    element.innerHTML = `<p><strong><a href="#崩坏：星穹铁道">崩坏：星穹铁道</a></strong></p>
+                    element.innerHTML = `<p><strong>崩坏：星穹铁道</strong></p>
 <table>
 <thead>
 <tr><th>池子</th><th>抽取数量</th><th>五星</th></tr>
 </thead>
 <tbody>
-<tr><td>角色池</td><td>${total11}</td><td></td></tr>
-<tr><td>武器池</td><td>${total12}</td><td></td></tr>
-<tr><td>常驻池</td><td>${total1}</td><td></td></tr>
-<tr><td>新手池</td><td>${total2}</td><td></td></tr>
+<tr><td>角色池</td><td>${total11}</td><td>${poolFiveCntMap.get('11')}</td></tr>
+<tr><td>武器池</td><td>${total12}</td><td>${poolFiveCntMap.get('12')}</td></tr>
+<tr><td>常驻池</td><td>${total1}</td><td>${poolFiveCntMap.get('1')}</td></tr>
+<tr><td>新手池</td><td>${total2}</td><td>${poolFiveCntMap.get('2')}</td></tr>
 </tbody>
 </table>`;
                     document.getElementsByClassName('article-content')[0].prepend(element);
@@ -105,7 +153,7 @@
 
                     const element = document.createElement('div');
                     element.className = "table-wrapper";
-                    element.innerHTML = `<p><strong><a href="#明日方舟">明日方舟</a></strong></p>
+                    element.innerHTML = `<p><strong>明日方舟</strong></p>
 <table>
 <thead>
 <tr><th>池子</th><th>抽取数量</th><th>六星</th></tr>
