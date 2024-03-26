@@ -168,8 +168,8 @@ ${tbody}
                     return resp.json();
                 })
                 .then(function (jsonObj) {
-                    const qingTotal = 0;
-                    const yangTotal = 0;
+                    let qingTotal = 0;
+                    let yangTotal = 0;
                     var tbody = '';
                     jsonObj.map(function (it) {
                         qingTotal = qingTotal + it.qing;
