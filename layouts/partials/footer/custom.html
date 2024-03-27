@@ -175,9 +175,9 @@ ${tbody}
                         qingTotal = qingTotal + it.qing;
                         yangTotal = yangTotal + it.yang;
                         if (it.status == '已收款') {
-                            tbody = tbody + `<tr><td>${it.name}</td><td>${it.amount}</td><td style="color: red;">${it.status}</td><td>${it.payTime}</td><td>${it.qing}</td><td>${it.yang}</td></tr>`;
+                            tbody = tbody + `<tr style="color: red;"><td>${it.name}</td><td>${it.amount}</td><td>${it.status}</td><td>${it.payTime}</td><td>${it.qing}</td><td>${it.yang}</td></tr>`;
                         } else if (it.status == '未付款') {
-                            tbody = tbody + `<tr><td>${it.name}</td><td>${it.amount}</td><td style="color: blue;">${it.status}</td><td>${it.payTime}</td><td>${it.qing}</td><td>${it.yang}</td></tr>`;
+                            tbody = tbody + `<tr style="color: blue;"><td>${it.name}</td><td>${it.amount}</td><td>${it.status}</td><td>${it.payTime}</td><td>${it.qing}</td><td>${it.yang}</td></tr>`;
                         } else {
                             tbody = tbody + `<tr><td>${it.name}</td><td>${it.amount}</td><td>${it.status}</td><td>${it.payTime}</td><td>${it.qing}</td><td>${it.yang}</td></tr>`;
                         }                        
