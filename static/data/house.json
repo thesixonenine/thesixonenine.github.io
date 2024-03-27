@@ -158,5 +158,77 @@
         "payTime": "2023-10-31",
         "qing": -2020,
         "yang": 0
+    },
+	{
+        "name": "柜子定金-博洛佐尼",
+        "amount": 1000,
+        "status": "已付款",
+        "payTime": "2023-11-04",
+        "qing": 1000,
+        "yang": 0
+    },
+	{
+        "name": "改燃气",
+        "amount": 600,
+        "status": "已付款",
+        "payTime": "2023-11-21",
+        "qing": 600,
+        "yang": 0
+    },
+	{
+        "name": "窗户吊装费",
+        "amount": 1000,
+        "status": "已付款",
+        "payTime": "2023-11-23",
+        "qing": 1000,
+        "yang": 0
+    },
+	{
+        "name": "沁园管子",
+        "amount": 30,
+        "status": "已付款",
+        "payTime": "2023-11-25",
+        "qing": 30,
+        "yang": 0
+    },
+	{
+        "name": "窗帘意向金-雅琪诺",
+        "amount": 100,
+        "status": "已付款",
+        "payTime": "2023-11-26",
+        "qing": 100,
+        "yang": 0
+    },
+	{
+        "name": "空调管子-格力",
+        "amount": 1080,
+        "status": "已付款",
+        "payTime": "2023-12-01",
+        "qing": 1080,
+        "yang": 0
+    },
+	{
+        "name": "前置安装费-沁园",
+        "amount": 30,
+        "status": "已付款",
+        "payTime": "2023-12-02",
+        "qing": 30,
+        "yang": 0
+    },
+	{
+        "name": "浴霸定金-奥普",
+        "amount": 1000,
+        "status": "已付款",
+        "payTime": "2023-12-09",
+        "qing": 0,
+        "yang": 1000
+    },
+	{
+        "name": "发泡剂",
+        "amount": 14,
+        "status": "已付款",
+        "payTime": "2023-12-10",
+        "qing": 0,
+        "yang": 14
     }
 ]
