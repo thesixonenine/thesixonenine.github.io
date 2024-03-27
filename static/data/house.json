@@ -230,5 +230,173 @@
         "payTime": "2023-12-10",
         "qing": 0,
         "yang": 14
+    },
+	{
+        "name": "淋浴玻璃推拉门隔断",
+        "amount": 1000,
+        "status": "已付款",
+        "payTime": "2023-12-17",
+        "qing": 0,
+        "yang": 1000
+    },
+	{
+        "name": "改燃气",
+        "amount": 200,
+        "status": "已付款",
+        "payTime": "2023-12-19",
+        "qing": 200,
+        "yang": 0
+    },
+	{
+        "name": "飘窗/阳台/门槛石材",
+        "amount": 500,
+        "status": "已付款",
+        "payTime": "2023-12-19",
+        "qing": 500,
+        "yang": 0
+    },
+	{
+        "name": "瓷砖尾款",
+        "amount": 3700,
+        "status": "已付款",
+        "payTime": "2023-12-19",
+        "qing": 2815,
+        "yang": 885
+    },
+	{
+        "name": "5个地漏",
+        "amount": 3700,
+        "status": "已付款",
+        "payTime": "2023-12-19",
+        "qing": 314,
+        "yang": 0
+    },
+	{
+        "name": "客厅灯带及型材",
+        "amount": 770,
+        "status": "已付款",
+        "payTime": "2023-12-19",
+        "qing": 770,
+        "yang": 0
+    },
+	{
+        "name": "八马施工费二期(29605)<br>改水电(2289)<br>构造柱三根(3\*300=900)<br>第二辆建渣外运(1200)<br>木饰面基层(10.5\*290=3045)<br>打拆墙体(-600)",
+        "amount": 36439,
+        "status": "已付款",
+        "payTime": "2023-12-20",
+        "qing": 36439,
+        "yang": 0
+    },
+	{
+        "name": "TATA木门定金",
+        "amount": 1011,
+        "status": "已付款",
+        "payTime": "2023-12-24",
+        "qing": 11,
+        "yang": 1000
+    },
+	{
+        "name": "浴霸打孔",
+        "amount": 80,
+        "status": "已付款",
+        "payTime": "2023-12-25",
+        "qing": 80,
+        "yang": 0
+    },
+	{
+        "name": "瓷砖退款",
+        "amount": -340,
+        "status": "已收款",
+        "payTime": "2023-12-29",
+        "qing": -340,
+        "yang": 0
+    },
+	{
+        "name": "飘窗/阳台/门槛石材二期",
+        "amount": 500,
+        "status": "已付款",
+        "payTime": "2024-01-08",
+        "qing": 500,
+        "yang": 0
+    },
+	{
+        "name": "卖废品",
+        "amount": -55,
+        "status": "已收款",
+        "payTime": "2024-01-08",
+        "qing": -55,
+        "yang": 0
+    },
+	{
+        "name": "八马施工费三期(29605)-灯带型材(656)",
+        "amount": 28949,
+        "status": "已付款",
+        "payTime": "2024-01-09",
+        "qing": 28949,
+        "yang": 0
+    },
+	{
+        "name": "飘窗/阳台/门槛石材尾款",
+        "amount": 218,
+        "status": "已付款",
+        "payTime": "2024-01-16",
+        "qing": 218,
+        "yang": 0
+    },
+	{
+        "name": "柜子二期-博洛佐尼",
+        "amount": 39000,
+        "status": "已付款",
+        "payTime": "2024-01-23",
+        "qing": 39000,
+        "yang": 0
+    },
+	{
+        "name": "TATA木门尾款",
+        "amount": 1859,
+        "status": "已付款",
+        "payTime": "2024-01-24",
+        "qing": 1859,
+        "yang": 0
+    },
+	{
+        "name": "烟道开孔-老板",
+        "amount": 60,
+        "status": "已付款",
+        "payTime": "2024-03-02",
+        "qing": 60,
+        "yang": 0
+    },
+	{
+        "name": "测量押金(KDS押金)-要退-老板",
+        "amount": 50,
+        "status": "已付款",
+        "payTime": "2024-03-02",
+        "qing": 50,
+        "yang": 0
+    },
+	{
+        "name": "浴霸尾款-奥普",
+        "amount": 4300,
+        "status": "已付款",
+        "payTime": "2024-03-07",
+        "qing": 174,
+        "yang": 4126
+    },
+	{
+        "name": "三联门定金-德润",
+        "amount": 1000,
+        "status": "已付款",
+        "payTime": "2024-03-15",
+        "qing": 0,
+        "yang": 1000
+    },
+	{
+        "name": "三联门尾款-德润",
+        "amount": 2970,
+        "status": "已付款",
+        "payTime": "2024-03-16",
+        "qing": 0,
+        "yang": 2970
     }
 ]
