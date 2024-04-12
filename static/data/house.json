@@ -456,6 +456,14 @@
         "yang": 1300
     },
 	{
+        "name": "折叠窗-定金",
+        "amount": 912,
+        "status": "已付款",
+        "payTime": "2024-04-12",
+        "qing": 0,
+        "yang": 912
+    },
+	{
         "name": "柜子尾款-博洛佐尼",
         "amount": 0,
         "status": "未付款",
@@ -536,8 +544,8 @@
         "yang": 0
     },
 	{
-        "name": "折叠窗",
-        "amount": 0,
+        "name": "折叠窗-尾款",
+        "amount": 608,
         "status": "未付款",
         "payTime": "",
         "qing": 0,
