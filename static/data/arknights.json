@@ -1789,5 +1789,205 @@
 		],
 		"pool": "【联合行动】特选干员定向寻访",
 		"ts": 1711633853
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "克洛丝",
+				"rarity": 2
+			}
+		],
+		"pool": "【联合行动】特选干员定向寻访",
+		"ts": 1711683891
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "玫兰莎",
+				"rarity": 2
+			}
+		],
+		"pool": "【联合行动】特选干员定向寻访",
+		"ts": 1711683907
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "阿消",
+				"rarity": 3
+			}
+		],
+		"pool": "【联合行动】特选干员定向寻访",
+		"ts": 1711683912
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "安赛尔",
+				"rarity": 2
+			}
+		],
+		"pool": "【联合行动】特选干员定向寻访",
+		"ts": 1711683919
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "清道夫",
+				"rarity": 3
+			}
+		],
+		"pool": "【联合行动】特选干员定向寻访",
+		"ts": 1711683926
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "米格鲁",
+				"rarity": 2
+			}
+		],
+		"pool": "【联合行动】特选干员定向寻访",
+		"ts": 1711785934
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "暗索",
+				"rarity": 3
+			}
+		],
+		"pool": "【联合行动】特选干员定向寻访",
+		"ts": 1711785940
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
+				"name": "羽毛笔",
+				"rarity": 4
+			}
+		],
+		"pool": "【联合行动】特选干员定向寻访",
+		"ts": 1711785946
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "孑",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "猎蜂",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "苏苏洛",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "杰克",
+				"rarity": 3
+			},
+			{
+				"isNew": true,
+				"name": "露托",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "炎熔",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "梅",
+				"rarity": 3
+			},
+			{
+				"isNew": true,
+				"name": "阿罗玛",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "炎熔",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "卡缇",
+				"rarity": 2
+			}
+		],
+		"pool": "如死亦终",
+		"ts": 1712822999
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "褐果",
+				"rarity": 3
+			},
+			{
+				"isNew": true,
+				"name": "赤冬",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "炎熔",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "波登可",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "流星",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "芬",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "暗索",
+				"rarity": 3
+			},
+			{
+				"isNew": true,
+				"name": "焰尾",
+				"rarity": 5
+			},
+			{
+				"isNew": false,
+				"name": "白雪",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "卡达",
+				"rarity": 3
+			}
+		],
+		"pool": "常驻标准寻访",
+		"ts": 1712823029
 	}
 ]
