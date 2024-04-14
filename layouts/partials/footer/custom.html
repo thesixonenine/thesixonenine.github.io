@@ -51,45 +51,41 @@
                     let json2 = jsonObj['2'];
 
                     const poolFiveCntMap = new Map();
-                    json11.map(function (it) {
-                        if (it.rank_type === '5') {
-                            if (poolFiveCntMap.get('11') == null) {
-                                poolFiveCntMap.set('11', it.name);
-                            } else {
-                                const p = poolFiveCntMap.get('11');
-                                poolFiveCntMap.set('11', `${p},${it.name}`);
-                            }
+                    const poolFiveCountMap = new Map();
+
+                    function storeGacha(pool, it) {
+                        let curCount = poolFiveCountMap.get(pool);
+                        if (curCount == null) {
+                            curCount = 1;
+                        } else {
+                            curCount = curCount + 1;
                         }
+
+                        if (it.rank_type === '5') {
+                            const fiveName = `${it.name}(${curCount})`;
+                            if (poolFiveCntMap.get(pool) == null) {
+                                poolFiveCntMap.set(pool, fiveName);
+                            } else {
+                                const p = poolFiveCntMap.get(pool);
+                                poolFiveCntMap.set(pool, `${p},${fiveName}`);
+                            }
+                            curCount = 0;
+                        }
+
+                        poolFiveCountMap.set(pool, curCount);
+                    }
+
+                    json11.map(function (it) {
+                        storeGacha('11', it);
                     });
                     json12.map(function (it) {
-                        if (it.rank_type === '5') {
-                            if (poolFiveCntMap.get('12') == null) {
-                                poolFiveCntMap.set('12', it.name);
-                            } else {
-                                const p = poolFiveCntMap.get('12');
-                                poolFiveCntMap.set('12', `${p},${it.name}`);
-                            }
-                        }
+                        storeGacha('12', it);
                     });
                     json2.map(function (it) {
-                        if (it.rank_type === '5') {
-                            if (poolFiveCntMap.get('2') == null) {
-                                poolFiveCntMap.set('2', it.name);
-                            } else {
-                                const p = poolFiveCntMap.get('2');
-                                poolFiveCntMap.set('2', `${p},${it.name}`);
-                            }
-                        }
+                        storeGacha('2', it);
                     });
                     json1.map(function (it) {
-                        if (it.rank_type === '5') {
-                            if (poolFiveCntMap.get('1') == null) {
-                                poolFiveCntMap.set('1', it.name);
-                            } else {
-                                const p = poolFiveCntMap.get('1');
-                                poolFiveCntMap.set('1', `${p},${it.name}`);
-                            }
-                        }
+                        storeGacha('1', it);
                     });
 
 
@@ -103,13 +99,13 @@
                     element.innerHTML = `<p><strong>崩坏：星穹铁道</strong></p>
 <table>
 <thead>
-<tr><th>池子</th><th>抽取数量</th><th>五星</th></tr>
+<tr><th>池子</th><th>总抽取数量</th><th>五星</th><th>已抽</th></tr>
 </thead>
 <tbody>
-<tr><td>角色池</td><td>${total11}</td><td>${poolFiveCntMap.get('11')}</td></tr>
-<tr><td>武器池</td><td>${total12}</td><td>${poolFiveCntMap.get('12')}</td></tr>
-<tr><td>常驻池</td><td>${total1}</td><td>${poolFiveCntMap.get('1')}</td></tr>
-<tr><td>新手池</td><td>${total2}</td><td>${poolFiveCntMap.get('2')}</td></tr>
+<tr><td>角色池</td><td>${total11}</td><td>${poolFiveCntMap.get('11')}</td><td>${poolFiveCountMap.get('11')}</td></tr>
+<tr><td>武器池</td><td>${total12}</td><td>${poolFiveCntMap.get('12')}</td><td>${poolFiveCountMap.get('12')}</td></tr>
+<tr><td>常驻池</td><td>${total1}</td><td>${poolFiveCntMap.get('1')}</td><td>${poolFiveCountMap.get('1')}</td></tr>
+<tr><td>新手池</td><td>${total2}</td><td>${poolFiveCntMap.get('2')}</td><td>${poolFiveCountMap.get('2')}</td></tr>
 </tbody>
 </table>`;
                     document.getElementsByClassName('article-content')[0].prepend(element);
