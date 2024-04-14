@@ -176,13 +176,6 @@ ${tbody}
 </table>`;
                     document.getElementsByClassName('article-content')[0].prepend(element);
                 });
-            const ac = document.getElementsByClassName('article-content')[0];
-            for (let ele of ac.getElementsByTagName('th')) {
-                ele.style.wordBreak = 'keep-all';
-            }
-            for (let ele of ac.getElementsByTagName('td')) {
-                ele.style.wordBreak = 'keep-all';
-            }
         }
         if (document.URL.indexOf('house') > 0) {
             fetch('/data/house.json')
