@@ -119,41 +119,60 @@
                     return resp.json();
                 })
                 .then(function (jsonObj) {
+                    // poolName 总抽数
                     const poolCntMap = new Map();
+                    // poolName 六星名字及抽数
                     const poolSixCntMap = new Map();
+                    // poolName 六星抽数计次
+                    const poolSixCountMap = new Map();
                     jsonObj.map(function (it) {
-                        if (poolCntMap.get(it.pool) == null) {
-                            poolCntMap.set(it.pool, 1);
+                        let poolName = it.pool;
+                        const charLength = it.chars.length;
+
+                        let curCnt = poolCntMap.get(poolName);
+                        if (curCnt == null) {
+                            poolCntMap.set(poolName, charLength);
                         } else {
-                            poolCntMap.set(it.pool, poolCntMap.get(it.pool) + 1);
+                            poolCntMap.set(poolName, charLength + curCnt);
                         }
+
                         it.chars.map(function (char) {
-                            if (char.rarity === 5) {
-                                if (poolSixCntMap.get(it.pool) == null) {
-                                    poolSixCntMap.set(it.pool, `${char.name}`);
-                                } else {
-                                    const pre = poolSixCntMap.get(it.pool);
-                                    poolSixCntMap.set(it.pool, `${pre},${char.name}`);
-                                }
+                            let curCount = poolSixCountMap.get(poolName);
+                            if (curCount == null) {
+                                curCount = 1;
+                            } else {
+                                curCount = curCount + 1;
                             }
+
+                            // 当前是六星
+                            if (char.rarity === 5) {
+                                const sixStar = `${char.name}(${curCount})`;
+                                if (poolSixCntMap.get(poolName) == null) {
+                                    poolSixCntMap.set(poolName, sixStar);
+                                } else {
+                                    const pre = poolSixCntMap.get(poolName);
+                                    poolSixCntMap.set(poolName, `${pre},${sixStar}`);
+                                }
+
+                                curCount = 0;
+                            }
+
+                            poolSixCountMap.set(poolName, curCount);
                         });
                     });
-                    var tbody = '';
-                    poolCntMap.forEach(function (v, k) {
-                        const sixChars=poolSixCntMap.get(k) != null ? poolSixCntMap.get(k):'';
-                        tbody = tbody + `<tr><td>${k}</td><td>${v}</td><td>${sixChars}</td></tr>`;
+                    let tbody = '';
+                    poolCntMap.forEach(function (cnt, poolName) {
+                        const curCount = poolSixCountMap.get(poolName);
+                        const sixChars = poolSixCntMap.get(poolName) != null ? poolSixCntMap.get(poolName) : '';
+                        tbody = tbody + `<tr><td>${poolName}</td><td>${cnt}</td><td>${sixChars}</td><td>${curCount}</td></tr>`;
                     });
-                    const total11 = '11';
-                    const total12 = '12';
-                    const total1 = '1';
-                    const total2 = '2';
 
                     const element = document.createElement('div');
                     element.className = "table-wrapper";
                     element.innerHTML = `<p><strong>明日方舟</strong></p>
 <table>
 <thead>
-<tr><th>池子</th><th>抽取数量</th><th>六星</th></tr>
+<tr><th>池子</th><th>抽取数量</th><th>六星</th><th>已抽</th></tr>
 </thead>
 <tbody>
 ${tbody}
