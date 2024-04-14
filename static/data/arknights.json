@@ -1989,5 +1989,71 @@
 		],
 		"pool": "常驻标准寻访",
 		"ts": 1712823029
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
+				"name": "极境",
+				"rarity": 4
+			}
+		],
+		"pool": "专属推荐干员寻访",
+		"ts": 1712989301
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "流星",
+				"rarity": 3
+			}
+		],
+		"pool": "专属推荐干员寻访",
+		"ts": 1712989310
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "红豆",
+				"rarity": 3
+			}
+		],
+		"pool": "专属推荐干员寻访",
+		"ts": 1712989318
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "炎熔",
+				"rarity": 2
+			}
+		],
+		"pool": "专属推荐干员寻访",
+		"ts": 1712989326
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "地灵",
+				"rarity": 3
+			}
+		],
+		"pool": "专属推荐干员寻访",
+		"ts": 1712989331
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
+				"name": "铃兰",
+				"rarity": 5
+			}
+		],
+		"pool": "专属推荐干员寻访",
+		"ts": 1712989336
 	}
 ]
