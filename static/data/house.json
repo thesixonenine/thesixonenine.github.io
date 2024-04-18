@@ -464,6 +464,14 @@
         "yang": 912
     },
 	{
+        "name": "箭牌尾款",
+        "amount": 2797,
+        "status": "已付款",
+        "payTime": "2024-04-18",
+        "qing": 0,
+        "yang": 2797
+    },
+	{
         "name": "柜子尾款-博洛佐尼",
         "amount": 0,
         "status": "未付款",
@@ -505,14 +513,6 @@
     },
 	{
         "name": "九牧尾款",
-        "amount": 0,
-        "status": "未付款",
-        "payTime": "",
-        "qing": 0,
-        "yang": 0
-    },
-	{
-        "name": "箭牌尾款",
         "amount": 0,
         "status": "未付款",
         "payTime": "",
