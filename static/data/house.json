@@ -496,15 +496,23 @@
         "yang": 2797
     },
 	{
-        "name": "柜子尾款-博洛佐尼",
-        "amount": 0,
-        "status": "未付款",
-        "payTime": "",
+        "name": "开关面板尾款-三雄极光",
+        "amount": 2063,
+        "status": "已付款",
+        "payTime": "2024-04-20",
         "qing": 0,
-        "yang": 0
+        "yang": 2063
     },
 	{
-        "name": "开关面板尾款-三雄极光",
+        "name": "灯带型材-三雄极光",
+        "amount": 1450,
+        "status": "已付款",
+        "payTime": "2024-04-20",
+        "qing": 0,
+        "yang": 1450
+    },
+	{
+        "name": "柜子尾款-博洛佐尼",
         "amount": 0,
         "status": "未付款",
         "payTime": "",
