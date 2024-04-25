@@ -536,6 +536,30 @@
         "yang": 405
     },
 	{
+        "name": "地板尾款-安信",
+        "amount": 474,
+        "status": "已付款",
+        "payTime": "2024-04-25",
+        "qing": 0,
+        "yang": 474
+    },
+	{
+        "name": "锯木栅-安信",
+        "amount": 100,
+        "status": "已付款",
+        "payTime": "2024-04-25",
+        "qing": 0,
+        "yang": 100
+    },
+	{
+        "name": "卖纸(三角一斤)",
+        "amount": -6,
+        "status": "已收款",
+        "payTime": "2024-04-05",
+        "qing": -6,
+        "yang": 0
+    },
+	{
         "name": "柜子尾款-博洛佐尼",
         "amount": 0,
         "status": "未付款",
