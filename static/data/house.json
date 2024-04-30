@@ -560,6 +560,62 @@
         "yang": 0
     },
 	{
+        "name": "阳台石材",
+        "amount": 645,
+        "status": "已付款",
+        "payTime": "2024-04-26",
+        "qing": 0,
+        "yang": 645
+    },
+	{
+        "name": "灯带安装费-20一米",
+        "amount": 640,
+        "status": "已付款",
+        "payTime": "2024-04-26",
+        "qing": 640,
+        "yang": 0
+    },
+	{
+        "name": "窗帘下单",
+        "amount": 4700,
+        "status": "已付款",
+        "payTime": "2024-04-26",
+        "qing": 0,
+        "yang": 4700
+    },
+	{
+        "name": "九牧管子延长",
+        "amount": 35,
+        "status": "已付款",
+        "payTime": "2024-04-29",
+        "qing": 35,
+        "yang": 0
+    },
+	{
+        "name": "九牧尾款",
+        "amount": 5724,
+        "status": "已付款",
+        "payTime": "2024-04-29",
+        "qing": 5724,
+        "yang": 0
+    },
+	{
+        "name": "空调接水盘+加长铜管(书房/客厅)+高空作业",
+        "amount": 665,
+        "status": "已付款",
+        "payTime": "2024-04-29",
+        "qing": 665,
+        "yang": 0
+    },
+	{
+        "name": "淋浴尾款",
+        "amount": 1370,
+        "status": "已付款",
+        "payTime": "2024-04-29",
+        "qing": 1370,
+        "yang": 0
+    },
+	{
         "name": "柜子尾款-博洛佐尼",
         "amount": 0,
         "status": "未付款",
