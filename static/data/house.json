@@ -617,11 +617,11 @@
     },
 	{
         "name": "柜子尾款-博洛佐尼",
-        "amount": 0,
-        "status": "未付款",
-        "payTime": "",
+        "amount": 880,
+        "status": "已付款",
+        "payTime": "2024-05-10",
         "qing": 0,
-        "yang": 0
+        "yang": 880
     },
 	{
         "name": "八马施工费尾款",
