@@ -3119,5 +3119,379 @@
 		],
 		"pool": "何以为我",
 		"ts": 1714875477
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "暗索",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1714929605
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "克洛丝",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1714929611
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "露托",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1714945028
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "史都华德",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1714945037
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "流星",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1714954383
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "角峰",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1714954517
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "安赛尔",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1714954523
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "历阵锐枪芬",
+				"rarity": 4
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1714971966
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "刻刀",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1714983842
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "米格鲁",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715002553
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715002558
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "历阵锐枪芬",
+				"rarity": 4
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715037787
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "缠丸",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715037798
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "宴",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715091052
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "调香师",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715095067
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "芙蓉",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715096756
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "玫兰莎",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715125553
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "慕斯",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715125576
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "米格鲁",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715156448
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
+				"name": "温米",
+				"rarity": 4
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715179213
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "芳汀",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715213379
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "流星",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715213392
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "芙蓉",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715228080
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "米格鲁",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715299494
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "清道夫",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715299508
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "历阵锐枪芬",
+				"rarity": 4
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715299517
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "芙蓉",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715345591
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "米格鲁",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715345612
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "米格鲁",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715345627
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "刺玫",
+				"rarity": 4
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715354340
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "罗比菈塔",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715386697
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "翎羽",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715386709
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "炎熔",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715386716
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "刻刀",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715387831
 	}
 ]
