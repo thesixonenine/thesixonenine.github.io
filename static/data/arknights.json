@@ -3493,5 +3493,148 @@
 		],
 		"pool": "何以为我",
 		"ts": 1715387831
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715430881
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
+				"name": "铎铃",
+				"rarity": 4
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715433306
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "克洛丝",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715433323
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "蛇屠箱",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715435934
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "休谟斯",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715435938
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "豆苗",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715442704
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "月见夜",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715442709
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "角峰",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715444999
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "阿消",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715445004
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "红云",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715445010
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
+				"name": "卡涅利安",
+				"rarity": 5
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715476289
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "维荻",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715476346
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "清道夫",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715476912
 	}
 ]
