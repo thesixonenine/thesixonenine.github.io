@@ -3636,5 +3636,71 @@
 		],
 		"pool": "何以为我",
 		"ts": 1715476912
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "芙蓉",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715488182
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "卡达",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715488186
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "维什戴尔",
+				"rarity": 5
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715491347
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "历阵锐枪芬",
+				"rarity": 4
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715493559
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "末药",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715493571
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "芬",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715493576
 	}
 ]
