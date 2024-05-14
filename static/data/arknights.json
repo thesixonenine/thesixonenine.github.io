@@ -3702,5 +3702,225 @@
 		],
 		"pool": "何以为我",
 		"ts": 1715493576
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "翎羽",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715509314
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "香草",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715509318
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "玫兰莎",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715559931
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "安赛尔",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715559939
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "褐果",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715560658
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "杰西卡",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715560663
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "梓兰",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715560670
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "深海色",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715561237
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "铅踝",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715577084
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "暗索",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715606047
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "卡缇",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715606052
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "安赛尔",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715609300
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "远山",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715609304
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "清道夫",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715609315
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "末药",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715609327
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "泡泡",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715611258
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "芬",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715611267
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "翎羽",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715646420
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "缠丸",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715646428
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "芳汀",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715646439
 	}
 ]
