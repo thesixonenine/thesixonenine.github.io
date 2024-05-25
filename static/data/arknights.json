@@ -3922,5 +3922,94 @@
 		],
 		"pool": "何以为我",
 		"ts": 1715646439
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "斑点",
+				"rarity": 2
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715702459
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "明椒",
+				"rarity": 4
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715702463
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "松果",
+				"rarity": 3
+			}
+		],
+		"pool": "何以为我",
+		"ts": 1715702470
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "角峰",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "杰西卡",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "斑点",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "梓兰",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "远山",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "香草",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "蛇屠箱",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "克洛丝",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "猎蜂",
+				"rarity": 3
+			},
+			{
+				"isNew": true,
+				"name": "守林人",
+				"rarity": 4
+			}
+		],
+		"pool": "中坚甄选",
+		"ts": 1716596154
 	}
 ]
