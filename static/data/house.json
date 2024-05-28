@@ -616,6 +616,14 @@
         "yang": 0
     },
     {
+        "name": "玻璃胶/美容胶-瓦克",
+        "amount": 236,
+        "status": "已付款",
+        "payTime": "2024-05-01",
+        "qing": 236,
+        "yang": 0
+    },
+    {
         "name": "镜子定金",
         "amount": 150,
         "status": "已付款",
@@ -656,6 +664,14 @@
         "yang": 60
     },
     {
+        "name": "一个厨房三通",
+        "amount": 34,
+        "status": "已付款",
+        "payTime": "2024-05-18",
+        "qing": 34,
+        "yang": 0
+    },
+    {
         "name": "三联门安装尾款",
         "amount": 1000,
         "status": "已付款",
@@ -670,6 +686,38 @@
         "payTime": "2024-05-26",
         "qing": 0,
         "yang": 636
+    },
+    {
+        "name": "主卧壁灯",
+        "amount": 560,
+        "status": "已付款",
+        "payTime": "2024-05-27",
+        "qing": 560,
+        "yang": 0
+    },
+    {
+        "name": "吧台壁灯",
+        "amount": 132,
+        "status": "已付款",
+        "payTime": "2024-05-27",
+        "qing": 132,
+        "yang": 0
+    },
+    {
+        "name": "入门玄关吊灯",
+        "amount": 73,
+        "status": "已付款",
+        "payTime": "2024-05-28",
+        "qing": 73,
+        "yang": 0
+    },
+    {
+        "name": "主卧面盆镜子",
+        "amount": 353,
+        "status": "已付款",
+        "payTime": "2024-05-28",
+        "qing": 353,
+        "yang": 0
     },
 	{
         "name": "八马施工费尾款",
