@@ -3,50 +3,6 @@
 		"chars": [
 			{
 				"isNew": true,
-				"name": "能天使",
-				"rarity": 5
-			}
-		],
-		"pool": "公招",
-		"ts": 1707550659
-	},
-	{
-		"chars": [
-			{
-				"isNew": true,
-				"name": "煌",
-				"rarity": 5
-			}
-		],
-		"pool": "公招",
-		"ts": 1709115656
-	},
-	{
-		"chars": [
-			{
-				"isNew": true,
-				"name": "闪灵",
-				"rarity": 5
-			}
-		],
-		"pool": "公招",
-		"ts": 1714876020
-	},
-	{
-		"chars": [
-			{
-				"isNew": true,
-				"name": "风笛",
-				"rarity": 5
-			}
-		],
-		"pool": "公招",
-		"ts": 1716204155
-	},
-	{
-		"chars": [
-			{
-				"isNew": true,
 				"name": "史尔特尔",
 				"rarity": 5
 			}
@@ -732,6 +688,17 @@
 	{
 		"chars": [
 			{
+				"isNew": true,
+				"name": "能天使",
+				"rarity": 5
+			}
+		],
+		"pool": "公招",
+		"ts": 1707550659
+	},
+	{
+		"chars": [
+			{
 				"isNew": false,
 				"name": "卡缇",
 				"rarity": 2
@@ -949,6 +916,17 @@
 		],
 		"pool": "【联合行动】特选干员定向寻访",
 		"ts": 1709001751
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
+				"name": "煌",
+				"rarity": 5
+			}
+		],
+		"pool": "公招",
+		"ts": 1709115656
 	},
 	{
 		"chars": [
@@ -3145,6 +3123,17 @@
 	{
 		"chars": [
 			{
+				"isNew": true,
+				"name": "闪灵",
+				"rarity": 5
+			}
+		],
+		"pool": "公招",
+		"ts": 1714876020
+	},
+	{
+		"chars": [
+			{
 				"isNew": false,
 				"name": "暗索",
 				"rarity": 3
@@ -3977,6 +3966,17 @@
 		],
 		"pool": "何以为我",
 		"ts": 1715702470
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
+				"name": "风笛",
+				"rarity": 5
+			}
+		],
+		"pool": "公招",
+		"ts": 1716204155
 	},
 	{
 		"chars": [
