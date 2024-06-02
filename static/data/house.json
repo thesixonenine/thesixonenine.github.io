@@ -721,7 +721,7 @@
     },
 	{
         "name": "八马施工费尾款",
-        "amount": 0,
+        "amount": 4934,
         "status": "未付款",
         "payTime": "",
         "qing": 0,
@@ -729,7 +729,7 @@
     },
 	{
         "name": "八马设计费尾款",
-        "amount": 0,
+        "amount": 7875,
         "status": "未付款",
         "payTime": "",
         "qing": 0,
