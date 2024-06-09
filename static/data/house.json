@@ -814,5 +814,77 @@
         "payTime": "",
         "qing": 0,
         "yang": 0
+    },
+	{
+        "name": "电视",
+        "amount": 0,
+        "status": "未付款",
+        "payTime": "",
+        "qing": 0,
+        "yang": 0
+    },
+	{
+        "name": "化妆凳子",
+        "amount": 0,
+        "status": "未付款",
+        "payTime": "",
+        "qing": 0,
+        "yang": 0
+    },
+	{
+        "name": "主卫置物架",
+        "amount": 0,
+        "status": "未付款",
+        "payTime": "",
+        "qing": 0,
+        "yang": 0
+    },
+	{
+        "name": "精保洁",
+        "amount": 0,
+        "status": "未付款",
+        "payTime": "",
+        "qing": 0,
+        "yang": 0
+    },
+	{
+        "name": "折叠窗安装费",
+        "amount": 0,
+        "status": "未付款",
+        "payTime": "",
+        "qing": 0,
+        "yang": 0
+    },
+	{
+        "name": "纱窗",
+        "amount": 0,
+        "status": "未付款",
+        "payTime": "",
+        "qing": 0,
+        "yang": 0
+    },
+	{
+        "name": "打美容胶费用",
+        "amount": 0,
+        "status": "未付款",
+        "payTime": "",
+        "qing": 0,
+        "yang": 0
+    },
+	{
+        "name": "塌塌米",
+        "amount": 0,
+        "status": "未付款",
+        "payTime": "",
+        "qing": 0,
+        "yang": 0
+    },
+	{
+        "name": "客厅桌子",
+        "amount": 0,
+        "status": "未付款",
+        "payTime": "",
+        "qing": 0,
+        "yang": 0
     }
 ]
