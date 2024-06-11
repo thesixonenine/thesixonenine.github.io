@@ -9,6 +9,13 @@ description: 一些实用的脚本命令
 
 ## PowerShell
 
+### 删除文件(目录)
+
+```powershell
+if (Test-Path .\dist.zip) { Remove-Item .\dist.zip; Write-Output "dist.zip 文件已删除" } else { Write-Output "dist.zip 文件不存在" }
+if (Test-Path .\dist -PathType Container) { Remove-Item .\dist -Recurse; Write-Output "dist 目录已删除" } else { Write-Output "dist 目录不存在" }
+```
+
 ### Redis 批量删除key
 
 ```powershell
