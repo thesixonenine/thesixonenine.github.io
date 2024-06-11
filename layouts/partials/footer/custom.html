@@ -200,7 +200,7 @@ ${tbody}
                     tbody = tbody + `<tr><td>总计</td><td>${qingTotal+yangTotal}</td><td></td><td></td><td>${qingTotal}</td><td>${yangTotal}</td></tr>`;
                     const element = document.createElement('div');
                     element.className = "table-wrapper";
-                    element.innerHTML = `<h2>支出</h2>
+                    element.innerHTML = `<h2 id="支出流水">支出流水</h2>
 <table>
 <thead>
 <tr><th>费用名称</th><th>金额</th><th>状态</th><th>支出时间</th><th>Qing</th><th>Yang</th></tr>
@@ -210,6 +210,16 @@ ${tbody}
 </tbody>
 </table>`;
                     document.getElementsByClassName('article-content')[0].prepend(element);
+                    // 更新导航
+                    var newLi = document.createElement('li');
+                    var newLink = document.createElement('a');
+                    newLink.href = '#支出流水';
+                    newLink.textContent = '支出流水';
+
+                    newLi.appendChild(newLink);
+                    // 将新的 li 元素插入到 ol 元素的第一个位置
+                    let olForTOC = document.getElementById('TableOfContents').getElementsByTagName('ol')[0]
+                    olForTOC.insertBefore(newLi, olForTOC.firstChild);
                 });
         }
     }());
