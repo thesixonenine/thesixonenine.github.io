@@ -6,23 +6,6 @@ categories: ['Life']
 description: 家庭装修
 ---
 
-## 水路
-
-<details>
-<summary>查看</summary>
-
-![](./house/水路.png)
-
-</details>
-
-## 阳台窗帘吊顶
-
-<details>
-<summary>查看</summary>
-
-![](./house/阳台窗帘吊顶方案.png)
-
-</details>
 
 ## 网线布线
 
@@ -58,9 +41,33 @@ description: 家庭装修
 - 一个插座
 - 一个单网口面板(通到电视柜里)
 
+
+[六类水晶头的接线方法](https://zhidao.baidu.com/question/585232950.html)
+[网络插座怎么接线](https://www.sohu.com/a/293118553_120043435)
+
+![](./house/rj45.jpg)
+
 </details>
 
 电价: 0.5224
+
+## 水路
+
+<details>
+<summary>查看</summary>
+
+![](./house/水路.png)
+
+</details>
+
+## 阳台窗帘吊顶
+
+<details>
+<summary>查看</summary>
+
+![](./house/阳台窗帘吊顶方案.png)
+
+</details>
 
 ## 支出
 
