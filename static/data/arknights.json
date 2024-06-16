@@ -4033,5 +4033,370 @@
 		],
 		"pool": "中坚甄选",
 		"ts": 1716596154
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "格雷伊",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "角峰",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "芬",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "卡缇",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "杰西卡",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "罗比菈塔",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "砾",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "刻刀",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "卡缇",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "青枳",
+				"rarity": 4
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717584345
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "芙蓉",
+				"rarity": 2
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717584356
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "芙蓉",
+				"rarity": 2
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717584360
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "阿罗玛",
+				"rarity": 4
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717584364
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "玫兰莎",
+				"rarity": 2
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717584369
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "格雷伊",
+				"rarity": 3
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717584372
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "白雪",
+				"rarity": 3
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717584376
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "褐果",
+				"rarity": 3
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717584379
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "米格鲁",
+				"rarity": 2
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717584384
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "芳汀",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "泡泡",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "翎羽",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "芙蓉",
+				"rarity": 2
+			},
+			{
+				"isNew": true,
+				"name": "远牙",
+				"rarity": 5
+			},
+			{
+				"isNew": false,
+				"name": "翎羽",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "卡达",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "米格鲁",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "炎熔",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "翎羽",
+				"rarity": 2
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717584390
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "史都华德",
+				"rarity": 2
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717585907
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "芬",
+				"rarity": 2
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717590596
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "红云",
+				"rarity": 3
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717590601
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "酸糖",
+				"rarity": 3
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717590604
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717740462
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "克洛丝",
+				"rarity": 2
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717740469
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "空爆",
+				"rarity": 2
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717740474
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "泡泡",
+				"rarity": 3
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717740480
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "梅",
+				"rarity": 3
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717740487
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "休谟斯",
+				"rarity": 3
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717795295
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "阿消",
+				"rarity": 3
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1717995948
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "流星",
+				"rarity": 3
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1718192246
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "砾",
+				"rarity": 3
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1718200207
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
+				"name": "深律",
+				"rarity": 4
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1718238968
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "清道夫",
+				"rarity": 3
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1718322822
 	}
 ]
