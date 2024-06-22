@@ -456,11 +456,11 @@
         "yang": 1300
     },
 	{
-        "name": "床/床头柜/餐桌/凳子-小半",
-        "amount": 11545,
+        "name": "床/床头柜-小半",
+        "amount": 7570,
         "status": "已付款",
         "payTime": "2024-04-12",
-        "qing": 11545,
+        "qing": 7570,
         "yang": 0
     },
 	{
@@ -823,6 +823,22 @@
         "qing": 0,
         "yang": 500
     },
+    {
+        "name": "智能锁-德施曼",
+        "amount": 1168,
+        "status": "已付款",
+        "payTime": "2024-06-15",
+        "qing": 1168,
+        "yang": 0
+    },
+    {
+        "name": "餐桌-小半",
+        "amount": 2596,
+        "status": "已付款",
+        "payTime": "2024-06-22",
+        "qing": 2596,
+        "yang": 0
+    },
 	{
         "name": "八马施工费尾款",
         "amount": 4934,
@@ -849,14 +865,6 @@
     },
 	{
         "name": "电视",
-        "amount": 0,
-        "status": "未付款",
-        "payTime": "",
-        "qing": 0,
-        "yang": 0
-    },
-	{
-        "name": "智能锁",
         "amount": 0,
         "status": "未付款",
         "payTime": "",
