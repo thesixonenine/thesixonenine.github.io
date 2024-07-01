@@ -692,16 +692,16 @@
         "amount": 1004,
         "status": "已付款",
         "payTime": "2024-05-24",
-        "qing": 1004,
-        "yang": 0
+        "qing": 0,
+        "yang": 1004
     },
     {
         "name": "傲风A4-电竞桌",
-        "amount": 1808,
+        "amount": 1729,
         "status": "已付款",
         "payTime": "2024-05-24",
-        "qing": 1808,
-        "yang": 0
+        "qing": 0,
+        "yang": 1729
     },
 	{
         "name": "折叠窗(608+货拉拉运输28)-尾款",
@@ -828,16 +828,40 @@
         "amount": 1168,
         "status": "已付款",
         "payTime": "2024-06-15",
-        "qing": 1168,
-        "yang": 0
+        "qing": 0,
+        "yang": 1168
     },
     {
         "name": "餐桌-小半",
         "amount": 2596,
         "status": "已付款",
         "payTime": "2024-06-22",
-        "qing": 2596,
-        "yang": 0
+        "qing": 0,
+        "yang": 2596
+    },
+    {
+        "name": "餐椅(2单椅+1长椅)",
+        "amount": 720,
+        "status": "已付款",
+        "payTime": "2024-06-22",
+        "qing": 0,
+        "yang": 720
+    },
+    {
+        "name": "不沾锅-卡罗特",
+        "amount": 96,
+        "status": "已付款",
+        "payTime": "2024-06-22",
+        "qing": 0,
+        "yang": 96
+    },
+    {
+        "name": "网线钳+10个水晶头-绿联",
+        "amount": 136,
+        "status": "已付款",
+        "payTime": "2024-06-22",
+        "qing": 0,
+        "yang": 136
     },
 	{
         "name": "八马施工费尾款",
@@ -881,22 +905,6 @@
     },
 	{
         "name": "主卫置物架",
-        "amount": 0,
-        "status": "未付款",
-        "payTime": "",
-        "qing": 0,
-        "yang": 0
-    },
-	{
-        "name": "精保洁",
-        "amount": 0,
-        "status": "未付款",
-        "payTime": "",
-        "qing": 0,
-        "yang": 0
-    },
-	{
-        "name": "折叠窗安装费",
         "amount": 0,
         "status": "未付款",
         "payTime": "",
