@@ -4398,5 +4398,313 @@
 		],
 		"pool": "沉向深渊的锚",
 		"ts": 1718322822
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "香草",
+				"rarity": 2
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1718584681
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "孑",
+				"rarity": 3
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1718584686
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "安赛尔",
+				"rarity": 2
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1718669584
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "玫兰莎",
+				"rarity": 2
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1718669591
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "梓兰",
+				"rarity": 2
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1718686335
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "空爆",
+				"rarity": 2
+			}
+		],
+		"pool": "沉向深渊的锚",
+		"ts": 1718717427
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "克洛丝",
+				"rarity": 2
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1719314753
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "白雪",
+				"rarity": 3
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1719314760
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "翎羽",
+				"rarity": 2
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1719314765
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "调香师",
+				"rarity": 3
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1719314774
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "月见夜",
+				"rarity": 2
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1719314778
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "古米",
+				"rarity": 3
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1719314786
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "史都华德",
+				"rarity": 2
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1719314791
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "卡缇",
+				"rarity": 2
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1719314800
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "卡缇",
+				"rarity": 2
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1719314806
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "明椒",
+				"rarity": 4
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1719314812
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "炎熔",
+				"rarity": 2
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1719324121
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "翎羽",
+				"rarity": 2
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1719324126
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "卡缇",
+				"rarity": 2
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1719324130
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "宴",
+				"rarity": 3
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1719530893
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "罗比菈塔",
+				"rarity": 3
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1719794509
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
+				"name": "桑葚",
+				"rarity": 4
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1719794515
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "深律",
+				"rarity": 4
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1719794524
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
+				"name": "烈夏",
+				"rarity": 4
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1719810137
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "炎熔",
+				"rarity": 2
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1719810149
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "红云",
+				"rarity": 3
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1719830242
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "豆苗",
+				"rarity": 3
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1719849895
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "米格鲁",
+				"rarity": 2
+			}
+		],
+		"pool": "执裁者",
+		"ts": 1720153955
 	}
 ]
