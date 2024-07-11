@@ -873,11 +873,19 @@
     },
 	{
         "name": "蛇形窗帘尾款-雅琪诺(南富森)",
-        "amount": 0,
-        "status": "未付款",
-        "payTime": "",
+        "amount": 500,
+        "status": "已付款",
+        "payTime": "2024-07-11",
         "qing": 0,
-        "yang": 0
+        "yang": 500
+    },
+	{
+        "name": "纱窗尾款",
+        "amount": 340,
+        "status": "已付款",
+        "payTime": "2024-07-11",
+        "qing": 0,
+        "yang": 340
     },
 	{
         "name": "电视",
@@ -897,14 +905,6 @@
     },
 	{
         "name": "主卫置物架",
-        "amount": 0,
-        "status": "未付款",
-        "payTime": "",
-        "qing": 0,
-        "yang": 0
-    },
-	{
-        "name": "纱窗",
         "amount": 0,
         "status": "未付款",
         "payTime": "",
