@@ -823,6 +823,214 @@
         "qing": 0,
         "yang": 1168
     },
+	{
+        "name": "主卫置物架",
+        "amount": 23.37,
+        "status": "已付款",
+        "payTime": "2024-06-18",
+        "qing": 23.37,
+        "yang": 0
+    },
+	{
+        "name": "重油污清洁剂",
+        "amount": 16.02,
+        "status": "已付款",
+        "payTime": "2024-06-18",
+        "qing": 16.02,
+        "yang": 0
+    },
+	{
+        "name": "书房垃圾桶",
+        "amount": 20.53,
+        "status": "已付款",
+        "payTime": "2024-06-18",
+        "qing": 20.53,
+        "yang": 0
+    },
+	{
+        "name": "拖把壁挂夹",
+        "amount": 13.6,
+        "status": "已付款",
+        "payTime": "2024-06-18",
+        "qing": 13.6,
+        "yang": 0
+    },
+	{
+        "name": "洁厕灵",
+        "amount": 5.8,
+        "status": "已付款",
+        "payTime": "2024-06-18",
+        "qing": 5.8,
+        "yang": 0
+    },
+	{
+        "name": "密封胶泥",
+        "amount": 11.6,
+        "status": "已付款",
+        "payTime": "2024-06-18",
+        "qing": 11.6,
+        "yang": 0
+    },
+	{
+        "name": "樟脑丸",
+        "amount": 3.9,
+        "status": "已付款",
+        "payTime": "2024-06-18",
+        "qing": 3.9,
+        "yang": 0
+    },
+	{
+        "name": "玻璃油壶",
+        "amount": 25.87,
+        "status": "已付款",
+        "payTime": "2024-06-18",
+        "qing": 25.87,
+        "yang": 0
+    },
+	{
+        "name": "甲醛清除剂",
+        "amount": 21.33,
+        "status": "已付款",
+        "payTime": "2024-06-18",
+        "qing": 21.33,
+        "yang": 0
+    },
+	{
+        "name": "马里奥挂钩",
+        "amount": 22.36,
+        "status": "已付款",
+        "payTime": "2024-06-18",
+        "qing": 22.36,
+        "yang": 0
+    },
+	{
+        "name": "棉绳",
+        "amount": 9.65,
+        "status": "已付款",
+        "payTime": "2024-06-18",
+        "qing": 9.65,
+        "yang": 0
+    },
+	{
+        "name": "肤感家具清洁剂",
+        "amount": 16.61,
+        "status": "已付款",
+        "payTime": "2024-06-18",
+        "qing": 16.61,
+        "yang": 0
+    },
+	{
+        "name": "面盆漏水塞子",
+        "amount": 11.51,
+        "status": "已付款",
+        "payTime": "2024-06-18",
+        "qing": 11.51,
+        "yang": 0
+    },
+	{
+        "name": "入户门垫",
+        "amount": 57.03,
+        "status": "已付款",
+        "payTime": "2024-06-18",
+        "qing": 57.03,
+        "yang": 0
+    },
+	{
+        "name": "纱窗清洗神器",
+        "amount": 7.2,
+        "status": "已付款",
+        "payTime": "2024-06-18",
+        "qing": 7.2,
+        "yang": 0
+    },
+	{
+        "name": "厨房垃圾桶",
+        "amount": 52.37,
+        "status": "已付款",
+        "payTime": "2024-06-18",
+        "qing": 52.37,
+        "yang": 0
+    },
+	{
+        "name": "搬家打包袋",
+        "amount": 22.81,
+        "status": "已付款",
+        "payTime": "2024-06-18",
+        "qing": 22.81,
+        "yang": 0
+    },
+	{
+        "name": "搬家打包袋",
+        "amount": 15.2,
+        "status": "已付款",
+        "payTime": "2024-06-18",
+        "qing": 15.2,
+        "yang": 0
+    },
+	{
+        "name": "手提式垃圾袋",
+        "amount": 6.3,
+        "status": "已付款",
+        "payTime": "2024-06-20",
+        "qing": 6.3,
+        "yang": 0
+    },
+	{
+        "name": "家用米桶",
+        "amount": 36.37,
+        "status": "已付款",
+        "payTime": "2024-06-20",
+        "qing": 36.37,
+        "yang": 0
+    },
+	{
+        "name": "结婚证相框",
+        "amount": 23.05,
+        "status": "已付款",
+        "payTime": "2024-06-20",
+        "qing": 23.05,
+        "yang": 0
+    },
+	{
+        "name": "化妆凳",
+        "amount": 107.28,
+        "status": "已付款",
+        "payTime": "2024-06-20",
+        "qing": 107.28,
+        "yang": 0
+    },
+	{
+        "name": "下水管遮挡盖",
+        "amount": 8.82,
+        "status": "已付款",
+        "payTime": "2024-06-20",
+        "qing": 8.82,
+        "yang": 0
+    },
+	{
+        "name": "擦玻璃专用抹布",
+        "amount": 10.49,
+        "status": "已付款",
+        "payTime": "2024-06-20",
+        "qing": 10.49,
+        "yang": 0
+    },
+	{
+        "name": "除胶剂/金属划痕清洁剂",
+        "amount": 11.53,
+        "status": "已付款",
+        "payTime": "2024-06-20",
+        "qing": 11.53,
+        "yang": 0
+    },
+	{
+        "name": "塑料衣架",
+        "amount": 10,
+        "status": "已付款",
+        "payTime": "2024-06-22",
+        "qing": 10,
+        "yang": 0
+    },
     {
         "name": "餐桌-小半",
         "amount": 2596,
@@ -856,12 +1064,356 @@
         "yang": 136
     },
     {
+        "name": "凉拖鞋女",
+        "amount": 26.99,
+        "status": "已付款",
+        "payTime": "2024-06-23",
+        "qing": 26.99,
+        "yang": 0
+    },
+    {
+        "name": "浴巾女",
+        "amount": 36.14,
+        "status": "已付款",
+        "payTime": "2024-06-23",
+        "qing": 36.14,
+        "yang": 0
+    },
+    {
+        "name": "浴袍男",
+        "amount": 90.47,
+        "status": "已付款",
+        "payTime": "2024-06-23",
+        "qing": 90.47,
+        "yang": 0
+    },
+    {
+        "name": "拖鞋男",
+        "amount": 11.04,
+        "status": "已付款",
+        "payTime": "2024-06-23",
+        "qing": 11.04,
+        "yang": 0
+    },
+    {
+        "name": "次卫地垫",
+        "amount": 42,
+        "status": "已付款",
+        "payTime": "2024-06-24",
+        "qing": 42,
+        "yang": 0
+    },
+    {
+        "name": "主卫垃圾桶",
+        "amount": 29.9,
+        "status": "已付款",
+        "payTime": "2024-06-24",
+        "qing": 29.9,
+        "yang": 0
+    },
+    {
+        "name": "次卫垃圾桶",
+        "amount": 26.9,
+        "status": "已付款",
+        "payTime": "2024-06-24",
+        "qing": 26.9,
+        "yang": 0
+    },
+    {
+        "name": "次卫厕纸盒",
+        "amount": 18.15,
+        "status": "已付款",
+        "payTime": "2024-06-24",
+        "qing": 18.15,
+        "yang": 0
+    },
+    {
+        "name": "艺术人物装饰品",
+        "amount": 14.13,
+        "status": "已付款",
+        "payTime": "2024-06-24",
+        "qing": 14.13,
+        "yang": 0
+    },
+    {
+        "name": "1个汤碗/4个斗笠碗",
+        "amount": 50.78,
+        "status": "已付款",
+        "payTime": "2024-06-24",
+        "qing": 50.78,
+        "yang": 0
+    },
+    {
+        "name": "双耳汤碗",
+        "amount": 22.8,
+        "status": "已付款",
+        "payTime": "2024-06-24",
+        "qing": 22.8,
+        "yang": 0
+    },
+    {
+        "name": "筷子/玻璃油壶",
+        "amount": 30.04,
+        "status": "已付款",
+        "payTime": "2024-06-24",
+        "qing": 30.04,
+        "yang": 0
+    },
+    {
+        "name": "开关装饰贴",
+        "amount": 30.48,
+        "status": "已付款",
+        "payTime": "2024-06-24",
+        "qing": 30.48,
+        "yang": 0
+    },
+    {
+        "name": "餐厅垃圾桶",
+        "amount": 19.9,
+        "status": "已付款",
+        "payTime": "2024-06-25",
+        "qing": 19.9,
+        "yang": 0
+    },
+    {
+        "name": "密封胶泥",
+        "amount": 12.9,
+        "status": "已付款",
+        "payTime": "2024-06-25",
+        "qing": 12.9,
+        "yang": 0
+    },
+    {
+        "name": "主卧洗脸巾收纳盒",
+        "amount": 15.16,
+        "status": "已付款",
+        "payTime": "2024-06-26",
+        "qing": 15.16,
+        "yang": 0
+    },
+    {
+        "name": "餐厅餐巾盒",
+        "amount": 9.9,
+        "status": "已付款",
+        "payTime": "2024-06-26",
+        "qing": 9.9,
+        "yang": 0
+    },
+    {
+        "name": "床头纸巾盒",
+        "amount": 5.31,
+        "status": "已付款",
+        "payTime": "2024-06-26",
+        "qing": 5.31,
+        "yang": 0
+    },
+    {
+        "name": "凉拖鞋男",
+        "amount": 17.9,
+        "status": "已付款",
+        "payTime": "2024-06-26",
+        "qing": 17.9,
+        "yang": 0
+    },
+    {
+        "name": "主卧牙刷置物架",
+        "amount": 17.95,
+        "status": "已付款",
+        "payTime": "2024-06-28",
+        "qing": 17.95,
+        "yang": 0
+    },
+    {
+        "name": "玲娜贝儿玩具",
+        "amount": 188.19,
+        "status": "已付款",
+        "payTime": "2024-06-29",
+        "qing": 188.19,
+        "yang": 0
+    },
+    {
+        "name": "床单四件套",
+        "amount": 170.9,
+        "status": "已付款",
+        "payTime": "2024-06-30",
+        "qing": 170.9,
+        "yang": 0
+    },
+    {
+        "name": "鸡蛋收纳盒",
+        "amount": 16.9,
+        "status": "已付款",
+        "payTime": "2024-06-30",
+        "qing": 16.9,
+        "yang": 0
+    },
+    {
+        "name": "乔迁之喜创意贴",
+        "amount": 2.82,
+        "status": "已付款",
+        "payTime": "2024-06-30",
+        "qing": 2.82,
+        "yang": 0
+    },
+    {
+        "name": "向日葵冰箱贴",
+        "amount": 8.88,
+        "status": "已付款",
+        "payTime": "2024-06-30",
+        "qing": 8.88,
+        "yang": 0
+    },
+    {
+        "name": "主卧地垫",
+        "amount": 99.75,
+        "status": "已付款",
+        "payTime": "2024-06-30",
+        "qing": 99.75,
+        "yang": 0
+    },
+    {
+        "name": "棉麻穿杆帘",
+        "amount": 31.01,
+        "status": "已付款",
+        "payTime": "2024-06-30",
+        "qing": 31.01,
+        "yang": 0
+    },
+    {
         "name": "路由器2个",
         "amount": 448.22,
         "status": "已付款",
         "payTime": "2024-07-01",
         "qing": 0,
         "yang": 448.22
+    },
+    {
+        "name": "向日葵油画",
+        "amount": 80.1,
+        "status": "已付款",
+        "payTime": "2024-07-02",
+        "qing": 80.1,
+        "yang": 0
+    },
+    {
+        "name": "厨房置物架",
+        "amount": 47.19,
+        "status": "已付款",
+        "payTime": "2024-07-02",
+        "qing": 47.19,
+        "yang": 0
+    },
+    {
+        "name": "菜板",
+        "amount": 40.08,
+        "status": "已付款",
+        "payTime": "2024-07-02",
+        "qing": 40.08,
+        "yang": 0
+    },
+    {
+        "name": "木锅铲",
+        "amount": 17.04,
+        "status": "已付款",
+        "payTime": "2024-07-02",
+        "qing": 17.04,
+        "yang": 0
+    },
+    {
+        "name": "食品保鲜袋",
+        "amount": 16.76,
+        "status": "已付款",
+        "payTime": "2024-07-02",
+        "qing": 16.76,
+        "yang": 0
+    },
+    {
+        "name": "抽屉防潮垫",
+        "amount": 8.5,
+        "status": "已付款",
+        "payTime": "2024-07-03",
+        "qing": 8.5,
+        "yang": 0
+    },
+    {
+        "name": "立邦滚筒",
+        "amount": 10.64,
+        "status": "已付款",
+        "payTime": "2024-07-03",
+        "qing": 10.64,
+        "yang": 0
+    },
+    {
+        "name": "大号垃圾袋",
+        "amount": 12.52,
+        "status": "已付款",
+        "payTime": "2024-07-03",
+        "qing": 12.52,
+        "yang": 0
+    },
+    {
+        "name": "床头垃圾桶",
+        "amount": 34.59,
+        "status": "已付款",
+        "payTime": "2024-07-03",
+        "qing": 34.59,
+        "yang": 0
+    },
+    {
+        "name": "洗脸巾/纸",
+        "amount": 128.15,
+        "status": "已付款",
+        "payTime": "2024-07-03",
+        "qing": 128.15,
+        "yang": 0
+    },
+    {
+        "name": "沐浴球",
+        "amount": 6.92,
+        "status": "已付款",
+        "payTime": "2024-07-03",
+        "qing": 6.92,
+        "yang": 0
+    },
+    {
+        "name": "吸管刷/杯具刷",
+        "amount": 11.77,
+        "status": "已付款",
+        "payTime": "2024-07-03",
+        "qing": 11.77,
+        "yang": 0
+    },
+    {
+        "name": "乔迁之喜梯子",
+        "amount": 13.33,
+        "status": "已付款",
+        "payTime": "2024-07-04",
+        "qing": 13.33,
+        "yang": 0
+    },
+    {
+        "name": "厨房地垫",
+        "amount": 92,
+        "status": "已付款",
+        "payTime": "2024-07-04",
+        "qing": 92,
+        "yang": 0
+    },
+    {
+        "name": "玻璃吸管/按压嘴",
+        "amount": 23.56,
+        "status": "已付款",
+        "payTime": "2024-07-04",
+        "qing": 23.56,
+        "yang": 0
+    },
+    {
+        "name": "长条餐布",
+        "amount": 32.7,
+        "status": "已付款",
+        "payTime": "2024-07-04",
+        "qing": 32.7,
+        "yang": 0
     },
 	{
         "name": "八马施工费尾款",
@@ -871,12 +1423,204 @@
         "qing": 0,
         "yang": 4934
     },
-	{
-        "name": "八马设计费尾款",
-        "amount": 7875,
-        "status": "未付款",
-        "payTime": "",
-        "qing": 0,
+    {
+        "name": "洗洁巾",
+        "amount": 9.9,
+        "status": "已付款",
+        "payTime": "2024-07-05",
+        "qing": 9.9,
+        "yang": 0
+    },
+    {
+        "name": "衣帽间抽屉DTC",
+        "amount": 20,
+        "status": "已付款",
+        "payTime": "2024-07-05",
+        "qing": 20,
+        "yang": 0
+    },
+    {
+        "name": "盐罐",
+        "amount": 23.88,
+        "status": "已付款",
+        "payTime": "2024-07-05",
+        "qing": 23.88,
+        "yang": 0
+    },
+    {
+        "name": "白糖罐",
+        "amount": 26.57,
+        "status": "已付款",
+        "payTime": "2024-07-05",
+        "qing": 26.57,
+        "yang": 0
+    },
+    {
+        "name": "衣架",
+        "amount": 24,
+        "status": "已付款",
+        "payTime": "2024-07-07",
+        "qing": 24,
+        "yang": 0
+    },
+    {
+        "name": "衣架",
+        "amount": 37.64,
+        "status": "已付款",
+        "payTime": "2024-07-08",
+        "qing": 37.64,
+        "yang": 0
+    },
+    {
+        "name": "防撞角",
+        "amount": 7.86,
+        "status": "已付款",
+        "payTime": "2024-07-08",
+        "qing": 7.86,
+        "yang": 0
+    },
+    {
+        "name": "冰块模具",
+        "amount": 25.68,
+        "status": "已付款",
+        "payTime": "2024-07-08",
+        "qing": 25.68,
+        "yang": 0
+    },
+    {
+        "name": "门牌号",
+        "amount": 23.26,
+        "status": "已付款",
+        "payTime": "2024-07-08",
+        "qing": 23.26,
+        "yang": 0
+    },
+    {
+        "name": "抽屉收纳盒",
+        "amount": 17.35,
+        "status": "已付款",
+        "payTime": "2024-07-08",
+        "qing": 17.35,
+        "yang": 0
+    },
+    {
+        "name": "厨房置物架",
+        "amount": 60.4,
+        "status": "已付款",
+        "payTime": "2024-07-08",
+        "qing": 60.4,
+        "yang": 0
+    },
+    {
+        "name": "一次性鞋套",
+        "amount": 6.92,
+        "status": "已付款",
+        "payTime": "2024-07-08",
+        "qing": 6.92,
+        "yang": 0
+    },
+    {
+        "name": "托盘",
+        "amount": 9.31,
+        "status": "已付款",
+        "payTime": "2024-07-08",
+        "qing": 9.31,
+        "yang": 0
+    },
+    {
+        "name": "卷纸",
+        "amount": 18.9,
+        "status": "已付款",
+        "payTime": "2024-07-08",
+        "qing": 18.9,
+        "yang": 0
+    },
+    {
+        "name": "塑料凳",
+        "amount": 124,
+        "status": "已付款",
+        "payTime": "2024-07-08",
+        "qing": 124,
+        "yang": 0
+    },
+    {
+        "name": "厨房收纳盒",
+        "amount": 18.9,
+        "status": "已付款",
+        "payTime": "2024-07-09",
+        "qing": 18.9,
+        "yang": 0
+    },
+    {
+        "name": "黑胡椒",
+        "amount": 9.7,
+        "status": "已付款",
+        "payTime": "2024-07-10",
+        "qing": 9.7,
+        "yang": 0
+    },
+    {
+        "name": "木勺",
+        "amount": 17.62,
+        "status": "已付款",
+        "payTime": "2024-07-10",
+        "qing": 17.62,
+        "yang": 0
+    },
+    {
+        "name": "衣架",
+        "amount": 48,
+        "status": "已付款",
+        "payTime": "2024-07-10",
+        "qing": 48,
+        "yang": 0
+    },
+    {
+        "name": "把手碗",
+        "amount": 17.89,
+        "status": "已付款",
+        "payTime": "2024-07-10",
+        "qing": 17.89,
+        "yang": 0
+    },
+    {
+        "name": "吸盘洗碗刷",
+        "amount": 7.85,
+        "status": "已付款",
+        "payTime": "2024-07-10",
+        "qing": 7.85,
+        "yang": 0
+    },
+    {
+        "name": "衣服收纳箱",
+        "amount": 4.83,
+        "status": "已付款",
+        "payTime": "2024-07-10",
+        "qing": 4.83,
+        "yang": 0
+    },
+    {
+        "name": "裤衣架",
+        "amount": 17.41,
+        "status": "已付款",
+        "payTime": "2024-07-10",
+        "qing": 17.41,
+        "yang": 0
+    },
+    {
+        "name": "洗碗机亮碟",
+        "amount": 107.99,
+        "status": "已付款",
+        "payTime": "2024-07-10",
+        "qing": 107.99,
+        "yang": 0
+    },
+    {
+        "name": "面条收纳盒",
+        "amount": 6.67,
+        "status": "已付款",
+        "payTime": "2024-07-11",
+        "qing": 6.67,
         "yang": 0
     },
 	{
@@ -896,23 +1640,71 @@
         "yang": 340
     },
 	{
+        "name": "餐垫",
+        "amount": 5.99,
+        "status": "已付款",
+        "payTime": "2024-07-14",
+        "qing": 5.99,
+        "yang": 0
+    },
+	{
+        "name": "汤锅-卡罗特",
+        "amount": 152.31,
+        "status": "已付款",
+        "payTime": "2024-07-15",
+        "qing": 152.31,
+        "yang": 0
+    },
+	{
+        "name": "电风扇",
+        "amount": 48.78,
+        "status": "已付款",
+        "payTime": "2024-07-15",
+        "qing": 48.78,
+        "yang": 0
+    },
+	{
+        "name": "一次性浴巾",
+        "amount": 5.8,
+        "status": "已付款",
+        "payTime": "2024-07-21",
+        "qing": 5.8,
+        "yang": 0
+    },
+	{
+        "name": "玻璃除水垢清洁剂",
+        "amount": 7.5,
+        "status": "已付款",
+        "payTime": "2024-07-22",
+        "qing": 7.5,
+        "yang": 0
+    },
+	{
+        "name": "防臭软管",
+        "amount": 75,
+        "status": "已付款",
+        "payTime": "2024-07-22",
+        "qing": 75,
+        "yang": 0
+    },
+	{
+        "name": "一次性马桶垫",
+        "amount": 5.8,
+        "status": "已付款",
+        "payTime": "2024-07-22",
+        "qing": 5.8,
+        "yang": 0
+    },
+	{
+        "name": "八马设计费尾款",
+        "amount": 7875,
+        "status": "未付款",
+        "payTime": "",
+        "qing": 0,
+        "yang": 0
+    },
+	{
         "name": "电视",
-        "amount": 0,
-        "status": "未付款",
-        "payTime": "",
-        "qing": 0,
-        "yang": 0
-    },
-	{
-        "name": "化妆凳子",
-        "amount": 0,
-        "status": "未付款",
-        "payTime": "",
-        "qing": 0,
-        "yang": 0
-    },
-	{
-        "name": "主卫置物架",
         "amount": 0,
         "status": "未付款",
         "payTime": "",
