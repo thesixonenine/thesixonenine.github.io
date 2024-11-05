@@ -4706,5 +4706,886 @@
 		],
 		"pool": "执裁者",
 		"ts": 1720153955
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "刻刀",
+				"rarity": 3
+			}
+		],
+		"pool": "心与镜的印痕",
+		"ts": 1720867150
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "香草",
+				"rarity": 2
+			}
+		],
+		"pool": "心与镜的印痕",
+		"ts": 1720867156
+	},
+	{
+		"chars": [
+			{
+				"isNew": true,
+				"name": "夜半",
+				"rarity": 4
+			}
+		],
+		"pool": "心与镜的印痕",
+		"ts": 1720867161
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "罗比菈塔",
+				"rarity": 3
+			}
+		],
+		"pool": "心与镜的印痕",
+		"ts": 1720867172
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "地灵",
+				"rarity": 3
+			}
+		],
+		"pool": "心与镜的印痕",
+		"ts": 1720867183
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "休谟斯",
+				"rarity": 3
+			}
+		],
+		"pool": "心与镜的印痕",
+		"ts": 1721002053
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "夜半",
+				"rarity": 4
+			}
+		],
+		"pool": "心与镜的印痕",
+		"ts": 1721002929
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "猎蜂",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "宴",
+				"rarity": 3
+			},
+			{
+				"isNew": true,
+				"name": "凯尔希",
+				"rarity": 5
+			},
+			{
+				"isNew": false,
+				"name": "铅踝",
+				"rarity": 3
+			},
+			{
+				"isNew": true,
+				"name": "空构",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "褐果",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "古米",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "安赛尔",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "空爆",
+				"rarity": 2
+			}
+		],
+		"pool": "常驻标准寻访",
+		"ts": 1724434445
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "罗比菈塔",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "猎蜂",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "休谟斯",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "古米",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "卡缇",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "青枳",
+				"rarity": 4
+			}
+		],
+		"pool": "泰拉饭，呜呼，泰拉饭",
+		"ts": 1725273679
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "角峰",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "翎羽",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "角峰",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "古米",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "格雷伊",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "香草",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "空爆",
+				"rarity": 2
+			},
+			{
+				"isNew": true,
+				"name": "齐尔查克",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "杜宾",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			}
+		],
+		"pool": "泰拉饭，呜呼，泰拉饭",
+		"ts": 1725840046
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "霜叶",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "桑葚",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "空爆",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "刻刀",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "炎熔",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "空爆",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "月见夜",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "卡达",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "清道夫",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "白雪",
+				"rarity": 3
+			}
+		],
+		"pool": "定向甄选",
+		"ts": 1727425302
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "阿消",
+				"rarity": 3
+			}
+		],
+		"pool": "定向甄选",
+		"ts": 1727425314
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "苏苏洛",
+				"rarity": 3
+			}
+		],
+		"pool": "定向甄选",
+		"ts": 1727425318
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "豆苗",
+				"rarity": 3
+			}
+		],
+		"pool": "定向甄选",
+		"ts": 1727425322
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "暗索",
+				"rarity": 3
+			}
+		],
+		"pool": "定向甄选",
+		"ts": 1727425326
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "芙蓉",
+				"rarity": 2
+			}
+		],
+		"pool": "定向甄选",
+		"ts": 1727425330
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "蛇屠箱",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "暗索",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "玫兰莎",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "翎羽",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "桃金娘",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "酸糖",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "月见夜",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "米格鲁",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "慕斯",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "休谟斯",
+				"rarity": 3
+			}
+		],
+		"pool": "定向甄选",
+		"ts": 1727425354
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "酸糖",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "阿消",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "卡达",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "猎蜂",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "慕斯",
+				"rarity": 3
+			},
+			{
+				"isNew": true,
+				"name": "承曦格雷伊",
+				"rarity": 4
+			},
+			{
+				"isNew": true,
+				"name": "玫拉",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "米格鲁",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "松果",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "安比尔",
+				"rarity": 3
+			}
+		],
+		"pool": "定向甄选",
+		"ts": 1727425362
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "末药",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "炎熔",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "白雪",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "砾",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "角峰",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "阿消",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "卡缇",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "翎羽",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "豆苗",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "露托",
+				"rarity": 3
+			}
+		],
+		"pool": "定向甄选",
+		"ts": 1727425414
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "泡泡",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "慕斯",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "芬",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "杰克",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "玫拉",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "芙蓉",
+				"rarity": 2
+			},
+			{
+				"isNew": true,
+				"name": "琴柳",
+				"rarity": 5
+			},
+			{
+				"isNew": false,
+				"name": "猎蜂",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "月见夜",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "露托",
+				"rarity": 3
+			}
+		],
+		"pool": "定向甄选",
+		"ts": 1727425427
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "梓兰",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "空爆",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "玫拉",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "梓兰",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "芬",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "褐果",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "玫拉",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "清道夫",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "香草",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "格雷伊",
+				"rarity": 3
+			}
+		],
+		"pool": "定向甄选",
+		"ts": 1727425462
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "空爆",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "维荻",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "玫兰莎",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "梓兰",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "调香师",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "清道夫",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "月见夜",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "空爆",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "松果",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "卡缇",
+				"rarity": 2
+			}
+		],
+		"pool": "定向甄选",
+		"ts": 1727425468
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "夜烟",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "角峰",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "斑点",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "泡泡",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "梓兰",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "调香师",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "末药",
+				"rarity": 3
+			},
+			{
+				"isNew": true,
+				"name": "但书",
+				"rarity": 4
+			},
+			{
+				"isNew": true,
+				"name": "逻各斯",
+				"rarity": 5
+			}
+		],
+		"pool": "定向甄选",
+		"ts": 1727425476
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "香草",
+				"rarity": 2
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730449074
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "松果",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "芙蓉",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "角峰",
+				"rarity": 3
+			},
+			{
+				"isNew": true,
+				"name": "裁度",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "夜烟",
+				"rarity": 3
+			},
+			{
+				"isNew": true,
+				"name": "缄默德克萨斯",
+				"rarity": 5
+			},
+			{
+				"isNew": true,
+				"name": "荒芜拉普兰德",
+				"rarity": 5
+			},
+			{
+				"isNew": true,
+				"name": "蚀清",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "泡泡",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "香草",
+				"rarity": 2
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730449112
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "休谟斯",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730503883
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "米格鲁",
+				"rarity": 2
+			}
+		],
+		"pool": "中坚寻访",
+		"ts": 1730504395
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "豆苗",
+				"rarity": 3
+			}
+		],
+		"pool": "中坚寻访",
+		"ts": 1730504401
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "裁度",
+				"rarity": 4
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730597457
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "安赛尔",
+				"rarity": 2
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730678552
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "霜叶",
+				"rarity": 3
+			}
+		],
+		"pool": "恶人寥寥",
+		"ts": 1730764897
 	}
 ]
