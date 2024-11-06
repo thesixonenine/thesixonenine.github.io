@@ -1,7 +1,7 @@
 ---
 title: small-script
 date: 2021-09-17T15:14:17+0800
-lastmod: 2023-12-05T16:19:17+0800
+lastmod: 2024-11-06T15:40:17+0800
 categories: ['Script']
 keywords: Script
 description: 一些实用的脚本命令
@@ -175,6 +175,11 @@ echo "My public IP address is: $(curl -s https://myip.ipip.net)"
 while ($true) { redis-cli -a PASSWORD -p PORT -h HOST -n 0 keys 'w*' | ForEach-Object {redis-cli -a PASSWORD -p PORT -h HOST -n 0 del $_} ; Start-Sleep -s 60 }
 ```
 
+### 启动 Windows Terminal 时指定参数
+
+```poweshell
+wt new-tab -p 'local' --title 'default' `; new-tab -p 'local' -d C:\Users\simple\Documents --title 'Documents' --tabColor '#07c160' `; new-tab -p 'local' -d C:\Users\simple\Desktop --title 'Desktop' --tabColor '#fa5151' `;focus-tab -t 0
+```
 
 ## Bash
 
