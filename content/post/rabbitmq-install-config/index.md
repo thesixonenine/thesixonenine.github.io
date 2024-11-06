@@ -1,7 +1,7 @@
 ---
 title: rabbitmq-install-config
 date: 2021-12-17T17:50:18+0800
-lastmod: 2021-12-17T17:50:18+0800
+lastmod: 2024-11-06T17:27:18+0800
 tags: ['Linux']
 categories: ['RabbitMQ']
 keywords: rabbitmq
@@ -60,6 +60,33 @@ rabbitmqctl set_user_tags mytest administrator
 
 # 设置用户可以访问的virtual host
 rabbitmqctl set_permissions -p / mytest ".*" ".*" ".*"
+```
+
+## Docker 安装
+
+### Dockerfile
+
+```bash
+FROM rabbitmq:3.13.2-management
+WORKDIR /plugins
+# 在release页面查看对应插件版本并下载
+# https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases
+COPY rabbitmq_delayed_message_exchange-3.13.0.ez ./
+RUN rabbitmq-plugins enable rabbitmq_delayed_message_exchange
+
+CMD ["rabbitmq-server"]
+```
+
+### Build Image
+
+```bash
+docker build -t thesixonenine/rabbitmq-delayed:3.13.2-management .
+```
+
+### Run Container
+
+```bash
+docker run -d --name=rabbitmq-delayed -p 15672:15672 -p 5672:5672 -e RABBITMQ_DEFAULT_USER=admin -e RABBITMQ_DEFAULT_PASS=admin123 thesixonenine/rabbitmq-delayed:3.13.2-management
 ```
 
 ## 离线安装特定版本
