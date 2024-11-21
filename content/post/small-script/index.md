@@ -1,11 +1,19 @@
 ---
 title: small-script
 date: 2021-09-17T15:14:17+0800
-lastmod: 2024-11-06T15:40:17+0800
+lastmod: 2024-11-21T09:45:17+0800
 categories: ['Script']
 keywords: Script
 description: 一些实用的脚本命令
 ---
+
+## adb
+
+### 查询手机的CPU架构
+
+```shell
+adb shell getprop ro.product.cpu.abi
+```
 
 ## PowerShell
 
