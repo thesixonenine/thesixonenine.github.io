@@ -109,7 +109,7 @@ scoop install extras/windowsdesktop-runtime-lts extras/office-tool-plus
 自定义部署配置文件部署
 ```
 iwr "https://officecdn.microsoft.com/pr/wsus/setup.exe" -OutFile setup.exe
-# move setup.ext into C:\
+# move setup.exe into C:\
 iwr "https://gist.githubusercontent.com/thesixonenine/173647918c69d9627eeb141a32d6ec57/raw/5ee850ca1fdacce442d94051fcb6f44598834093/Configuration.xml" -OutFile Configuration.xml
 cd C:\
 setup.exe /configure Configuration.xml
