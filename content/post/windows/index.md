@@ -5,7 +5,7 @@ lastmod: 2023-08-09T17:44:26+08:00
 categories: ['Windows']
 keywords: windows
 description: Windows相关
-image: "https://i0.hdslb.com/bfs/archive/405bb96d82f0909cde9dcb3b4432725e7169edf3.jpg"
+image: "https://msdesign.blob.core.windows.net/wallpapers/Microsoft_Nostalgic_Windows_Wallpaper_4k.jpg"
 ---
 
 
