@@ -1,5 +1,5 @@
 module github.com/CaiJimmy/hugo-theme-stack-starter
 
-go 1.21.5
+go 1.22.0
 
-require github.com/CaiJimmy/hugo-theme-stack/v3 v3.21.0 // indirect
+require github.com/CaiJimmy/hugo-theme-stack/v3 v3.29.0 // indirect
