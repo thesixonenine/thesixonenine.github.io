@@ -15,7 +15,7 @@ sidebar:
   subtitle: 念天地之悠悠, 独怆然而涕下
   avatar:
     enabled: true
-    local: true
+    local: false
     src: https://upload-bbs.miyoushe.com/upload/2024/11/24/11629047/e93db8033d1f5d00d7209d627d780b1c_2088066395768754440.png
 article:
   math: false
