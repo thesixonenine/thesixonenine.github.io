@@ -3,7 +3,7 @@ mainSections:
   - post
 # Output page's full content in RSS.
 rssFullContent: true
-favicon: /favicon.ico
+favicon: https://upload-bbs.miyoushe.com/upload/2024/11/25/11629047/fa1ef7a746d7e304e76f1cb8ada0907f_8253852077941386559.png
 footer:
   since: 2019
   customText: ""
