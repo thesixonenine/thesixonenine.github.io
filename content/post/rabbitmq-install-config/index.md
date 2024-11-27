@@ -1,7 +1,7 @@
 ---
 title: rabbitmq-install-config
 date: 2021-12-17T17:50:18+0800
-lastmod: 2024-11-06T17:27:18+0800
+lastmod: 2024-11-27T14:53:18+0800
 tags: ['Linux']
 categories: ['RabbitMQ']
 keywords: rabbitmq
@@ -32,6 +32,9 @@ systemctl start rabbitmq-server
 
 # 状态查看
 rabbitmqctl status
+
+# 版本查看
+rabbitmqctl status | grep \"RabbitMQ\"
 
 # 修改默认的账户guest的密码
 rabbitmqctl change_password guest guest123
