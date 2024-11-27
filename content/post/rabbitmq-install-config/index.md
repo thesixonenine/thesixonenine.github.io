@@ -34,7 +34,7 @@ systemctl start rabbitmq-server
 rabbitmqctl status
 
 # 版本查看
-rabbitmqctl status | grep \"RabbitMQ\"
+rabbitmqctl status | grep RabbitMQ
 
 # 修改默认的账户guest的密码
 rabbitmqctl change_password guest guest123
