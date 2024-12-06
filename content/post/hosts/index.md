@@ -5,10 +5,9 @@ lastmod: 2024-12-06T11:13:09+08:00
 categories: ['Script']
 tags: ['hosts']
 keywords: hosts
-description: hosts
+description: 记录一些需要在hosts中修改的域名
 ---
 
-记录一些需要在hosts中修改的域名
 
 ## 被禁止的域名
 
