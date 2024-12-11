@@ -1,6 +1,5 @@
 ---
 title: "git-repo-proxy"
-description: 
 date: 2023-12-04T15:44:18+08:00
 lastmod: 2023-11-29T17:14:10+08:00
 categories: ['Git']

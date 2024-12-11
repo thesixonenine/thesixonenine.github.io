@@ -1,7 +1,7 @@
 ---
 title: "windows"
 date: 2023-07-21T10:14:26+08:00
-lastmod: 2023-08-09T17:44:26+08:00
+lastmod: 2024-12-11T18:19:26+08:00
 categories: ['Windows']
 keywords: windows
 description: Windows相关
@@ -124,3 +124,112 @@ irm https://massgrave.dev/get | iex
 ```
 
 配置同步
+
+
+## 使用 WSL2
+
+[安装参考](https://learn.microsoft.com/en-us/windows/wsl/install#install-wsl-command)
+
+[环境配置](https://learn.microsoft.com/zh-cn/windows/wsl/setup/environment)
+
+基本命令
+
+```shell
+# 安装
+wsl --install Ubuntu
+# 查看版本
+wsl --version
+# 删除
+wsl --unregister Ubuntu
+# 帮助
+wsl --help
+```
+
+```toml
+# C:\Users\simple\.wslconfig
+[wsl2]
+# default: same as Windows
+processors=4
+# default: 50% of available RAM
+memory=8GB
+# default: 25% of available RAM
+swap=0
+# default: true
+localhostForwarding=true
+```
+
+### 配置源
+
+```shell
+# 查看 Ubuntu 版本
+lsb_release -a
+# 替换源
+sudo sed -i 's@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g' /etc/apt/sources.list.d/ubuntu.sources
+# 替换 security 源
+sudo sed -i 's/security.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list.d/ubuntu.sources
+# 使用 HTTPS
+sudo sed -i 's/http:/https:/g' /etc/apt/sources.list.d/ubuntu.sources
+# 更新索引
+sudo apt update
+```
+
+### 安装软件
+
+Git配置
+
+```shell
+# 安装 Git
+sudo apt install git
+
+# 查看所有配置信息
+git config --list
+# 查看系统级(/etc/gitconfig)配置信息
+git config --system --list
+# 查看用户级(~/.gitconfig)配置信息
+git config --global --list
+# 查看仓库级(./.git/config)配置信息
+git config --local --list
+
+# 开始配置 Git
+git config --global user.name Simple
+# TODO 全局配置邮箱
+# git config --global user.email xxx@xxx.com
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ps push
+git config --global alias.pl pull
+git config --global alias.ft fetch
+git config --global alias.mg merge
+# 修改 ~/.gitconfig
+# git config --global alias.lg log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+# 将帐密存储在 ~/.git-credentials
+git config --global credential.helper store
+
+# 配置 GPG
+# 生成 GPG 密钥
+gpg --full-generate-key
+# 列出 GPG 密钥
+gpg --list-secret-keys --keyid-format=long
+# 导入 GPG 公钥
+gpg --import public.asc
+# 导入 GPG 私钥
+gpg --import private.asc
+
+# TODO 全局配置 GPG 签名
+git config --global user.signingkey 8E61F4E8701DD140
+git config --global commit.gpgsign true
+
+# 支持 passphrase
+echo '# enable passphrase prompt for gpg' >> ~/.bashrc
+echo 'export GPG_TTY=$(tty)' >> ~/.bashrc
+
+# 项目上单独配置
+git config user.name Simple
+# TODO 项目配置邮箱
+# git config user.email xxx@xxx.com
+# TODO 项目配置 GPG 签名
+git config user.signingkey 8E61F4E8701DD140
+git config commit.gpgsign true
+```
