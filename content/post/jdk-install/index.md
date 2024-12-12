@@ -23,7 +23,7 @@ rpm -i jdk-17.0.10_linux-x64_bin.rpm
 
 # 设置并生效环境变量
 echo 'JAVA_HOME=/usr/lib/jvm/jdk-17-oracle-x64' >> /etc/profile
-echo 'PATH=$PATH:$JAVA_HOME/bin' >> /etc/profile
+echo 'PATH=$JAVA_HOME/bin:$PATH' >> /etc/profile
 source /etc/profile
 
 # 打印JDK安装版本信息
@@ -46,7 +46,7 @@ rpm -i jdk-8u301-linux-x64.rpm
 
 # 设置并生效环境变量
 echo 'JAVA_HOME=/usr/java/jdk1.8.0_301-amd64' >> /etc/profile
-echo 'PATH=$PATH:$JAVA_HOME/bin' >> /etc/profile
+echo 'PATH=$JAVA_HOME/bin:$PATH' >> /etc/profile
 source /etc/profile
 
 # 打印JDK安装版本信息
