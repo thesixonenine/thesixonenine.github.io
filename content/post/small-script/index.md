@@ -1,7 +1,7 @@
 ---
 title: small-script
 date: 2021-09-17T15:14:17+0800
-lastmod: 2024-11-21T09:45:17+0800
+lastmod: 2024-12-17T14:23:17+0800
 categories: ['Script']
 keywords: Script
 description: 一些实用的脚本命令
@@ -190,6 +190,94 @@ wt new-tab -p 'local' --title 'default' `; new-tab -p 'local' -d C:\Users\simple
 ```
 
 ## Bash
+
+### B站循环推流本地视频文件
+
+```bash
+# nasm, x264
+url='rtmp://live-push.bilivideo.com/live-bvc/'
+passwd='?streamname=&key=&schedule=rtmp&pflag=1'
+file='/root/640_360.flv'
+nohup /usr/local/bin/ffmpeg -re -stream_loop 3 -i ${file} -vcodec libx264 -acodec aac -f flv ${url}${passwd} 1>/dev/null 2>&1 &
+```
+
+### 添加 Tomcat 为 Systemd 服务
+
+```bash
+SERVICE_NAME=tomcat-service
+TOMCAT_PATH=/path/to/tomcat
+JAVA_PATH=/path/to/java/home
+RUN_USER=root
+RUN_GROUP=root
+
+cat>/etc/systemd/system/${SERVICE_NAME}.service<<EOF
+[Unit]
+Description=${SERVICE_NAME}
+After=network.target
+
+[Service]
+Type=forking
+TimeoutSec=0
+Environment=CATALINA_HOME=${TOMCAT_PATH}
+Environment=CATALINA_BASE=${TOMCAT_PATH}
+Environment=CATALINA_PID=${TOMCAT_PATH}/temp/tomcat.pid
+Environment=JAVA_HOME=${JAVA_PATH}
+
+ExecStart=${TOMCAT_PATH}/bin/startup.sh
+ExecStop=${TOMCAT_PATH}/bin/shutdown.sh
+ExecReload=/bin/kill -s HUP \$MAINPID
+
+User=${RUN_USER}
+Group=${RUN_GROUP}
+[Install]
+WantedBy=multi-user.target
+EOF
+
+systemctl daemon-reload
+systemctl enable ${SERVICE_NAME}.service
+systemctl status ${SERVICE_NAME}.service
+systemctl list-unit-files | grep ${SERVICE_NAME}.service
+systemctl list-units --type=service | grep tomcat
+# systemctl start ${SERVICE_NAME}.service
+```
+
+### 添加 java -jar 为 Systemd 服务
+
+```bash
+SERVICE_NAME=jar-file-manage
+JAR_DIR=/path/to/jar/home/
+JAR_NAME=file-manage.jar
+SERVER_PORT=8210
+JAR_ARGS="--spring.profiles.active=test --server.port=${SERVER_PORT}"
+JVM_ARGS="-Xms256m -Xmx1024m"
+JAVA_PATH=/path/to/java/home
+RUN_USER=root
+RUN_GROUP=root
+
+cat>/etc/systemd/system/${SERVICE_NAME}.service<<EOF
+[Unit]
+Description=${SERVICE_NAME}
+After=network.target
+
+[Service]
+Type=simple
+User=${RUN_USER}
+Group=${RUN_GROUP}
+WorkingDirectory=${JAR_DIR}
+ExecStart=${JAVA_PATH}/bin/java -jar ${JVM_ARGS} ${JAR_DIR}${JAR_NAME} ${JAR_ARGS}
+SuccessExitStatus=143
+Restart=on-failure
+[Install]
+WantedBy=multi-user.target
+EOF
+
+systemctl daemon-reload
+systemctl enable ${SERVICE_NAME}.service
+systemctl status ${SERVICE_NAME}.service
+systemctl list-unit-files | grep ${SERVICE_NAME}.service
+systemctl list-units --type=service | grep jar
+# systemctl start ${SERVICE_NAME}.service
+```
 
 ### Redis 批量删除key
 
