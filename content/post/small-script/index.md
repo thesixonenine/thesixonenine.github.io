@@ -17,6 +17,17 @@ adb shell getprop ro.product.cpu.abi
 
 ## PowerShell
 
+### winget 走代理
+
+[winget替换源](https://mirrors.ustc.edu.cn/help/winget-source.html)
+
+```powershell
+# 管理员权限下开启
+winget settings --enable ProxyCommandLineOptions
+# 安装走代理
+winget install JanDeDobbeleer.OhMyPosh -s winget --proxy http://127.0.0.1:10809
+```
+
 ### 删除文件(目录)
 
 ```powershell
