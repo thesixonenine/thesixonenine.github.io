@@ -1,7 +1,7 @@
 ---
 title: "windows"
 date: 2023-07-21T10:14:26+08:00
-lastmod: 2024-12-11T18:19:26+08:00
+lastmod: 2025-01-01T21:19:26+08:00
 categories: ['Windows']
 keywords: windows
 description: Windows相关
@@ -173,9 +173,26 @@ sudo sed -i 's/http:/https:/g' /etc/apt/sources.list.d/ubuntu.sources
 sudo apt update
 ```
 
+### 安装包管理器 Homebrew
+
+```shell
+echo "export HOMEBREW_BREW_GIT_REMOTE='https://mirrors.ustc.edu.cn/brew.git'" >> ~/.bashrc
+echo "export HOMEBREW_CORE_GIT_REMOTE='https://mirrors.ustc.edu.cn/homebrew-core.git'" >> ~/.bashrc
+echo "export HOMEBREW_BOTTLE_DOMAIN='https://mirrors.ustc.edu.cn/homebrew-bottles'" >> ~/.bashrc
+echo "export HOMEBREW_API_DOMAIN='https://mirrors.ustc.edu.cn/homebrew-bottles/api'" >> ~/.bashrc
+source ~/.bashrc
+/bin/bash -c "$(curl -fsSL https://mirrors.ustc.edu.cn/misc/brew-install.sh)"
+```
+
 ### 安装软件
 
-Git配置
+#### neovim & lazyvim
+
+```shell
+brew install neovim
+```
+
+#### Git配置
 
 ```shell
 # 安装 Git
