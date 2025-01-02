@@ -175,11 +175,14 @@ sudo apt update
 
 ### 配置 .shellrc
 
-新建 **.shellrc** 并加入当前使用的shell
+将shell配置追加到当前使用的shell
+
 ```shell
 # load my shell config
 echo "if [ -f ~/.shellrc ]; then source ~/.shellrc ; fi" >> ~/.bashrc
 ```
+
+新建 **.shellrc** 并加入当前使用的shell
 
 ```shell
 # func
