@@ -1,7 +1,7 @@
 ---
 title: "windows"
 date: 2023-07-21T10:14:26+08:00
-lastmod: 2025-01-01T21:19:26+08:00
+lastmod: 2025-01-02T15:15:26+08:00
 categories: ['Windows']
 keywords: windows
 description: Windows相关
@@ -173,14 +173,75 @@ sudo sed -i 's/http:/https:/g' /etc/apt/sources.list.d/ubuntu.sources
 sudo apt update
 ```
 
+### 配置 .shellrc
+
+新建 **.shellrc** 并加入当前使用的shell
+```shell
+# load my shell config
+echo "if [ -f ~/.shellrc ]; then source ~/.shellrc ; fi" >> ~/.bashrc
+```
+
+```shell
+# func
+function git_proxy_set {
+proxy_ip=$(ip route show | grep -i default | awk '{ print $3}')
+if [ -d ./.git ]; then
+    git config http.proxy http://${proxy_ip}:10809
+    git config https.proxy http://${proxy_ip}:10809
+else
+    git config --global http.proxy http://${proxy_ip}:10809
+    git config --global https.proxy http://${proxy_ip}:10809
+fi
+}
+function git_proxy_unset {
+if [ -d ./.git ]; then
+    git config --unset http.proxy
+    git config --unset https.proxy
+else
+    git config --global --unset http.proxy
+    git config --global --unset https.proxy
+fi
+}
+function git_proxy_get {
+if [ -d ./.git ]; then
+    git config http.proxy
+    git config https.proxy
+else
+    git config --global http.proxy
+    git config --global https.proxy
+fi
+}
+function git_proxy_command {
+    echo "git_proxy_set git_proxy_unset git_proxy_get"
+}
+
+# enable passphrase prompt for gpg
+export GPG_TTY=$(tty)
+
+# env
+JAVA_HOME=/home/simple/software/jdk8u432-b06
+MAVEN_HOME=/home/simple/software/apache-maven-3.9.9
+PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH
+
+# homebrew
+# ref: https://mirrors.ustc.edu.cn/help/brew.git.html#homebrew-linuxbrew
+export HOMEBREW_BREW_GIT_REMOTE='https://mirrors.ustc.edu.cn/brew.git'
+export HOMEBREW_CORE_GIT_REMOTE='https://mirrors.ustc.edu.cn/homebrew-core.git'
+export HOMEBREW_BOTTLE_DOMAIN='https://mirrors.ustc.edu.cn/homebrew-bottles'
+export HOMEBREW_API_DOMAIN='https://mirrors.ustc.edu.cn/homebrew-bottles/api'
+
+# alias
+alias ii="explorer.exe"
+```
+
 ### 安装包管理器 Homebrew
 
 ```shell
-echo "export HOMEBREW_BREW_GIT_REMOTE='https://mirrors.ustc.edu.cn/brew.git'" >> ~/.bashrc
-echo "export HOMEBREW_CORE_GIT_REMOTE='https://mirrors.ustc.edu.cn/homebrew-core.git'" >> ~/.bashrc
-echo "export HOMEBREW_BOTTLE_DOMAIN='https://mirrors.ustc.edu.cn/homebrew-bottles'" >> ~/.bashrc
-echo "export HOMEBREW_API_DOMAIN='https://mirrors.ustc.edu.cn/homebrew-bottles/api'" >> ~/.bashrc
-source ~/.bashrc
+# echo "export HOMEBREW_BREW_GIT_REMOTE='https://mirrors.ustc.edu.cn/brew.git'" >> ~/.shellrc
+# echo "export HOMEBREW_CORE_GIT_REMOTE='https://mirrors.ustc.edu.cn/homebrew-core.git'" >> ~/.shellrc
+# echo "export HOMEBREW_BOTTLE_DOMAIN='https://mirrors.ustc.edu.cn/homebrew-bottles'" >> ~/.shellrc
+# echo "export HOMEBREW_API_DOMAIN='https://mirrors.ustc.edu.cn/homebrew-bottles/api'" >> ~/.shellrc
+# source ~/.shellrc
 /bin/bash -c "$(curl -fsSL https://mirrors.ustc.edu.cn/misc/brew-install.sh)"
 ```
 
@@ -189,8 +250,11 @@ source ~/.bashrc
 #### neovim & lazyvim
 
 ```shell
-brew install neovim
+brew install fzf neovim
+git clone https://github.com/LazyVim/starter ~/.config/nvim
 ```
+
+[配置字体](https://www.nerdfonts.com/)(Hack)并在 Windows Terminal 中选定
 
 #### Git配置
 
@@ -239,8 +303,8 @@ git config --global user.signingkey 8E61F4E8701DD140
 git config --global commit.gpgsign true
 
 # 支持 passphrase
-echo '# enable passphrase prompt for gpg' >> ~/.bashrc
-echo 'export GPG_TTY=$(tty)' >> ~/.bashrc
+# echo '# enable passphrase prompt for gpg' >> ~/.bashrc
+# echo 'export GPG_TTY=$(tty)' >> ~/.bashrc
 
 # 项目上单独配置
 git config user.name Simple
