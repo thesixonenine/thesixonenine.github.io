@@ -1,7 +1,7 @@
 ---
 title: small-script
 date: 2021-09-17T15:14:17+0800
-lastmod: 2025-01-03T11:59:49+08:00
+lastmod: 2025-01-03T13:58:51+08:00
 categories: ['Script']
 keywords: Script
 description: 一些实用的脚本命令
