@@ -20,13 +20,13 @@ adb shell getprop ro.product.cpu.abi
 ### 更新 lastmod
 
 ```powershell
-(Get-Content file.txt) -replace 'lastmod: 2025-01-03T11:59:49+08:00
+(Get-Content /path/to/file) -replace '^lastmod: .*', "lastmod: $(Get-Date -Format 'yyyy-MM-ddTHH:mm:sszzz')" | Set-Content /path/to/file
 
 function update-lastmod {
     param (
         [string]$FilePath
     )
-    (Get-Content $FilePath) -replace 'lastmod: 2025-01-03T11:59:49+08:00
+    (Get-Content $FilePath) -replace '^lastmod: .*', "lastmod: $(Get-Date -Format 'yyyy-MM-ddTHH:mm:sszzz')" | Set-Content $FilePath
 }
 ```
 
@@ -218,11 +218,10 @@ wt new-tab -p 'local' --title 'default' `; new-tab -p 'local' -d C:\Users\simple
 ### 更新 lastmod
 
 ```shell
-sed -i "s/lastmod: 2025-01-03T11:59:49+08:00
+sed -i "/^lastmod: /s/^lastmod: .*/lastmod: $(date '+%Y-%m-%dT%H:%M:%S%z')/" /path/to/file
 
 update_lastmod() {
-    local file_path="$1"
-    sed -i "s/lastmod: 2025-01-03T11:59:49+08:00
+    sed -i "/^lastmod: /s/^lastmod: .*/lastmod: $(date '+%Y-%m-%dT%H:%M:%S%z')/" "${1}"
 }
 ```
 
