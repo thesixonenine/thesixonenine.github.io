@@ -1,7 +1,7 @@
 ---
 title: small-script
 date: 2021-09-17T15:14:17+0800
-lastmod: 2024-12-17T14:23:17+0800
+lastmod: 2025-01-03T11:59:49+08:00
 categories: ['Script']
 keywords: Script
 description: 一些实用的脚本命令
@@ -16,6 +16,19 @@ adb shell getprop ro.product.cpu.abi
 ```
 
 ## PowerShell
+
+### 更新 lastmod
+
+```powershell
+(Get-Content file.txt) -replace 'lastmod: 2025-01-03T11:59:49+08:00
+
+function update-lastmod {
+    param (
+        [string]$FilePath
+    )
+    (Get-Content $FilePath) -replace 'lastmod: 2025-01-03T11:59:49+08:00
+}
+```
 
 ### winget 走代理
 
@@ -201,6 +214,17 @@ wt new-tab -p 'local' --title 'default' `; new-tab -p 'local' -d C:\Users\simple
 ```
 
 ## Bash
+
+### 更新 lastmod
+
+```shell
+sed -i "s/lastmod: 2025-01-03T11:59:49+08:00
+
+update_lastmod() {
+    local file_path="$1"
+    sed -i "s/lastmod: 2025-01-03T11:59:49+08:00
+}
+```
 
 ### B站循环推流本地视频文件
 
