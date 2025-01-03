@@ -1,7 +1,7 @@
 ---
 title: "windows"
 date: 2023-07-21T10:14:26+08:00
-lastmod: 2025-01-03T10:59:26+08:00
+lastmod: 2025-01-03T11:50:26+08:00
 categories: ['Windows']
 keywords: windows
 description: Windows相关
@@ -362,4 +362,18 @@ hello world
 
 ```shell
 docker run hello-world
+```
+
+阿里云个人镜像操作
+
+```shell
+# 登录阿里云 Docker Registry
+docker login --username=USERNAME registry.cn-chengdu.aliyuncs.com
+
+# 从 Registry 中拉取镜像
+docker pull registry.cn-chengdu.aliyuncs.com/NAMESPACE/REPO:[镜像版本号]
+
+# 将镜像推送到 Registry
+docker tag [ImageId] registry.cn-chengdu.aliyuncs.com/NAMESPACE/REPO:[镜像版本号]
+docker push registry.cn-chengdu.aliyuncs.com/NAMESPACE/REPO:[镜像版本号]
 ```
