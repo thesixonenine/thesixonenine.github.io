@@ -1,7 +1,7 @@
 ---
 title: "windows"
 date: 2023-07-21T10:14:26+08:00
-lastmod: 2025-01-02T15:15:26+08:00
+lastmod: 2025-01-03T10:59:26+08:00
 categories: ['Windows']
 keywords: windows
 description: Windows相关
@@ -156,6 +156,11 @@ memory=8GB
 swap=0
 # default: true
 localhostForwarding=true
+```
+
+```shell
+# 检查系统中 PID 1 的主初始化进程是 init 还是 systemd
+ps --no-headers -o comm 1
 ```
 
 ### 配置源
@@ -316,4 +321,45 @@ git config user.name Simple
 # TODO 项目配置 GPG 签名
 git config user.signingkey 8E61F4E8701DD140
 git config commit.gpgsign true
+```
+
+
+#### docker
+
+[官方文档](https://docs.docker.com/engine/install/ubuntu)
+
+[源安装](https://mirrors.ustc.edu.cn/help/docker-ce.html)
+
+```shell
+# 下载安装脚本
+curl --proxy 172.26.112.1:10809 -fsSL https://get.docker.com -o get-docker.sh
+# 执行安装
+sudo DOWNLOAD_URL=https://mirrors.ustc.edu.cn/docker-ce sh get-docker.sh
+
+# https://docs.docker.com/engine/install/linux-postinstall
+# 添加用户组
+sudo groupadd docker
+sudo usermod -aG docker $USER
+# 退出重启
+logout
+# 查看版本
+docker version
+```
+
+配置仓库镜像,阿里云个人镜像加速地址
+
+```shell
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+  "registry-mirrors": ["https://dockerproxy.net"]
+}
+EOF
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
+
+hello world
+
+```shell
+docker run hello-world
 ```
