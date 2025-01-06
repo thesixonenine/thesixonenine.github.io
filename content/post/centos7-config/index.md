@@ -1,7 +1,7 @@
 ---
 title: centos7-config
 date: 2022-01-16T15:24:10+0800
-lastmod: 2022-02-09T14:20:10+0800
+lastmod: 2025-01-06T16:02:59+08:00
 tags: ['Linux', 'Vim']
 categories: ['CentOS']
 keywords:
@@ -171,5 +171,15 @@ sudo sed -e 's|^mirrorlist=|#mirrorlist=|g' \
 sudo yum makecache
 ```
 
+## 升级 Git 版本
 
+```shell
+sudo yum -y remove git
+sudo yum -y remove git-*
+
+sudo yum -y install https://packages.endpointdev.com/rhel/7/os/x86_64/endpoint-repo.x86_64.rpm
+sudo yum -y install git
+
+git --version
+```
 
