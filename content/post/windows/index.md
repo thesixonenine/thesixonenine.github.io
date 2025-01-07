@@ -1,7 +1,7 @@
 ---
 title: "windows"
 date: 2023-07-21T10:14:26+08:00
-lastmod: 2025-01-03T11:50:26+08:00
+lastmod: 2025-01-07T15:12:03+08:00
 categories: ['Windows']
 keywords: windows
 description: Windows相关
@@ -253,6 +253,26 @@ alias ii="explorer.exe"
 /bin/bash -c "$(curl -fsSL https://mirrors.ustc.edu.cn/misc/brew-install.sh)"
 ```
 
+### 使用 apt
+
+```shell
+sudo apt install -y build-essential curl git sudo wget file software-properties-common
+
+# 安装并切换 zsh, 安装 oh-my-zsh
+sudo apt install -y zsh && chsh -s /bin/zsh && \
+    git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/ohmyzsh.git ~/.oh-my-zsh && \
+    cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc && \
+    echo "if [ -f ~/.shellrc ]; then source ~/.shellrc ; fi" >> ~/.zshrc
+
+# 安装 oh-my-zsh 插件
+git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && \
+    git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && \
+    sed -i 's/^plugins=(git)/plugins=(\ngit\n)/' ~/.zshrc && \
+    sed -i 's/^plugins=(/&\nzsh-syntax-highlighting/' ~/.zshrc && \
+    sed -i 's/^plugins=(/&\nzsh-autosuggestions/' ~/.zshrc && \
+    source ~/.zshrc
+```
+
 ### 安装软件
 
 #### neovim & lazyvim
@@ -376,4 +396,17 @@ docker pull registry.cn-chengdu.aliyuncs.com/NAMESPACE/REPO:[镜像版本号]
 # 将镜像推送到 Registry
 docker tag [ImageId] registry.cn-chengdu.aliyuncs.com/NAMESPACE/REPO:[镜像版本号]
 docker push registry.cn-chengdu.aliyuncs.com/NAMESPACE/REPO:[镜像版本号]
+```
+
+**docker 代理源拉取**
+
+将 `PROXY_DOMAIN` 替换成支持的代理源, 例如:
+
+- docker.m.daocloud.io
+- dockerproxy.net
+
+```shell
+docker pull PROXY_DOMAIN/library/ubuntu:latest
+docker tag PROXY_DOMAIN/library/ubuntu:latest ubuntu:latest
+docker rmi PROXY_DOMAIN/library/ubuntu:latest
 ```
