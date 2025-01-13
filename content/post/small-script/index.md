@@ -1,7 +1,7 @@
 ---
 title: small-script
 date: 2021-09-17T15:14:17+0800
-lastmod: 2025-01-03T13:58:51+08:00
+lastmod: 2025-01-13T16:48:43+08:00
 categories: ['Script']
 keywords: Script
 description: 一些实用的脚本命令
@@ -16,6 +16,20 @@ adb shell getprop ro.product.cpu.abi
 ```
 
 ## PowerShell
+
+### 文件 MD5 生成与校验
+
+#### 生成
+
+```powershell
+Get-FileHash -Algorithm MD5 text.txt | ForEach-Object { "$($_.Hash) text.txt" } > text.txt.md5
+```
+
+#### 校验
+
+```powershell
+if ((Get-FileHash -Algorithm MD5 text.txt).Hash -eq (Get-Content text.txt.md5).Split(" ")[0]) { "text.txt: OK" } else { "text.txt: FAILED" }
+```
 
 ### 更新 lastmod
 
@@ -214,6 +228,20 @@ wt new-tab -p 'local' --title 'default' `; new-tab -p 'local' -d C:\Users\simple
 ```
 
 ## Bash
+
+### 文件 MD5 生成与校验
+
+#### 生成
+
+```shell
+md5sum text.txt > text.txt.md5
+```
+
+#### 校验
+
+```shell
+md5sum -c text.txt.md5
+```
 
 ### 更新 lastmod
 
