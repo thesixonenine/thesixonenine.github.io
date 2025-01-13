@@ -1,7 +1,7 @@
 ---
 title: "windows"
 date: 2023-07-21T10:14:26+08:00
-lastmod: 2025-01-07T15:12:03+08:00
+lastmod: 2025-01-13T12:13:23+08:00
 categories: ['Windows']
 keywords: windows
 description: Windows相关
@@ -230,6 +230,8 @@ export GPG_TTY=$(tty)
 JAVA_HOME=/home/simple/software/jdk8u432-b06
 MAVEN_HOME=/home/simple/software/apache-maven-3.9.9
 PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH
+
+BOOKMARKS=/home/simple/gitee/Bookmarks
 
 # homebrew
 # ref: https://mirrors.ustc.edu.cn/help/brew.git.html#homebrew-linuxbrew
