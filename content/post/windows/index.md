@@ -1,7 +1,7 @@
 ---
 title: "windows"
 date: 2023-07-21T10:14:26+08:00
-lastmod: 2025-01-13T12:13:23+08:00
+lastmod: 2025-01-16T15:36:23+08:00
 categories: ['Windows']
 keywords: windows
 description: Windows相关
@@ -191,7 +191,7 @@ echo "if [ -f ~/.shellrc ]; then source ~/.shellrc ; fi" >> ~/.bashrc
 
 ```shell
 # func
-function git_proxy_set {
+function git-proxy-set {
 proxy_ip=$(ip route show | grep -i default | awk '{ print $3}')
 if [ -d ./.git ]; then
     git config http.proxy http://${proxy_ip}:10809
@@ -201,7 +201,7 @@ else
     git config --global https.proxy http://${proxy_ip}:10809
 fi
 }
-function git_proxy_unset {
+function git-proxy-unset {
 if [ -d ./.git ]; then
     git config --unset http.proxy
     git config --unset https.proxy
@@ -210,7 +210,7 @@ else
     git config --global --unset https.proxy
 fi
 }
-function git_proxy_get {
+function git-proxy-get {
 if [ -d ./.git ]; then
     git config http.proxy
     git config https.proxy
@@ -219,8 +219,8 @@ else
     git config --global https.proxy
 fi
 }
-function git_proxy_command {
-    echo "git_proxy_set git_proxy_unset git_proxy_get"
+function git-proxy-command {
+    echo "git-proxy-set git-proxy-unset git-proxy-get"
 }
 
 # enable passphrase prompt for gpg
