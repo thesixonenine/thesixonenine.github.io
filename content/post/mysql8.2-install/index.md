@@ -1,7 +1,7 @@
 ---
 title: "mysql8.2-install"
 date: 2024-01-30T15:04:16+08:00
-lastmod: 2024-01-30T15:04:16+08:00
+lastmod: 2025-01-17T14:51:32+08:00
 tags: ['Linux']
 categories: ['MySQL']
 keywords: MySQL
@@ -56,22 +56,8 @@ mysql -uroot -p
 
 创建库
 
-```bash
-CREATE DATABASE qing CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-```
+**MySQL 8 开始默认字符集为 `utf8mb4`, 排序规则为 `utf8mb4_0900_ai_ci`**
 
-创建用户
-
-```bash
-USE mysql;
-CREATE USER 'dev'@'%' IDENTIFIED BY '123456';
-# GRANT ALL PRIVILEGES ON *.* TO 'dev'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON qing.* TO 'dev'@'%' WITH GRANT OPTION;
-```
-
-创建只读用户
-```bash
-CREATE USER 'read_only'@'%' IDENTIFIED BY '123456';
-GRANT SELECT ON product.* TO 'read_only'@'%' WITH GRANT OPTION;
-FLUSH PRIVILEGES;
-```
+> - 0900 表示基于 Unicode 9.0 标准
+> - ai (Accent Insensitive) 表示区分重音符号不敏感
+> - ci (Case Insensitive) 表示大小写不敏感

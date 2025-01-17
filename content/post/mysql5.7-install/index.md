@@ -1,7 +1,7 @@
 ---
 title: mysql5.7-install
 date: 2021-12-21T22:38:43+0800
-lastmod: 2021-12-21T22:38:43+0800
+lastmod: 2025-01-17T14:51:26+08:00
 tags: ['Linux']
 categories: ['MySQL']
 keywords: MySQL
@@ -54,4 +54,26 @@ echo "刷新权限的SQL:"
 echo "FLUSH PRIVILEGES;"
 echo ""
 mysql -uroot -p
+```
+
+## 创建库
+
+```bash
+CREATE DATABASE qing CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+```
+
+## 创建用户
+
+```bash
+USE mysql;
+CREATE USER 'dev'@'%' IDENTIFIED BY '123456';
+# GRANT ALL PRIVILEGES ON *.* TO 'dev'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON qing.* TO 'dev'@'%' WITH GRANT OPTION;
+```
+
+## 创建只读用户
+```bash
+CREATE USER 'read_only'@'%' IDENTIFIED BY '123456';
+GRANT SELECT ON product.* TO 'read_only'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
 ```
