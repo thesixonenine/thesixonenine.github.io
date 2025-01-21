@@ -35,7 +35,7 @@ useradd -r -g mysql -s /bin/false mysql
 
 ```bash
 cd /usr/local/
-tar -zxvf mysql-5.7.38-linux-glibc2.12-x86_64.tar.gz
+tar -zxf mysql-5.7.38-linux-glibc2.12-x86_64.tar.gz
 mv mysql-5.7.38-linux-glibc2.12-x86_64 mysql
 ```
 
@@ -53,7 +53,7 @@ chown -R mysql:mysql data
 #### 创建my.cnf文件
 
 ```bash
-vi /usr/local/mysql/my.conf
+vi /etc/my.cnf
 ```
 
 **文件内容**
@@ -65,7 +65,7 @@ default-character-set=utf8mb4
 
 [mysqld]
 socket=/var/lib/mysql/mysql.sock
-port = 3306
+port=3306
 basedir=/usr/local/mysql
 datadir=/usr/local/mysql/data
 max_connections=200
@@ -83,7 +83,7 @@ basedir=/usr/local/mysql
 #### 安装mysql
 
 ```bash
-/usr/local/mysql/bin/mysql_install_db --user=mysql --basedir=/usr/local/mysql/ --datadir=/usr/local/mysql/data/
+/usr/local/mysql/bin/mysqld --initialize --user=mysql --basedir=/usr/local/mysql --datadir=/usr/local/mysql/data
 
 echo 'export PATH=$PATH:/usr/local/mysql/bin' >> /etc/profile
 source /etc/profile
@@ -93,8 +93,10 @@ source /etc/profile
 
 ```bash
 cp /usr/local/mysql/support-files/mysql.server  /etc/init.d/mysqld
-chmod 777 /usr/local/mysql/my.conf
+# chmod 777 /usr/local/mysql/my.conf
 chmod +x /etc/init.d/mysqld
+mkdir /var/lib/mysql
+chmod 777 /var/lib/mysql
 # 启动
 /etc/init.d/mysqld restart
 # 重启
