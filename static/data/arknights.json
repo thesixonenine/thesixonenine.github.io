@@ -8365,5 +8365,419 @@
 		],
 		"pool": "证实，完成，指引",
 		"ts": 1734011495
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "梅",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "孑",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "梓兰",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "调香师",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "地灵",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "玫兰莎",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "苏苏洛",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "酸糖",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "格雷伊",
+				"rarity": 3
+			},
+			{
+				"isNew": true,
+				"name": "寻澜",
+				"rarity": 4
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1737533918
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "褐果",
+				"rarity": 3
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1737533928
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "芬",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "卡缇",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "末药",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "翎羽",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "梓兰",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "古米",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "安赛尔",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "休谟斯",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "蛇屠箱",
+				"rarity": 3
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1737562750
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "褐果",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "维荻",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "末药",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "卡缇",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "流星",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "红云",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "芳汀",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "芙蓉",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "红云",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "地灵",
+				"rarity": 3
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1737562763
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "香草",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "安赛尔",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "砾",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "夜烟",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "羽毛笔",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "酸糖",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "芬",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "角峰",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "翎羽",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "白雪",
+				"rarity": 3
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1737562782
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "炎熔",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "米格鲁",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "阿消",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "酸糖",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "芳汀",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "泡普卡",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "芙蓉",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "寒檀",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "波登可",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "苏苏洛",
+				"rarity": 3
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1737562792
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "霜叶",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "温米",
+				"rarity": 4
+			},
+			{
+				"isNew": false,
+				"name": "空爆",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "红豆",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "砾",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "慕斯",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "红豆",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "翎羽",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "克洛丝",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "松果",
+				"rarity": 3
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1737562801
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "铅踝",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "松果",
+				"rarity": 3
+			},
+			{
+				"isNew": true,
+				"name": "余",
+				"rarity": 5
+			},
+			{
+				"isNew": false,
+				"name": "酸糖",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "深靛",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "卡缇",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "米格鲁",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "梓兰",
+				"rarity": 2
+			},
+			{
+				"isNew": false,
+				"name": "杜宾",
+				"rarity": 3
+			},
+			{
+				"isNew": false,
+				"name": "月见夜",
+				"rarity": 2
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1737562812
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "砾",
+				"rarity": 3
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1737590519
 	}
 ]
