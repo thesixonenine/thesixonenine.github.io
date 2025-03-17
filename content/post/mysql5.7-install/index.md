@@ -77,3 +77,11 @@ CREATE USER 'read_only'@'%' IDENTIFIED BY '123456';
 GRANT SELECT ON product.* TO 'read_only'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ```
+
+## 导出/入数据库
+```
+# 导出数据库所有(指定)表的结构, 加-d参数代表只导表结构
+# mysqldump [选项] 数据库名 [表名] > 脚本名
+mysqldump -uUSER -pPASSWORD [-d] dbname [table_name table_name...] > db_tables.sql
+mysql -uUSER -pPASSWORD dbname < db_tables.sql
+```
