@@ -229,6 +229,13 @@ wt new-tab -p 'local' --title 'default' `; new-tab -p 'local' -d C:\Users\simple
 
 ## Bash
 
+### 检查 SSH 公钥信息
+
+```shell
+ssh-keygen -l -f ~/.ssh/id_rsa.pub
+ssh-keygen -E md5 -l -f ~/.ssh/id_rsa.pub
+```
+
 ### 文件 MD5 生成与校验
 
 #### 生成
