@@ -313,7 +313,7 @@ systemctl list-units --type=service | grep tomcat
 ### 添加 java -jar 为 Systemd 服务
 
 ```java
-# 以下两种写法均可
+# 以下两种写法均可 https://docs.spring.io/spring-boot/reference/features/external-config.html#features.external-config.application-json
 # system property
 java -Xms128m -Dspring.profiles.active=prod -jar app.jar
 # command line argument
