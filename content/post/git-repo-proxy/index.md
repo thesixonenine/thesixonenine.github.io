@@ -13,13 +13,24 @@ description: git repo proxy
 
 ```shell
 # cat $HOME/.ssh/config
+# 代理服务器可能不允许22端口, 可以尝试在HTTPS端口使用SSH
+# https://docs.github.com/zh/authentication/troubleshooting-ssh/using-ssh-over-the-https-port
+Host github.com
+  User git
+  Port 443
+  Hostname ssh.github.com
+  IdentityFile "~/.ssh/id_rsa"
+  TCPKeepAlive yes
+  ProxyCommand "C:\Program Files\Git\mingw64\bin\connect" -H 127.0.0.1:1080 %h %p
+
+# 正常填写代理
 Host github.com
   User git
   Port 22
   Hostname github.com
   IdentityFile "~/.ssh/id_rsa"
   TCPKeepAlive yes
-  ProxyCommand "C:\Program Files\Git\mingw64\bin\connect" -S 127.0.0.1:1080 -a none %h %p
+  ProxyCommand "C:\Program Files\Git\mingw64\bin\connect" -S 127.0.0.1:1080 %h %p
   # MacOS
   # ProxyCommand nc -v -x 127.0.0.1:1080 %h %p
 Host ssh.github.com
@@ -28,7 +39,7 @@ Host ssh.github.com
   Hostname ssh.github.com
   IdentityFile "~/.ssh/id_rsa"
   TCPKeepAlive yes
-  ProxyCommand "C:\Program Files\Git\mingw64\bin\connect" -S 127.0.0.1:1080 -a none %h %p
+  ProxyCommand "C:\Program Files\Git\mingw64\bin\connect" -S 127.0.0.1:1080 %h %p
 ```
 
 ## Method 1. git http + proxy http
