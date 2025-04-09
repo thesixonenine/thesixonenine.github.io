@@ -1,7 +1,7 @@
 ---
 title: small-script
 date: 2021-09-17T15:14:17+0800
-lastmod: 2025-01-13T16:48:43+08:00
+lastmod: 2025-04-09T15:19:42+0800
 categories: ['Script']
 keywords: Script
 description: 一些实用的脚本命令
@@ -334,6 +334,8 @@ User=${RUN_USER}
 Group=${RUN_GROUP}
 WorkingDirectory=${JAR_DIR}
 ExecStart=${JAVA_PATH}/bin/java -jar ${JVM_ARGS} ${JAR_DIR}${JAR_NAME} ${JAR_ARGS}
+ExecReload=/bin/kill -s HUP \$MAINPID
+ExecStop=/bin/kill -s QUIT \$MAINPID
 SuccessExitStatus=143
 Restart=on-failure
 [Install]
