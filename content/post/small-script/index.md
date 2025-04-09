@@ -1,7 +1,7 @@
 ---
 title: small-script
 date: 2021-09-17T15:14:17+0800
-lastmod: 2025-04-09T15:19:42+0800
+lastmod: 2025-04-09T16:09:15+0800
 categories: ['Script']
 keywords: Script
 description: 一些实用的脚本命令
@@ -311,6 +311,14 @@ systemctl list-units --type=service | grep tomcat
 ```
 
 ### 添加 java -jar 为 Systemd 服务
+
+```java
+# 以下两种写法均可
+# system property
+java -Xms128m -Dspring.profiles.active=prod -jar app.jar
+# command line argument
+java -Xms128m -jar app.jar --spring.profiles.active=prod
+```
 
 ```bash
 SERVICE_NAME=jar-file-manage
