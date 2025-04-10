@@ -1,11 +1,13 @@
 ---
 title: "git-repo-proxy"
 date: 2023-12-04T15:44:18+08:00
-lastmod: 2025-04-10T10:53:52+0800
+lastmod: 2025-04-10T11:11:52+0800
 categories: ['Git']
 keywords: git repo proxy
 description: git repo proxy
 ---
+
+[参考](https://ericclose.github.io/git-proxy-config.html)
 
 走 ssh 协议代理时, 代理服务器可能不允许22端口, 可以尝试[在443端口使用SSH](https://docs.github.com/zh/authentication/troubleshooting-ssh/using-ssh-over-the-https-port), 即在config文件中指定 Port 443
 
