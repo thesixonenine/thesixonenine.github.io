@@ -7,7 +7,7 @@ keywords: git repo proxy
 description: git repo proxy
 ---
 
-代理服务器可能不允许22端口, 可以尝试[在443端口使用SSH](https://docs.github.com/zh/authentication/troubleshooting-ssh/using-ssh-over-the-https-port)
+走 ssh 协议代理时, 代理服务器可能不允许22端口, 可以尝试[在443端口使用SSH](https://docs.github.com/zh/authentication/troubleshooting-ssh/using-ssh-over-the-https-port), 即在config文件中指定 Port 443
 
 ## Recommend
 
@@ -53,6 +53,7 @@ git config --global --unset https.proxy
 # cat ~/.ssh/config
 Host github.com
   User git
+  # 使用 443 端口, 避免代理服务器不支持 22 端口
   Port 443
   Hostname ssh.github.com
   IdentityFile "~/.ssh/id_rsa"
