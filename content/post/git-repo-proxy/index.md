@@ -20,7 +20,7 @@ Host github.com
   Port 443
   Hostname ssh.github.com
   IdentityFile "~/.ssh/id_rsa"
-  ProxyCommand "C:\Program Files\Git\mingw64\bin\connect" -H 127.0.0.1:1080 %h %p
+  ProxyCommand "C:\Program Files\Git\mingw64\bin\connect" -S 127.0.0.1:1080 %h %p
 ```
 
 ## http 协议代理
@@ -64,8 +64,8 @@ Host github.com
 # Windows 使用 Git for Windows 默认附带的 connect 程序
 # -H 代表 http, -S 代表 socks
 ProxyCommand "C:\Program Files\Git\mingw64\bin\connect" -H 127.0.0.1:1080 %h %p
-# Linux 使用 nc 命令, 查看 nc 命令的参数来进行设置代理类型及IP:PORT
 
+# Linux 使用 nc 命令, 查看 nc 命令的参数来进行设置代理类型及IP:PORT
 # socks5 -X 5 是默认的, 可以不加
 ProxyCommand nc -X 5 -x 127.0.0.1:1080 %h %p
 # http
