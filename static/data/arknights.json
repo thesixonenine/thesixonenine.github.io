@@ -8779,5 +8779,148 @@
 		],
 		"pool": "炽吾生平",
 		"ts": 1737590519
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "梓兰",
+				"rarity": 2
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1737677053
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "芬",
+				"rarity": 2
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1737761346
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "维荻",
+				"rarity": 3
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1737848987
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "梅",
+				"rarity": 3
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1737936284
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "夜烟",
+				"rarity": 3
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1738025014
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "深靛",
+				"rarity": 3
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1738114230
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "维荻",
+				"rarity": 3
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1738198886
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "梓兰",
+				"rarity": 2
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1738290592
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "斑点",
+				"rarity": 2
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1738376995
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "酸糖",
+				"rarity": 3
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1738464942
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "寻澜",
+				"rarity": 4
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1738549217
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "寻澜",
+				"rarity": 4
+			}
+		],
+		"pool": "炽吾生平",
+		"ts": 1738635476
+	},
+	{
+		"chars": [
+			{
+				"isNew": false,
+				"name": "格雷伊",
+				"rarity": 3
+			}
+		],
+		"pool": "中坚寻访",
+		"ts": 1740004371
 	}
 ]
