@@ -1,7 +1,7 @@
 ---
 title: "git-repo-proxy"
 date: 2023-12-04T15:44:18+08:00
-lastmod: 2025-04-10T11:11:52+0800
+lastmod: 2025-04-24T10:11:52+0800
 categories: ['Git']
 keywords: git repo proxy
 description: git repo proxy
@@ -37,16 +37,16 @@ Host github.com
 git config --global http.proxy http://127.0.0.1:1080
 # cat ~/.gitconfig
 [http]
-	proxy = http://127.0.0.1:1080
+  proxy = http://127.0.0.1:1080
+
 # 指定网站代理
 git config --global http.https://github.com.proxy socks5://127.0.0.1:1080
 # cat ~/.gitconfig
 [http "https://github.com"]
-	proxy = socks5://127.0.0.1:1080
+  proxy = socks5://127.0.0.1:1080
 
 # 取消代理
 git config --global --unset http.proxy
-git config --global --unset https.proxy
 ```
 
 ## ssh 协议代理
@@ -66,7 +66,7 @@ Host github.com
 ProxyCommand "C:\Program Files\Git\mingw64\bin\connect" -H 127.0.0.1:1080 %h %p
 
 # Linux 使用 nc 命令, 查看 nc 命令的参数来进行设置代理类型及IP:PORT
-# socks5 -X 5 是默认的, 可以不加
+# socks5 (-X 5 是默认的, 可以不加)
 ProxyCommand nc -X 5 -x 127.0.0.1:1080 %h %p
 # http
 ProxyCommand nc -X connect -x 127.0.0.1:1080 %h %p
