@@ -1,7 +1,7 @@
 ---
 title: "git-repo-proxy"
 date: 2023-12-04T15:44:18+08:00
-lastmod: 2025-04-24T10:11:52+0800
+lastmod: 2025-04-28T15:07:52+0800
 categories: ['Git']
 keywords: git repo proxy
 description: git repo proxy
@@ -20,6 +20,8 @@ Host github.com
   Port 443
   Hostname ssh.github.com
   IdentityFile "~/.ssh/id_rsa"
+  # 如果安装了nmap(scoop install nmap)也可以使用ncat
+  # ProxyCommand ncat --proxy 127.0.0.1:1080 --proxy-type socks5 %h %p
   ProxyCommand "C:\Program Files\Git\mingw64\bin\connect" -S 127.0.0.1:1080 %h %p
 ```
 
