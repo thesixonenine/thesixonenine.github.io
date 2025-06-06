@@ -1,8 +1,8 @@
 # Configure main menu and social menu
 main:
   - identifier: dashboard
-    name: Dashboard
-    url: https://dashboard.thesixonenine.site
+    name: Login
+    url: https://todo-list.thesixonenine.site
     params:
       icon: dashboard
       newtab: true
