@@ -2,3 +2,5 @@ public
 resources
 *.lock
 .idea
+.vscode
+
