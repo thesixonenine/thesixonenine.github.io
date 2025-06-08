@@ -1,5 +1,12 @@
 ## My Person Blog Source
 
+#### Sync arknights gacha
+
+```bash
+cd gosrc
+go run ./cmd/arknightsv2
+```
+
 #### proxy
 
 ```bash
