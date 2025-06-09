@@ -203,7 +203,7 @@ func StoreWishes(wishMap []Wish) {
 		log.Fatalf("JSON序列化异常[%s]\n", err.Error())
 		return
 	}
-	utils.WriteToFile(JSONFilePath, utils.JSONIndent(marshal))
+	_ = os.WriteFile(JSONFilePath, utils.JSONIndent(marshal), 0600)
 }
 
 // SortWishMap 根据 ts (时间)进行排序
