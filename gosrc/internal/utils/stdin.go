@@ -2,24 +2,23 @@ package utils
 
 import (
 	"bufio"
-	"log"
+	"fmt"
 	"os"
 	"strings"
+	"unicode"
 )
 
 func ReadMultiLine(tips string) string {
-	log.Println(tips)
+	fmt.Println(tips)
 	reader := bufio.NewReader(os.Stdin)
 	var lines []string
-
-	// 读取多行输入直到空行
 	for {
 		line, _ := reader.ReadString('\n')
-		line = strings.TrimSpace(line)
-		if line == "" {
+		line = strings.TrimSuffix(line, "\n")
+		lines = append(lines, line)
+		if !strings.HasSuffix(strings.TrimRightFunc(line, unicode.IsSpace), "\\") {
 			break
 		}
-		lines = append(lines, line)
 	}
-	return strings.Join(lines, " ")
+	return strings.Join(lines, "\n")
 }
