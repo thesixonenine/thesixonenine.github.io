@@ -33,7 +33,7 @@ func main() {
 }
 
 func ExtractCUrlBash() (*parseCurl.Request, string) {
-	multiLine := utils.ReadMultiLine("请粘贴cURL命令并按Enter结束:")
+	multiLine := utils.ReadContinuedLinesStdin("请粘贴cURL命令并按Enter结束:")
 	curl, ok := parseCurl.Parse(multiLine)
 	if !ok {
 		log.Printf("\n解析错误: %v\n", multiLine)
