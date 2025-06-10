@@ -18,8 +18,8 @@ import (
 	"time"
 )
 
-const WishHistoryFilePath = "F:\\game\\Star Rail\\Game\\StarRail_Data\\webCaches\\2.34.1.0\\Cache\\Cache_Data\\data_2"
-const JSONFilePath = "../../src/assets/data/star-rail-wish.json"
+const WishHistoryFilePath = "F:\\game\\Star Rail\\Game\\StarRail_Data\\webCaches\\2.37.1.0\\Cache\\Cache_Data\\data_2"
+const JSONFilePath = "../static/data/star-rail-wish.json"
 const GACHA_URL_PREFIX = "https://public-operation-hkrpg.mihoyo.com/common/gacha_record/api/getGachaLog"
 
 var re = regexp.MustCompile(`\p{C}`)
