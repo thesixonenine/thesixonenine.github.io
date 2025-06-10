@@ -16,11 +16,12 @@ import (
 // a non-continued line is entered.
 //
 // Usage example:
-//   input := ReadContinuedLinesStdin("Enter JSON (end with non-\\ line):")
-//   // User enters:
-//   // {\
-//   //   "key": "value"\
-//   // }
+//
+//	input := ReadContinuedLinesStdin("Enter JSON (end with non-\\ line):")
+//	// User enters:
+//	// {\
+//	//   "key": "value"\
+//	// }
 func ReadContinuedLinesStdin(tips string) string {
 	return ReadContinuedLines(tips, os.Stdin)
 }
@@ -36,9 +37,10 @@ func ReadContinuedLinesStdin(tips string) string {
 // Lines are joined with newline separators in the returned string.
 //
 // Example termination condition:
-//   "input\"   -> continues (backslash after trimming)
-//   "input "   -> terminates (space after backslash: "input \")
-//   "input"    -> terminates
+//
+//	"input\"   -> continues (backslash after trimming)
+//	"input "   -> terminates (space after backslash: "input \")
+//	"input"    -> terminates
 func ReadContinuedLines(tips string, rd io.Reader) string {
 	fmt.Println(tips)
 	reader := bufio.NewReader(rd)
