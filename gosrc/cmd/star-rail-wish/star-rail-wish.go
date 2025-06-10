@@ -1,9 +1,9 @@
 package main
 
 import (
-	"bytes"
 	"encoding/json"
 	"fmt"
+	"gosrc/internal/utils"
 	"io"
 	"log"
 	"net/http"
@@ -183,25 +183,7 @@ func StoreWishes(wishMap map[string][]HKRPGWish) {
 		log.Fatalf("JSON序列化异常[%s]\n", err.Error())
 		return
 	}
-	WriteToFile(JSONIndent(marshal))
-}
-
-// JSONIndent 进行 JSON 格式化
-func JSONIndent(marshal []byte) []byte {
-	var out bytes.Buffer
-	err := json.Indent(&out, marshal, "", "\t")
-	if err != nil {
-		log.Fatal(err)
-	}
-	return out.Bytes()
-}
-
-// WriteToFile 写入文件
-func WriteToFile(marshal []byte) {
-	err := os.WriteFile(JSONFilePath, marshal, syscall.O_RDWR|syscall.O_CREAT)
-	if err != nil {
-		log.Fatalf("写入文件异常[%s]\n", err.Error())
-	}
+	_ = os.WriteFile(JSONFilePath, utils.JSONIndent(marshal), 0600)
 }
 
 // SortWishMap 根据抽卡 ID (时间)进行排序
