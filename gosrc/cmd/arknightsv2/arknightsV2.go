@@ -26,6 +26,9 @@ var cookie = ""
 // 收集每次从官网获取的抽卡数据, 然后合并到本地JSON文件中.
 func main() {
 	cUrl, _ := ExtractCUrlBash()
+	if cUrl == nil {
+		return
+	}
 	roleToken = cUrl.Header["x-role-token"]
 	accountToken = cUrl.Header["x-account-token"]
 	cookie = cUrl.Header["Cookie"]
@@ -34,9 +37,9 @@ func main() {
 
 func ExtractCUrlBash() (*parseCurl.Request, string) {
 	multiLine := utils.ReadContinuedLinesStdin("请粘贴cURL命令并按Enter结束:")
-	curl, ok := parseCurl.Parse(multiLine)
-	if !ok {
-		log.Printf("\n解析错误: %v\n", multiLine)
+	curl, err := parseCurl.Parse(multiLine)
+	if err != nil {
+		log.Printf("\n[%v]解析错误: %v\n", multiLine, err.Error())
 		return nil, multiLine
 	}
 	return curl, multiLine
