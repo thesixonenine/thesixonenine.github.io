@@ -85,7 +85,7 @@
 
                         if (it.rank_type === '5') {
                             const fiveName = `${it.name}(${curCount})`;
-                            if (poolFiveCntMap.get(pool) == null) {
+                            if (poolFiveCntMap.get(pool) == null || poolFiveCntMap.get(pool) == "") {
                                 poolFiveCntMap.set(pool, fiveName);
                             } else {
                                 const p = poolFiveCntMap.get(pool);
@@ -159,7 +159,7 @@
 
                         if (it.rank_type === '5') {
                             const fiveName = `${it.name}(${curCount})`;
-                            if (poolFiveCntMap.get(pool) == null) {
+                            if (poolFiveCntMap.get(pool) == null || poolFiveCntMap.get(pool) == "") {
                                 poolFiveCntMap.set(pool, fiveName);
                             } else {
                                 const p = poolFiveCntMap.get(pool);
