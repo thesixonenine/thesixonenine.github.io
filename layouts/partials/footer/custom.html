@@ -92,6 +92,10 @@
                                 poolFiveCntMap.set(pool, `${p},${fiveName}`);
                             }
                             curCount = 0;
+                        } else {
+                            if (poolFiveCntMap.get(pool) == null) {
+                                poolFiveCntMap.set(pool, "");
+                            }
                         }
 
                         poolFiveCountMap.set(pool, curCount);
@@ -162,6 +166,10 @@
                                 poolFiveCntMap.set(pool, `${p},${fiveName}`);
                             }
                             curCount = 0;
+                        } else {
+                            if (poolFiveCntMap.get(pool) == null) {
+                                poolFiveCntMap.set(pool, "");
+                            }
                         }
 
                         poolFiveCountMap.set(pool, curCount);
