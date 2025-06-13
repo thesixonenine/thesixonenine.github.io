@@ -141,8 +141,8 @@
                     return resp.json();
                 })
                 .then(function (jsonObj) {
-                    let json11 = jsonObj['3'] ? jsonObj['3'] : [];
-                    let json12 = jsonObj['5'] ? jsonObj['5'] : [];
+                    let json3 = jsonObj['3'] ? jsonObj['3'] : [];
+                    let json5 = jsonObj['5'] ? jsonObj['5'] : [];
                     let json1 = jsonObj['1'] ? jsonObj['1'] : [];
                     let json2 = jsonObj['2'] ? jsonObj['2'] : [];
 
@@ -157,9 +157,9 @@
                             curCount = curCount + 1;
                         }
 
-                        if (it.rank_type === '5') {
+                        if (it.rank_type === '4') {
                             const fiveName = `${it.name}(${curCount})`;
-                            if (poolFiveCntMap.get(pool) == null || poolFiveCntMap.get(pool) == "") {
+                            if (poolFiveCntMap.get(pool) == null || poolFiveCntMap.get(pool) === "") {
                                 poolFiveCntMap.set(pool, fiveName);
                             } else {
                                 const p = poolFiveCntMap.get(pool);
@@ -175,11 +175,11 @@
                         poolFiveCountMap.set(pool, curCount);
                     }
 
-                    json11.map(function (it) {
-                        storeGacha('11', it);
+                    json3.map(function (it) {
+                        storeGacha('3', it);
                     });
-                    json12.map(function (it) {
-                        storeGacha('12', it);
+                    json5.map(function (it) {
+                        storeGacha('5', it);
                     });
                     json2.map(function (it) {
                         storeGacha('2', it);
@@ -189,8 +189,8 @@
                     });
 
 
-                    const total11 = json11.length;
-                    const total12 = json12.length;
+                    const total3 = json3.length;
+                    const total5 = json5.length;
                     const total1 = json1.length;
                     const total2 = json2.length;
 
@@ -202,8 +202,8 @@
 <tr><th>池子</th><th>总抽取数量</th><th>五星</th><th>已抽</th></tr>
 </thead>
 <tbody>
-<tr><td>音擎频段</td><td>${total11}</td><td>${poolFiveCntMap.get('11')}</td><td>${poolFiveCountMap.get('11')}</td></tr>
-<tr><td>邦布频段</td><td>${total12}</td><td>${poolFiveCntMap.get('12')}</td><td>${poolFiveCountMap.get('12')}</td></tr>
+<tr><td>音擎频段</td><td>${total3}</td><td>${poolFiveCntMap.get('3')}</td><td>${poolFiveCountMap.get('3')}</td></tr>
+<tr><td>邦布频段</td><td>${total5}</td><td>${poolFiveCntMap.get('5')}</td><td>${poolFiveCountMap.get('5')}</td></tr>
 <tr><td>常驻频段</td><td>${total1}</td><td>${poolFiveCntMap.get('1')}</td><td>${poolFiveCountMap.get('1')}</td></tr>
 <tr><td>独家频段</td><td>${total2}</td><td>${poolFiveCntMap.get('2')}</td><td>${poolFiveCountMap.get('2')}</td></tr>
 </tbody>
