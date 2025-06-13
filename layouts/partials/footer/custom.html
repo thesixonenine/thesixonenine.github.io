@@ -67,10 +67,10 @@
                     return resp.json();
                 })
                 .then(function (jsonObj) {
-                    let json11 = jsonObj['11'];
-                    let json12 = jsonObj['12'];
-                    let json1 = jsonObj['1'];
-                    let json2 = jsonObj['2'];
+                    let json11 = jsonObj['11'] ? jsonObj['11'] : [];
+                    let json12 = jsonObj['12'] ? jsonObj['12'] : [];
+                    let json1 = jsonObj['1'] ? jsonObj['1'] : [];
+                    let json2 = jsonObj['2'] ? jsonObj['2'] : [];
 
                     const poolFiveCntMap = new Map();
                     const poolFiveCountMap = new Map();
@@ -85,7 +85,7 @@
 
                         if (it.rank_type === '5') {
                             const fiveName = `${it.name}(${curCount})`;
-                            if (poolFiveCntMap.get(pool) == null || poolFiveCntMap.get(pool) == "") {
+                            if (poolFiveCntMap.get(pool) == null || poolFiveCntMap.get(pool) === "") {
                                 poolFiveCntMap.set(pool, fiveName);
                             } else {
                                 const p = poolFiveCntMap.get(pool);
@@ -141,10 +141,10 @@
                     return resp.json();
                 })
                 .then(function (jsonObj) {
-                    let json11 = jsonObj['3'];
-                    let json12 = jsonObj['5'] | [];
-                    let json1 = jsonObj['1'];
-                    let json2 = jsonObj['2'];
+                    let json11 = jsonObj['3'] ? jsonObj['3'] : [];
+                    let json12 = jsonObj['5'] ? jsonObj['5'] : [];
+                    let json1 = jsonObj['1'] ? jsonObj['1'] : [];
+                    let json2 = jsonObj['2'] ? jsonObj['2'] : [];
 
                     const poolFiveCntMap = new Map();
                     const poolFiveCountMap = new Map();
