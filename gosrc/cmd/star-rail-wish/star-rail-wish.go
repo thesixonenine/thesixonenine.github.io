@@ -20,7 +20,7 @@ import (
 
 const WishHistoryFilePath = "F:\\game\\Star Rail\\Game\\StarRail_Data\\webCaches\\2.37.1.0\\Cache\\Cache_Data\\data_2"
 const JSONFilePath = "../static/data/star-rail-wish.json"
-const GACHA_URL_PREFIX = "https://public-operation-hkrpg.mihoyo.com/common/gacha_record/api/getGachaLog"
+const GachaUrlPrefix = "https://public-operation-hkrpg.mihoyo.com/common/gacha_record/api/getGachaLog"
 
 var re = regexp.MustCompile(`\p{C}`)
 
@@ -56,7 +56,7 @@ func FindURLFromLogFile() UrlParam {
 	for i := len(split) - 1; i >= 0; i-- {
 		s := split[i]
 		t := re.ReplaceAllString(strings.TrimSpace(s), "")
-		if strings.Index(t, GACHA_URL_PREFIX) != 0 {
+		if strings.Index(t, GachaUrlPrefix) != 0 {
 			continue
 		}
 		u, parseErr := url.Parse(t)
@@ -65,7 +65,7 @@ func FindURLFromLogFile() UrlParam {
 		}
 		queryMap := ParseQuery(u.RawQuery)
 		queryMap["end_id"] = "0"
-		if FetchData(GACHA_URL_PREFIX+"?"+ParamMapToStr(queryMap)).Retcode != 0 {
+		if FetchData(GachaUrlPrefix+"?"+ParamMapToStr(queryMap)).Retcode != 0 {
 			continue
 		}
 
