@@ -271,6 +271,71 @@ ${tbody}
 </table>`;
                     document.getElementsByClassName('article-content')[0].prepend(element);
                 });
+            fetch('/data/arknightsV2.json')
+                .then(function (resp) {
+                    return resp.json();
+                })
+                .then(function (jsonObj) {
+                    // 名称
+                    const poolNameMap = new Map();
+                    // 总抽数
+                    const poolCntMap = new Map();
+                    // 六星名字及抽数
+                    const poolSixCntMap = new Map();
+                    // 六星抽数计次
+                    const poolSixCountMap = new Map();
+                    jsonObj.map(function (char) {
+                        const poolId = char.poolId;
+                        poolNameMap.set(poolId, char.poolName);
+                        if (poolCntMap.get(poolId) == null) {
+                            poolCntMap.set(poolId, 1);
+                        } else {
+                            poolCntMap.set(poolId, poolCntMap.get(poolId) + 1);
+                        }
+                        if (poolSixCntMap.get(poolId) == null) {
+                            poolSixCntMap.set(poolId, '');
+                        }
+                        if (poolSixCountMap.get(poolId) == null) {
+                            poolSixCountMap.set(poolId, 0);
+                        }
+
+                        let curCount = poolSixCountMap.get(poolId);
+                        curCount += 1;
+
+                        // 当前是六星
+                        if (char.rarity === 5) {
+                            const sixStar = `${char.charName}(${curCount})`;
+                            let pre = poolSixCntMap.get(poolId);
+                            if (pre !== '') {
+                                pre = pre + ",";
+                            }
+                            poolSixCntMap.set(poolId, `${pre}${sixStar}`);
+                            curCount = 0;
+                        }
+                        poolSixCountMap.set(poolId, curCount);
+                    });
+                    let tbody = '';
+                    poolCntMap.forEach(function (cnt, poolId) {
+                        const poolName = poolNameMap.get(poolId);
+                        const curCount = poolSixCountMap.get(poolId);
+                        const sixChars = poolSixCntMap.get(poolId);
+                        tbody = tbody + `<tr><td>${poolName}</td><td>${cnt}</td><td>${sixChars}</td><td>${curCount}</td></tr>`;
+                    });
+
+                    const element = document.createElement('div');
+                    element.id = "Arknights";
+                    element.className = "table-wrapper";
+                    element.innerHTML = `<p><strong>明日方舟V2</strong></p>
+<table>
+<thead>
+<tr><th>池子</th><th>总抽取数量</th><th>六星</th><th>已抽</th></tr>
+</thead>
+<tbody>
+${tbody}
+</tbody>
+</table>`;
+                    document.getElementsByClassName('article-content')[0].prepend(element);
+                });
         }
         if (document.URL.indexOf('house') > 0) {
             fetch('/data/house.json')
