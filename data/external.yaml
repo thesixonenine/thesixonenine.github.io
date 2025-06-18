@@ -5,33 +5,40 @@ Vibrant:
       type: script
 
 PhotoSwipe:
-    - src: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/photoswipe/4.1.3/photoswipe.min.js
+    # https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/photoswipe/4.1.3/photoswipe.min.js
+    - src: https://registry.npmmirror.com/photoswipe/4.1.3/files/dist/photoswipe.min.js
       integrity: sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=
       type: script
       defer: true
 
-    - src: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js
+    # https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js
+    - src: https://registry.npmmirror.com/photoswipe/4.1.3/files/dist/photoswipe-ui-default.min.js
       integrity: sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=
       type: script
       defer: true
 
+    # https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.min.css
     - src: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.min.css
       type: style
 
+    # https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.css
     - src: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/photoswipe/4.1.3/photoswipe.min.css
       type: style
 
 KaTeX:
-    - src: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/KaTeX/0.15.6/katex.min.css
+    # https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/KaTeX/0.15.6/katex.min.css
+    - src: https://registry.npmmirror.com/katex/0.15.6/files/dist/katex.min.css
       integrity: sha256-J+iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s=
       type: style
 
-    - src: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/KaTeX/0.15.6/katex.min.js
+    # https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/KaTeX/0.15.6/katex.min.js
+    - src: https://registry.npmmirror.com/katex/0.15.6/files/dist/katex.min.js
       integrity: sha256-InsNdER1b2xUewP+pKCUJpkhiqwHgqiPXDlIk7GzBu4=
       type: script
       defer: true
 
-    - src: https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/KaTeX/0.15.6/contrib/auto-render.min.js
+    # https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/KaTeX/0.15.6/contrib/auto-render.min.js
+    - src: https://registry.npmmirror.com/katex/0.15.6/files/dist/contrib/auto-render.min.js
       integrity: sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI=
       type: script
       defer: true
