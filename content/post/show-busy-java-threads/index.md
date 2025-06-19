@@ -1,8 +1,8 @@
 ---
 title: "show-busy-java-threads"
 date: 2024-12-06T14:18:32+08:00
-lastmod: 2024-12-06T14:18:32+08:00
-categories: ['Java', 'Linux']
+lastmod: 2025-06-19T14:30:08+0800
+categories: ['Java']
 tags: ['Java', 'Linux']
 keywords: ['Java', 'Linux', 'CPU']
 description: 排查 Java 进程占用 CPU 高的堆栈
