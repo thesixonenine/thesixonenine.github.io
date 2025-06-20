@@ -141,6 +141,7 @@ func FetchGacha(uid string, category string, gachaTs string, pos int) Gacha {
 	if pos != -1 {
 		posStr = "&pos=" + strconv.Itoa(pos)
 	}
+	// https://ak.hypergryph.com/user/api/inquiry/gacha/cate?uid=
 	parse, parseErr := url.Parse(fmt.Sprintf("https://ak.hypergryph.com/user/api/inquiry/gacha/history?uid=%s&category=%s%s%s&size=10", uid, category, posStr, gachaTsStr))
 	if parseErr != nil {
 		log.Fatal(parseErr)
