@@ -3,7 +3,6 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	parseCurl "github.com/thesixonenine/parse-curl"
 	"gosrc/internal/utils"
 	"io"
 	"log"
@@ -15,6 +14,8 @@ import (
 	"strings"
 	"syscall"
 	"time"
+
+	parseCurl "github.com/thesixonenine/parse-curl"
 )
 
 const JSONFilePath = "../static/data/arknightsV2.json"
@@ -29,10 +30,15 @@ func main() {
 	if cUrl == nil {
 		return
 	}
+	c, err := url.ParseRequestURI(cUrl.Url)
+	if err != nil {
+		fmt.Println("未获取到uid, 请重新粘贴cURL")
+		return
+	}
 	roleToken = cUrl.Header["x-role-token"]
 	accountToken = cUrl.Header["x-account-token"]
 	cookie = cUrl.Header["Cookie"]
-	UpdateGacha()
+	UpdateGacha(c.Query().Get("uid"))
 }
 
 func ExtractCUrlBash() (*parseCurl.Request, string) {
@@ -45,7 +51,7 @@ func ExtractCUrlBash() (*parseCurl.Request, string) {
 	return curl, multiLine
 }
 
-func UpdateGacha() {
+func UpdateGacha(uid string) {
 	history := LocalHistory()
 	var maxWish = Wish{}
 	if len(history) > 0 {
@@ -66,7 +72,7 @@ func UpdateGacha() {
 		page := 1
 		for {
 			pageStr := "第" + strconv.Itoa(page) + "页"
-			curGacha := FetchGacha(cate, gachaTs, pos)
+			curGacha := FetchGacha(uid, cate, gachaTs, pos)
 			if curGacha.Code != 0 {
 				log.Printf(pageStr+"查询失败,code[%d][%s]\n", curGacha.Code, curGacha.Msg)
 				break
@@ -125,7 +131,7 @@ func LocalHistory() []Wish {
 	return history
 }
 
-func FetchGacha(category string, gachaTs string, pos int) Gacha {
+func FetchGacha(uid string, category string, gachaTs string, pos int) Gacha {
 	client := &http.Client{}
 	gachaTsStr := ""
 	if gachaTs != "" {
@@ -135,7 +141,7 @@ func FetchGacha(category string, gachaTs string, pos int) Gacha {
 	if pos != -1 {
 		posStr = "&pos=" + strconv.Itoa(pos)
 	}
-	parse, parseErr := url.Parse(fmt.Sprintf("https://ak.hypergryph.com/user/api/inquiry/gacha/history?uid=891691350&category=%s%s%s&size=10", category, posStr, gachaTsStr))
+	parse, parseErr := url.Parse(fmt.Sprintf("https://ak.hypergryph.com/user/api/inquiry/gacha/history?uid=%s&category=%s%s%s&size=10", uid, category, posStr, gachaTsStr))
 	if parseErr != nil {
 		log.Fatal(parseErr)
 	}
