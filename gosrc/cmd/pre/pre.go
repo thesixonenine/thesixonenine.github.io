@@ -52,7 +52,7 @@ func buildZZZ() string {
 		fiveStr = strings.TrimRight(fiveStr, ",")
 		s = s + fmt.Sprintf("|%s|%d|%s|%d|\n", v, l, fiveStr, cnt)
 	}
-	zzz := `##绝区零
+	zzz := `## 绝区零
 
 |池子|总抽取数量|五星|已抽|
 |---|---|---|---|
