@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"gosrc/internal/constant"
 	"gosrc/internal/utils"
 	"io"
 	"log"
@@ -121,7 +122,7 @@ func FetchWishes(urlParam UrlParam, localHistoryMap map[string][]HKRPGWish) {
 	}
 	paramMap := urlParam.ParamMap
 	// 循环抽卡类型
-	for k, v := range gachaTypeMap {
+	for k, v := range constant.GachaTypeMap {
 		fmt.Printf("开始获取[%s]\n", v)
 		localIdList := MapToId(localHistoryMap[k])
 		page := 1
@@ -245,7 +246,7 @@ type HKRPGWish struct {
 }
 
 func (wish HKRPGWish) String() string {
-	return fmt.Sprintf("%s %s %s", wish.Time, gachaTypeMap[wish.GachaType], wish.Name)
+	return fmt.Sprintf("%s %s %s", wish.Time, constant.GachaTypeMap[wish.GachaType], wish.Name)
 }
 
 type Page[T any] struct {
