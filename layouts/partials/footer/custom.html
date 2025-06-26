@@ -130,6 +130,7 @@
                                     `;
                     document.querySelector('.article-content').insertAdjacentHTML('afterbegin', tableHTML);
                 });
+            /*
             fetch('/data/zzz.json')
                 .then(resp => resp.json())
                 .then(jsonObj => {
@@ -201,6 +202,7 @@
                     document.querySelector('.article-content').insertAdjacentHTML('afterbegin', tableHTML);
                     document.querySelector("#zzz").onclick = function(){document.querySelector("#zzz").scrollIntoView(true);}
                 });
+            */
             fetch('/data/arknights.json')
                 .then(resp => resp.json())
                 .then(function (jsonObj) {
