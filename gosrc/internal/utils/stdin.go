@@ -55,3 +55,35 @@ func ReadContinuedLines(tips string, rd io.Reader) string {
 	}
 	return strings.Join(lines, "\n")
 }
+
+// KeepHeadAndAppend 保留开头几行并追加指定内容
+func KeepHeadAndAppend(filePath string, keepHeadLine int, appendContent string) error {
+	file, err := os.Open(filePath)
+	if err != nil {
+		return err
+	}
+	defer file.Close()
+	var preservedLines []string
+	scanner := bufio.NewScanner(file)
+	for i := 0; i < keepHeadLine && scanner.Scan(); i++ {
+		preservedLines = append(preservedLines, scanner.Text())
+	}
+	if err := scanner.Err(); err != nil {
+		return err
+	}
+	file, err = os.OpenFile(filePath, os.O_WRONLY|os.O_TRUNC, 0644)
+	if err != nil {
+		return err
+	}
+	defer file.Close()
+	writer := bufio.NewWriter(file)
+	for _, line := range preservedLines {
+		if _, err := writer.WriteString(line + "\n"); err != nil {
+			return err
+		}
+	}
+	if _, err := writer.WriteString(appendContent); err != nil {
+		return err
+	}
+	return writer.Flush()
+}
