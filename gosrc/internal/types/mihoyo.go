@@ -25,7 +25,7 @@ func (wish MiHoYoWish) Fmt(m map[string]string) string {
 	return fmt.Sprintf("%s %s %s", wish.Time, m[wish.GachaType], wish.Name)
 }
 
-type Page[T any] struct {
+type MiHoYoPage[T any] struct {
 	Retcode int    `json:"retcode"`
 	Message string `json:"message"`
 	Data    struct {

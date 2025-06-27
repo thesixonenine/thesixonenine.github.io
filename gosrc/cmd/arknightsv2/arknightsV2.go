@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"gosrc/internal/types"
 	"gosrc/internal/utils"
 	"io"
 	"log"
@@ -53,11 +54,11 @@ func ExtractCUrlBash() (*parseCurl.Request, string) {
 
 func UpdateGacha(uid string) {
 	history := LocalHistory()
-	var maxWish = Wish{}
+	var maxWish = types.ArkNightsChar{}
 	if len(history) > 0 {
 		maxWish = history[0]
 		for _, wish := range history {
-			if WishCompare(maxWish, wish) < 0 {
+			if types.WishCompare(maxWish, wish) < 0 {
 				maxWish = wish
 			}
 		}
@@ -88,7 +89,7 @@ func UpdateGacha(uid string) {
 			for _, wish := range curGacha.Data.List {
 				gachaTs = wish.GachaTs
 				pos = wish.Pos
-				if WishCompare(maxWish, wish) < 0 {
+				if types.WishCompare(maxWish, wish) < 0 {
 					log.Printf("查询到新的抽卡记录,%s\n", wish.String())
 					hasNew = true
 					hasNewGacha = true
@@ -112,7 +113,7 @@ func UpdateGacha(uid string) {
 	}
 }
 
-func LocalHistory() []Wish {
+func LocalHistory() []types.ArkNightsChar {
 	historyFile, err := os.OpenFile(JSONFilePath, syscall.O_RDWR|syscall.O_CREAT, os.ModePerm)
 	if err != nil {
 		log.Fatalf("打开文件[%s]异常,err[%s]\n", JSONFilePath, err.Error())
@@ -126,12 +127,12 @@ func LocalHistory() []Wish {
 	if err != nil {
 		log.Fatalf("读取文件[%s]异常,err[%s]\n", JSONFilePath, err.Error())
 	}
-	var history []Wish
+	var history []types.ArkNightsChar
 	_ = json.Unmarshal(historyFileContent, &history)
 	return history
 }
 
-func FetchGacha(uid string, category string, gachaTs string, pos int) Gacha {
+func FetchGacha(uid string, category string, gachaTs string, pos int) types.ArkNightsGacha {
 	client := &http.Client{}
 	gachaTsStr := ""
 	if gachaTs != "" {
@@ -162,13 +163,13 @@ func FetchGacha(uid string, category string, gachaTs string, pos int) Gacha {
 	if err != nil {
 		log.Fatal(err)
 	}
-	history := Gacha{}
+	history := types.ArkNightsGacha{}
 	_ = json.Unmarshal(bodyText, &history)
 	return history
 }
 
 // StoreWishes 存储抽卡历史
-func StoreWishes(wishMap []Wish) {
+func StoreWishes(wishMap []types.ArkNightsChar) {
 	wishMap = SortWishMap(wishMap)
 	marshal, err := json.Marshal(wishMap)
 	if err != nil {
@@ -179,7 +180,7 @@ func StoreWishes(wishMap []Wish) {
 }
 
 // SortWishMap 排序
-func SortWishMap(ist []Wish) []Wish {
+func SortWishMap(ist []types.ArkNightsChar) []types.ArkNightsChar {
 	sort.Slice(ist, func(i, j int) bool {
 		its := ist[i].GachaTs
 		jts := ist[j].GachaTs
@@ -191,53 +192,4 @@ func SortWishMap(ist []Wish) []Wish {
 		return ii < ji
 	})
 	return ist
-}
-
-type Gacha struct {
-	Code int64 `json:"code"`
-	Data struct {
-		List    []Wish `json:"list"`
-		HasMore bool   `json:"hasMore"`
-	} `json:"data"`
-	Msg string `json:"msg"`
-}
-type Wish struct {
-	PoolID   string `json:"poolId"`
-	PoolName string `json:"poolName"`
-	CharID   string `json:"charId"`
-	CharName string `json:"charName"`
-	Rarity   int    `json:"rarity"`
-	IsNew    bool   `json:"isNew"`
-	GachaTs  string `json:"gachaTs"`
-	Pos      int    `json:"pos"`
-}
-
-func (c Wish) String() string {
-	n := ""
-	if c.IsNew {
-		n = "(新)"
-	}
-	return fmt.Sprintf("%s-%s"+n, c.CharName, strconv.Itoa(c.Rarity+1)+"星")
-}
-
-func WishCompare(w1 Wish, w2 Wish) int {
-	its := w1.GachaTs
-	jts := w2.GachaTs
-	if its == "" {
-		if jts == "" {
-			return w1.Pos - w2.Pos
-		} else {
-			return -1
-		}
-	} else {
-		if jts == "" {
-			return 1
-		}
-	}
-	if strings.EqualFold(its, jts) {
-		return w1.Pos - w2.Pos
-	}
-	ii, _ := strconv.ParseInt(its[:len(its)-3], 10, 64)
-	ji, _ := strconv.ParseInt(jts[:len(jts)-3], 10, 64)
-	return int(ii - ji)
 }

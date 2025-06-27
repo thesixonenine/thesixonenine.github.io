@@ -1,5 +1,12 @@
 ## My Person Blog Source
 
+#### rander data
+
+```bash
+cd gosrc
+go run ./cmd/pre
+```
+
 #### Sync gacha
 
 ```bash

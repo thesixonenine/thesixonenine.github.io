@@ -204,7 +204,7 @@ func ParamMapToStr(paramMap map[string]string) string {
 }
 
 // FetchData 从指定 URL 获取抽卡历史并转成分页对象
-func FetchData(link string) types.Page[types.MiHoYoWish] {
+func FetchData(link string) types.MiHoYoPage[types.MiHoYoWish] {
 	time.Sleep(5 * time.Second)
 	resp, err := http.Get(link)
 	if err != nil {
@@ -220,7 +220,7 @@ func FetchData(link string) types.Page[types.MiHoYoWish] {
 	if httpReadErr != nil {
 		log.Fatalf("读取HTTP Body异常,err[%s]", err.Error())
 	}
-	p := types.Page[types.MiHoYoWish]{}
+	p := types.MiHoYoPage[types.MiHoYoWish]{}
 	if resp.StatusCode != 200 {
 		p.Retcode = -1
 		return p
