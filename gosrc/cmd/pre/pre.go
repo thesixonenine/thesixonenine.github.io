@@ -129,7 +129,13 @@ func buildArkNightsV1() string {
 func buildSR() string {
 	f := utils.ReadJSONFile[map[string][]types.MiHoYoWish]("../static/data/star-rail-wish.json")
 	s := ""
-	for k, v := range constant.SRGachaType {
+	ks := []string{}
+	for k := range constant.SRGachaType {
+		ks = append(ks, k)
+	}
+	sort.Strings(ks)
+	for _, k := range ks {
+		v := constant.SRGachaType[k]
 		wishes := f[k]
 		l := len(wishes)
 		// 排序
@@ -161,7 +167,13 @@ func buildSR() string {
 func buildZZZ() string {
 	f := utils.ReadJSONFile[map[string][]types.MiHoYoWish]("../static/data/zzz.json")
 	s := ""
-	for k, v := range constant.ZZZGachaType {
+	ks := []string{}
+	for k := range constant.ZZZGachaType {
+		ks = append(ks, k)
+	}
+	sort.Strings(ks)
+	for _, k := range ks {
+		v := constant.ZZZGachaType[k]
 		wishes := f[k]
 		l := len(wishes)
 		// 排序
