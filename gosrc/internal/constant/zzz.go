@@ -12,3 +12,5 @@ var SRGachaType = map[string]string{
 	"1":  "常驻跃迁",
 	"2":  "新手跃迁",
 }
+
+const CacheData2Path = "\\Cache\\Cache_Data\\data_2"

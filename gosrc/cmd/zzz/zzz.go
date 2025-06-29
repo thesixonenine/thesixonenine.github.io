@@ -20,7 +20,7 @@ import (
 	"time"
 )
 
-const WishHistoryFilePath = "F:\\game\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\webCaches\\2.37.0.0\\Cache\\Cache_Data\\data_2"
+const WishHistoryFilePath = "F:\\game\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\webCaches\\"
 const JSONFilePath = "../static/data/zzz.json"
 const GachaUrlPrefix = "https://public-operation-nap.mihoyo.com/common/gacha_record/api/getGachaLog"
 
@@ -29,22 +29,21 @@ var re = regexp.MustCompile(`\p{C}`)
 var absParams = []string{"authkey_ver", "sign_type", "region", "auth_appid", "lang", "authkey", "game_biz", "page", "size", "gacha_type", "real_gacha_type", "is_gacha"}
 
 func main() {
+	lastModVerPath, err := utils.LastModVerPath(WishHistoryFilePath)
+	if err != nil {
+		log.Fatal("未找到缓存文件", err)
+	}
+	log.Println("Version: " + lastModVerPath)
+	fullPath := WishHistoryFilePath + lastModVerPath + constant.CacheData2Path
 	// 使用抽卡 URL 进行循环查询抽卡历史, 一但发现已经存在于历史 JSON 文件中, 则停止查询
-	FetchWishes(FindURLFromLogFile(), LocalHistoryJSONFileToMap())
+	FetchWishes(FindURLFromLogFile(fullPath), LocalHistoryJSONFileToMap())
 }
 
 // FindURLFromLogFile 查询日志文件中的抽卡 URL
-func FindURLFromLogFile() UrlParam {
-	for _, p := range strings.Split(WishHistoryFilePath, "\\") {
-		_, err := strconv.Atoi(strings.ReplaceAll(p, ".", ""))
-		if err != nil {
-			continue
-		}
-		log.Println("Version: " + p)
-	}
-	content, err := os.ReadFile(WishHistoryFilePath)
+func FindURLFromLogFile(filePath string) UrlParam {
+	content, err := os.ReadFile(filePath)
 	if err != nil {
-		log.Fatalf("日志文件[%s]未找到", WishHistoryFilePath)
+		log.Fatalf("日志文件[%s]未找到", filePath)
 	}
 	lastUrl := ""
 	nMap := map[string]string{}
