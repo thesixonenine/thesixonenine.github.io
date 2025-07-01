@@ -1,7 +1,7 @@
 ---
 title: small-script
-date: 2021-09-17T15:14:17+0800
-lastmod: 2025-06-19T11:52:44+0800
+date: 2021-09-17T15:14:17
+lastmod: 2025-07-01T16:26:53
 categories: ['Script']
 keywords: Script
 description: 一些实用的脚本命令
@@ -34,13 +34,13 @@ if ((Get-FileHash -Algorithm MD5 text.txt).Hash -eq (Get-Content text.txt.md5).S
 ### 更新 lastmod
 
 ```powershell
-(Get-Content /path/to/file) -replace '^lastmod: .*', "lastmod: $(Get-Date -Format 'yyyy-MM-ddTHH:mm:sszzz')" | Set-Content /path/to/file
+(Get-Content /path/to/file) -replace '^lastmod: .*', "lastmod: $(Get-Date -Format 'yyyy-MM-ddTHH:mm:ss')" | Set-Content /path/to/file
 
 function update-lastmod {
     param (
         [string]$FilePath
     )
-    (Get-Content $FilePath) -replace '^lastmod: .*', "lastmod: $(Get-Date -Format 'yyyy-MM-ddTHH:mm:sszzz')" | Set-Content $FilePath
+    (Get-Content $FilePath) -replace '^lastmod: .*', "lastmod: $(Get-Date -Format 'yyyy-MM-ddTHH:mm:ss')" | Set-Content $FilePath
 }
 ```
 
@@ -259,10 +259,10 @@ md5sum -c text.txt.md5
 ### 更新 lastmod
 
 ```shell
-sed -i "/^lastmod: /s/^lastmod: .*/lastmod: $(date '+%Y-%m-%dT%H:%M:%S%z')/" /path/to/file
+sed -i "/^lastmod: /s/^lastmod: .*/lastmod: $(date '+%Y-%m-%dT%H:%M:%S')/" /path/to/file
 
 function update-lastmod {
-    sed -i "/^lastmod: /s/^lastmod: .*/lastmod: $(date '+%Y-%m-%dT%H:%M:%S%z')/" "${1}"
+    sed -i "/^lastmod: /s/^lastmod: .*/lastmod: $(date '+%Y-%m-%dT%H:%M:%S')/" "${1}"
 }
 ```
 
