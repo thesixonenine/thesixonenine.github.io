@@ -1,7 +1,7 @@
 ---
 title: "windows"
-date: 2023-07-21T10:14:26+08:00
-lastmod: 2025-01-16T15:36:23+08:00
+date: 2023-07-21T10:14:26
+lastmod: 2025-07-06T20:38:07
 categories: ['Windows']
 keywords: windows
 description: Windows相关
@@ -10,6 +10,9 @@ image: "https://msdesign.blob.core.windows.net/wallpapers/Microsoft_Nostalgic_Wi
 
 
 从一个开发者的角度来使用 `Windows`
+
+**视频参考**
+{{< bilibili BV1dxT6zGESE >}}
 
 ## 系统安装
 
@@ -411,4 +414,40 @@ docker push registry.cn-chengdu.aliyuncs.com/NAMESPACE/REPO:[镜像版本号]
 docker pull PROXY_DOMAIN/library/ubuntu:latest
 docker tag PROXY_DOMAIN/library/ubuntu:latest ubuntu:latest
 docker rmi PROXY_DOMAIN/library/ubuntu:latest
+```
+
+## 环境变量配置
+
+### CMD
+
+```bash
+# 查看环境变量
+echo %USERPROFILE%
+
+# 设置会话级环境变量
+set JAVA_HOME="\path\to\jdk"
+# 设置用户级环境变量
+setx JAVA_HOME "\path\to\jdk"
+# 设置系统级环境变量
+setx JAVA_HOME "\path\to\jdk" /M
+```
+
+### PowerShell
+
+```powershell
+# 查看环境变量
+$env:JAVA_HOME
+# 或者
+[System.Environment]::GetEnvironmentVariable("JAVA_HOME")
+[System.Environment]::GetEnvironmentVariable("JAVA_HOME", "Process")
+
+
+# 设置会话级环境变量
+$env:JAVA_HOME="\path\to\jdk"
+# 或者
+[System.Environment]::SetEnvironmentVariable("JAVA_HOME", "\path\to\jdk", "Process")
+# 设置用户级环境变量
+[System.Environment]::SetEnvironmentVariable("JAVA_HOME", "\path\to\jdk", "User")
+# 设置会话级环境变量
+[System.Environment]::SetEnvironmentVariable("JAVA_HOME", "\path\to\jdk", "Machine")
 ```
