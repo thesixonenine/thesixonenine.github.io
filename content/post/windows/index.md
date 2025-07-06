@@ -9,10 +9,11 @@ image: "https://msdesign.blob.core.windows.net/wallpapers/Microsoft_Nostalgic_Wi
 ---
 
 
-从一个开发者的角度来使用 `Windows`
+## 视频参考
 
-**视频参考**
 {{< bilibili BV1dxT6zGESE >}}
+
+从一个开发者的角度来使用 `Windows`
 
 ## 系统安装
 
