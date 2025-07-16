@@ -9,21 +9,21 @@ image: "https://msdesign.blob.core.windows.net/wallpapers/Microsoft_Nostalgic_Wi
 ---
 
 
-## 视频参考
+## Video References
 
 {{< bilibili BV1dxT6zGESE >}}
 
 从一个开发者的角度来使用 `Windows`
 
-## 系统安装
+## Install Windows
 
-### 重置 Windows
+### Reset Windows
 
 - `win + i` 打开设置.
 - 输入 `重置此电脑` 并按 `Enter` 确认.
 - 点击 `开始`, 按提示操作即可.
 
-### U盘安装
+### Install Windows From USB
 
 [参考](https://mirrors.sdu.edu.cn/docs/guide/Windows-iso)
 
@@ -47,19 +47,19 @@ Windows11 跳过网络验证
 - 新建DWORD(32位)值,名称为 `BypassNRO`, 值设置为1
 - 命令行输入 `logoff` 或 `shutdown /r /t 0`
 
-## 系统设置
+## System Setting
 
-### 手动设置
+### Manual
 
 - 桌面图标仅保留回收站
 
-### 安装脚本
+### Install Script
 
 在新安装的 Windows 系统上配置软件以便快速回到自己熟悉的开发环境, 特此记录以下脚本
 
 软件安装统一使用 [Scoop](https://github.com/ScoopInstaller/Scoop) 来安装软件, 参考另一篇[博客](https://thesixonenine.site/p/scoop.html)
 
-#### 安装 **Scoop**
+#### Install **Scoop**
 
 打开自带的 **Windows PowerShell** 并执行以下命令
 
@@ -74,7 +74,7 @@ iwr -useb get.scoop.sh | iex
 # scoop bucket add extras https://gitee.com/scoop-bucket/extras.git
 ```
 
-#### 安装软件
+#### Install Software
 
 ```
 scoop install git
@@ -130,7 +130,7 @@ irm https://massgrave.dev/get | iex
 配置同步
 
 
-## 使用 WSL2
+## Use WSL2
 
 [安装参考](https://learn.microsoft.com/en-us/windows/wsl/install#install-wsl-command)
 
@@ -167,7 +167,7 @@ localhostForwarding=true
 ps --no-headers -o comm 1
 ```
 
-### 配置源
+### Configure Mirror
 
 ```shell
 # 查看 Ubuntu 版本
@@ -182,7 +182,7 @@ sudo sed -i 's/http:/https:/g' /etc/apt/sources.list.d/ubuntu.sources
 sudo apt update
 ```
 
-### 配置 .shellrc
+### Configure .shellrc
 
 将shell配置追加到当前使用的shell
 
@@ -248,7 +248,7 @@ export HOMEBREW_API_DOMAIN='https://mirrors.ustc.edu.cn/homebrew-bottles/api'
 alias ii="explorer.exe"
 ```
 
-### 安装包管理器 Homebrew
+### Use Homebrew
 
 ```shell
 # echo "export HOMEBREW_BREW_GIT_REMOTE='https://mirrors.ustc.edu.cn/brew.git'" >> ~/.shellrc
@@ -259,7 +259,7 @@ alias ii="explorer.exe"
 /bin/bash -c "$(curl -fsSL https://mirrors.ustc.edu.cn/misc/brew-install.sh)"
 ```
 
-### 使用 apt
+### Use apt
 
 ```shell
 sudo apt install -y build-essential curl git sudo wget file software-properties-common
@@ -279,7 +279,7 @@ git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTO
     source ~/.zshrc
 ```
 
-### 安装软件
+### Install Software
 
 #### neovim & lazyvim
 
@@ -290,7 +290,7 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim
 
 [配置字体](https://www.nerdfonts.com/)(Hack)并在 Windows Terminal 中选定
 
-#### Git配置
+#### Configure Git
 
 ```shell
 # 安装 Git
@@ -417,7 +417,7 @@ docker tag PROXY_DOMAIN/library/ubuntu:latest ubuntu:latest
 docker rmi PROXY_DOMAIN/library/ubuntu:latest
 ```
 
-## 环境变量配置
+## Configure Environment
 
 ### CMD
 
