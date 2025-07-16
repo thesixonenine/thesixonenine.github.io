@@ -11,7 +11,11 @@ image: "https://msdesign.blob.core.windows.net/wallpapers/Microsoft_Nostalgic_Wi
 
 ## Video References
 
-{{< bilibili BV1dxT6zGESE >}}
+<!-- {{< bilibili BV1dxT6zGESE >}} -->
+
+<div class="video-wrapper">
+<iframe src='https://player.bilibili.com/player.html?as_wide=1&high_quality=1&page=1&bvid=BV1dxT6zGESE&autoplay=0' scrolling='no' frameborder='no' framespacing='0' allowfullscreen='true'></iframe>
+</div>
 
 从一个开发者的角度来使用 `Windows`
 
