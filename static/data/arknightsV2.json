@@ -3358,5 +3358,145 @@
 		"isNew": false,
 		"gachaTs": "1750347943212",
 		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_278_orchid",
+		"charName": "梓兰",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1754122621448",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_4062_totter",
+		"charName": "铅踝",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1754122621448",
+		"pos": 1
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_110_deepcl",
+		"charName": "深海色",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1754122621448",
+		"pos": 2
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1754122621448",
+		"pos": 3
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_1044_hsgma2",
+		"charName": "斩业星熊",
+		"rarity": 5,
+		"isNew": true,
+		"gachaTs": "1754122621448",
+		"pos": 4
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_4062_totter",
+		"charName": "铅踝",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1754122621448",
+		"pos": 5
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_212_ansel",
+		"charName": "安赛尔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1754122621448",
+		"pos": 6
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_236_rope",
+		"charName": "暗索",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1754122621448",
+		"pos": 7
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_4130_luton",
+		"charName": "露托",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1754122621448",
+		"pos": 8
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_4203_kichi",
+		"charName": "吉星",
+		"rarity": 4,
+		"isNew": true,
+		"gachaTs": "1754122621448",
+		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_212_ansel",
+		"charName": "安赛尔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1754123785894",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_284_spot",
+		"charName": "斑点",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1754177412225",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_185_frncat",
+		"charName": "慕斯",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1754264168772",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_469_indigo",
+		"charName": "深靛",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1754349973236",
+		"pos": 0
 	}
 ]
