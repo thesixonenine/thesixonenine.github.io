@@ -1,7 +1,7 @@
 ---
 title: small-script
 date: 2021-09-17T15:14:17
-lastmod: 2025-07-01T16:26:53
+lastmod: 2025-08-06T16:33:54
 categories: ['Script']
 keywords: Script
 description: 一些实用的脚本命令
@@ -16,6 +16,24 @@ adb shell getprop ro.product.cpu.abi
 ```
 
 ## PowerShell
+
+### AES 加密与解密
+
+```shell
+echo -n "654321" | openssl enc -aes-128-cbc -salt -pbkdf2 -a -e -pass pass:"1234567890123456"
+echo "U2FsdGVkX1/ZeUsDRum+ltlqPBcM3LsC5kZsFApd8AE=" | openssl enc -aes-128-cbc -a -d -pbkdf2 -pass pass:"1234567890123456"
+# 直接在命令行中指定密码
+openssl aes-128-cbc -salt -pbkdf2 -in hello.sh -out hello.sh.enc -pass pass:"1234567890123456"
+openssl aes-128-cbc -d -pbkdf2 -in hello.sh.enc -pass pass:"1234567890123456"
+# 从文件的第一行读取密码
+# 如果同一个文件被同时用作 -passin 和 -passout 参数, 则第一行作为输入密码, 第二行作为输出密码
+openssl aes-128-cbc -salt -pbkdf2 -in hello.sh -out hello.sh.enc -pass file:pw.txt
+openssl aes-128-cbc -d -pbkdf2 -in hello.sh.enc -pass file:pw.txt
+# 从标准输入读取密码
+# stdin
+# 从环境变量中获取密码
+# env:var
+```
 
 ### 文件 MD5 生成与校验
 
