@@ -3498,5 +3498,105 @@
 		"isNew": false,
 		"gachaTs": "1754349973236",
 		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_278_orchid",
+		"charName": "梓兰",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1754438012648",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_150_snakek",
+		"charName": "蛇屠箱",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1754526345943",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_484_robrta",
+		"charName": "罗比菈塔",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1754601870116",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_4062_totter",
+		"charName": "铅踝",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1754697632677",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_381_bubble",
+		"charName": "泡泡",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1754788194647",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_381_bubble",
+		"charName": "泡泡",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1754870748217",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_235_jesica",
+		"charName": "杰西卡",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1754956562621",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_212_ansel",
+		"charName": "安赛尔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1755042828261",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_121_lava",
+		"charName": "炎熔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1755130026907",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_64_0_1",
+		"poolName": "不归花火",
+		"charId": "char_123_fang",
+		"charName": "芬",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1755216269377",
+		"pos": 0
 	}
 ]
