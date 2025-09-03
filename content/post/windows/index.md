@@ -1,10 +1,10 @@
 ---
 title: "windows"
 date: 2023-07-21T10:14:26
-lastmod: 2025-07-06T20:38:07
+lastmod: 2025-09-03T10:56:40
 categories: ['Windows']
 keywords: windows
-description: Windows相关
+description: Using Windows
 # image: "https://msdesign.blob.core.windows.net/wallpapers/Microsoft_Nostalgic_Windows_Wallpaper_4k.jpg"
 ---
 
@@ -17,7 +17,7 @@ description: Windows相关
 <iframe src='https://player.bilibili.com/player.html?as_wide=1&high_quality=1&page=1&bvid=BV1dxT6zGESE&autoplay=0' scrolling='no' frameborder='no' framespacing='0' allowfullscreen='true'></iframe>
 </div>
 
-从一个开发者的角度来使用 `Windows`
+Using Windows from a Developer's Perspective
 
 ## Install Windows
 
@@ -56,6 +56,13 @@ Windows11 跳过网络验证
 ### Manual
 
 - 桌面图标仅保留回收站
+
+### Postpone Windows Updates
+
+```powershell
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" /v FlightSettingsMaxPauseDays /t reg_dword /d 10000 /f
+# Type "Check for updates" in the search box and enter. Find "Pause updates," then click the dropdown menu to select a time.
+```
 
 ### Install Script
 
