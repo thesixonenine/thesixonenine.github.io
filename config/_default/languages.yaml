@@ -1,0 +1,8 @@
+zh-cn:
+  languageName: Chinese
+  languagedirection: ltr
+  weight: 1
+en:
+  languageName: English
+  languagedirection: ltr
+  weight: 2
