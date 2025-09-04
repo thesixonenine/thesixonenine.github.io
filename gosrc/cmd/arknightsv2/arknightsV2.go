@@ -65,7 +65,7 @@ func UpdateGacha(uid string) {
 		log.Printf("本地最新抽卡记录: %s\n", maxWish.String())
 	}
 
-	cates := []string{"classic" /*中坚*/, "normal" /*标准*/, "anniver_fest" /*限定寻访庆典*/, "summer_fest" /*限定寻访夏季*/}
+	cates := []string{"classic" /*中坚*/, "normal" /*标准*/, "anniver_fest" /*限定寻访庆典*/, "summer_fest" /*限定寻访夏季*/, "mujica"}
 	hasNewGacha := false
 	for _, cate := range cates {
 		gachaTs := ""
