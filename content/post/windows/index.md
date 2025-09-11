@@ -1,7 +1,7 @@
 ---
 title: "windows"
 date: 2023-07-21T10:14:26
-lastmod: 2025-09-03T10:56:40
+lastmod: 2025-09-11T15:16:40
 categories: ['Windows']
 keywords: windows
 description: Using Windows
@@ -134,8 +134,9 @@ setup.exe /configure Configuration.xml
 激活 Windows/Office 使用开源的[MAS](https://github.com/massgravel/Microsoft-Activation-Scripts)或者闭源的[HEU](https://github.com/zbezj/HEU_KMS_Activator)
 
 **MAS激活**
+
 ```
-irm https://massgrave.dev/get | iex
+irm https://get.activated.win | iex
 ```
 
 配置同步
