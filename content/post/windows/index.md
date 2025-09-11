@@ -31,6 +31,8 @@ Using Windows from a Developer's Perspective
 
 [参考](https://mirrors.sdu.edu.cn/docs/guide/Windows-iso)
 
+[MSDL下载ISO](https://msdl.gravesoft.dev/#2618)
+
 - 微软官方下载
   - 使用**任意设备**打开 [Windows 11](https://www.microsoft.com/zh-cn/software-download/windows11/)
   - 使用**除Windows**以外的设备打开 [Windows 10](https://www.microsoft.com/zh-cn/software-download/windows10ISO/)
