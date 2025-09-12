@@ -1,7 +1,7 @@
 ---
 title: go-install
-date: 2022-02-23T16:49:28+0800
-lastmod: 2023-11-22T14:02:28+0800
+date: 2022-02-23T16:49:28
+lastmod: 2025-09-12T17:43:26
 tags: ['Linux']
 categories: ['Go']
 keywords: Go
@@ -10,16 +10,16 @@ description: Go Intall on Linux
 
 ```bash
 #!/bin/bash
-echo '安装go1.21.4'
-if ! command -v wget &> /dev/null
-then
+filename=go1.25.1.linux-amd64.tar.gz
+echo "Intall ${filename}"
+if ! command -v wget > /dev/null;then
     echo "wget could not be found"
     exit
 fi
 # 下载
-wget https://golang.google.cn/dl/go1.21.4.linux-amd64.tar.gz
+wget https://golang.google.cn/dl/${filename}
 # 删除旧版本, 解压新版本
-rm -rf /usr/local/go && tar -C /usr/local -xzf go1.21.4.linux-amd64.tar.gz
+rm -rf /usr/local/go && tar -C /usr/local -xzf ${filename}
 
 mkdir -p $HOME/go/src
 mkdir -p $HOME/go/pkg
