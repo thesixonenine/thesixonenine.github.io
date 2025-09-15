@@ -1,7 +1,7 @@
 ---
 title: go-install
 date: 2022-02-23T16:49:28
-lastmod: 2025-09-12T17:43:26
+lastmod: 2025-09-15T14:13:26
 tags: ['Linux']
 categories: ['Go']
 keywords: Go
@@ -33,6 +33,8 @@ source /etc/profile
 # 设置代理
 go env -w GO111MODULE=on
 go env -w GOPROXY=https://goproxy.cn,direct
+# 还原代理
+go env -w GOPROXY=https://proxy.golang.org,direct
 # 打印go版本
 go version
 ```
