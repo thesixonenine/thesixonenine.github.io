@@ -1,7 +1,7 @@
 ---
 title: "nexus"
 date: 2025-09-11T16:59:26
-lastmod: 2025-09-11T16:59:26
+lastmod: 2025-09-17T14:35:26
 categories: ['Java']
 keywords: nexus
 description: Using Nexus
@@ -88,4 +88,79 @@ cd ~/.m2/repository
     </mirror>
   </mirrors>
 </settings>
+```
+
+## 三方包
+
+### 本地安装
+
+必填参数包括 **file**, **groupId**, **artifactId**, **version**
+
+选填参数 **maven.repo.local**
+
+```shell
+mvn install:install-file -Dmaven.repo.local= -DgroupId= -DartifactId= -Dversion= -Dfile= -Dpackaging=jar -DgeneratePom=true
+```
+
+eg:
+
+```shell
+mvn install:install-file "-Dmaven.repo.local=C:\Users\simple\.m2\repository" "-DgroupId=com.sankuai.sjst" "-DartifactId=MtOpJavaSDK" "-Dversion=1.0-SNAPSHOT" "-Dfile=C:\Users\simple\Desktop\MtOpJavaSDK-1.0-SNAPSHOT.jar" "-Dpackaging=jar" "-DgeneratePom=true"
+```
+
+### 部署到 Nexus
+
+必填参数包括 **file**, **groupId**, **artifactId**, **version**, **repositoryId**, **url**
+
+**repositoryId** 对应 settings.xml 中 server 节点的下的 id
+
+**url** 指向 Hosted 仓库
+
+```shell
+mvn deploy:deploy-file -DgroupId= -DartifactId= -Dversion= -Dfile= -DrepositoryId= -Durl= -Dpackaging=jar -DgeneratePom=true
+```
+
+eg:
+
+```shell
+mvn deploy:deploy-file \
+  -Dfile=C:\Users\simple\Desktop\MtOpJavaSDK-1.0-SNAPSHOT.jar \
+  -DgroupId=com.sankuai.sjst \
+  -DartifactId=MtOpJavaSDK \
+  -Dversion=1.0-SNAPSHOT \
+  -Dpackaging=jar \
+  -DgeneratePom=true \
+  -DrepositoryId=nexus \
+  -Durl=http://localhost:8081/repository/my-hosted-repo/
+```
+
+自定义 Maven 的配置文件并在命令中追加参数 --settings /path/to/nexus-settings.xml
+
+```xml
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <servers>
+    <server>
+      <id>nexus</id>
+      <username>Nexus 账号</username>
+      <password>Nexus 密码</password>
+    </server>
+  </servers>
+</settings>
+```
+
+eg:
+
+```powershell
+mvn deploy:deploy-file `
+  "-Dfile=C:\Users\simple\Desktop\MtOpJavaSDK-1.0-SNAPSHOT.jar" `
+  "-DgroupId=com.sankuai.sjst" `
+  "-DartifactId=MtOpJavaSDK" `
+  "-Dversion=1.0-SNAPSHOT" `
+  "-Dpackaging=jar" `
+  "-DgeneratePom=true" `
+  "-DrepositoryId=nexus" `
+  "-Durl=http://localhost:8081/repository/my-hosted-repo/" `
+  --settings "C:\Users\simple\Desktop\nexus-settings.xml"
 ```
