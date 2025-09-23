@@ -46,7 +46,7 @@ ENV HTTP_PROXY=socks5://host.docker.internal:1080 HTTPS_PROXY=socks5://host.dock
 ENV DEBIAN_FRONTEND=noninteractive TZ=Asia/Shanghai
 
 RUN sed -i "s/deb.debian.org/mirrors.aliyun.com/g" /etc/apt/sources.list.d/debian.sources && apt-get update > /dev/null && apt-get upgrade -y > /dev/null && \
-    apt-get install -y tzdata > /dev/null && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && \
+    apt-get install -y tzdata ncat > /dev/null && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && \
     sh -c "$(curl -fsLS get.chezmoi.io)"
 USER vscode
 RUN chezmoi init https://$GITHUB_USERNAME:$GITHUB_PAT@github.com/$GITHUB_USERNAME/dotfiles.git
