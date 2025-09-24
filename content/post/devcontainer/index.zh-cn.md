@@ -1,7 +1,7 @@
 ---
 title: "devcontainer"
 date: 2025-09-10T11:19:26
-lastmod: 2025-09-23T17:01:26
+lastmod: 2025-09-24T10:57:13
 categories: ['Docker']
 keywords: devcontainer
 description: Dev Container
@@ -15,12 +15,20 @@ description: Dev Container
 
 [模板列表](https://github.com/devcontainers/templates/tree/main/src)
 
-## 构建步骤
+## 构建说明
+
+1. 基于官方基础镜像, 替换源和时区, 并指定代理 **HTTP_PROXY/HTTPS_PROXY**
+2. 安装 [chezmoi](https://chezmoi.io) 来同步环境设置
+3. [chezmoi](https://chezmoi.io) 需要先创建 **dotfiles** 仓库及该仓库的只读 [PAT](https://github.com/settings/personal-access-tokens), [PAT](https://github.com/settings/personal-access-tokens) 同时也作为密码来解密用 **aes-128-cbc** 加密的 **gpg** 密钥文件
+4. 初始化 [chezmoi](https://chezmoi.io) 时会 clone **dotfiles** 仓库需要走代理
+5. 首次应用 [chezmoi](https://chezmoi.io) 时会先用 [PAT](https://github.com/settings/personal-access-tokens) 解密并导入 **gpg** 的密钥文件, 然后再使用 **gpg** 来解密 **ssh** 的公钥和私钥
+6. 使用 **ssh** 来 clone 仓库, 如果还需要走代理, 则在第 2 步中安装 [ncat](https://nmap.org/ncat)
+
 
 **环境变量**
 
-- GITHUB_USERNAME: GitHub 的用户名, 用于拉取 dotfiles 仓库
-- GITHUB_PAT: GitHub dotfiles 仓库的 [PAT](https://github.com/settings/personal-access-tokens), 用于拉取 dotfiles 仓库. 后续解密并导入 **gpg** 密钥文件也需要
+- GITHUB_USERNAME: GitHub 的用户名, 用于拉取 **dotfiles** 仓库
+- GITHUB_PAT: GitHub dotfiles 仓库的 [PAT](https://github.com/settings/personal-access-tokens), 用于拉取 **dotfiles** 仓库及后续解密并导入 **gpg** 密钥文件
 - HTTP_PROXY/HTTPS_PROXY: 代理, 用于安装和更新 [chezmoi](https://chezmoi.io)
 
 **构建命令**
@@ -28,9 +36,9 @@ description: Dev Container
 1. 修改 APT 源为阿里云并更新
 2. 修改时区为上海
 3. 安装 [chezmoi](https://chezmoi.io)
-4. 切换到 vscode 用户并初始化 dotfiles 仓库
+4. 切换到 vscode 用户并初始化 **dotfiles** 仓库
 
-> 后续的软件安装及环境配置均由 dotfiles 中的脚本完成
+> 后续的软件安装及环境配置均由 **dotfiles** 中的脚本完成
 
 ## 构建步骤(以 Java 为例)
 
