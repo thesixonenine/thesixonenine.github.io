@@ -1,7 +1,7 @@
 ---
 title: "devcontainer"
 date: 2025-09-10T11:19:26
-lastmod: 2025-09-24T10:57:13
+lastmod: 2025-09-24T12:03:13
 categories: ['Docker']
 keywords: devcontainer
 description: Dev Container
@@ -23,6 +23,15 @@ description: Dev Container
 4. 初始化 [chezmoi](https://chezmoi.io) 时会 clone **dotfiles** 仓库需要走代理
 5. 首次应用 [chezmoi](https://chezmoi.io) 时会先用 [PAT](https://github.com/settings/personal-access-tokens) 解密并导入 **gpg** 的密钥文件, 然后再使用 **gpg** 来解密 **ssh** 的公钥和私钥
 6. 使用 **ssh** 来 clone 仓库, 如果还需要走代理, 则在第 2 步中安装 [ncat](https://nmap.org/ncat)
+
+```shell
+# 加密 gpg 密钥文件
+openssl enc -aes-128-cbc -pbkdf2 -in ~/.gpg/SECRET.asc -out ~/.gpg/SECRET.asc.enc -pass env:GITHUB_PAT
+openssl enc -aes-128-cbc -pbkdf2 -in ~/.gpg/public.asc -out ~/.gpg/public.asc.enc -pass env:GITHUB_PAT
+# 解密 gpg 密钥文件
+openssl aes-128-cbc -d -pbkdf2 -in ~/.gpg/SECRET.asc.enc -out ~/.gpg/SECRET.asc -pass env:GITHUB_PAT
+openssl aes-128-cbc -d -pbkdf2 -in ~/.gpg/public.asc.enc -out ~/.gpg/public.asc -pass env:GITHUB_PAT
+```
 
 
 **环境变量**
