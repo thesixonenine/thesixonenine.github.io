@@ -1,7 +1,7 @@
 ---
 title: "devcontainer"
 date: 2025-09-10T11:19:26
-lastmod: 2025-09-24T12:03:13
+lastmod: 2025-09-25T10:45:55
 categories: ['Docker']
 keywords: devcontainer
 description: Dev Container
@@ -62,7 +62,8 @@ ENV GITHUB_USERNAME=${GITHUB_USERNAME} GITHUB_PAT=${GITHUB_PAT}
 ENV HTTP_PROXY=socks5://host.docker.internal:1080 HTTPS_PROXY=socks5://host.docker.internal:1080
 ENV DEBIAN_FRONTEND=noninteractive TZ=Asia/Shanghai
 
-RUN sed -i "s/deb.debian.org/mirrors.aliyun.com/g" /etc/apt/sources.list.d/debian.sources && apt-get update > /dev/null && apt-get upgrade -y > /dev/null && \
+RUN sed -i -e 's@deb.debian.org@mirrors.aliyun.com@;s@http:@https:@' /etc/apt/sources.list.d/debian.sources && \
+    apt-get update > /dev/null && apt-get upgrade -y > /dev/null && \
     apt-get install -y tzdata ncat > /dev/null && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && \
     sh -c "$(curl -fsLS get.chezmoi.io)"
 USER vscode
