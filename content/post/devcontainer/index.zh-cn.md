@@ -1,7 +1,7 @@
 ---
 title: "devcontainer"
 date: 2025-09-10T11:19:26
-lastmod: 2025-09-25T10:45:55
+lastmod: 2025-09-25T15:58:38
 categories: ['Docker']
 keywords: devcontainer
 description: Dev Container
@@ -39,13 +39,14 @@ openssl aes-128-cbc -d -pbkdf2 -in ~/.gpg/public.asc.enc -out ~/.gpg/public.asc 
 - GITHUB_USERNAME: GitHub 的用户名, 用于拉取 **dotfiles** 仓库
 - GITHUB_PAT: GitHub dotfiles 仓库的 [PAT](https://github.com/settings/personal-access-tokens), 用于拉取 **dotfiles** 仓库及后续解密并导入 **gpg** 密钥文件
 - HTTP_PROXY/HTTPS_PROXY: 代理, 用于安装和更新 [chezmoi](https://chezmoi.io)
+- TZ=Asia/Shanghai: 上海时区
+- DEBIAN_FRONTEND=noninteractive: 避免交互式提示
 
 **构建命令**
 
-1. 修改 APT 源为阿里云并更新
-2. 修改时区为上海
-3. 安装 [chezmoi](https://chezmoi.io)
-4. 切换到 vscode 用户并初始化 **dotfiles** 仓库
+1. 修改 `APT` 源为阿里云并更新
+2. 安装 [chezmoi](https://chezmoi.io), **ncat**(可选, 用于 **ssh** 走代理)
+3. 切换到 vscode 用户并初始化 **dotfiles** 仓库
 
 > 后续的软件安装及环境配置均由 **dotfiles** 中的脚本完成
 
@@ -64,11 +65,17 @@ ENV DEBIAN_FRONTEND=noninteractive TZ=Asia/Shanghai
 
 RUN sed -i -e 's@deb.debian.org@mirrors.aliyun.com@;s@http:@https:@' /etc/apt/sources.list.d/debian.sources && \
     apt-get update > /dev/null && apt-get upgrade -y > /dev/null && \
-    apt-get install -y tzdata ncat > /dev/null && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && \
+    apt-get install -y ncat > /dev/null && \
     sh -c "$(curl -fsLS get.chezmoi.io)"
 USER vscode
 RUN chezmoi init https://$GITHUB_USERNAME:$GITHUB_PAT@github.com/$GITHUB_USERNAME/dotfiles.git
 ENTRYPOINT ["bash"]
+```
+
+如果基础镜像不支持通过环境变量 **TZ** 来修改时区, 则可以在更新软件包后安装 `tzdata` 来修改时区
+
+```shell
+apt-get install -y tzdata > /dev/null && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 ```
 
 **Build**
