@@ -1,7 +1,7 @@
 ---
 title: docker-install
 date: 2022-03-22T18:27:00+0800
-lastmod: 2022-03-22T18:27:00+0800
+lastmod: 2025-09-28T10:49:23
 tags: ['Linux']
 categories: ['Docker']
 keywords: docker
@@ -75,6 +75,8 @@ docker run -d --name mysql \
 
 ```bash
 #!/bin/bash
+# delete unused none image
+docker rmi $(docker images -f "dangling=true" -q)
 # delete unused image container cache
 docker system prune --all
 # delete unused volume
