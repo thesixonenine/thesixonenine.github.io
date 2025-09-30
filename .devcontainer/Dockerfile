@@ -8,7 +8,7 @@ ARG VARIANT=hugo
 ARG VERSION=latest
 ARG GITHUB_PAT
 ENV GITHUB_USERNAME=thesixonenine GITHUB_PAT=${GITHUB_PAT}
-ENV HTTP_PROXY=socks5://host.docker.internal:1080 HTTPS_PROXY=socks5://host.docker.internal:1080
+ENV HTTP_PROXY=socks5://host.docker.internal:1080 HTTPS_PROXY=socks5://host.docker.internal:1080 GOPROXY=https://goproxy.cn,direct
 ENV DEBIAN_FRONTEND=noninteractive TZ=Asia/Shanghai
 
 # Download Hugo
