@@ -1,11 +1,11 @@
 ---
-title: docker-install
+title: docker-tutorial
 date: 2022-03-22T18:27:00+0800
-lastmod: 2025-09-28T10:49:23
+lastmod: 2025-10-09T10:27:23
 tags: ['Linux']
 categories: ['Docker']
 keywords: docker
-description: CentOS 7 docker-ce install; portainer install
+description: 
 ---
 
 ## docker install
@@ -77,6 +77,8 @@ docker run -d --name mysql \
 #!/bin/bash
 # delete unused none image
 docker rmi $(docker images -f "dangling=true" -q)
+# powershell
+docker images -f "dangling=true" -q | % { docker rmi $_ }
 # delete unused image container cache
 docker system prune --all
 # delete unused volume
