@@ -21,3 +21,10 @@ security:
       - ^asciidoctor$
     osEnv:
       - (?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GEM_PATH|GO\w+)$
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "Offline"
+    - "WebAppManifest"

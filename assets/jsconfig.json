@@ -3,7 +3,13 @@
   "baseUrl": ".",
   "paths": {
    "*": [
-    "..\\..\\..\\..\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\!cai!jimmy\\hugo-theme-stack\\v3@v3.31.0\\assets\\*"
+    "..\\..\\..\\..\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\!cai!jimmy\\hugo-theme-stack\\v3@v3.31.0\\assets\\*",
+    "..\\..\\..\\..\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\!google!chrome\\workbox@v7.3.0+incompatible\\packages\\workbox-cacheable-response\\src\\*",
+    "..\\..\\..\\..\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\!google!chrome\\workbox@v7.3.0+incompatible\\packages\\workbox-core\\src\\*",
+    "..\\..\\..\\..\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\!google!chrome\\workbox@v7.3.0+incompatible\\packages\\workbox-expiration\\src\\*",
+    "..\\..\\..\\..\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\!google!chrome\\workbox@v7.3.0+incompatible\\packages\\workbox-routing\\src\\*",
+    "..\\..\\..\\..\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\!google!chrome\\workbox@v7.3.0+incompatible\\packages\\workbox-strategies\\src\\*",
+    "..\\..\\..\\..\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\jakearchibald\\idb@v8.0.3+incompatible\\src\\*"
    ]
   }
  }

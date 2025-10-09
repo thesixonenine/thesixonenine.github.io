@@ -127,3 +127,31 @@ comments:
   cusdis:
     host: ""
     id: ""
+# PWA
+description: "Simple's blog"
+pwa:
+  debug: false
+  icon_path: img/avatar.png
+  offline_image: img/offline.png
+  precaches:
+    # - url: "/"
+    # - url: "/precached/"
+    - url: "https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/font-awesome/6.3.0/js/all.min.js"
+  caches:
+    font:
+      max_age: 2592000
+      origins: []
+      strategy: cache-first
+    image:
+      max_age: 2592000
+      origins:
+        - "https://avatars.githubusercontent.com/"
+      strategy: cache-first
+    script:
+      max_age: 2592000
+      origins: []
+      strategy: cache-first
+    style:
+      max_age: 2592000
+      origins: []
+      strategy: cache-first
