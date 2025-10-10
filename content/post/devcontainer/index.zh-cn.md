@@ -1,7 +1,7 @@
 ---
 title: "devcontainer"
 date: 2025-09-10T11:19:26
-lastmod: 2025-09-25T15:58:38
+lastmod: 2025-10-10T16:06:35
 categories: ['Docker']
 keywords: devcontainer
 description: Dev Container
@@ -78,9 +78,49 @@ ENTRYPOINT ["bash"]
 apt-get install -y tzdata > /dev/null && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 ```
 
+**devcontainer.json**
+
+```json
+{
+  "name": "thesixonenine/dev-java:8-bookworm",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+        "GITHUB_USERNAME": "thesixonenine", 
+        "GITHUB_PAT": "${localEnv:GITHUB_PAT}"
+    }
+  },
+  "customizations": { "vscode": { "settings": {
+        "extensions.allowed": {
+            "microsoft": false,
+            "github": false
+        }
+  }}}
+}
+```
+
 **Build**
 
 需要在 GitHub 上申请 [PAT](https://github.com/settings/personal-access-tokens), 权限只勾选 dotfiles 仓库的读取权限即可
+
+
+**提前构建**
+
+使用 [Dev Container CLI](https://github.com/devcontainers/cli) 构建镜像
+
+```shell
+npm install -g @devcontainers/cli --registry=https://registry.npmmirror.com
+```
+
+将以上 `Dockerfile` 和 `devcontainer.json` 置于当前目录下的 `.devcontainer` 目录中, 配置环境变量 `GITHUB_PAT` 后在当前目录下执行
+
+```shell
+devcontainer build --no-cache --workspace-folder . --image-name thesixonenine/dev-java:8-bookworm
+```
+
+**直接构建**
+
+直接根据 `Dockerfile` 进行构建
 
 ```shell
 docker build --no-cache --build-arg GITHUB_USERNAME=thesixonenine --build-arg GITHUB_PAT=github_pat_* -t thesixonenine/dev-java:8-bookworm .
