@@ -70,7 +70,7 @@ function update-lastmod {
 # 管理员权限下开启
 winget settings --enable ProxyCommandLineOptions
 # 安装走代理
-winget install JanDeDobbeleer.OhMyPosh -s winget --proxy http://127.0.0.1:10809
+winget install JanDeDobbeleer.OhMyPosh -s winget --proxy http://127.0.0.1:1080
 ```
 
 ### 删除文件(目录)

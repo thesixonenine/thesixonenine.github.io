@@ -2,8 +2,8 @@
 title: scoop
 date: 2022-08-08T11:11:21+0800
 lastmod: 2022-08-31T17:19:21+0800
-tags: ['Windows']
-categories: ['Scoop']
+tags: ['Scoop']
+categories: ['Windows']
 keywords: scoop
 description: scoop使用
 ---
@@ -25,7 +25,7 @@ irm get.scoop.sh | iex
 # 查看代理
 scoop config proxy
 # 设置代理
-scoop config proxy 127.0.0.1:10809
+scoop config proxy 127.0.0.1:1080
 # 取消代理
 scoop config rm proxy
 ```

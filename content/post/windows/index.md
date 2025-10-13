@@ -212,29 +212,23 @@ echo "if [ -f ~/.shellrc ]; then source ~/.shellrc ; fi" >> ~/.bashrc
 function git-proxy-set {
 proxy_ip=$(ip route show | grep -i default | awk '{ print $3}')
 if [ -d ./.git ]; then
-    git config http.proxy http://${proxy_ip}:10809
-    git config https.proxy http://${proxy_ip}:10809
+    git config http.proxy http://${proxy_ip}:1080
 else
-    git config --global http.proxy http://${proxy_ip}:10809
-    git config --global https.proxy http://${proxy_ip}:10809
+    git config --global http.proxy http://${proxy_ip}:1080
 fi
 }
 function git-proxy-unset {
 if [ -d ./.git ]; then
     git config --unset http.proxy
-    git config --unset https.proxy
 else
     git config --global --unset http.proxy
-    git config --global --unset https.proxy
 fi
 }
 function git-proxy-get {
 if [ -d ./.git ]; then
     git config http.proxy
-    git config https.proxy
 else
     git config --global http.proxy
-    git config --global https.proxy
 fi
 }
 function git-proxy-command {
@@ -372,7 +366,7 @@ git config commit.gpgsign true
 
 ```shell
 # 下载安装脚本
-curl --proxy 172.26.112.1:10809 -fsSL https://get.docker.com -o get-docker.sh
+curl --proxy 172.26.112.1:1080 -fsSL https://get.docker.com -o get-docker.sh
 # 执行安装
 sudo DOWNLOAD_URL=https://mirrors.ustc.edu.cn/docker-ce sh get-docker.sh
 
