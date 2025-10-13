@@ -3,7 +3,7 @@ title: centos7-config
 date: 2022-01-16T15:24:10+0800
 lastmod: 2025-01-06T16:02:59+08:00
 tags: ['Linux', 'Vim']
-categories: ['CentOS']
+categories: ['Linux']
 keywords:
 description: CentOS7常用配置
 ---
@@ -78,65 +78,63 @@ function ssh-copy-id([string]$userAtMachine, $args){
 ################
 ### HTTP 代理 ###
 ################
-function proxy_set([string]$protocol, [int]$port, $args){
+function proxy-set([string]$protocol, [int]$port, $args){
     if ([String]::IsNullOrEmpty($protocol) -or 'http','socks5' -cnotcontains $protocol) {
         # 区分大小写, 且左边不包含右边
         "Invalid protocol[${protocol}], The default value of socks5 will be used"
         $protocol = "socks5"
     }
     if ($port -le 0 -or $port -gt 65535) {
-        "Invalid port[${port}], The default value of 10808 will be used"
-        $port = 10808
+        "Invalid port[${port}], The default value of 1080 will be used"
+        $port = 1080
     }
     Set-Item Env:http_proxy "${protocol}://127.0.0.1:${port}"
     Set-Item Env:https_proxy "${protocol}://127.0.0.1:${port}"
+    Set-Item Env:GIT_HTTP_PROXY "${protocol}://127.0.0.1:${port}"
 }
-function proxy_unset {
+function proxy-unset {
     Remove-Item Env:http_proxy
     Remove-Item Env:https_proxy
 }
-function proxy_get {
+function proxy-get {
     "http_proxy  = ${env:http_proxy}"
     "https_proxy = ${env:https_proxy}"
 }
-function proxy_test {
+function proxy-test {
     curl -v http://www.google.com
 }
-function proxy_commad {
-    "设置代理: proxy_set"
-    "重置代理: proxy_unset"
-    "查看代理: proxy_get"
-    "测试代理: proxy_test"
+function proxy-commad {
+    "设置代理: proxy-set"
+    "重置代理: proxy-unset"
+    "查看代理: proxy-get"
+    "测试代理: proxy-test"
 }
 
 ###############
 ### Git 代理 ###
 ###############
-function git_proxy_set([string]$protocol, [int]$port, $args){
+function git-proxy-set([string]$protocol, [int]$port, $args){
     if ([String]::IsNullOrEmpty($protocol) -or 'http','socks5' -cnotcontains $protocol) {
         # 区分大小写, 且左边不包含右边
         "Invalid protocol[${protocol}], The default value of socks5 will be used"
         $protocol = "socks5"
     }
     if ($port -le 0 -or $port -gt 65535) {
-        "Invalid port[${port}], The default value of 10808 will be used"
-        $port = 10808
+        "Invalid port[${port}], The default value of 1080 will be used"
+        $port = 1080
     }
     git config http.proxy "${protocol}://127.0.0.1:${port}"
-    git config https.proxy "${protocol}://127.0.0.1:${port}"
 }
-function git_proxy_unset {
+function git-proxy-unset {
     git config --unset http.proxy
-    git config --unset https.proxy
 }
-function git_proxy_get {
+function git-proxy-get {
     git config http.proxy
-    git config https.proxy
 }
-function git_proxy_commad {
-    "设置代理: git_proxy_set"
-    "重置代理: git_proxy_unset"
-    "查看代理: git_proxy_get"
+function git-proxy-commad {
+    "设置代理: git-proxy-set"
+    "重置代理: git-proxy-unset"
+    "查看代理: git-proxy-get"
 }
 ```
 
