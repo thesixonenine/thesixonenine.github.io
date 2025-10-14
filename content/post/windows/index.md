@@ -1,7 +1,7 @@
 ---
 title: "windows"
 date: 2023-07-21T10:14:26
-lastmod: 2025-09-11T15:16:40
+lastmod: 2025-10-14T10:16:40
 categories: ['Windows']
 keywords: windows
 description: Using Windows
@@ -23,7 +23,7 @@ Using Windows from a Developer's Perspective
 
 ### Reset Windows
 
-- `win + i` 打开设置.
+- `win` + `i` 打开设置.
 - 输入 `重置此电脑` 并按 `Enter` 确认.
 - 点击 `开始`, 按提示操作即可.
 
@@ -46,12 +46,26 @@ ISO文件Hash校验(SHA256)
 if ((Get-FileHash -Algorithm SHA256 -Path "PATH/TO/FILE").Hash -ne "HASH") { Write-Host "文件校验失败" } else { Write-Host "文件校验成功" }
 ```
 
-Windows11 跳过网络验证
+### Windows11 跳过微软账户登录
 
-- Shift + F10 打开 `CMD` 窗口并输入 regedit
+**先断网** **先断网** **先断网**
+
+#### 手动修改注册表
+
+- `Shift` + `F10` 打开 `CMD` 窗口并输入 `regedit`
 - 定位到 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE`
-- 新建DWORD(32位)值,名称为 `BypassNRO`, 值设置为1
+- 新建 `DWORD(32位)值`, 名称为 `BypassNRO`, 值设置为 `1`
 - 命令行输入 `logoff` 或 `shutdown /r /t 0`
+
+#### 一行命令修改注册表
+
+```powershell
+reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_DWORD /d 1 /f
+```
+
+```shell
+shutdown /r /t 0
+```
 
 ## System Setting
 
@@ -63,8 +77,9 @@ Windows11 跳过网络验证
 
 ```powershell
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" /v FlightSettingsMaxPauseDays /t reg_dword /d 10000 /f
-# Type "Check for updates" in the search box and enter. Find "Pause updates," then click the dropdown menu to select a time.
 ```
+
+> Type "Check for updates" in the search box and enter. Find "Pause updates," then click the dropdown menu to select a time.
 
 ### Install Script
 
