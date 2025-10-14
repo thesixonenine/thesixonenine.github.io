@@ -20,7 +20,7 @@ description: Dev Container
 1. 基于官方基础镜像, 替换源和时区, 并指定代理 **HTTP_PROXY/HTTPS_PROXY**
 2. 安装 [chezmoi](https://chezmoi.io) 来同步环境设置
 3. [chezmoi](https://chezmoi.io) 需要先创建 **dotfiles** 仓库及该仓库的只读 [PAT](https://github.com/settings/personal-access-tokens), [PAT](https://github.com/settings/personal-access-tokens) 同时也作为密码来解密用 **aes-128-cbc** 加密的 **gpg** 密钥文件
-4. 初始化 [chezmoi](https://chezmoi.io) 时会 clone **dotfiles** 仓库需要走代理
+4. 初始化 [chezmoi](https://chezmoi.io) 时会 clone **dotfiles** 仓库需要走代理, 而 git 并不会使用 `HTTP_PROXY` 或 `HTTPS_PROXY`, 需要手动指定
 5. 首次应用 [chezmoi](https://chezmoi.io) 时会先用 [PAT](https://github.com/settings/personal-access-tokens) 解密并导入 **gpg** 的密钥文件, 然后再使用 **gpg** 来解密 **ssh** 的公钥和私钥
 6. 使用 **ssh** 来 clone 仓库, 如果还需要走代理, 则在第 2 步中安装 [ncat](https://nmap.org/ncat)
 
@@ -68,7 +68,8 @@ RUN sed -i -e 's@deb.debian.org@mirrors.aliyun.com@;s@http:@https:@' /etc/apt/so
     apt-get install -y ncat > /dev/null && \
     sh -c "$(curl -fsLS get.chezmoi.io)"
 USER vscode
-RUN chezmoi init https://$GITHUB_USERNAME:$GITHUB_PAT@github.com/$GITHUB_USERNAME/dotfiles.git
+RUN git config --global http.https://github.com.proxy $HTTP_PROXY && \
+    chezmoi init https://$GITHUB_USERNAME:$GITHUB_PAT@github.com/$GITHUB_USERNAME/dotfiles.git
 ENTRYPOINT ["bash"]
 ```
 
