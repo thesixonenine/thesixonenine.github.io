@@ -1,7 +1,7 @@
 ---
 title: "devcontainer"
 date: 2025-09-10T11:19:26
-lastmod: 2025-10-15T15:00:00
+lastmod: 2025-10-15T17:55:19+0800
 categories: ['Docker']
 keywords: devcontainer
 description: Dev Container
@@ -225,6 +225,31 @@ RUN npm config set registry https://registry.npmmirror.com
 
 另外, 还可以预先拉取该 `Dockerfile` 中的基础镜像 `mcr.microsoft.com/devcontainers/base:0-alpine-3.20`
 
+## 镜像源替换
+
+### debian
+
+```shell
+sudo sed -i -e 's@deb.debian.org@mirrors.aliyun.com@;s@http:@https:@' /etc/apt/sources.list.d/debian.sources
+```
+
+### ubuntu
+
+```shell
+sudo sed -i 's@//.*archive.ubuntu.com@//mirrors.aliyun.com@g' /etc/apt/sources.list.d/ubuntu.sources
+```
+
+### alpine
+
+```shell
+sudo sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
+```
+
+### npm
+
+```shell
+npm config set registry https://registry.npmmirror.com
+```
 
 ## MySQL Client
 
