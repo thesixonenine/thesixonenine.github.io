@@ -1,7 +1,7 @@
 ---
 title: "devcontainer"
 date: 2025-09-10T11:19:26
-lastmod: 2025-10-10T16:06:35
+lastmod: 2025-10-15T15:00:00
 categories: ['Docker']
 keywords: devcontainer
 description: Dev Container
@@ -134,6 +134,97 @@ cd && chezmoi update
 ```
 
 > 构建其他语言的镜像基本相同, 只需要替换基础镜像名称和构建的镜像名称即可.
+
+## 使用构建
+
+1. 打开 `VSCode` 并用 `Ctrl` + `Shift` + `p` 打开命令面板
+2. 输入 `Dev Containers: Clone Repository in Named Container Volume...` 并选中
+3. 输入仓库地址, 例如: `git@github.com:thesixonenine/dotfiles.git`
+4. 选择新建命名的卷并输入名称, 与仓库名称相同即可
+5. 按 `Enter` 确认使用默认的目录名称, 即与仓库名称相同
+
+此时开始构建, 构建过程中需要从指定镜像开始, 例如 `/tmp/vsch-simple/bootstrap-image/0.427.0/bootstrap.Dockerfile`
+
+在该 `Dockerfile` 中涉及 `alpine` 的镜像及软件安装, 可以先关闭 `VSCode`, 然后在 `WSL2` 中编辑该文件, 增加镜像源
+
+修改前的 `Dockerfile` 内容如下:
+
+```Dockerfile
+FROM mcr.microsoft.com/devcontainers/base:0-alpine-3.20
+
+COPY host-ca-certificates.crt /tmp/host-ca-certificates.crt
+RUN cat /tmp/host-ca-certificates.crt >> /etc/ssl/certs/ca-certificates.crt
+RUN csplit -f /usr/local/share/ca-certificates/host-ca-certificate- -b '%02d.pem' -z -s /tmp/host-ca-certificates.crt '/-----BEGIN CERTIFICATE-----/' '{*}'
+ENV NODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt
+
+# Avoiding OpenSSH >8.8 for compatibility for now: https://github.com/microsoft/vscode-remote-release/issues/7482
+RUN echo "@old https://dl-cdn.alpinelinux.org/alpine/v3.15/main" >> /etc/apk/repositories
+
+RUN apk add --no-cache \
+        git-lfs \
+        nodejs \
+        python3 \
+        npm \
+        make \
+        g++ \
+        docker-cli \
+        docker-cli-buildx \
+        docker-cli-compose \
+        openssh-client-default@old \
+        ;
+
+RUN npm config set cafile /etc/ssl/certs/ca-certificates.crt && cd && npm i node-pty || echo "Continuing without node-pty."
+
+COPY .vscode-remote-containers /root/.vscode-remote-containers
+```
+
+修改后的 `Dockerfile` 内容如下:
+
+```Dockerfile
+FROM mcr.microsoft.com/devcontainers/base:0-alpine-3.20
+
+COPY host-ca-certificates.crt /tmp/host-ca-certificates.crt
+RUN cat /tmp/host-ca-certificates.crt >> /etc/ssl/certs/ca-certificates.crt
+RUN csplit -f /usr/local/share/ca-certificates/host-ca-certificate- -b '%02d.pem' -z -s /tmp/host-ca-certificates.crt '/-----BEGIN CERTIFICATE-----/' '{*}'
+ENV NODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt
+
+# Avoiding OpenSSH >8.8 for compatibility for now: https://github.com/microsoft/vscode-remote-release/issues/7482
+RUN echo "@old https://dl-cdn.alpinelinux.org/alpine/v3.15/main" >> /etc/apk/repositories
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
+RUN apk add --no-cache \
+        git-lfs \
+        nodejs \
+        python3 \
+        npm \
+        make \
+        g++ \
+        docker-cli \
+        docker-cli-buildx \
+        docker-cli-compose \
+        openssh-client-default@old \
+        ;
+RUN npm config set registry https://registry.npmmirror.com
+RUN npm config set cafile /etc/ssl/certs/ca-certificates.crt && cd && npm i node-pty || echo "Continuing without node-pty."
+
+COPY .vscode-remote-containers /root/.vscode-remote-containers
+```
+
+修改点如下:
+
+**指定 apk 镜像源**
+
+```Dockerfile
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
+```
+
+**指定 npm 镜像源**
+
+```Dockerfile
+RUN npm config set registry https://registry.npmmirror.com
+```
+
+另外, 还可以预先拉取该 `Dockerfile` 中的基础镜像 `mcr.microsoft.com/devcontainers/base:0-alpine-3.20`
+
 
 ## MySQL Client
 
