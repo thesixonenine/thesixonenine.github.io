@@ -147,6 +147,17 @@ cd && chezmoi update
 
 在该 `Dockerfile` 中涉及 `alpine` 的镜像及软件安装, 可以先关闭 `VSCode`, 然后在 `WSL2` 中编辑该文件, 增加镜像源
 
+直接命令修改
+
+1. 修改软件镜像源
+2. 修改npm镜像源
+3. 指定git针对 `https://github.com` 进行代理, 以便在 `VSCode` 中使用 `https` 的方式进行 Clone 的时候加快速度
+
+```shell
+sed -i '10cRUN sed -i '\''s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g'\'' /etc/apk/repositories' /tmp/vsch-simple/bootstrap-image/0.427.0/bootstrap.Dockerfile \
+sed -i '23cRUN npm config set registry https://registry.npmmirror.com && git config --global http.https://github.com.proxy socks5://host.docker.internal:1080' /tmp/vsch-simple/bootstrap-image/0.427.0/bootstrap.Dockerfile
+```
+
 修改前的 `Dockerfile` 内容如下:
 
 ```Dockerfile
@@ -203,7 +214,7 @@ RUN apk add --no-cache \
         docker-cli-compose \
         openssh-client-default@old \
         ;
-RUN npm config set registry https://registry.npmmirror.com
+RUN npm config set registry https://registry.npmmirror.com && git config --global http.https://github.com.proxy socks5://host.docker.internal:1080
 RUN npm config set cafile /etc/ssl/certs/ca-certificates.crt && cd && npm i node-pty || echo "Continuing without node-pty."
 
 COPY .vscode-remote-containers /root/.vscode-remote-containers
