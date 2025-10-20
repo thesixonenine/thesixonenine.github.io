@@ -1,7 +1,7 @@
 ---
 title: "devcontainer"
 date: 2025-09-10T11:19:26
-lastmod: 2025-10-15T17:55:19+0800
+lastmod: 2025-10-20T10:23:02+0800
 categories: ['Docker']
 keywords: devcontainer
 description: Dev Container
@@ -144,6 +144,8 @@ cd && chezmoi update
 5. 按 `Enter` 确认使用默认的目录名称, 即与仓库名称相同
 
 此时开始构建, 构建过程中需要从指定镜像开始, 例如 `/tmp/vsch-simple/bootstrap-image/0.427.0/bootstrap.Dockerfile`
+
+> `0.427.0` 是指 `Dev Containers` 插件的版本, Identifier 是 `ms-vscode-remote.remote-containers`
 
 在该 `Dockerfile` 中涉及 `alpine` 的镜像及软件安装, 可以先关闭 `VSCode`, 然后在 `WSL2` 中编辑该文件, 增加镜像源
 
