@@ -1,7 +1,7 @@
 ---
 title: docker-tutorial
 date: 2022-03-22T18:27:00+0800
-lastmod: 2025-10-09T10:27:23
+lastmod: 2025-10-21T14:42:02+0800
 tags: ['Linux']
 categories: ['Docker']
 keywords: docker
@@ -57,8 +57,7 @@ docker run hello-world
 
 ### mysql install
 
-```bash
-#!/bin/bash
+```shell
 docker run -d --name mysql \
     --network host \
     --restart unless-stopped \
@@ -73,8 +72,7 @@ docker run -d --name mysql \
 
 ### delete unused data
 
-```bash
-#!/bin/bash
+```shell
 # delete unused none image
 docker rmi $(docker images -f "dangling=true" -q)
 # powershell
@@ -85,10 +83,17 @@ docker system prune --all
 docker volume prune
 ```
 
+### stop all container
+
+```shell
+docker ps -q | xargs docker stop
+# powershell
+docker ps -q | % { docker stop $_ }
+```
+
 ## docker uninstall
 
-```bash
-#!/bin/bash
+```shell
 # docker uninstall
 sudo yum remove docker-ce docker-ce-cli containerd.io
 # delete all images, containers, and volumes
@@ -98,14 +103,13 @@ sudo rm -rf /var/lib/containerd
 
 ## docker compose install
 
-```bash
+```shell
 sudo yum install docker-compose-plugin
 ```
 
 ## portainer install
 
-```bash
-#!/bin/bash
+```shell
 # portainer install
 docker volume create portainer_data
 docker run -d -p 8000:8000 -p 9000:9000 -p 9443:9443 \
