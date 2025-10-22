@@ -1,7 +1,7 @@
 ---
 title: docker-tutorial
 date: 2022-03-22T18:27:00+0800
-lastmod: 2025-10-21T14:42:02+0800
+lastmod: 2025-10-22T14:04:06+0800
 tags: ['Linux']
 categories: ['Docker']
 keywords: docker
@@ -89,6 +89,8 @@ docker volume prune
 docker ps -q | xargs docker stop
 # powershell
 docker ps -q | % { docker stop $_ }
+# powershell
+docker ps -q | ForEach-Object { docker stop $_ }
 ```
 
 ## docker uninstall
