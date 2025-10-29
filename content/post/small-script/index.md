@@ -294,6 +294,26 @@ file='/root/640_360.flv'
 nohup /usr/local/bin/ffmpeg -re -stream_loop 3 -i ${file} -vcodec libx264 -acodec aac -f flv ${url}${passwd} 1>/dev/null 2>&1 &
 ```
 
+### 定时删除过去30天没有修改过的文件
+
+```bash
+#!/bin/bash
+logs_paths=(
+    "/home/app/apache-tomcat-8.5.50/logs/"
+    "/home/app/LOGBACK/cloud/tomcat/"
+)
+
+for logs_path in "${logs_paths[@]}"; do
+    if [ ! -d "$logs_path" ]; then
+        echo "path not exist - $logs_path"
+        continue
+    fi
+    find "$logs_path" -mtime +30 -type f -name "*.txt" -exec rm -f {} \;
+    find "$logs_path" -mtime +30 -type f -name "*.out" -exec rm -f {} \;
+    find "$logs_path" -mtime +30 -type f -name "*.log" -exec rm -f {} \;
+done
+```
+
 ### 添加 Tomcat 为 Systemd 服务
 
 ```bash
