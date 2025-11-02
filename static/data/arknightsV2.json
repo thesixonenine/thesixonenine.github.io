@@ -4698,5 +4698,1025 @@
 		"isNew": false,
 		"gachaTs": "1757548970783",
 		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_121_lava",
+		"charName": "炎熔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996077712",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_124_kroos",
+		"charName": "克洛丝",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996090466",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_253_greyy",
+		"charName": "格雷伊",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996090466",
+		"pos": 1
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_117_myrrh",
+		"charName": "末药",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996090466",
+		"pos": 2
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_366_acdrop",
+		"charName": "酸糖",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996090466",
+		"pos": 3
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_289_gyuki",
+		"charName": "缠丸",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996090466",
+		"pos": 4
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_4072_ironmn",
+		"charName": "白铁",
+		"rarity": 5,
+		"isNew": false,
+		"gachaTs": "1761996090466",
+		"pos": 5
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_4211_snhunt",
+		"charName": "雪猎",
+		"rarity": 4,
+		"isNew": true,
+		"gachaTs": "1761996090466",
+		"pos": 6
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_283_midn",
+		"charName": "月见夜",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996090466",
+		"pos": 7
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_1027_greyy2",
+		"charName": "承曦格雷伊",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1761996090466",
+		"pos": 8
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_192_falco",
+		"charName": "翎羽",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996090466",
+		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_289_gyuki",
+		"charName": "缠丸",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996136180",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_123_fang",
+		"charName": "芬",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996136180",
+		"pos": 1
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_337_utage",
+		"charName": "宴",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996136180",
+		"pos": 2
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_192_falco",
+		"charName": "翎羽",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996136180",
+		"pos": 3
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_123_fang",
+		"charName": "芬",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996136180",
+		"pos": 4
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_283_midn",
+		"charName": "月见夜",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996136180",
+		"pos": 5
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996136180",
+		"pos": 6
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_123_fang",
+		"charName": "芬",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996136180",
+		"pos": 7
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_284_spot",
+		"charName": "斑点",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996136180",
+		"pos": 8
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996136180",
+		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_253_greyy",
+		"charName": "格雷伊",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996145689",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_284_spot",
+		"charName": "斑点",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996145689",
+		"pos": 1
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_272_strong",
+		"charName": "孑",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996145689",
+		"pos": 2
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_440_pinecn",
+		"charName": "松果",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996145689",
+		"pos": 3
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_196_sunbr",
+		"charName": "古米",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996145689",
+		"pos": 4
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_110_deepcl",
+		"charName": "深海色",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996145689",
+		"pos": 5
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_290_vigna",
+		"charName": "红豆",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996145689",
+		"pos": 6
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_149_scave",
+		"charName": "清道夫",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996145689",
+		"pos": 7
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_149_scave",
+		"charName": "清道夫",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996145689",
+		"pos": 8
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_4211_snhunt",
+		"charName": "雪猎",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1761996145689",
+		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_193_frostl",
+		"charName": "霜叶",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996154389",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_133_mm",
+		"charName": "梅",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996154389",
+		"pos": 1
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_290_vigna",
+		"charName": "红豆",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996154389",
+		"pos": 2
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_118_yuki",
+		"charName": "白雪",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996154389",
+		"pos": 3
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_121_lava",
+		"charName": "炎熔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996154389",
+		"pos": 4
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_1045_svash2",
+		"charName": "凛御银灰",
+		"rarity": 5,
+		"isNew": true,
+		"gachaTs": "1761996154389",
+		"pos": 5
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_258_podego",
+		"charName": "波登可",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996154389",
+		"pos": 6
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_4041_chnut",
+		"charName": "褐果",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996154389",
+		"pos": 7
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_301_cutter",
+		"charName": "刻刀",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996154389",
+		"pos": 8
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_484_robrta",
+		"charName": "罗比菈塔",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996154389",
+		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_4171_wulfen",
+		"charName": "钼铅",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1761996221111",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_282_catap",
+		"charName": "空爆",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996221111",
+		"pos": 1
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_109_fmout",
+		"charName": "远山",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996221111",
+		"pos": 2
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_281_popka",
+		"charName": "泡普卡",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996221111",
+		"pos": 3
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_258_podego",
+		"charName": "波登可",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996221111",
+		"pos": 4
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_150_snakek",
+		"charName": "蛇屠箱",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996221111",
+		"pos": 5
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996221111",
+		"pos": 6
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_236_rope",
+		"charName": "暗索",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996221111",
+		"pos": 7
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996221111",
+		"pos": 8
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_122_beagle",
+		"charName": "米格鲁",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996221111",
+		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_237_gravel",
+		"charName": "砾",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996242387",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_281_popka",
+		"charName": "泡普卡",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996242387",
+		"pos": 1
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_235_jesica",
+		"charName": "杰西卡",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996242387",
+		"pos": 2
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_121_lava",
+		"charName": "炎熔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996242387",
+		"pos": 3
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_284_spot",
+		"charName": "斑点",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996242387",
+		"pos": 4
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_141_nights",
+		"charName": "夜烟",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996242387",
+		"pos": 5
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996242387",
+		"pos": 6
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_212_ansel",
+		"charName": "安赛尔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996242387",
+		"pos": 7
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_328_cammou",
+		"charName": "卡达",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996242387",
+		"pos": 8
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_150_snakek",
+		"charName": "蛇屠箱",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996242387",
+		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_328_cammou",
+		"charName": "卡达",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996250239",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_4211_snhunt",
+		"charName": "雪猎",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1761996250239",
+		"pos": 1
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_282_catap",
+		"charName": "空爆",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996250239",
+		"pos": 2
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_240_wyvern",
+		"charName": "香草",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996250239",
+		"pos": 3
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_121_lava",
+		"charName": "炎熔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996250239",
+		"pos": 4
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_130_doberm",
+		"charName": "杜宾",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996250239",
+		"pos": 5
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996250239",
+		"pos": 6
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_109_fmout",
+		"charName": "远山",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996250239",
+		"pos": 7
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_192_falco",
+		"charName": "翎羽",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996250239",
+		"pos": 8
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_236_rope",
+		"charName": "暗索",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996250239",
+		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_212_ansel",
+		"charName": "安赛尔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996260084",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_208_melan",
+		"charName": "玫兰莎",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996260084",
+		"pos": 1
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_122_beagle",
+		"charName": "米格鲁",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996260084",
+		"pos": 2
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_137_brownb",
+		"charName": "猎蜂",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996260084",
+		"pos": 3
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_149_scave",
+		"charName": "清道夫",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996260084",
+		"pos": 4
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_281_popka",
+		"charName": "泡普卡",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996260084",
+		"pos": 5
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_208_melan",
+		"charName": "玫兰莎",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996260084",
+		"pos": 6
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_491_humus",
+		"charName": "休谟斯",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996260084",
+		"pos": 7
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_193_frostl",
+		"charName": "霜叶",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996260084",
+		"pos": 8
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_4211_snhunt",
+		"charName": "雪猎",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1761996260084",
+		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_192_falco",
+		"charName": "翎羽",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996270632",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_122_beagle",
+		"charName": "米格鲁",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996270632",
+		"pos": 1
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_121_lava",
+		"charName": "炎熔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996270632",
+		"pos": 2
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_337_utage",
+		"charName": "宴",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996270632",
+		"pos": 3
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_302_glaze",
+		"charName": "安比尔",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996270632",
+		"pos": 4
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_240_wyvern",
+		"charName": "香草",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996270632",
+		"pos": 5
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_278_orchid",
+		"charName": "梓兰",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996270632",
+		"pos": 6
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_212_ansel",
+		"charName": "安赛尔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996270632",
+		"pos": 7
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_199_yak",
+		"charName": "角峰",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996270632",
+		"pos": 8
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996270632",
+		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_282_catap",
+		"charName": "空爆",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996277417",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_126_shotst",
+		"charName": "流星",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996277417",
+		"pos": 1
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_210_stward",
+		"charName": "史都华德",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996277417",
+		"pos": 2
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_366_acdrop",
+		"charName": "酸糖",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1761996277417",
+		"pos": 3
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_240_wyvern",
+		"charName": "香草",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996277417",
+		"pos": 4
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_208_melan",
+		"charName": "玫兰莎",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996277417",
+		"pos": 5
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_1046_sbell2",
+		"charName": "圣聆初雪",
+		"rarity": 5,
+		"isNew": true,
+		"gachaTs": "1761996277417",
+		"pos": 6
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_433_windft",
+		"charName": "掠风",
+		"rarity": 4,
+		"isNew": true,
+		"gachaTs": "1761996277417",
+		"pos": 7
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_212_ansel",
+		"charName": "安赛尔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1761996277417",
+		"pos": 8
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_4211_snhunt",
+		"charName": "雪猎",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1761996277417",
+		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_283_midn",
+		"charName": "月见夜",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1762044432234",
+		"pos": 0
 	}
 ]
