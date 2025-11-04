@@ -2,13 +2,13 @@
 main:
   - identifier: dashboard
     name: Login
-    url: https://todo-list.thesixonenine.site
+    url: https://react.thesixonenine.site
     params:
       icon: dashboard
       newtab: true
   - identifier: keyboard
     name: Keyboard
-    url: https://thesixonenine.github.io/keyboard
+    url: https://keyboard.thesixonenine.site
     params:
       icon: keyboard
       newtab: true
