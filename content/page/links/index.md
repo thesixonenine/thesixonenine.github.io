@@ -21,6 +21,10 @@ links:
     description: 查询IP
     website: http://ip.sb
     image: https://ip.sb/apple-touch-icon.png
+  - title: 中科大测速
+    description: 测试网络延迟/延迟抖动/下载速度/上传速度
+    website: https://test.ustc.edu.cn
+    image: https://test.ustc.edu.cn/favicon.ico
 menu:
     main: 
         weight: 4
