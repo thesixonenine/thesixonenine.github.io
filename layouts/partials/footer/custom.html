@@ -4,24 +4,6 @@
 
 <script>
     (function () {
-        // 增加 days
-        // function days() {
-        //     const nowDate = new Date();
-        //
-        //     const birthDate = '1994/09/27 19:00:00';
-        //     const birthDays = Math.floor((nowDate.getTime() - new Date(birthDate).getTime()) / (24 * 3600 * 1000));
-        //
-        //     const loveDate = '2022/11/18 10:00:00';
-        //     const loveDays = Math.floor((nowDate.getTime() - new Date(loveDate).getTime()) / (24 * 3600 * 1000));
-        //
-        //     const meetDate = '2013/7/16 10:00:00';
-        //     const meetDays = Math.floor((nowDate.getTime() - new Date(meetDate).getTime()) / (24 * 3600 * 1000));
-        //
-        //     return `存活<b>${birthDays}</b>天,相遇<b>${meetDays}</b>天,结婚<b>${loveDays}</b>天`;
-        // }
-        // const daysElement = document.createElement('div');
-        // daysElement.innerHTML = days();
-        // document.getElementsByClassName('powerby')[0].prepend(daysElement);
         function yuanToFen(text) {
             if (text != null && text != undefined && text != "") {
                 // 转换为字符串并去除空格
@@ -45,24 +27,23 @@
                 return text;
             }
         }
-        fetch('/data/days.json')
+        function fetchDaysByJSON() {
+            fetch('/data/days.json')
             .then(resp => resp.json())
-            .then(function (jsonObj) {
+            .then(function (days) {fetchDays(days['birthDate'], days['meetDate'], days['loveDate']);});
+        }
+        function fetchDays(birthDate, meetDate, loveDate) {
                 const nowDate = new Date();
-
-                const birthDate = jsonObj['birthDate'];
                 const birthDays = Math.floor((nowDate.getTime() - new Date(birthDate).getTime()) / (24 * 3600 * 1000));
-
-                const loveDate = jsonObj['loveDate'];
                 const loveDays = Math.floor((nowDate.getTime() - new Date(loveDate).getTime()) / (24 * 3600 * 1000));
-
-                const meetDate = jsonObj['meetDate'];
                 const meetDays = Math.floor((nowDate.getTime() - new Date(meetDate).getTime()) / (24 * 3600 * 1000));
-
                 const daysElement = document.createElement('div');
                 daysElement.innerHTML = `存活<b>${birthDays}</b>天,相遇<b>${meetDays}</b>天(${meetDate.split(' ')[0]}),结婚<b>${loveDays}</b>天(${loveDate.split(' ')[0]})`;
                 document.getElementsByClassName('powerby')[0].prepend(daysElement);
-            });
+        }
+        // fetchDaysByJSON();
+        fetchDays('1994/09/27 00:00:00', '2013/7/16 00:00:00', '2022/11/18 00:00:00');
+        // @Deprecated
         if (document.URL.indexOf('genshin-impact') > 0) {
             /*
             fetch('/data/star-rail-wish.json')
