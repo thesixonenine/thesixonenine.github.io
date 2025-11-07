@@ -2,7 +2,7 @@ baseurl: https://blog.thesixonenine.site
 languageCode: zh-CN
 pagination:
   pagerSize: 5
-title: Simple's blog
+title: Simple's Blog
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar
 defaultContentLanguage: zh-cn
