@@ -58,7 +58,7 @@ description: 家庭装修
 [六类水晶头的接线方法](https://zhidao.baidu.com/question/585232950.html)
 [网络插座怎么接线](https://www.sohu.com/a/293118553_120043435)
 
-![](./house/rj45.jpg)
+![](images/rj45.jpg)
 
 </details>
 
@@ -69,7 +69,7 @@ description: 家庭装修
 <details>
 <summary>查看</summary>
 
-![](./house/水路.png)
+![](images/水路.png)
 
 </details>
 
@@ -78,7 +78,7 @@ description: 家庭装修
 <details>
 <summary>查看</summary>
 
-![](./house/阳台窗帘吊顶方案.png)
+![](images/阳台窗帘吊顶方案.png)
 
 </details>
 
@@ -216,7 +216,7 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/次卫蹲便.jpg)
+![](images/次卫蹲便.jpg)
 
 </details>
 
@@ -392,8 +392,8 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/空调-美的-01.jpg)
-![](./house/空调-美的-02.jpg)
+![](images/空调-美的-01.jpg)
+![](images/空调-美的-02.jpg)
 
 </details>
 
@@ -405,8 +405,8 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/空调-美的-03.jpg)
-![](./house/空调-美的-04.jpg)
+![](images/空调-美的-03.jpg)
+![](images/空调-美的-04.jpg)
 
 </details>
 
@@ -420,7 +420,7 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/空调-美的-05.jpg)
+![](images/空调-美的-05.jpg)
 
 </details>
 
@@ -434,7 +434,7 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/空调-美的-06.jpg)
+![](images/空调-美的-06.jpg)
 
 </details>
 
@@ -445,8 +445,8 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/空调-美的-07.jpg)
-![](./house/空调-美的-08.jpg)
+![](images/空调-美的-07.jpg)
+![](images/空调-美的-08.jpg)
 
 </details>
 
@@ -461,8 +461,8 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/冰箱-海尔-01.jpg)
-![](./house/冰箱-海尔-02.jpg)
+![](images/冰箱-海尔-01.jpg)
+![](images/冰箱-海尔-02.jpg)
 
 </details>
 
@@ -472,8 +472,8 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/冰箱-海尔-03.jpg)
-![](./house/冰箱-海尔-04.jpg)
+![](images/冰箱-海尔-03.jpg)
+![](images/冰箱-海尔-04.jpg)
 
 </details>
 
@@ -487,8 +487,8 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/油烟机-老板-01.jpg)
-![](./house/油烟机-老板-02.jpg)
+![](images/油烟机-老板-01.jpg)
+![](images/油烟机-老板-02.jpg)
 
 </details>
 
@@ -497,8 +497,8 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/油烟机-老板-03.jpg)
-![](./house/油烟机-老板-04.jpg)
+![](images/油烟机-老板-03.jpg)
+![](images/油烟机-老板-04.jpg)
 
 </details>
 
@@ -513,7 +513,7 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/油烟机-方太-01.jpg)
+![](images/油烟机-方太-01.jpg)
 
 </details>
 
@@ -527,8 +527,8 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/燃气灶-老板-01.jpg)
-![](./house/燃气灶-老板-02.jpg)
+![](images/燃气灶-老板-01.jpg)
+![](images/燃气灶-老板-02.jpg)
 
 </details>
 
@@ -537,8 +537,8 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/燃气灶-老板-03.jpg)
-![](./house/燃气灶-老板-04.jpg)
+![](images/燃气灶-老板-03.jpg)
+![](images/燃气灶-老板-04.jpg)
 
 </details>
 
@@ -551,7 +551,7 @@ description: 家庭装修
 - 油烟机+燃气灶: 7300
 - 燃气灶型号: JZT-01-TD7B-12T
 
-![](./house/燃气灶-方太-01.jpg)
+![](images/燃气灶-方太-01.jpg)
 
 </details>
 
@@ -570,7 +570,7 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/洗碗机-美的-01.jpg)
+![](images/洗碗机-美的-01.jpg)
 
 </details>
 
@@ -591,8 +591,8 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/洗衣机-海尔-01.jpg)
-![](./house/洗衣机-海尔-02.jpg)
+![](images/洗衣机-海尔-01.jpg)
+![](images/洗衣机-海尔-02.jpg)
 
 </details>
 
@@ -606,7 +606,7 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/洗衣机-小天鹅-01.jpg)
+![](images/洗衣机-小天鹅-01.jpg)
 
 </details>
 
@@ -622,8 +622,8 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/烘干机-海尔-01.jpg)
-![](./house/烘干机-海尔-02.jpg)
+![](images/烘干机-海尔-01.jpg)
+![](images/烘干机-海尔-02.jpg)
 
 </details>
 
@@ -635,7 +635,7 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/烘干机-小天鹅-01.jpg)
+![](images/烘干机-小天鹅-01.jpg)
 
 </details>
 
@@ -651,8 +651,8 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/管线机-美的-01.jpg)
-![](./house/管线机-美的-02.jpg)
+![](images/管线机-美的-01.jpg)
+![](images/管线机-美的-02.jpg)
 
 </details>
 
@@ -675,8 +675,8 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/净水器-美的-01.jpg)
-![](./house/净水器-美的-02.jpg)
+![](images/净水器-美的-01.jpg)
+![](images/净水器-美的-02.jpg)
 
 </details>
 
@@ -699,7 +699,7 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/前置过滤器-美的-01.jpg)
+![](images/前置过滤器-美的-01.jpg)
 
 </details>
 
@@ -722,8 +722,8 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/燃气热水器-美的-01.jpg)
-![](./house/燃气热水器-美的-02.jpg)
+![](images/燃气热水器-美的-01.jpg)
+![](images/燃气热水器-美的-02.jpg)
 
 </details>
 
@@ -738,8 +738,8 @@ description: 家庭装修
 <details>
 <summary>查看图片</summary>
 
-![](./house/洗袜机-海尔-01.jpg)
-![](./house/洗袜机-海尔-02.jpg)
+![](images/洗袜机-海尔-01.jpg)
+![](images/洗袜机-海尔-02.jpg)
 
 </details>
 
