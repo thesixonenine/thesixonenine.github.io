@@ -33,7 +33,7 @@ make menuconfig
 ```
 4. 配置
 
-![openwrt-make](./openwrt-build/openwrt-make.jpg)
+![openwrt-make](images/openwrt-make.jpg)
 
 5. 编译
 ```bash
