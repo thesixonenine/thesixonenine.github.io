@@ -18,7 +18,7 @@ import (
 	"time"
 )
 
-const JSONFilePath = "../../src/assets/data/arknights.json"
+const JSONFilePath = "../assets/data/arknights.json"
 
 // 收集每次从官网获取的抽卡数据, 然后合并到本地JSON文件中.
 func main() {
@@ -26,10 +26,11 @@ func main() {
 	// token, _ = url.QueryUnescape(token)
 	// fmt.Println("token: " + token)
 	// fmt.Println("X-Csrf-Token: " + xCsrfToken)
-	token := os.Getenv("ARKNIGHTS_TOKEN")
-	xCsrfToken := os.Getenv("ARKNIGHTS_X_CSRF_TOKEN")
-	UpdateGacha(token, xCsrfToken)
-	Stat()
+	// token := os.Getenv("ARKNIGHTS_TOKEN")
+	// xCsrfToken := os.Getenv("ARKNIGHTS_X_CSRF_TOKEN")
+	// UpdateGacha(token, xCsrfToken)
+	// Stat()
+	fmt.Println("Not Supported")
 }
 
 func ExtractTokens() (string, string) {

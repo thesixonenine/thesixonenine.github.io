@@ -19,7 +19,7 @@ func main() {
 	_ = utils.KeepHeadAndAppend(filePath, 9, content)
 }
 func buildArkNightsV2() string {
-	f := utils.ReadJSONFile[[]types.ArkNightsChar]("../static/data/arknightsV2.json")
+	f := utils.ReadJSONFile[[]types.ArkNightsChar]("../assets/data/arknightsV2.json")
 	sort.Slice(f, func(i, j int) bool {
 		return types.WishCompare(f[i], f[j]) < 0
 	})
@@ -73,7 +73,7 @@ func buildArkNightsV2() string {
 }
 
 func buildArkNightsV1() string {
-	f := utils.ReadJSONFile[[]types.ArkNightsData]("../static/data/arknights.json")
+	f := utils.ReadJSONFile[[]types.ArkNightsData]("../assets/data/arknights.json")
 	sort.Slice(f, func(i, j int) bool {
 		return f[i].Ts < f[j].Ts
 	})
@@ -127,7 +127,7 @@ func buildArkNightsV1() string {
 }
 
 func buildSR() string {
-	f := utils.ReadJSONFile[map[string][]types.MiHoYoWish]("../static/data/star-rail-wish.json")
+	f := utils.ReadJSONFile[map[string][]types.MiHoYoWish]("../assets/data/star-rail-wish.json")
 	s := ""
 	ks := []string{}
 	for k := range constant.SRGachaType {
@@ -165,7 +165,7 @@ func buildSR() string {
 }
 
 func buildZZZ() string {
-	f := utils.ReadJSONFile[map[string][]types.MiHoYoWish]("../static/data/zzz.json")
+	f := utils.ReadJSONFile[map[string][]types.MiHoYoWish]("../assets/data/zzz.json")
 	s := ""
 	ks := []string{}
 	for k := range constant.ZZZGachaType {

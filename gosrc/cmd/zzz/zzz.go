@@ -21,7 +21,7 @@ import (
 )
 
 const WishHistoryFilePath = "F:\\game\\ZenlessZoneZero Game\\ZenlessZoneZero_Data\\webCaches\\"
-const JSONFilePath = "../static/data/zzz.json"
+const JSONFilePath = "../assets/data/zzz.json"
 const GachaUrlPrefix = "https://public-operation-nap.mihoyo.com/common/gacha_record/api/getGachaLog"
 
 var re = regexp.MustCompile(`\p{C}`)
