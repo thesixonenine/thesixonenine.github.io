@@ -11,6 +11,44 @@ import (
 
 func main() {
 	fillGenshinImpact()
+	fillHouse()
+}
+
+func fillHouse() {
+	content := ""
+	content = content + "\n\n" + buildHouseCost()
+	content = content + "\n\n"
+	filePath := "../content/post/house/index.md"
+	_ = utils.KeepHeadAndAppendWithEndLine(filePath, 9, "## 网线布线", content)
+}
+
+func buildHouseCost() string {
+	f := utils.ReadJSONFile[[]types.House]("../assets/data/house.json")
+	var tableBuilder strings.Builder
+	tableBuilder.WriteString("## 支出流水\n\n|费用名称|金额|状态|支出时间|Qing|Yang|\n|---|---|---|---|---|---|\n")
+	qingTotal := 0
+	yangTotal := 0
+	for _, it := range f {
+		tableBuilder.WriteString(fmt.Sprintf("|%s|%s|%s|%s|%s|%s|\n", it.Name, it.Amount, it.Status, it.PayTime, it.Qing, it.Yang))
+		// 总计
+		fen, err := utils.YuanToFen(string(it.Qing))
+		if err != nil {
+			fmt.Printf("YuanToFen[%s]Error\n", string(it.Qing))
+			break
+		}
+		qingTotal += fen
+
+		fen, err = utils.YuanToFen(string(it.Yang))
+		if err != nil {
+			fmt.Printf("YuanToFen[%s]Error\n", string(it.Yang))
+			break
+		}
+		yangTotal += fen
+	}
+
+	tableBuilder.WriteString(fmt.Sprintf("|%s|%s|%s|%s|%s|%s|\n", "总计", utils.DivideHundred(qingTotal+yangTotal), "", "", utils.DivideHundred(qingTotal), utils.DivideHundred(yangTotal)))
+
+	return tableBuilder.String()
 }
 
 func fillGenshinImpact() {
@@ -22,6 +60,7 @@ func fillGenshinImpact() {
 	filePath := "../content/post/genshin-impact/index.md"
 	_ = utils.KeepHeadAndAppend(filePath, 9, content)
 }
+
 func buildArkNightsV2() string {
 	f := utils.ReadJSONFile[[]types.ArkNightsChar]("../assets/data/arknightsV2.json")
 	sort.Slice(f, func(i, j int) bool {

@@ -87,3 +87,78 @@ func KeepHeadAndAppend(filePath string, keepHeadLine int, appendContent string) 
 	}
 	return writer.Flush()
 }
+
+// KeepHeadAndAppendWithEndLine 保留开头几行并追加指定内容，同时保留以 endLine 开头到文件末尾的行
+func KeepHeadAndAppendWithEndLine(filePath string, keepHeadLine int, endLine string, appendContent string) error {
+	file, err := os.Open(filePath)
+	if err != nil {
+		return err
+	}
+	defer file.Close()
+
+	var allLines []string
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		allLines = append(allLines, scanner.Text())
+	}
+	if err := scanner.Err(); err != nil {
+		return err
+	}
+
+	headCount := keepHeadLine
+	if headCount < 0 {
+		headCount = 0
+	}
+	if headCount > len(allLines) {
+		headCount = len(allLines)
+	}
+	preservedHead := allLines[:headCount]
+
+	tailStart := -1
+	for i := headCount; i < len(allLines); i++ {
+		if strings.HasPrefix(allLines[i], endLine) {
+			tailStart = i
+			break
+		}
+	}
+
+	var preservedTail []string
+	if tailStart != -1 {
+		preservedTail = allLines[tailStart:]
+	}
+
+	file, err = os.OpenFile(filePath, os.O_WRONLY|os.O_TRUNC, 0644)
+	if err != nil {
+		return err
+	}
+	defer file.Close()
+
+	writer := bufio.NewWriter(file)
+	for _, line := range preservedHead {
+		if _, err := writer.WriteString(line + "\n"); err != nil {
+			return err
+		}
+	}
+
+	if appendContent != "" {
+		if _, err := writer.WriteString(appendContent); err != nil {
+			return err
+		}
+	}
+
+	if len(preservedTail) > 0 {
+		// 在 appendContent 与尾部之间保证有换行
+		if appendContent != "" && !strings.HasSuffix(appendContent, "\n") {
+			if _, err := writer.WriteString("\n"); err != nil {
+				return err
+			}
+		}
+		for _, line := range preservedTail {
+			if _, err := writer.WriteString(line + "\n"); err != nil {
+				return err
+			}
+		}
+	}
+
+	return writer.Flush()
+}
