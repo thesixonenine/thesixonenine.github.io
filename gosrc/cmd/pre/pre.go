@@ -10,6 +10,10 @@ import (
 )
 
 func main() {
+	fillGenshinImpact()
+}
+
+func fillGenshinImpact() {
 	content := "\n"
 	content = content + "\n\n" + buildZZZ()
 	content = content + "\n\n" + buildSR()
