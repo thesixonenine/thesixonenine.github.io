@@ -42,6 +42,7 @@
                 document.getElementsByClassName('powerby')[0].prepend(daysElement);
         }
         // fetchDaysByJSON();
+        // assets/data/days.json
         fetchDays('1994/09/27 00:00:00', '2013/7/16 00:00:00', '2022/11/18 00:00:00');
         if (document.URL.indexOf('house') > 0) {
             fetch('/data/house.json')
