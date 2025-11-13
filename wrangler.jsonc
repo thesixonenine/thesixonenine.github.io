@@ -1,6 +1,7 @@
 {
   "name": "blog",
   "compatibility_date": "2025-11-04",
+  "preview_urls": false,
   "assets": {
     "directory": "./public"
   }
