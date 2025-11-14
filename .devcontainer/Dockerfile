@@ -45,4 +45,5 @@ EXPOSE 1313
 # RUN sudo -u node npm install -g <your-package-list-here>
 
 USER node
-RUN chezmoi init https://$GITHUB_USERNAME:$GITHUB_PAT@github.com/$GITHUB_USERNAME/dotfiles.git
+RUN git config --global http.https://github.com.proxy $HTTP_PROXY && \
+    chezmoi init https://$GITHUB_USERNAME:$GITHUB_PAT@github.com/$GITHUB_USERNAME/dotfiles.git
