@@ -9,7 +9,7 @@ ARG VERSION=latest
 ARG GITHUB_PAT
 ENV GITHUB_USERNAME=thesixonenine GITHUB_PAT=${GITHUB_PAT}
 ENV HTTP_PROXY=socks5://host.docker.internal:1080 HTTPS_PROXY=socks5://host.docker.internal:1080 GOPROXY=https://goproxy.cn,direct
-ENV DEBIAN_FRONTEND=noninteractive TZ=Asia/Shanghai
+ENV DEBIAN_FRONTEND=noninteractive TZ=Asia/Shanghai SHELL=/bin/zsh
 
 # Download Hugo
 RUN sed -i -e 's@deb.debian.org@mirrors.aliyun.com@;s@http:@https:@' /etc/apt/sources.list.d/debian.sources && \
