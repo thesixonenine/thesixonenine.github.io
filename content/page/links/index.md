@@ -11,7 +11,7 @@ links:
     image: https://dash.cloudflare.com/favicon-96x96.png
   - title: itdog
     description: 在线Ping/TCP Ping/DNS查询
-    website: https://www.itdog.cn/tcping
+    website: https://www.itdog.cn/tcping/blog.thesixonenine.site
     image: https://www.itdog.cn/frame/images/logo.png
   - title: ipip.net
     description: 查询IP及归属地
@@ -25,6 +25,18 @@ links:
     description: 测试网络延迟/延迟抖动/下载速度/上传速度
     website: https://test.ustc.edu.cn
     image: https://test.ustc.edu.cn/favicon.ico
+  - title: Google Fiber测速
+    description: Google Fiber测速
+    website: https://fiber.google.com/speedtest
+    image: https://fiber.google.com/favicon.ico
+  - title: iCalendar
+    description: iCalendar 验证/工具/规范
+    website: https://icalendar.org/validator.html
+    image: https://icalendar.org/templates/cleanboot/favicon.ico
+  - title: 合同示范文本库
+    description: 合同示范文本库
+    website: https://htsfwb.samr.gov.cn/
+    image: https://htsfwb.samr.gov.cn/favicon.ico
 menu:
     main: 
         weight: 4
