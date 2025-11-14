@@ -16,6 +16,7 @@ RUN sed -i -e 's@deb.debian.org@mirrors.aliyun.com@;s@http:@https:@' /etc/apt/so
     apt-get update > /dev/null && apt-get upgrade -y > /dev/null && \
     apt-get install -y ncat ca-certificates openssl git curl && \
     sh -c "$(curl -fsLS get.chezmoi.io)" && \
+    chsh -s /bin/zsh node && \
     rm -rf /var/lib/apt/lists/* && \
     case ${VERSION} in \
     latest) \
