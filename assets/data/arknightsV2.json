@@ -5818,5 +5818,25 @@
 		"isNew": false,
 		"gachaTs": "1762904860995",
 		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_150_snakek",
+		"charName": "蛇屠箱",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1762992263946",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_67_0_1",
+		"poolName": "以风雪为誓",
+		"charId": "char_236_rope",
+		"charName": "暗索",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1763078521869",
+		"pos": 0
 	}
 ]
