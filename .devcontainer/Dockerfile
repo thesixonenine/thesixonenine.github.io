@@ -9,14 +9,14 @@ ARG VERSION=latest
 ARG GITHUB_PAT
 ENV GITHUB_USERNAME=thesixonenine GITHUB_PAT=${GITHUB_PAT}
 ENV HTTP_PROXY=socks5://host.docker.internal:1080 HTTPS_PROXY=socks5://host.docker.internal:1080 GOPROXY=https://goproxy.cn,direct
-ENV DEBIAN_FRONTEND=noninteractive TZ=Asia/Shanghai SHELL=/bin/zsh
+ENV DEBIAN_FRONTEND=noninteractive TZ=Asia/Shanghai
 
 # Download Hugo
 RUN sed -i -e 's@deb.debian.org@mirrors.aliyun.com@;s@http:@https:@' /etc/apt/sources.list.d/debian.sources && \
     apt-get update > /dev/null && apt-get upgrade -y > /dev/null && \
     apt-get install -y ncat ca-certificates openssl git curl && \
     sh -c "$(curl -fsLS get.chezmoi.io)" && \
-    chsh -s /bin/zsh node && \
+    chsh -s /usr/bin/zsh node && \
     rm -rf /var/lib/apt/lists/* && \
     case ${VERSION} in \
     latest) \
