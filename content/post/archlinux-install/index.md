@@ -1,7 +1,7 @@
 ---
 title: archlinux-install
 date: 2020-10-08T13:37:34+0800
-lastmod: 2020-10-09T14:00:00+0800
+lastmod: 2025-11-25T15:53:22+0800
 tags: ['Archlinux']
 categories: ['Linux']
 keywords: archlinux
@@ -69,10 +69,10 @@ fdisk /dev/sda
 ```
 
 1. `g`创建一个空的gpt分区
-2. `n`创建新分区(编号1), 大小为512M, 用作系统引导
-3. `n`创建新分区(编号3), 与内存一样(4G), 用作SWAP
-4. `n`创建新分区(编号2), 使用剩下所有的空间, 用作主分区(/)
-5. `w`写入并退出
+2. `n`创建新分区(编号1), 大小为512M, 用作系统引导 (`n` + `Enter`, `Enter`, `Enter`, `+512M` + `Enter`)
+3. `n`创建新分区(编号3), 与内存一样(4G), 用作SWAP (`n` + `Enter`, `3` + `Enter`, `Enter`, `+4G` + `Enter`)
+4. `n`创建新分区(编号2), 使用剩下所有的空间, 用作主分区(/) (`n` + `Enter`, `Enter`, `Enter`, `Enter`)
+5. `w`写入并退出 (`w`)
 
 **格式化分区**
 
@@ -192,9 +192,13 @@ shutdown -h now
 
 网络配置与远程登陆
 
+重新开机并使用 `root` 登录
+
 ### 设置网络
 
 ```bash
+# 查看网络
+ip addr
 # 启用网络
 ip link set eth0 up
 # 设置静态IP
@@ -203,7 +207,7 @@ touch eth0.network
 echo '[Match]' >> eth0.network
 echo 'Name=eth0' >> eth0.network
 echo '[Network]' >> eth0.network
-echo 'Address=192.168.137.12' >> eth0.network
+echo 'Address=192.168.137.12/24' >> eth0.network
 echo 'Gateway=192.168.137.1' >> eth0.network
 echo 'DNS=223.5.5.5' >> eth0.network
 systemctl restart systemd-resolved
@@ -224,26 +228,37 @@ systemctl enable sshd
 >
 > 使用`echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config`允许root用户远程登陆
 
+**从这里开始可以使用SSH远程登录来进行操作了**
 
+### 创建用户
 
-### 安装oh-my-zsh
+#### 安装sudo
 
-| Method    | Command                                                      |
-| --------- | ------------------------------------------------------------ |
-| **curl**  | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
-| **wget**  | `sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
-| **fetch** | `sh -c "$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` |
-
-修改主题
+安装sudo并允许wheel组用户执行任意命令
 
 ```bash
-vim ~/.zshrc
-ZSH_THEME="agnoster"
+pacman -S sudo
+EDITOR=vim visudo
 ```
 
+将 `# %wheel ALL=(ALL:ALL) ALL` 去掉开头的注释 `#` 变成 `%wheel ALL=(ALL:ALL) ALL`
 
+#### 添加用户
 
+```bash
+useradd -m -G wheel simple
+passwd simple
+# 验证所属组
+groups simple
+```
 
+#### 验证sudo权限
+
+```bash
+sudo whoami
+```
+
+## 图形界面
 
 ## 文件权限
 
