@@ -1,7 +1,7 @@
 ---
 title: archlinux-install
 date: 2020-10-08T13:37:34+0800
-lastmod: 2025-11-25T15:53:22+0800
+lastmod: 2025-11-25T17:59:31+0800
 tags: ['Archlinux']
 categories: ['Linux']
 keywords: archlinux
@@ -256,6 +256,38 @@ groups simple
 
 ```bash
 sudo whoami
+```
+
+
+### 安装chezmoi
+
+#### 设置环境变量
+
+**注意替换 GITHUB_PAT 变量**
+
+```bash
+export GITHUB_USERNAME=thesixonenine && \
+export GITHUB_PAT=XXX && \
+export HTTP_PROXY=socks5://192.168.137.1:1080 && \
+export HTTPS_PROXY=socks5://192.168.137.1:1080 && \
+export TZ=Asia/Shanghai
+```
+
+### 安装并应用dotfiles
+
+```bash
+sudo pacman -S netcat chezmoi
+```
+
+```bash
+git config --global http.https://github.com.proxy $HTTP_PROXY && \
+chezmoi init https://$GITHUB_USERNAME:$GITHUB_PAT@github.com/$GITHUB_USERNAME/dotfiles.git
+```
+
+### 更新dotfiles
+
+```bash
+chezmoi update
 ```
 
 ## 图形界面
