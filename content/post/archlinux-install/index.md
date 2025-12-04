@@ -174,7 +174,8 @@ grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 **安装程序**
 
 ```bash
-pacman -S vim git zsh
+pacman -S vim git zsh networkmanager
+systemctl enable NetworkManager
 ```
 
 **重启系统**
@@ -214,6 +215,13 @@ systemctl restart systemd-resolved
 systemctl restart systemd-networkd
 systemctl enable systemd-resolved
 systemctl enable systemd-networkd
+```
+
+```
+# 查看可用网络
+nmcli device wifi list
+# 连接网络
+nmcli device wifi connect Xiaomi_xxxx password 12345678
 ```
 
 ### 安装SSH
