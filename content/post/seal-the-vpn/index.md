@@ -47,7 +47,7 @@ docker rmi swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/lukbinx/qianxin-cl
 ### run image
 
 ```shell
-docker run -d --name qianxin-lukbinx --restart=always -e TZ=Asia/Shanghai -e KASM_VNC_SSL=0 -e KASM_NO_AUTH=1 -p 26901:6901 -p 21080:1080 --cap-add=NET_ADMIN --device=/dev/net/tun:/dev/net/tun --shm-size=512m --ulimit nofile=1048576:1048576 lukbinx/qianxin-client:1.2.1.463
+docker run -d --name qianxin-lukbinx --restart=always -e TZ=Asia/Shanghai -e KASM_VNC_SSL=0 -e KASM_NO_AUTH=1 -p 26901:6901 -p 21080:1080 --add-host mirrors.ustc.edu.cn:202.141.160.110 --cap-add=NET_ADMIN --device=/dev/net/tun:/dev/net/tun --shm-size=512m --ulimit nofile=1048576:1048576 lukbinx/qianxin-client:1.2.1.463
 ```
 
 ### add hosts
