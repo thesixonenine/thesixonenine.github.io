@@ -93,5 +93,332 @@ ${tbody}
                 });
           }
         }
+        if (document.URL.indexOf('seal-the-vpn') > 0) {
+        document.addEventListener('DOMContentLoaded', 
+        function() {
+    // 通过h4标签的id定位到目标位置
+    const convertH4 = document.getElementById('convert');
+    
+    if (!convertH4) {
+        console.error('未找到id为"convert"的h4标签');
+        return;
+    }
+    
+    // 找到下一个details元素
+    const detailsElement = convertH4.nextElementSibling;
+    
+    if (!detailsElement || detailsElement.tagName !== 'DETAILS') {
+        console.error('未找到details元素');
+        return;
+    }
+    
+    // 检查是否已经插入过转换工具
+    if (detailsElement.querySelector('.hosts-convert-tool')) {
+        return; // 已经存在，不再重复插入
+    }
+    
+    // 创建转换工具容器
+    const convertTool = document.createElement('div');
+    convertTool.className = 'hosts-convert-tool';
+    convertTool.style.cssText = `
+        margin-top: 15px;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border-radius: 8px;
+        font-family: system-ui, -apple-system, sans-serif;
+    `;
+    
+    // 创建输入区域容器
+    const inputContainer = document.createElement('div');
+    inputContainer.className = 'input-container';
+    inputContainer.style.cssText = `
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+        align-items: stretch;
+    `;
+    
+    // 创建左侧输入区域
+    const leftColumn = document.createElement('div');
+    leftColumn.className = 'input-column';
+    leftColumn.style.cssText = `
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    `;
+    
+    const leftLabel = document.createElement('label');
+    leftLabel.textContent = 'Hosts格式 (多行输入)';
+    leftLabel.style.cssText = `
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #333;
+    `;
+    
+    const leftTextarea = document.createElement('textarea');
+    leftTextarea.id = 'hosts-input';
+    leftTextarea.placeholder = `# 示例格式：
+202.141.160.110 mirrors.ustc.edu.cn
+182.140.147.67 mirrors.aliyun.com
+8.8.8.8 dns.google
+
+# 每行格式: IP 域名 [域名2 ...]
+# 支持注释（以#开头）`;
+    leftTextarea.style.cssText = `
+        flex: 1;
+        min-height: 200px;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        resize: vertical;
+        font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+        font-size: 14px;
+        line-height: 1.5;
+    `;
+    
+    // 创建右侧输入区域
+    const rightColumn = document.createElement('div');
+    rightColumn.className = 'input-column';
+    rightColumn.style.cssText = `
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    `;
+    
+    const rightLabel = document.createElement('label');
+    rightLabel.textContent = 'Docker参数 (单行输出)';
+    rightLabel.style.cssText = `
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #333;
+    `;
+    
+    const rightInput = document.createElement('input');
+    rightInput.type = 'text';
+    rightInput.id = 'docker-output';
+    rightInput.placeholder = '--add-host mirrors.ustc.edu.cn:202.141.160.110 --add-host mirrors.aliyun.com:182.140.147.67';
+    rightInput.readOnly = true;
+    rightInput.style.cssText = `
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+        font-size: 14px;
+        background-color: #fafafa;
+    `;
+    
+    // 创建转换按钮
+    const convertButton = document.createElement('button');
+    convertButton.id = 'convert-button';
+    convertButton.textContent = '转换';
+    convertButton.style.cssText = `
+        padding: 12px 24px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        transition: background-color 0.2s;
+        align-self: flex-start;
+    `;
+    
+    // 添加悬停效果
+    convertButton.addEventListener('mouseenter', () => {
+        convertButton.style.backgroundColor = '#0056b3';
+    });
+    
+    convertButton.addEventListener('mouseleave', () => {
+        convertButton.style.backgroundColor = '#007bff';
+    });
+    
+    // 创建按钮容器
+    const buttonContainer = document.createElement('div');
+    buttonContainer.style.cssText = `
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    `;
+    
+    // 创建状态提示
+    const statusMessage = document.createElement('span');
+    statusMessage.id = 'status-message';
+    statusMessage.style.cssText = `
+        color: #666;
+        font-size: 14px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    `;
+    
+    // 组装元素
+    leftColumn.appendChild(leftLabel);
+    leftColumn.appendChild(leftTextarea);
+    
+    rightColumn.appendChild(rightLabel);
+    rightColumn.appendChild(rightInput);
+    
+    inputContainer.appendChild(leftColumn);
+    inputContainer.appendChild(rightColumn);
+    
+    buttonContainer.appendChild(convertButton);
+    buttonContainer.appendChild(statusMessage);
+    
+    convertTool.appendChild(inputContainer);
+    convertTool.appendChild(buttonContainer);
+    
+    // 插入到details元素中
+    detailsElement.appendChild(convertTool);
+    
+    // 转换函数
+    function convertHostsToDockerParams() {
+        const hostsText = leftTextarea.value;
+        const lines = hostsText.split('\n');
+        let dockerParams = [];
+        
+        lines.forEach(line => {
+            // 移除行首尾空白字符
+            line = line.trim();
+            
+            // 跳过空行和注释行
+            if (!line || line.startsWith('#')) {
+                return;
+            }
+            
+            // 分割IP和域名（支持制表符和多个空格）
+            const parts = line.split(/\s+/);
+            if (parts.length < 2) {
+                return; // 跳过格式不正确的行
+            }
+            
+            const ip = parts[0];
+            
+            // 为每个域名生成--add-host参数
+            for (let i = 1; i < parts.length; i++) {
+                const domain = parts[i];
+                // 跳过可能是注释的部分
+                if (domain.startsWith('#')) {
+                    break;
+                }
+                dockerParams.push(`--add-host ${domain}:${ip}`);
+            }
+        });
+        
+        // 拼接所有参数
+        const result = dockerParams.join(' ');
+        rightInput.value = result;
+        
+        // 显示状态提示
+        if (dockerParams.length > 0) {
+            showStatus(`已转换 ${dockerParams.length} 个host条目`, 'success');
+        } else {
+            showStatus('未找到有效的host条目', 'warning');
+        }
+        
+        // 自动选中输出内容以便复制
+        rightInput.select();
+    }
+    
+    // 显示状态信息函数
+    function showStatus(message, type) {
+        statusMessage.textContent = message;
+        
+        switch(type) {
+            case 'success':
+                statusMessage.style.color = '#28a745';
+                break;
+            case 'warning':
+                statusMessage.style.color = '#ffc107';
+                break;
+            case 'error':
+                statusMessage.style.color = '#dc3545';
+                break;
+            default:
+                statusMessage.style.color = '#666';
+        }
+        
+        statusMessage.style.opacity = '1';
+        
+        // 3秒后淡出
+        setTimeout(() => {
+            statusMessage.style.opacity = '0';
+        }, 3000);
+    }
+    
+    // 添加转换按钮点击事件
+    convertButton.addEventListener('click', convertHostsToDockerParams);
+    
+    // 添加示例数据（可选）
+    const exampleButton = document.createElement('button');
+    exampleButton.textContent = '加载示例';
+    exampleButton.style.cssText = `
+        padding: 8px 16px;
+        margin-left: 10px;
+        background-color: #6c757d;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.2s;
+    `;
+    
+    exampleButton.addEventListener('mouseenter', () => {
+        exampleButton.style.backgroundColor = '#545b62';
+    });
+    
+    exampleButton.addEventListener('mouseleave', () => {
+        exampleButton.style.backgroundColor = '#6c757d';
+    });
+    
+    exampleButton.addEventListener('click', () => {
+        leftTextarea.value = `# 常用镜像站
+202.141.160.110 mirrors.ustc.edu.cn
+182.140.147.67 mirrors.aliyun.com
+# DNS服务器
+8.8.8.8 dns.google
+1.1.1.1 one.one.one.one cloudflare-dns.com`;
+        convertHostsToDockerParams();
+    });
+    
+    buttonContainer.appendChild(exampleButton);
+    
+    // 添加清空按钮（可选）
+    const clearButton = document.createElement('button');
+    clearButton.textContent = '清空';
+    clearButton.style.cssText = `
+        padding: 8px 16px;
+        margin-left: 10px;
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.2s;
+    `;
+    
+    clearButton.addEventListener('mouseenter', () => {
+        clearButton.style.backgroundColor = '#c82333';
+    });
+    
+    clearButton.addEventListener('mouseleave', () => {
+        clearButton.style.backgroundColor = '#dc3545';
+    });
+    
+    clearButton.addEventListener('click', () => {
+        leftTextarea.value = '';
+        rightInput.value = '';
+        showStatus('已清空所有内容', 'success');
+    });
+    
+    buttonContainer.appendChild(clearButton);
+    
+    // 初始转换（如果有默认内容）
+    // setTimeout(convertHostsToDockerParams, 100);
+    });
+        }
+
     }());
 </script>
