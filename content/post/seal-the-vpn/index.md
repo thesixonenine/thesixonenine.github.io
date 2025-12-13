@@ -1,7 +1,7 @@
 ---
 title: seal-the-vpn
 date: 2025-12-10T23:11:21+0800
-lastmod: 2025-12-13T21:50:03+0800
+lastmod: 2025-12-13T22:27:24+0800
 tags: ['Docker']
 categories: ['Docker']
 keywords: vpn
@@ -115,6 +115,12 @@ open -a "Google Chrome" --args --proxy-server="socks5://127.0.0.1:21080"
 & "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --proxy-server="socks5://127.0.0.1:21080"
 ```
 
+### debug
+
+```shell
+docker exec -it -u root qianxin-lukbinx /bin/bash
+```
+
 ## atrust
 
 ### pull image
@@ -203,4 +209,10 @@ open -a "Google Chrome" --args --proxy-server="socks5://127.0.0.1:11080"
 
 ```shell
 & "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --proxy-server="socks5://127.0.0.1:11080"
+```
+
+### debug
+
+```shell
+docker exec -it -u root atrust /bin/bash
 ```
