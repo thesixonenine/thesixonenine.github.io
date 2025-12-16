@@ -81,6 +81,8 @@ docker images -f "dangling=true" -q | % { docker rmi $_ }
 docker system prune --all
 # delete unused volume
 docker volume prune
+# delete build cache
+docker builder prune
 ```
 
 ### stop all container
