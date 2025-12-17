@@ -20,3 +20,7 @@ description: 我的第二台组装PC
 |全汉（FSP）额定450W 经典版MS450|439|[电源](https://item.jd.com/6060172.html)|
 |乔思伯（JONSBO）A4 Ver1.1版|799|[机箱](https://item.jd.com/100007000176.html)|
 |英特尔（Intel）9代 酷睿 i7-9700K|2449.98|[CPU](https://item.jd.com/100000634417.html)|
+
+
+> ITX支持CPU风扇限制高度: 71mm
+
