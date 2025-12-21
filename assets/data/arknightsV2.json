@@ -5838,5 +5838,125 @@
 		"isNew": false,
 		"gachaTs": "1763078521869",
 		"pos": 0
+	},
+	{
+		"poolId": "CLASSIC_DOUBLE_68_0_1",
+		"poolName": "中坚寻访",
+		"charId": "char_253_greyy",
+		"charName": "格雷伊",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1766122537830",
+		"pos": 0
+	},
+	{
+		"poolId": "CLASSIC_DOUBLE_68_0_1",
+		"poolName": "中坚寻访",
+		"charId": "char_283_midn",
+		"charName": "月见夜",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1766122537830",
+		"pos": 1
+	},
+	{
+		"poolId": "CLASSIC_DOUBLE_68_0_1",
+		"poolName": "中坚寻访",
+		"charId": "char_277_sqrrel",
+		"charName": "阿消",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1766122537830",
+		"pos": 2
+	},
+	{
+		"poolId": "CLASSIC_DOUBLE_68_0_1",
+		"poolName": "中坚寻访",
+		"charId": "char_381_bubble",
+		"charName": "泡泡",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1766122537830",
+		"pos": 3
+	},
+	{
+		"poolId": "CLASSIC_DOUBLE_68_0_1",
+		"poolName": "中坚寻访",
+		"charId": "char_373_lionhd",
+		"charName": "莱恩哈特",
+		"rarity": 4,
+		"isNew": true,
+		"gachaTs": "1766122537830",
+		"pos": 4
+	},
+	{
+		"poolId": "CLASSIC_DOUBLE_68_0_1",
+		"poolName": "中坚寻访",
+		"charId": "char_117_myrrh",
+		"charName": "末药",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1766122537830",
+		"pos": 5
+	},
+	{
+		"poolId": "CLASSIC_DOUBLE_68_0_1",
+		"poolName": "中坚寻访",
+		"charId": "char_253_greyy",
+		"charName": "格雷伊",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1766122537830",
+		"pos": 6
+	},
+	{
+		"poolId": "CLASSIC_DOUBLE_68_0_1",
+		"poolName": "中坚寻访",
+		"charId": "char_277_sqrrel",
+		"charName": "阿消",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1766122537830",
+		"pos": 7
+	},
+	{
+		"poolId": "CLASSIC_DOUBLE_68_0_1",
+		"poolName": "中坚寻访",
+		"charId": "char_469_indigo",
+		"charName": "深靛",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1766122537830",
+		"pos": 8
+	},
+	{
+		"poolId": "CLASSIC_DOUBLE_68_0_1",
+		"poolName": "中坚寻访",
+		"charId": "char_284_spot",
+		"charName": "斑点",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1766122537830",
+		"pos": 9
+	},
+	{
+		"poolId": "CLASSIC_DOUBLE_68_0_1",
+		"poolName": "中坚寻访",
+		"charId": "char_347_jaksel",
+		"charName": "杰克",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1766122562777",
+		"pos": 0
+	},
+	{
+		"poolId": "CLASSIC_DOUBLE_68_0_1",
+		"poolName": "中坚寻访",
+		"charId": "char_298_susuro",
+		"charName": "苏苏洛",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1766122569261",
+		"pos": 0
 	}
 ]
