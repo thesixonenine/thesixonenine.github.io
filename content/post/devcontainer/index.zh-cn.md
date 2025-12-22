@@ -1,7 +1,7 @@
 ---
 title: "devcontainer"
 date: 2025-09-10T11:19:26
-lastmod: 2025-10-21T14:39:49+0800
+lastmod: 2025-12-22T14:59:15+0800
 categories: ['Docker']
 keywords: devcontainer
 description: Dev Container
@@ -19,10 +19,13 @@ description: Dev Container
 
 1. 基于官方基础镜像, 替换源和时区, 并指定代理 **HTTP_PROXY/HTTPS_PROXY**
 2. 安装 [chezmoi](https://chezmoi.io) 来同步环境设置
-3. [chezmoi](https://chezmoi.io) 需要先创建 **dotfiles** 仓库及该仓库的只读 [PAT](https://github.com/settings/personal-access-tokens), [PAT](https://github.com/settings/personal-access-tokens) 同时也作为密码来解密用 **aes-128-cbc** 加密的 **gpg** 密钥文件
+3. [chezmoi](https://chezmoi.io) 需要先创建 **dotfiles** 仓库及该仓库的只读 [PAT](https://github.com/settings/personal-access-tokens), [PAT](https://github.com/settings/personal-access-tokens) 同时也作为密码来解密用 **age** 加密的 **key.txt** 密钥文件
 4. 初始化 [chezmoi](https://chezmoi.io) 时会 clone **dotfiles** 仓库需要走代理, 而 git 并不会使用 `HTTP_PROXY` 或 `HTTPS_PROXY`, 需要手动指定
-5. 首次应用 [chezmoi](https://chezmoi.io) 时会先用 [PAT](https://github.com/settings/personal-access-tokens) 解密并导入 **gpg** 的密钥文件, 然后再使用 **gpg** 来解密 **ssh** 的公钥和私钥
+5. 首次应用 [chezmoi](https://chezmoi.io) 时会先用 [PAT](https://github.com/settings/personal-access-tokens) 解密 **key.txt.age** 密钥文件, 然后再使用 **age** 来解密其他加密文件
 6. 使用 **ssh** 来 clone 仓库, 如果还需要走代理, 则在第 2 步中安装 [ncat](https://nmap.org/ncat)
+
+<details>
+<summary>gpg aes-128-cbc 加解密示例</summary>
 
 ```shell
 # 加密 gpg 密钥文件
@@ -33,11 +36,13 @@ openssl aes-128-cbc -d -pbkdf2 -in ~/.gpg/SECRET.asc.enc -out ~/.gpg/SECRET.asc 
 openssl aes-128-cbc -d -pbkdf2 -in ~/.gpg/public.asc.enc -out ~/.gpg/public.asc -pass env:GITHUB_PAT
 ```
 
+</details>
+
 
 **环境变量**
 
 - GITHUB_USERNAME: GitHub 的用户名, 用于拉取 **dotfiles** 仓库
-- GITHUB_PAT: GitHub dotfiles 仓库的 [PAT](https://github.com/settings/personal-access-tokens), 用于拉取 **dotfiles** 仓库及后续解密并导入 **gpg** 密钥文件
+- GITHUB_PAT: GitHub dotfiles 仓库的 [PAT](https://github.com/settings/personal-access-tokens), 用于拉取 **dotfiles** 仓库及后续解密 **key.txt.age** 密钥文件
 - HTTP_PROXY/HTTPS_PROXY: 代理, 用于安装和更新 [chezmoi](https://chezmoi.io)
 - TZ=Asia/Shanghai: 上海时区
 - DEBIAN_FRONTEND=noninteractive: 避免交互式提示
@@ -50,7 +55,9 @@ openssl aes-128-cbc -d -pbkdf2 -in ~/.gpg/public.asc.enc -out ~/.gpg/public.asc 
 
 > 后续的软件安装及环境配置均由 **dotfiles** 中的脚本完成
 
-## 构建步骤(以 Java 为例)
+## 构建步骤
+
+以 Java 为例, 其他镜像同理, 注意镜像默认使用的用户
 
 **Dockerfile**
 
@@ -61,12 +68,14 @@ ARG GITHUB_USERNAME
 ARG GITHUB_PAT
 ENV GITHUB_USERNAME=${GITHUB_USERNAME} GITHUB_PAT=${GITHUB_PAT}
 ENV HTTP_PROXY=socks5://host.docker.internal:1080 HTTPS_PROXY=socks5://host.docker.internal:1080
-ENV DEBIAN_FRONTEND=noninteractive TZ=Asia/Shanghai
+ENV TZ=Asia/Shanghai DEBIAN_FRONTEND=noninteractive
 
 RUN sed -i -e 's@deb.debian.org@mirrors.aliyun.com@;s@http:@https:@' /etc/apt/sources.list.d/debian.sources && \
     apt-get update > /dev/null && apt-get upgrade -y > /dev/null && \
-    apt-get install -y ncat > /dev/null && \
-    sh -c "$(curl -fsLS get.chezmoi.io)"
+    apt-get install -y ncat age expect > /dev/null && \
+    sh -c "$(curl -fsLS get.chezmoi.io)" && \
+    chsh -s /usr/bin/zsh vscode && \
+    rm -rf /var/lib/apt/lists/*
 USER vscode
 RUN git config --global http.https://github.com.proxy $HTTP_PROXY && \
     chezmoi init https://$GITHUB_USERNAME:$GITHUB_PAT@github.com/$GITHUB_USERNAME/dotfiles.git
