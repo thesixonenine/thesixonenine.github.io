@@ -50,7 +50,7 @@ openssl aes-128-cbc -d -pbkdf2 -in ~/.gpg/public.asc.enc -out ~/.gpg/public.asc 
 **构建命令**
 
 1. 修改 `APT` 源为阿里云并更新
-2. 安装 [chezmoi](https://chezmoi.io), **ncat**(可选, 用于 **ssh** 走代理)
+2. 安装 [chezmoi](https://chezmoi.io), **ncat**(用于 **ssh** 走代理), age和expect(用于解密key.txt.age文件)
 3. 切换到 vscode 用户并初始化 **dotfiles** 仓库
 
 > 后续的软件安装及环境配置均由 **dotfiles** 中的脚本完成
