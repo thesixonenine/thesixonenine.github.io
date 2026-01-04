@@ -207,7 +207,7 @@ func buildHK4E() string {
     return hsr
 }
 func buildSR() string {
-	f := utils.ReadJSONFile[map[string][]types.MiHoYoWish]("../assets/data/star-rail-wish.json")
+	f := utils.ReadJSONFile[map[string][]types.MiHoYoWish]("../assets/data/star-rail.json")
 	s := ""
 	ks := []string{}
 	for k := range constant.SRGachaType {
