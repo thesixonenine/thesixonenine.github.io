@@ -52,13 +52,14 @@ func buildHouseCost() string {
 }
 
 func fillGenshinImpact() {
-	content := "\n"
-	content = content + "\n\n" + buildZZZ()
-	content = content + "\n\n" + buildSR()
-	content = content + "\n\n" + buildArkNightsV2()
-	content = content + "\n\n" + buildArkNightsV1()
-	filePath := "../content/post/genshin-impact/index.md"
-	_ = utils.KeepHeadAndAppend(filePath, 9, content)
+    content := "\n"
+    content = content + "\n\n" + buildHK4E()
+    content = content + "\n\n" + buildZZZ()
+    content = content + "\n\n" + buildSR()
+    content = content + "\n\n" + buildArkNightsV2()
+    content = content + "\n\n" + buildArkNightsV1()
+    filePath := "../content/post/genshin-impact/index.md"
+    _ = utils.KeepHeadAndAppend(filePath, 9, content)
 }
 
 func buildArkNightsV2() string {
@@ -168,7 +169,43 @@ func buildArkNightsV1() string {
 
 	return tableBuilder.String()
 }
+func buildHK4E() string {
+    f := utils.ReadJSONFile[map[string][]types.MiHoYoWish]("../assets/data/genshin-impact.json")
+    s := ""
+    ks := []string{}
+    for k := range constant.HK4EGachaType {
+        ks = append(ks, k)
+    }
+    sort.Strings(ks)
+    for _, k := range ks {
+        v := constant.HK4EGachaType[k]
+        wishes := f[k]
+        l := len(wishes)
+        // 排序
+        sort.Slice(wishes, func(i, j int) bool {
+            return wishes[i].Id < wishes[j].Id
+        })
+        // 统计
+        fiveStr := ""
+        cnt := 0
+        for _, wish := range wishes {
+            cnt++
+            if wish.RankType == "5" {
+                fiveStr = fiveStr + fmt.Sprintf("%s(%d),", wish.Name, cnt)
+                cnt = 0
+            }
+        }
+        fiveStr = strings.TrimRight(fiveStr, ",")
+        s = s + fmt.Sprintf("|%s|%d|%s|%d|\n", v, l, fiveStr, cnt)
+    }
+    hsr := `## 原神
 
+|池子|总抽取数量|五星|已抽|
+|---|---|---|---|
+`
+    hsr = hsr + s
+    return hsr
+}
 func buildSR() string {
 	f := utils.ReadJSONFile[map[string][]types.MiHoYoWish]("../assets/data/star-rail-wish.json")
 	s := ""

@@ -12,5 +12,13 @@ var SRGachaType = map[string]string{
 	"1":  "常驻跃迁",
 	"2":  "新手跃迁",
 }
+var HK4EGachaType = map[string]string{
+    "100": "新手祈愿",
+    "200": "常驻祈愿",
+    "301": "角色祈愿",
+    "302": "武器祈愿",
+    "400": "角色祈愿2",
+    "500": "混合祈愿",
+}
 
 const CacheData2Path = "\\Cache\\Cache_Data\\data_2"
