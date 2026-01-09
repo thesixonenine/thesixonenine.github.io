@@ -33,6 +33,12 @@ links:
     description: iCalendar 验证/工具/规范
     website: https://icalendar.org/validator.html
     image: https://icalendar.org/templates/cleanboot/favicon.ico
+  - title: Keyboard Test
+    description: 键盘按键测试
+    website: https://keyboard.thesixonenine.site
+  - title: Login Demo
+    description: 登录页案例
+    website: https://react.thesixonenine.site
   - title: GalGame 下载
     description: 忧郁的弟弟(网址发布 https://mmgal.com)
     website: https://ttloli.com
