@@ -1,17 +1,17 @@
 # Configure main menu and social menu
-main:
-  # - identifier: dashboard
-  #   name: Login
-  #   url: https://react.thesixonenine.site
-  #   params:
-  #     icon: dashboard
-  #     newtab: true
-  # - identifier: keyboard
-  #   name: Keyboard
-  #   url: https://keyboard.thesixonenine.site
-  #   params:
-  #     icon: keyboard
-  #     newtab: true
+# main:
+#   - identifier: dashboard
+#     name: Login
+#     url: https://react.thesixonenine.site
+#     params:
+#       icon: dashboard
+#       newtab: true
+#   - identifier: keyboard
+#     name: Keyboard
+#     url: https://keyboard.thesixonenine.site
+#     params:
+#       icon: keyboard
+#       newtab: true
 social:
   - identifier: github
     name: GitHub
