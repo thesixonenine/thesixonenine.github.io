@@ -3,7 +3,6 @@
     "runArgs": ["--name", "blog"],
 	"build": {
 		"dockerfile": "Dockerfile",
-        "imageTag": "vsc-blog:latest",
 		"args": {
 			// Update VARIANT to pick hugo variant.
 			// Example variants: hugo, hugo_extended
