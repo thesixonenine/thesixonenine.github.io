@@ -1,7 +1,7 @@
 ---
 title: "devcontainer"
 date: 2025-09-10T11:19:26
-lastmod: 2025-12-22T14:59:15+0800
+lastmod: 2026-01-15T14:45:54+0800
 categories: ['Docker']
 keywords: devcontainer
 description: Dev Container
@@ -27,13 +27,16 @@ description: Dev Container
 <details>
 <summary>gpg aes-128-cbc 加解密示例</summary>
 
+加密
+
 ```shell
-# 加密 gpg 密钥文件
-openssl enc -aes-128-cbc -pbkdf2 -in ~/.gpg/SECRET.asc -out ~/.gpg/SECRET.asc.enc -pass env:GITHUB_PAT
-openssl enc -aes-128-cbc -pbkdf2 -in ~/.gpg/public.asc -out ~/.gpg/public.asc.enc -pass env:GITHUB_PAT
-# 解密 gpg 密钥文件
-openssl aes-128-cbc -d -pbkdf2 -in ~/.gpg/SECRET.asc.enc -out ~/.gpg/SECRET.asc -pass env:GITHUB_PAT
-openssl aes-128-cbc -d -pbkdf2 -in ~/.gpg/public.asc.enc -out ~/.gpg/public.asc -pass env:GITHUB_PAT
+openssl enc -aes-128-cbc -salt -pbkdf2 -iter 100000 -in ./test.txt -out ./test.txt.enc -pass env:PASSWORD
+```
+
+解密
+
+```shell
+openssl aes-128-cbc -d -salt -pbkdf2 -in ./test.txt.enc -out ./test.txt -pass env:PASSWORD
 ```
 
 </details>
