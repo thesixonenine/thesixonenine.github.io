@@ -14,7 +14,7 @@
 			"VERSION": "latest",
 			// Update NODE_VERSION to pick the Node.js version: 12, 14
 			"NODE_VERSION": "24-trixie",
-			"GITHUB_PAT": "${localEnv:GITHUB_PAT}"
+			"MY_PAT": "${localEnv:MY_PAT}"
 		}
 	},
     "postStartCommand": "chezmoi update",
