@@ -1,7 +1,7 @@
 ---
 title: small-script
 date: 2021-09-17T15:14:17
-lastmod: 2026-01-21T10:21:30+0800
+lastmod: 2026-01-21T12:03:53+0800
 categories: ['Script']
 keywords: Script
 description: 一些实用的脚本命令
@@ -255,6 +255,20 @@ Get-ChildItem -Recurse -File | Where-Object { $_.DirectoryName -notmatch '[\\/]\
 
 ```powershell
 Get-ChildItem -Directory -Exclude ".*" | ForEach-Object -Parallel { Get-Content (Join-Path $_.FullName "./.git/config") | findstr "url" }
+```
+
+### 查询Git远程是否存在指定分支
+
+```powershell
+if (git ls-remote --heads origin | Select-String -Pattern 'refs/heads/feature-branch' -Quiet) { Write-Output "存在" } else { Write-Output "不存在" }
+```
+
+```powershell
+if (git ls-remote --heads origin | Select-String -Pattern 'refs/heads/feature-branch' -Quiet) {
+    Write-Output "feature-branch分支在远程origin中存在"
+} else {
+    Write-Output "feature-branch分支在远程origin中不存在"
+}
 ```
 
 ## Bash
@@ -524,4 +538,48 @@ pandoc -f docbook -t docx -o README.docx README.xml
 
 ```bash
 for hostport in HOST:PORT HOST:PORT; do (echo >/dev/tcp/${hostport/:/\/}) >/dev/null 2>&1 || echo "${hostport} is closed"; done
+```
+
+### 查询Git远程是否存在指定分支
+
+```shell
+git ls-remote --heads origin | grep -q "refs/heads/feature-branch" && echo "存在" || echo "不存在"
+```
+
+```shell
+if git ls-remote --heads origin | grep -q "refs/heads/feature-branch"; then
+    echo "feature-branch分支在远程origin中存在"
+else
+    echo "feature-branch分支在远程origin中不存在"
+fi
+```
+
+### 安装ping,ifconfig,netstat,gcc,make等
+
+**ping**
+
+```shell
+sudo apt-get update && \
+sudo apt-get install inetutils-ping
+```
+
+**telnet**
+
+```shell
+sudo apt-get update && \
+sudo apt-get install inetutils-telnet
+```
+
+**ifconfig**, **route**, **arp**, **netstat**
+
+```shell
+sudo apt-get update && \
+apt-get install net-tools
+```
+
+**gcc**, **g++**, **make**
+
+```shell
+sudo apt-get update && \
+apt-get install build-essential
 ```
