@@ -1,7 +1,7 @@
 ---
 title: small-script
 date: 2021-09-17T15:14:17
-lastmod: 2025-08-06T16:33:54
+lastmod: 2026-01-21T10:21:30+0800
 categories: ['Script']
 keywords: Script
 description: 一些实用的脚本命令
@@ -249,6 +249,12 @@ wt new-tab -p 'local' --title 'default' `; new-tab -p 'local' -d C:\Users\simple
 
 ```powershell
 Get-ChildItem -Recurse -File | Where-Object { $_.DirectoryName -notmatch '[\\/]\.(git|idea)$' -and $_.DirectoryName -notmatch '^\.(git|idea)[\\/]' } | ForEach-Object { $_.Extension } | Group-Object | Select-Object Name, Count | Sort-Object Name | ForEach-Object { if ($_.Name) { $_.Name.TrimStart('.') + " " + $_.Count } else { "<noext> " + $_.Count } }
+```
+
+### 查询子目录的Git地址
+
+```powershell
+Get-ChildItem -Directory -Exclude ".*" | ForEach-Object -Parallel { Get-Content (Join-Path $_.FullName "./.git/config") | findstr "url" }
 ```
 
 ## Bash
