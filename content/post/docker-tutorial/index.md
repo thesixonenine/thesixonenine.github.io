@@ -1,7 +1,7 @@
 ---
 title: docker-tutorial
 date: 2022-03-22T18:27:00+0800
-lastmod: 2025-10-22T14:04:06+0800
+lastmod: 2026-01-21T11:13:29+0800
 tags: ['Linux']
 categories: ['Docker']
 keywords: docker
@@ -57,6 +57,8 @@ docker run hello-world
 
 ### mysql install
 
+生产运行
+
 ```shell
 docker run -d --name mysql \
     --network host \
@@ -68,6 +70,18 @@ docker run -d --name mysql \
     --group-replication-consistency=AFTER \
     --transaction-isolation=READ-COMMITTED \
     --lower_case_table_names=1
+```
+
+本地测试
+
+```shell
+docker run --name mysql5.7.26 \
+    -e MYSQL_ROOT_PASSWORD=123456 \
+    -e MYSQL_DATABASE=test \
+    -p 3306:3306 -d \
+    mysql:5.7.26 \
+    --character-set-server=utf8mb4 \
+    --collation-server=utf8mb4_unicode_ci
 ```
 
 ### delete unused data
