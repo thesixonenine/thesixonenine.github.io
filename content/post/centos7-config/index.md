@@ -1,7 +1,7 @@
 ---
 title: centos7-config
 date: 2022-01-16T15:24:10+0800
-lastmod: 2025-01-06T16:02:59+08:00
+lastmod: 2026-01-21T11:10:37+0800
 tags: ['Linux', 'Vim']
 categories: ['Linux']
 keywords:
@@ -38,106 +38,6 @@ sudo update-ca-trust extract
 colorscheme desert
 ```
 
-## PowerShell常用配置
-
-**Microsoft.PowerShell_profile.ps1**
-
-```powershell
-Import-Module posh-git
-Import-Module oh-my-posh
-# Set-PoshPrompt -Theme Paradox
-Set-PoshPrompt -Theme nu4a
-
-# 这个主题会改tab名称
-# Set-PoshPrompt -Theme pure
-# Set-PoshPrompt -Theme ys
-
-# 设置预测文本来源为历史记录
-Set-PSReadLineOption -PredictionSource History
-# 设置 Tab 键补全
-Set-PSReadLineKeyHandler -Key "Tab" -Function MenuComplete
-
-cls
-if (Test-Path ~\Desktop\VPN.lnk) {
-    Remove-Item -Recurse ~\Desktop\VPN.lnk
-    Write-Host "VPN.lnk 删除成功"
-}
-# 传递指定公钥到服务器上
-function ssh-copy-id([string]$userAtMachine, $args){   
-    $publicKey = "$ENV:USERPROFILE" + "/.ssh/id_rsa.pub"
-    if (!(Test-Path "$publicKey")){
-        Write-Error "ERROR: failed to open ID file '$publicKey': No such file"            
-    }
-    else {
-        & cat "$publicKey" | ssh $args $userAtMachine "umask 077; test -d .ssh || mkdir .ssh ; cat >> .ssh/authorized_keys || exit 1"      
-    }
-}
-# 代理相关
-
-
-################
-### HTTP 代理 ###
-################
-function proxy-set([string]$protocol, [int]$port, $args){
-    if ([String]::IsNullOrEmpty($protocol) -or 'http','socks5' -cnotcontains $protocol) {
-        # 区分大小写, 且左边不包含右边
-        "Invalid protocol[${protocol}], The default value of socks5 will be used"
-        $protocol = "socks5"
-    }
-    if ($port -le 0 -or $port -gt 65535) {
-        "Invalid port[${port}], The default value of 1080 will be used"
-        $port = 1080
-    }
-    Set-Item Env:http_proxy "${protocol}://127.0.0.1:${port}"
-    Set-Item Env:https_proxy "${protocol}://127.0.0.1:${port}"
-    Set-Item Env:GIT_HTTP_PROXY "${protocol}://127.0.0.1:${port}"
-}
-function proxy-unset {
-    Remove-Item Env:http_proxy
-    Remove-Item Env:https_proxy
-}
-function proxy-get {
-    "http_proxy  = ${env:http_proxy}"
-    "https_proxy = ${env:https_proxy}"
-}
-function proxy-test {
-    curl -v http://www.google.com
-}
-function proxy-commad {
-    "设置代理: proxy-set"
-    "重置代理: proxy-unset"
-    "查看代理: proxy-get"
-    "测试代理: proxy-test"
-}
-
-###############
-### Git 代理 ###
-###############
-function git-proxy-set([string]$protocol, [int]$port, $args){
-    if ([String]::IsNullOrEmpty($protocol) -or 'http','socks5' -cnotcontains $protocol) {
-        # 区分大小写, 且左边不包含右边
-        "Invalid protocol[${protocol}], The default value of socks5 will be used"
-        $protocol = "socks5"
-    }
-    if ($port -le 0 -or $port -gt 65535) {
-        "Invalid port[${port}], The default value of 1080 will be used"
-        $port = 1080
-    }
-    git config http.proxy "${protocol}://127.0.0.1:${port}"
-}
-function git-proxy-unset {
-    git config --unset http.proxy
-}
-function git-proxy-get {
-    git config http.proxy
-}
-function git-proxy-commad {
-    "设置代理: git-proxy-set"
-    "重置代理: git-proxy-unset"
-    "查看代理: git-proxy-get"
-}
-```
-
 ## 修改yum源
 
 ### 阿里云
@@ -171,6 +71,8 @@ sudo yum makecache
 
 ## 升级 Git 版本
 
+rpm 安装
+
 ```shell
 sudo yum -y remove git
 sudo yum -y remove git-*
@@ -178,6 +80,28 @@ sudo yum -y remove git-*
 sudo yum -y install https://packages.endpointdev.com/rhel/7/os/x86_64/endpoint-repo.x86_64.rpm
 sudo yum -y install git
 
+git --version
+```
+
+源码安装
+
+```shell
+# 移除旧版本
+sudo yum remove git
+sudo yum remove git-*
+# 安装依赖
+sudo yum install -y wget curl-devel expat-devel gettext-devel openssl-devel zlib-devel
+sudo yum groupinstall -y "Development Tools"
+# 下载并解压源码
+wget --user-agent="Mozilla" https://mirrors.ustc.edu.cn/kernel.org/software/scm/git/git-2.51.0.tar.gz
+tar -xvf git-2.51.0.tar.gz
+cd git-2.51.0
+# 编译并安装
+make configure
+sudo ./configure --prefix=/usr
+sudo make
+sudo make install
+# 检查安装的 Git 版本
 git --version
 ```
 
