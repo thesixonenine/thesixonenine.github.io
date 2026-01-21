@@ -84,6 +84,16 @@ docker run --name mysql5.7.26 \
     --collation-server=utf8mb4_unicode_ci
 ```
 
+### redis install
+
+本地测试
+
+```shell
+docker run -d --name redis6.2.20 \
+    -p 6379:6379 redis:6.2.20-alpine \
+    redis-server --requirepass 12345678
+```
+
 ### delete unused data
 
 ```shell
