@@ -17,6 +17,14 @@ adb shell getprop ro.product.cpu.abi
 
 ## PowerShell
 
+### 查询最新的 ghproxy 地址
+
+```powershell
+(iwr -Uri "https://ghproxy.link/js/src_views_home_HomeView_vue.js" -UseBasicParsing).Content `
+  -replace '(?s).*?href(.*?)status-text green-text.*', '$1' `
+  -replace '(?s).*>([^<]+)</a>.*', '$1'
+```
+
 ### AES 加密与解密
 
 ```shell
