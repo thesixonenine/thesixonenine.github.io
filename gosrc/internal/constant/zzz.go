@@ -20,5 +20,10 @@ var HK4EGachaType = map[string]string{
     "400": "角色祈愿2",
     "500": "混合祈愿",
 }
+var EndfieldCharGachaType = map[string]string{
+	"E_CharacterGachaPoolType_Standard": "标准",
+	"E_CharacterGachaPoolType_Special":  "特殊",
+	"E_CharacterGachaPoolType_Beginner": "新手",
+}
 
 const CacheData2Path = "\\Cache\\Cache_Data\\data_2"
