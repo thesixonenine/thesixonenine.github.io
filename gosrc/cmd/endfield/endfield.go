@@ -77,7 +77,7 @@ func FetchGacha(uid string, category string, charPoolType string, seqId string) 
 	if category != "char" && category != "weapon" {
 		log.Fatal("unsupport category: " + category)
 	}
-	ul := fmt.Sprintf("https://ef-webview.hypergryph.com/api/record/%s?lang=zh-cn&token=%s&server_id=1%s%s", category, uid, poolType, posStr)
+	ul := fmt.Sprintf("https://ef-webview.hypergryph.com/api/record/%s?lang=zh-cn&token=%s&server_id=1%s%s", category, url.QueryEscape(uid), poolType, posStr)
 	parse, parseErr := url.Parse(ul)
 	if parseErr != nil {
 		log.Fatal(parseErr)
