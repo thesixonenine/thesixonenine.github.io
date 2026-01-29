@@ -75,3 +75,19 @@ type ArkNightsCate struct {
 	List []ArkNightsCategory `json:"data"`
 	Msg  string              `json:"msg"`
 }
+type EndfieldCharGacha struct {
+    Code int64 `json:"code"`
+    Data struct {
+        List    []EndfieldChar `json:"list"`
+        HasMore bool           `json:"hasMore"`
+    } `json:"data"`
+    Msg string `json:"msg"`
+}
+type EndfieldWeaponGacha struct {
+    Code int64 `json:"code"`
+    Data struct {
+        List    []EndfieldWeapon `json:"list"`
+        HasMore bool             `json:"hasMore"`
+    } `json:"data"`
+    Msg string `json:"msg"`
+}

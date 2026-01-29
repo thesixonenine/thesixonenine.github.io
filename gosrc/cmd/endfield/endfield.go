@@ -5,7 +5,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"gosrc/internal/constant"
-	"gosrc/internal/utils"
+    "gosrc/internal/types"
+    "gosrc/internal/utils"
 	"io"
 	"log"
 	"net/http"
@@ -54,46 +55,73 @@ func Fetch(uid string, u8Token string) {
 		if k == "char" {
 			for m, n := range constant.EndfieldCharGachaType {
 				fmt.Println(fmt.Sprintf("开始获取[%s%s]池", n, v))
-				FetchGacha(uid, k, m, "")
+                FetchCharGacha(uid, m, "")
 			}
 		} else {
 			fmt.Println(fmt.Sprintf("开始获取[%s]池", v))
-			FetchGacha(uid, k, "", "")
+            FetchWeaponGacha(uid, "")
 		}
 	}
 }
 
-// FetchGacha 拉取数据
-func FetchGacha(uid string, category string, charPoolType string, seqId string) {
-	client := &http.Client{}
-	posStr := ""
-	if seqId != "" {
-		posStr = "&seq_id=" + seqId
-	}
-	poolType := ""
-	if category == "char" {
-		poolType = "&pool_type=" + charPoolType
-	}
-	if category != "char" && category != "weapon" {
-		log.Fatal("unsupport category: " + category)
-	}
-	ul := fmt.Sprintf("https://ef-webview.hypergryph.com/api/record/%s?lang=zh-cn&token=%s&server_id=1%s%s", category, url.QueryEscape(uid), poolType, posStr)
-	parse, parseErr := url.Parse(ul)
-	if parseErr != nil {
-		log.Fatal(parseErr)
-	}
-	req, err := http.NewRequest("GET", parse.String(), nil)
-	if err != nil {
-		log.Fatal(err)
-	}
-	resp, err := client.Do(req)
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer resp.Body.Close()
-	bodyText, err := io.ReadAll(resp.Body)
-	if err != nil {
-		log.Fatal(err)
-	}
-	fmt.Println(string(bodyText))
+// FetchCharGacha 拉取角色数据
+func FetchCharGacha(uid string, poolType string, seqId string) types.EndfieldCharGacha {
+    client := &http.Client{}
+    posStr := ""
+    if seqId != "" {
+        posStr = "&seq_id=" + seqId
+    }
+    ul := fmt.Sprintf("https://ef-webview.hypergryph.com/api/record/char?lang=zh-cn&token=%s&server_id=1&pool_type=%s%s", url.QueryEscape(uid), poolType, posStr)
+    parse, parseErr := url.Parse(ul)
+    if parseErr != nil {
+        log.Fatal(parseErr)
+    }
+    req, err := http.NewRequest("GET", parse.String(), nil)
+    if err != nil {
+        log.Fatal(err)
+    }
+    resp, err := client.Do(req)
+    if err != nil {
+        log.Fatal(err)
+    }
+    defer resp.Body.Close()
+    bodyText, err := io.ReadAll(resp.Body)
+    if err != nil {
+        log.Fatal(err)
+    }
+    fmt.Println(string(bodyText))
+    history := types.EndfieldCharGacha{}
+    _ = json.Unmarshal(bodyText, &history)
+    return history
+}
+
+// FetchWeaponGacha 拉取武器数据
+func FetchWeaponGacha(uid string, seqId string) types.EndfieldWeaponGacha {
+    client := &http.Client{}
+    posStr := ""
+    if seqId != "" {
+        posStr = "&seq_id=" + seqId
+    }
+    ul := fmt.Sprintf("https://ef-webview.hypergryph.com/api/record/weapon?lang=zh-cn&token=%s&server_id=1%s", url.QueryEscape(uid), posStr)
+    parse, parseErr := url.Parse(ul)
+    if parseErr != nil {
+        log.Fatal(parseErr)
+    }
+    req, err := http.NewRequest("GET", parse.String(), nil)
+    if err != nil {
+        log.Fatal(err)
+    }
+    resp, err := client.Do(req)
+    if err != nil {
+        log.Fatal(err)
+    }
+    defer resp.Body.Close()
+    bodyText, err := io.ReadAll(resp.Body)
+    if err != nil {
+        log.Fatal(err)
+    }
+    fmt.Println(string(bodyText))
+    history := types.EndfieldWeaponGacha{}
+    _ = json.Unmarshal(bodyText, &history)
+    return history
 }
