@@ -25,5 +25,10 @@ var EndfieldCharGachaType = map[string]string{
 	"E_CharacterGachaPoolType_Special":  "特殊",
 	"E_CharacterGachaPoolType_Beginner": "新手",
 }
+var EndfieldCharGachaTypeMap = map[string]string{
+    "E_CharacterGachaPoolType_Standard": "standard",
+    "E_CharacterGachaPoolType_Special":  "special",
+    "E_CharacterGachaPoolType_Beginner": "beginner",
+}
 
 const CacheData2Path = "\\Cache\\Cache_Data\\data_2"
