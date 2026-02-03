@@ -316,7 +316,7 @@ func buildEndfield() string {
         pool.PityCount++
         if it.Rarity == 6 {
             // 格式化六星记录: 干员名(抽取序号)
-            record := fmt.Sprintf("%s(%d)", it.CharName, pool.PityCount)
+            record := fmt.Sprintf("%s(%d)", it.Name(), pool.PityCount)
             pool.SixStars = append(pool.SixStars, record)
             // 重置保底计数器
             pool.PityCount = 0

@@ -64,3 +64,9 @@ func (receiver EndfieldGacha) IsWeapon() bool {
 func (receiver EndfieldGacha) Exist() bool {
     return receiver.PoolID != ""
 }
+func (receiver EndfieldGacha) Name() string {
+    if receiver.IsWeapon() {
+        return receiver.WeaponName
+    }
+    return receiver.CharName
+}
