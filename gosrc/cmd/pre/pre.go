@@ -5,7 +5,8 @@ import (
 	"gosrc/internal/constant"
 	"gosrc/internal/types"
 	"gosrc/internal/utils"
-	"sort"
+    "slices"
+    "sort"
 	"strings"
 )
 
@@ -56,6 +57,7 @@ func fillGenshinImpact() {
     content = content + "\n\n" + buildHK4E()
     content = content + "\n\n" + buildZZZ()
     content = content + "\n\n" + buildSR()
+    content = content + "\n\n" + buildEndfield()
     content = content + "\n\n" + buildArkNightsV2()
     content = content + "\n\n" + buildArkNightsV1()
     filePath := "../content/post/genshin-impact/index.md"
@@ -105,7 +107,8 @@ func buildArkNightsV2() string {
 	var tableBuilder strings.Builder
 	tableBuilder.WriteString("## 明日方舟\n\n|池子|总抽取数量|六星|已抽|\n|---|---|---|---|\n")
 
-	// 按出现顺序输出池子
+    // 按出现顺序的倒序输出池子
+    slices.Reverse(poolOrder)
 	for _, name := range poolOrder {
 		p := poolMap[name]
 		// 将六星记录连接为逗号分隔的字符串
@@ -243,7 +246,6 @@ func buildSR() string {
 	hsr = hsr + s
 	return hsr
 }
-
 func buildZZZ() string {
 	f := utils.ReadJSONFile[map[string][]types.MiHoYoWish]("../assets/data/zzz.json")
 	s := ""
@@ -280,4 +282,58 @@ func buildZZZ() string {
 `
 	zzz = zzz + s
 	return zzz
+}
+func buildEndfield() string {
+    f := utils.ReadJSONFile[[]types.EndfieldGacha]("../assets/data/endfield.json")
+    sort.Slice(f, func(i, j int) bool {
+        return !f[i].TimeGt(f[j])
+    })
+
+    type Pool struct {
+        Id        string
+        Name      string
+        Count     int
+        SixStars  []string // 存储六星记录的切片
+        PityCount int      // 保底计数器
+    }
+
+    // 使用map提高查找效率
+    poolMap := make(map[string]*Pool)
+    // 记录池子出现的顺序
+    poolOrder := []string{}
+
+    for _, it := range f {
+        pool, exists := poolMap[it.PoolID]
+        if !exists {
+            // 新池子初始化
+            pool = &Pool{Id: it.PoolID, Name: it.PoolName}
+            poolMap[it.PoolID] = pool
+            poolOrder = append(poolOrder, it.PoolID)
+        }
+
+        pool.Count += 1
+
+        pool.PityCount++
+        if it.Rarity == 5 {
+            // 格式化六星记录: 干员名(抽取序号)
+            record := fmt.Sprintf("%s(%d)", it.CharName, pool.PityCount)
+            pool.SixStars = append(pool.SixStars, record)
+            // 重置保底计数器
+            pool.PityCount = 0
+        }
+    }
+
+    var tableBuilder strings.Builder
+    tableBuilder.WriteString("## 终末地\n\n|池子|总抽取数量|六星|已抽|\n|---|---|---|---|\n")
+
+    // 按出现顺序的倒序输出池子
+    slices.Reverse(poolOrder)
+    for _, name := range poolOrder {
+        p := poolMap[name]
+        // 将六星记录连接为逗号分隔的字符串
+        sixStarStr := strings.Join(p.SixStars, ",")
+        tableBuilder.WriteString(fmt.Sprintf("|%s|%d|%s|%d|\n", p.Name, p.Count, sixStarStr, p.PityCount))
+    }
+
+    return tableBuilder.String()
 }

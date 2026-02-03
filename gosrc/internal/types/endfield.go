@@ -2,7 +2,6 @@ package types
 
 import (
     "fmt"
-    "gosrc/internal/constant"
     "strconv"
     "strings"
 )
@@ -36,20 +35,6 @@ func (receiver EndfieldGacha) String() string {
     }
     return fmt.Sprintf("PoolName[%s]Char[%s][%s]", receiver.PoolName, receiver.CharName, strings.Repeat("⭐", receiver.Rarity))
 }
-func (receiver EndfieldGacha) Equal(other EndfieldGacha) bool {
-	return receiver.PoolID == other.PoolID && receiver.GachaTs == other.GachaTs && receiver.SeqId == other.SeqId
-}
-func (receiver EndfieldGacha) TimeLt(other EndfieldGacha) bool {
-    if receiver.GachaTs == other.GachaTs {
-        is, _ := strconv.Atoi(receiver.SeqId)
-        js, _ := strconv.Atoi(other.SeqId)
-        return is < js
-    }
-
-    its, _ := strconv.ParseInt(receiver.GachaTs, 10, 64)
-    jts, _ := strconv.ParseInt(other.GachaTs, 10, 64)
-    return its < jts
-}
 func (receiver EndfieldGacha) TimeGt(other EndfieldGacha) bool {
     if receiver.GachaTs == other.GachaTs {
         is, _ := strconv.Atoi(receiver.SeqId)
@@ -64,12 +49,6 @@ func (receiver EndfieldGacha) TimeGt(other EndfieldGacha) bool {
 func (receiver EndfieldGacha) GachaId() string {
 	return receiver.PoolID + receiver.GachaTs + receiver.SeqId
 }
-func (receiver EndfieldGacha) MatchGachaType(gachaType string) bool {
-    if receiver.IsWeapon() {
-        return false
-    }
-    return strings.HasPrefix(receiver.PoolID, constant.EndfieldCharGachaTypeMap[gachaType])
-}
 func (receiver EndfieldGacha) IsBeginner() bool {
     return receiver.PoolID == "beginner"
 }
@@ -81,4 +60,7 @@ func (receiver EndfieldGacha) IsSpecial() bool {
 }
 func (receiver EndfieldGacha) IsWeapon() bool {
     return receiver.WeaponID != ""
+}
+func (receiver EndfieldGacha) Exist() bool {
+    return receiver.PoolID != ""
 }

@@ -21,14 +21,28 @@ var HK4EGachaType = map[string]string{
     "500": "混合祈愿",
 }
 var EndfieldCharGachaType = map[string]string{
+    "E_CharacterGachaPoolType_Beginner": "新手",
 	"E_CharacterGachaPoolType_Standard": "标准",
 	"E_CharacterGachaPoolType_Special":  "特殊",
-	"E_CharacterGachaPoolType_Beginner": "新手",
 }
 var EndfieldCharGachaTypeMap = map[string]string{
-    "E_CharacterGachaPoolType_Standard": "standard",
-    "E_CharacterGachaPoolType_Special":  "special",
-    "E_CharacterGachaPoolType_Beginner": "beginner",
+    "E_CharacterGachaPoolType_Beginner": BEGINNER,
+    "E_CharacterGachaPoolType_Standard": STANDARD,
+    "E_CharacterGachaPoolType_Special":  SPECIAL,
+}
+
+const (
+    BEGINNER = "beginner"
+    STANDARD = "standard"
+    SPECIAL  = "special"
+    WEPONBOX = "weponbox"
+)
+
+var EndfieldGachaType = map[string]struct{}{
+    BEGINNER: {},
+    STANDARD: {},
+    SPECIAL:  {},
+    WEPONBOX: {},
 }
 
 const CacheData2Path = "\\Cache\\Cache_Data\\data_2"
