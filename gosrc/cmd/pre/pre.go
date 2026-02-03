@@ -314,7 +314,7 @@ func buildEndfield() string {
         pool.Count += 1
 
         pool.PityCount++
-        if it.Rarity == 5 {
+        if it.Rarity == 6 {
             // 格式化六星记录: 干员名(抽取序号)
             record := fmt.Sprintf("%s(%d)", it.CharName, pool.PityCount)
             pool.SixStars = append(pool.SixStars, record)
