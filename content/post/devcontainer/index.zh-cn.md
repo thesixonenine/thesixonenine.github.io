@@ -1,7 +1,7 @@
 ---
 title: "devcontainer"
 date: 2025-09-10T11:19:26
-lastmod: 2026-01-15T14:45:54+0800
+lastmod: 2026-02-03T15:07:50+0800
 categories: ['Docker']
 keywords: devcontainer
 description: Dev Container
@@ -249,6 +249,23 @@ RUN npm config set registry https://registry.npmmirror.com
 ```
 
 另外, 还可以预先拉取该 `Dockerfile` 中的基础镜像 `mcr.microsoft.com/devcontainers/base:0-alpine-3.20`
+
+## 更新基础镜像
+
+**Powershell**
+
+更新以 mcr 开头的镜像
+
+```
+docker images --format "{{.Repository}}:{{.Tag}}" | Where-Object { $_ -like "mcr*" -and $_ -notlike "*:<none>" } | ForEach-Object { docker pull $_ }
+```
+
+打印非 mcr 开头的镜像
+
+```
+docker images --format "{{.Repository}}:{{.Tag}}" | Where-Object { $_ -notlike "mcr*" } | ForEach-Object { Write-Host "$_" }
+```
+
 
 ## 镜像源替换
 
