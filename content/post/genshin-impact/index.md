@@ -1,7 +1,7 @@
 ---
 title: "genshin-impact"
 date: 2023-10-23T21:53:15
-lastmod: 2025-12-14T23:00:17
+lastmod: 2026-02-03T16:31:14
 categories: ['Game']
 description: 原神,启动!
 image: "https://act-webstatic.mihoyo.com/event-static/2023/08/15/cc72ddf351003a4a9b618e5f4697dad0_2771553456903788244.jpg"
@@ -42,7 +42,7 @@ image: "https://act-webstatic.mihoyo.com/event-static/2023/08/15/cc72ddf351003a4
 |新手跃迁|50|白露(50)|0|
 
 
-## 终末地
+## 明日方舟：终末地
 
 |池子|总抽取数量|六星|已抽|
 |---|---|---|---|

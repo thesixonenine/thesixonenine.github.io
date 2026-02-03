@@ -324,7 +324,7 @@ func buildEndfield() string {
     }
 
     var tableBuilder strings.Builder
-    tableBuilder.WriteString("## 终末地\n\n|池子|总抽取数量|六星|已抽|\n|---|---|---|---|\n")
+    tableBuilder.WriteString("## 明日方舟：终末地\n\n|池子|总抽取数量|六星|已抽|\n|---|---|---|---|\n")
 
     // 按出现顺序的倒序输出池子
     slices.Reverse(poolOrder)
