@@ -5958,5 +5958,115 @@
 		"isNew": false,
 		"gachaTs": "1766122569261",
 		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_190_clour",
+		"charName": "红云",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1770701282463",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_271_spikes",
+		"charName": "芳汀",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1770701282463",
+		"pos": 1
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_301_cutter",
+		"charName": "刻刀",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1770701282463",
+		"pos": 2
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_484_robrta",
+		"charName": "罗比菈塔",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1770701282463",
+		"pos": 3
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_328_cammou",
+		"charName": "卡达",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1770701282463",
+		"pos": 4
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_290_vigna",
+		"charName": "红豆",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1770701282463",
+		"pos": 5
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_4222_taraxa",
+		"charName": "风絮",
+		"rarity": 4,
+		"isNew": true,
+		"gachaTs": "1770701282463",
+		"pos": 6
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_4208_wintim",
+		"charName": "冬时",
+		"rarity": 3,
+		"isNew": true,
+		"gachaTs": "1770701282463",
+		"pos": 7
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_151_myrtle",
+		"charName": "桃金娘",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1770701282463",
+		"pos": 8
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_278_orchid",
+		"charName": "梓兰",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1770701282463",
+		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_121_lava",
+		"charName": "炎熔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1770701295068",
+		"pos": 0
 	}
 ]

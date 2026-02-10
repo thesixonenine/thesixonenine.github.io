@@ -27,6 +27,7 @@ var cookie = ""
 var cates []types.ArkNightsCategory
 
 // 收集每次从官网获取的抽卡数据, 然后合并到本地JSON文件中.
+// https://ak.hypergryph.com/user/headhunting
 func main() {
 	cUrl, _ := ExtractCUrlBash()
 	if cUrl == nil {
