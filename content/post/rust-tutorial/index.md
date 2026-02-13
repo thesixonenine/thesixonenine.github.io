@@ -2,7 +2,7 @@
 title: "rust-tutorial"
 date: 2026-02-13T14:08:57+08:00
 lastmod: 2026-02-13T14:08:57+08:00
-categories: ['']
+categories: ['Rust']
 tags: ['']
 keywords: 
 description: 
