@@ -6068,5 +6068,55 @@
 		"isNew": false,
 		"gachaTs": "1770701295068",
 		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_452_bstalk",
+		"charName": "豆苗",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1770770122170",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_126_shotst",
+		"charName": "流星",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1770856019277",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_4222_taraxa",
+		"charName": "风絮",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1770941293700",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_4222_taraxa",
+		"charName": "风絮",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1771027655957",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_2014_nian",
+		"charName": "年",
+		"rarity": 5,
+		"isNew": true,
+		"gachaTs": "1771117401113",
+		"pos": 0
 	}
 ]
