@@ -6118,5 +6118,75 @@
 		"isNew": true,
 		"gachaTs": "1771117401113",
 		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_284_spot",
+		"charName": "斑点",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771205197001",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_240_wyvern",
+		"charName": "香草",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771275022983",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_118_yuki",
+		"charName": "白雪",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771375296193",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_137_brownb",
+		"charName": "猎蜂",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771460760528",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_328_cammou",
+		"charName": "卡达",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771555237243",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_122_beagle",
+		"charName": "米格鲁",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771636578377",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_151_myrtle",
+		"charName": "桃金娘",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771729234747",
+		"pos": 0
 	}
 ]
