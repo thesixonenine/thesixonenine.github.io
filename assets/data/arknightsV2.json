@@ -6188,5 +6188,215 @@
 		"isNew": false,
 		"gachaTs": "1771729234747",
 		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_118_yuki",
+		"charName": "白雪",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771813485921",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_4222_taraxa",
+		"charName": "风絮",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1771814710337",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_192_falco",
+		"charName": "翎羽",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771814710337",
+		"pos": 1
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771814710337",
+		"pos": 2
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_124_kroos",
+		"charName": "克洛丝",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771814710337",
+		"pos": 3
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_298_susuro",
+		"charName": "苏苏洛",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771814710337",
+		"pos": 4
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_493_firwhl",
+		"charName": "火哨",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1771814710337",
+		"pos": 5
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_4130_luton",
+		"charName": "露托",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771814710337",
+		"pos": 6
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_271_spikes",
+		"charName": "芳汀",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771814710337",
+		"pos": 7
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_137_brownb",
+		"charName": "猎蜂",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771814710337",
+		"pos": 8
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_183_skgoat",
+		"charName": "地灵",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771814710337",
+		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_141_nights",
+		"charName": "夜烟",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771814724210",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_196_sunbr",
+		"charName": "古米",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771814724210",
+		"pos": 1
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_283_midn",
+		"charName": "月见夜",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771814724210",
+		"pos": 2
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_236_rope",
+		"charName": "暗索",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771814724210",
+		"pos": 3
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_366_acdrop",
+		"charName": "酸糖",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771814724210",
+		"pos": 4
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_237_gravel",
+		"charName": "砾",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771814724210",
+		"pos": 5
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_302_glaze",
+		"charName": "安比尔",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771814724210",
+		"pos": 6
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_2027_wang",
+		"charName": "望",
+		"rarity": 5,
+		"isNew": true,
+		"gachaTs": "1771814724210",
+		"pos": 7
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_237_gravel",
+		"charName": "砾",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771814724210",
+		"pos": 8
+	},
+	{
+		"poolId": "LIMITED_70_0_1",
+		"poolName": "劫尽古今",
+		"charId": "char_381_bubble",
+		"charName": "泡泡",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771814724210",
+		"pos": 9
 	}
 ]
