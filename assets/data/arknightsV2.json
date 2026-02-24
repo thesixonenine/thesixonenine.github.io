@@ -6398,5 +6398,1605 @@
 		"isNew": false,
 		"gachaTs": "1771814724210",
 		"pos": 9
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_301_cutter",
+		"charName": "刻刀",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946754304",
+		"pos": 0
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_149_scave",
+		"charName": "清道夫",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946754304",
+		"pos": 1
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_452_bstalk",
+		"charName": "豆苗",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946754304",
+		"pos": 2
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_281_popka",
+		"charName": "泡普卡",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946754304",
+		"pos": 3
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_130_doberm",
+		"charName": "杜宾",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946754304",
+		"pos": 4
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_151_myrtle",
+		"charName": "桃金娘",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946754304",
+		"pos": 5
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_130_doberm",
+		"charName": "杜宾",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946754304",
+		"pos": 6
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_210_stward",
+		"charName": "史都华德",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946754304",
+		"pos": 7
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946754304",
+		"pos": 8
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_497_ctable",
+		"charName": "晓歌",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1771946754304",
+		"pos": 9
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_118_yuki",
+		"charName": "白雪",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946762368",
+		"pos": 0
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946762368",
+		"pos": 1
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_117_myrrh",
+		"charName": "末药",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946762368",
+		"pos": 2
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_278_orchid",
+		"charName": "梓兰",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946762368",
+		"pos": 3
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_491_humus",
+		"charName": "休谟斯",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946762368",
+		"pos": 4
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_122_beagle",
+		"charName": "米格鲁",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946762368",
+		"pos": 5
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_208_melan",
+		"charName": "玫兰莎",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946762368",
+		"pos": 6
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_381_bubble",
+		"charName": "泡泡",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946762368",
+		"pos": 7
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_150_snakek",
+		"charName": "蛇屠箱",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946762368",
+		"pos": 8
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_491_humus",
+		"charName": "休谟斯",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946762368",
+		"pos": 9
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_484_robrta",
+		"charName": "罗比菈塔",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946770357",
+		"pos": 0
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_123_fang",
+		"charName": "芬",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946770357",
+		"pos": 1
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_283_midn",
+		"charName": "月见夜",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946770357",
+		"pos": 2
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_212_ansel",
+		"charName": "安赛尔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946770357",
+		"pos": 3
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_4130_luton",
+		"charName": "露托",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946770357",
+		"pos": 4
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_278_orchid",
+		"charName": "梓兰",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946770357",
+		"pos": 5
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_181_flower",
+		"charName": "调香师",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946770357",
+		"pos": 6
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_271_spikes",
+		"charName": "芳汀",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946770357",
+		"pos": 7
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_141_nights",
+		"charName": "夜烟",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946770357",
+		"pos": 8
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_123_fang",
+		"charName": "芬",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946770357",
+		"pos": 9
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_4207_branch",
+		"charName": "折桠",
+		"rarity": 4,
+		"isNew": true,
+		"gachaTs": "1771946777786",
+		"pos": 0
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_253_greyy",
+		"charName": "格雷伊",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946777786",
+		"pos": 1
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_283_midn",
+		"charName": "月见夜",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946777786",
+		"pos": 2
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_190_clour",
+		"charName": "红云",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946777786",
+		"pos": 3
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_278_orchid",
+		"charName": "梓兰",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946777786",
+		"pos": 4
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_210_stward",
+		"charName": "史都华德",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946777786",
+		"pos": 5
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_196_sunbr",
+		"charName": "古米",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946777786",
+		"pos": 6
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_4130_luton",
+		"charName": "露托",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946777786",
+		"pos": 7
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_283_midn",
+		"charName": "月见夜",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946777786",
+		"pos": 8
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_141_nights",
+		"charName": "夜烟",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946777786",
+		"pos": 9
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_192_falco",
+		"charName": "翎羽",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946786995",
+		"pos": 0
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_4196_reckpr",
+		"charName": "录武官",
+		"rarity": 4,
+		"isNew": true,
+		"gachaTs": "1771946786995",
+		"pos": 1
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_4208_wintim",
+		"charName": "冬时",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946786995",
+		"pos": 2
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_122_beagle",
+		"charName": "米格鲁",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946786995",
+		"pos": 3
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_278_orchid",
+		"charName": "梓兰",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946786995",
+		"pos": 4
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_281_popka",
+		"charName": "泡普卡",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946786995",
+		"pos": 5
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_284_spot",
+		"charName": "斑点",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946786995",
+		"pos": 6
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_289_gyuki",
+		"charName": "缠丸",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946786995",
+		"pos": 7
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_130_doberm",
+		"charName": "杜宾",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946786995",
+		"pos": 8
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_4041_chnut",
+		"charName": "褐果",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946786995",
+		"pos": 9
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_181_flower",
+		"charName": "调香师",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946794676",
+		"pos": 0
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_110_deepcl",
+		"charName": "深海色",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946794676",
+		"pos": 1
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_133_mm",
+		"charName": "梅",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946794676",
+		"pos": 2
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_366_acdrop",
+		"charName": "酸糖",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946794676",
+		"pos": 3
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_289_gyuki",
+		"charName": "缠丸",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946794676",
+		"pos": 4
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_4208_wintim",
+		"charName": "冬时",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946794676",
+		"pos": 5
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946794676",
+		"pos": 6
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_137_brownb",
+		"charName": "猎蜂",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946794676",
+		"pos": 7
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_277_sqrrel",
+		"charName": "阿消",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946794676",
+		"pos": 8
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_4132_ascln",
+		"charName": "阿斯卡纶",
+		"rarity": 5,
+		"isNew": false,
+		"gachaTs": "1771946794676",
+		"pos": 9
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_190_clour",
+		"charName": "红云",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946801878",
+		"pos": 0
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946801878",
+		"pos": 1
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_284_spot",
+		"charName": "斑点",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946801878",
+		"pos": 2
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_4196_reckpr",
+		"charName": "录武官",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1771946801878",
+		"pos": 3
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_302_glaze",
+		"charName": "安比尔",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946801878",
+		"pos": 4
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946801878",
+		"pos": 5
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_484_robrta",
+		"charName": "罗比菈塔",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946801878",
+		"pos": 6
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_469_indigo",
+		"charName": "深靛",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946801878",
+		"pos": 7
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_181_flower",
+		"charName": "调香师",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946801878",
+		"pos": 8
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_123_fang",
+		"charName": "芬",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946801878",
+		"pos": 9
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_445_wscoot",
+		"charName": "骋风",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946808098",
+		"pos": 0
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_190_clour",
+		"charName": "红云",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946808098",
+		"pos": 1
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946808098",
+		"pos": 2
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_4062_totter",
+		"charName": "铅踝",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946808098",
+		"pos": 3
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_141_nights",
+		"charName": "夜烟",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946808098",
+		"pos": 4
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_210_stward",
+		"charName": "史都华德",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946808098",
+		"pos": 5
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_193_frostl",
+		"charName": "霜叶",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946808098",
+		"pos": 6
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_258_podego",
+		"charName": "波登可",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946808098",
+		"pos": 7
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_124_kroos",
+		"charName": "克洛丝",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946808098",
+		"pos": 8
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_150_snakek",
+		"charName": "蛇屠箱",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946808098",
+		"pos": 9
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_4196_reckpr",
+		"charName": "录武官",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1771946815833",
+		"pos": 0
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_141_nights",
+		"charName": "夜烟",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946815833",
+		"pos": 1
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_284_spot",
+		"charName": "斑点",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946815833",
+		"pos": 2
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_210_stward",
+		"charName": "史都华德",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946815833",
+		"pos": 3
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946815833",
+		"pos": 4
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_289_gyuki",
+		"charName": "缠丸",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946815833",
+		"pos": 5
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_212_ansel",
+		"charName": "安赛尔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946815833",
+		"pos": 6
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_150_snakek",
+		"charName": "蛇屠箱",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946815833",
+		"pos": 7
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_4062_totter",
+		"charName": "铅踝",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946815833",
+		"pos": 8
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_133_mm",
+		"charName": "梅",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946815833",
+		"pos": 9
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_281_popka",
+		"charName": "泡普卡",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946861496",
+		"pos": 0
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_121_lava",
+		"charName": "炎熔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946861496",
+		"pos": 1
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_301_cutter",
+		"charName": "刻刀",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946861496",
+		"pos": 2
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_302_glaze",
+		"charName": "安比尔",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946861496",
+		"pos": 3
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_4203_kichi",
+		"charName": "吉星",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1771946861496",
+		"pos": 4
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_122_beagle",
+		"charName": "米格鲁",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946861496",
+		"pos": 5
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_4132_ascln",
+		"charName": "阿斯卡纶",
+		"rarity": 5,
+		"isNew": false,
+		"gachaTs": "1771946861496",
+		"pos": 6
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_381_bubble",
+		"charName": "泡泡",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946861496",
+		"pos": 7
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_4130_luton",
+		"charName": "露托",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946861496",
+		"pos": 8
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_118_yuki",
+		"charName": "白雪",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946861496",
+		"pos": 9
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946870315",
+		"pos": 0
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_284_spot",
+		"charName": "斑点",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946870315",
+		"pos": 1
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_110_deepcl",
+		"charName": "深海色",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946870315",
+		"pos": 2
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_121_lava",
+		"charName": "炎熔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946870315",
+		"pos": 3
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_337_utage",
+		"charName": "宴",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946870315",
+		"pos": 4
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_149_scave",
+		"charName": "清道夫",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946870315",
+		"pos": 5
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_210_stward",
+		"charName": "史都华德",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946870315",
+		"pos": 6
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_289_gyuki",
+		"charName": "缠丸",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946870315",
+		"pos": 7
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_109_fmout",
+		"charName": "远山",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946870315",
+		"pos": 8
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_192_falco",
+		"charName": "翎羽",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946870315",
+		"pos": 9
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_289_gyuki",
+		"charName": "缠丸",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946877348",
+		"pos": 0
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_109_fmout",
+		"charName": "远山",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946877348",
+		"pos": 1
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_440_pinecn",
+		"charName": "松果",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946877348",
+		"pos": 2
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_497_ctable",
+		"charName": "晓歌",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1771946877348",
+		"pos": 3
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_193_frostl",
+		"charName": "霜叶",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946877348",
+		"pos": 4
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_4187_graceb",
+		"charName": "聆音",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1771946877348",
+		"pos": 5
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_181_flower",
+		"charName": "调香师",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946877348",
+		"pos": 6
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_301_cutter",
+		"charName": "刻刀",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946877348",
+		"pos": 7
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_183_skgoat",
+		"charName": "地灵",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946877348",
+		"pos": 8
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_278_orchid",
+		"charName": "梓兰",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946877348",
+		"pos": 9
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_124_kroos",
+		"charName": "克洛丝",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946884508",
+		"pos": 0
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_284_spot",
+		"charName": "斑点",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946884508",
+		"pos": 1
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_149_scave",
+		"charName": "清道夫",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946884508",
+		"pos": 2
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_121_lava",
+		"charName": "炎熔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946884508",
+		"pos": 3
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_149_scave",
+		"charName": "清道夫",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946884508",
+		"pos": 4
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_469_indigo",
+		"charName": "深靛",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946884508",
+		"pos": 5
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_151_myrtle",
+		"charName": "桃金娘",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946884508",
+		"pos": 6
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_199_yak",
+		"charName": "角峰",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946884508",
+		"pos": 7
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_278_orchid",
+		"charName": "梓兰",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946884508",
+		"pos": 8
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_192_falco",
+		"charName": "翎羽",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946884508",
+		"pos": 9
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_149_scave",
+		"charName": "清道夫",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946891531",
+		"pos": 0
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_122_beagle",
+		"charName": "米格鲁",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946891531",
+		"pos": 1
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_240_wyvern",
+		"charName": "香草",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946891531",
+		"pos": 2
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_497_ctable",
+		"charName": "晓歌",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1771946891531",
+		"pos": 3
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_210_stward",
+		"charName": "史都华德",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946891531",
+		"pos": 4
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_469_indigo",
+		"charName": "深靛",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946891531",
+		"pos": 5
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_278_orchid",
+		"charName": "梓兰",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946891531",
+		"pos": 6
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_440_pinecn",
+		"charName": "松果",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946891531",
+		"pos": 7
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_258_podego",
+		"charName": "波登可",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946891531",
+		"pos": 8
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946891531",
+		"pos": 9
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_258_podego",
+		"charName": "波登可",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946897516",
+		"pos": 0
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_1027_greyy2",
+		"charName": "承曦格雷伊",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1771946897516",
+		"pos": 1
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_290_vigna",
+		"charName": "红豆",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946897516",
+		"pos": 2
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_4130_luton",
+		"charName": "露托",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946897516",
+		"pos": 3
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946897516",
+		"pos": 4
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_277_sqrrel",
+		"charName": "阿消",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946897516",
+		"pos": 5
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_124_kroos",
+		"charName": "克洛丝",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946897516",
+		"pos": 6
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_181_flower",
+		"charName": "调香师",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946897516",
+		"pos": 7
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_212_ansel",
+		"charName": "安赛尔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946897516",
+		"pos": 8
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_290_vigna",
+		"charName": "红豆",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946897516",
+		"pos": 9
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_278_orchid",
+		"charName": "梓兰",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946904289",
+		"pos": 0
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_337_utage",
+		"charName": "宴",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946904289",
+		"pos": 1
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_240_wyvern",
+		"charName": "香草",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946904289",
+		"pos": 2
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_381_bubble",
+		"charName": "泡泡",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946904289",
+		"pos": 3
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_491_humus",
+		"charName": "休谟斯",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946904289",
+		"pos": 4
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_4202_haruka",
+		"charName": "遥",
+		"rarity": 5,
+		"isNew": true,
+		"gachaTs": "1771946904289",
+		"pos": 5
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_124_kroos",
+		"charName": "克洛丝",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1771946904289",
+		"pos": 6
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_193_frostl",
+		"charName": "霜叶",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946904289",
+		"pos": 7
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_4196_reckpr",
+		"charName": "录武官",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1771946904289",
+		"pos": 8
+	},
+	{
+		"poolId": "SPECIAL_70_0_3",
+		"poolName": "定向甄选",
+		"charId": "char_149_scave",
+		"charName": "清道夫",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1771946904289",
+		"pos": 9
 	}
 ]
