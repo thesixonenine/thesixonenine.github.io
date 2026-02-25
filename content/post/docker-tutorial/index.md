@@ -1,7 +1,7 @@
 ---
 title: docker-tutorial
 date: 2022-03-22T18:27:00+0800
-lastmod: 2026-01-21T11:13:29+0800
+lastmod: 2026-02-25T15:04:49
 tags: ['Linux']
 categories: ['Docker']
 keywords: docker
@@ -145,4 +145,31 @@ docker run -d -p 8000:8000 -p 9000:9000 -p 9443:9443 \
 	-v /var/run/docker.sock:/var/run/docker.sock \
 	-v portainer_data:/data \
 	portainer/portainer-ce:2.11.1
+```
+
+## often images
+
+```shell
+docker images --format "{{.Repository}}:{{.Tag}} {{.ID}}"
+```
+
+```text
+mcr.microsoft.com/devcontainers/typescript-node:24-trixie 1c85db47779c
+mcr.microsoft.com/devcontainers/javascript-node:24-trixie 4343c225fd9d
+mcr.microsoft.com/devcontainers/java:8-bookworm e8f6adef0f3f
+mcr.microsoft.com/devcontainers/base:trixie 4863c108939a
+mcr.microsoft.com/devcontainers/python:3-trixie 1435048bd360
+mcr.microsoft.com/devcontainers/go:1-trixie 0dda5fbe8ccb
+vsc-volume-bootstrap:latest d611d0a3668a
+tindy2013/subconverter:latest d5c07cbdcdd4
+redis:6.2.20-alpine a58b74ba639d
+lukbinx/qianxin-client:1.2.1.463 b022c9d38bd3
+hagb/docker-atrust:latest 25ee7f99cbe2
+hagb/docker-easyconnect:7.6.3 6bdf01bf6c9e
+docker/dockerfile:1.4 1e8a16826fd1
+mysql:5.7.26 e9c354083de7
+```
+
+```shell
+docker images --format "table {{.Repository}}\t{{.Tag}}\t{{.ID}}"
 ```
