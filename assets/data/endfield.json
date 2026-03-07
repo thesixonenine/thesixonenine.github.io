@@ -2,6 +2,20 @@
 	{
 		"poolId": "standard",
 		"poolName": "基础寻访",
+		"charId": "chr_0014_aurora",
+		"charName": "昼雪",
+		"weaponId": "",
+		"weaponName": "",
+		"weaponType": "",
+		"rarity": 5,
+		"isNew": false,
+		"isFree": false,
+		"gachaTs": "1772800975051",
+		"seqId": "274"
+	},
+	{
+		"poolId": "standard",
+		"poolName": "基础寻访",
 		"charId": "chr_0019_karin",
 		"charName": "秋栗",
 		"weaponId": "",
