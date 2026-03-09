@@ -1,7 +1,7 @@
 ---
 title: seal-the-vpn
 date: 2025-12-10T23:11:21+0800
-lastmod: 2025-12-13T22:27:24+0800
+lastmod: 2026-03-09T16:47:01
 tags: ['Docker']
 categories: ['Docker']
 keywords: vpn
@@ -53,6 +53,10 @@ docker rmi swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/lukbinx/qianxin-cl
 ```
 
 ### run image
+
+- 端口 `6901` 是 KasmVNC 服务, 可使用浏览器打开 `http://127.0.0.1:6901` 进行连接并登录
+- 端口 `1080` 是 socks5 代理
+
 
 ```shell
 docker run -d --name qianxin-lukbinx --restart=always \
@@ -146,6 +150,11 @@ docker rmi swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/hagb/docker-atrust
 ```
 
 ### run image
+
+- 端口 `5901` 是 VNC 服务, 可使用 `realvnc viewer` 进行连接并登录
+- 端口 `1080` 是 socks5 代理
+- 端口 `8888` 是 http 代理
+
 
 ```shell
 docker run --name atrust \
