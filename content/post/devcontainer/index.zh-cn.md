@@ -1,7 +1,7 @@
 ---
 title: "devcontainer"
 date: 2025-09-10T11:19:26
-lastmod: 2026-02-03T15:07:50+0800
+lastmod: 2026-03-19T10:15:21
 categories: ['Docker']
 keywords: devcontainer
 description: Dev Container
@@ -292,6 +292,38 @@ sudo sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositorie
 ```shell
 npm config set registry https://registry.npmmirror.com
 ```
+
+
+## 新环境初始化
+
+
+很多时候需要临时在linux中试用一些软件或命令, 需要一个干净的环境, 这时可以直接使用 `mcr.microsoft.com/devcontainers/base:trixie`
+
+
+```shell
+docker run --rm -it mcr.microsoft.com/devcontainers/base:trixie /bin/zsh
+```
+
+```shell
+sed -i -e 's@deb.debian.org@mirrors.aliyun.com@;s@http:@https:@' /etc/apt/sources.list.d/debian.sources && \
+apt-get update > /dev/null && apt-get upgrade -y > /dev/null && \
+apt-get install -y vim ncat age expect > /dev/null && \
+sh -c "$(curl -fsLS get.chezmoi.io)" -- -b /bin
+```
+
+再从主机中复制 `chezmoi` 的初始化命令并执行
+
+
+```shell
+copy-chezmoi-init
+```
+
+最后刷新一下 shell 即可
+
+```shell
+source ~/.zshrc
+```
+
 
 ## MySQL Client
 
