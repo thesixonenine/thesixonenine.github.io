@@ -346,6 +346,17 @@ rg -V && \
 nvim -v
 ```
 
+Clone
+
+
+```shell
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+```
+
+```shell
+rm -rf ~/.config/nvim/.git
+```
+
 
 ## MySQL Client
 
