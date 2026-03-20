@@ -324,6 +324,28 @@ copy-chezmoi-init
 source ~/.zshrc
 ```
 
+### LazyVim
+
+```shell
+apt install -y git lazygit fd-find curl ripgrep neovim
+```
+
+```shell
+ln -s $(which fdfind) /bin/fd
+```
+
+Version
+
+
+```shell
+git -v && \
+lazygit -v && \
+fdfind -V && \
+curl -V && \
+rg -V && \
+nvim -v
+```
+
 
 ## MySQL Client
 
