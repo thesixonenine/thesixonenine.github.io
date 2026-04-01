@@ -1,7 +1,7 @@
 ---
 title: seal-the-vpn
 date: 2025-12-10T23:11:21+0800
-lastmod: 2026-03-09T16:47:01
+lastmod: 2026-04-01T10:47:01
 tags: ['Docker']
 categories: ['Docker']
 keywords: vpn
@@ -164,7 +164,7 @@ docker run --name atrust \
 -e URLWIN=1 \
 -e PING_ADDR_URL=http://192.168.26.50 \
 -e PING_INTERVAL=30 \
--v $HOME/.atrust-data:/root \
+-v atrust:/root \
 -p 15901:5901 \
 -p 11080:1080 \
 -p 18888:8888 \
@@ -182,7 +182,7 @@ docker run --name atrust `
 -e URLWIN=1 `
 -e PING_ADDR_URL=http://192.168.26.50 `
 -e PING_INTERVAL=30 `
--v $HOME/.atrust-data:/root `
+-v atrust:/root `
 -p 15901:5901 `
 -p 11080:1080 `
 -p 18888:8888 `
@@ -225,3 +225,74 @@ open -a "Google Chrome" --args --proxy-server="socks5://127.0.0.1:11080"
 ```shell
 docker exec -it -u root atrust /bin/bash
 ```
+
+## easyconnect
+
+### pull image
+
+```shell
+docker pull hagb/docker-easyconnect:7.6.3
+```
+
+**china mirror**
+
+```shell
+docker pull swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/hagb/docker-easyconnect:7.6.3 && \
+docker tag swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/hagb/docker-easyconnect:7.6.3 docker.io/hagb/docker-easyconnect:7.6.3 && \
+docker rmi swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/hagb/docker-easyconnect:7.6.3
+```
+
+`For PowerShell`
+
+```powershell
+docker pull swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/hagb/docker-easyconnect:7.6.3 && `
+docker tag swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/hagb/docker-easyconnect:7.6.3 docker.io/hagb/docker-easyconnect:7.6.3 && `
+docker rmi swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/hagb/docker-easyconnect:7.6.3
+```
+
+### run image
+
+- 端口 `5901` 是 VNC 服务, 可使用 `realvnc viewer` 进行连接并登录
+- 端口 `1080` 是 socks5 代理
+- 端口 `8888` 是 http 代理
+
+
+```shell
+docker run --name easyconnect \
+--device /dev/net/tun \
+--cap-add NET_ADMIN \
+-e PASSWORD=12345678 \
+-e VPN_TUN=tun0 \
+-e DISABLE_PKG_VERSION_XML=1 \
+-e URLWIN=1 \
+-v ecdata:/root \
+-p 15901:5901 \
+-p 11080:1080 \
+-p 18888:8888 \
+-d hagb/docker-easyconnect:7.6.3
+```
+
+`For PowerShell`
+
+```powershell
+docker run --name easyconnect `
+--device /dev/net/tun `
+--cap-add NET_ADMIN `
+-e PASSWORD=12345678 `
+-e VPN_TUN=tun0 `
+-e DISABLE_PKG_VERSION_XML=1 `
+-e URLWIN=1 `
+-v ecdata:/root `
+-p 15901:5901 `
+-p 11080:1080 `
+-p 18888:8888 `
+-d hagb/docker-easyconnect:7.6.3
+```
+
+### login vpn
+
+同 `atrust`
+
+### open browser use socks5
+
+同 `atrust`
