@@ -1,7 +1,7 @@
 ---
 title: "devcontainer"
 date: 2025-09-10T11:19:26
-lastmod: 2026-03-19T10:15:21
+lastmod: 2026-04-02T12:00:21
 categories: ['Docker']
 keywords: devcontainer
 description: Dev Container
@@ -11,18 +11,27 @@ description: Dev Container
 
 ## 文档参考
 
-[官网](https://containers.dev)
-
-[模板列表](https://github.com/devcontainers/templates/tree/main/src)
+- [官网](https://containers.dev)
+- [模板列表](https://github.com/devcontainers/templates/tree/main/src)
+- [chezmoi](https://chezmoi.io)
+- [PAT](https://github.com/settings/personal-access-tokens)
+- [ncat](https://nmap.org/ncat)
 
 ## 构建说明
 
+**构建准备**: 创建 **dotfiles** 仓库及该仓库的只读 `PAT`
+
 1. 基于官方基础镜像, 替换源和时区, 并指定代理 **HTTP_PROXY/HTTPS_PROXY**
-2. 安装 [chezmoi](https://chezmoi.io) 来同步环境设置
-3. [chezmoi](https://chezmoi.io) 需要先创建 **dotfiles** 仓库及该仓库的只读 [PAT](https://github.com/settings/personal-access-tokens), [PAT](https://github.com/settings/personal-access-tokens) 同时也作为密码来解密用 **age** 加密的 **key.txt** 密钥文件
-4. 初始化 [chezmoi](https://chezmoi.io) 时会 clone **dotfiles** 仓库需要走代理, 而 git 并不会使用 `HTTP_PROXY` 或 `HTTPS_PROXY`, 需要手动指定
-5. 首次应用 [chezmoi](https://chezmoi.io) 时会先用 [PAT](https://github.com/settings/personal-access-tokens) 解密 **key.txt.age** 密钥文件, 然后再使用 **age** 来解密其他加密文件
-6. 使用 **ssh** 来 clone 仓库, 如果还需要走代理, 则在第 2 步中安装 [ncat](https://nmap.org/ncat)
+2. 安装 `chezmoi` 来同步环境设置, 安装 `age` 来支持解密文件
+3. **dotfiles** 仓库的只读 `PAT` 作为密码来解密用 **age** 加密的 **key.txt** 密钥文件
+4. 初始化 `chezmoi` 时会使用  clone **dotfiles** 仓库需要走代理, 而 git 并不会使用 `HTTP_PROXY` 或 `HTTPS_PROXY`, 需要手动指定
+5. 首次应用 `chezmoi` 时会先用 `PAT` 解密 **key.txt.age** 密钥文件, 然后再使用 **age** 来解密其他加密文件
+6. 使用 **ssh** 来 clone 仓库, 如果还需要走代理, 则在第 2 步中安装 `ncat`
+
+> 使用 `Docker Desktop` 4.63.0及以上版本则可以不用配置 **HTTP_PROXY/HTTPS_PROXY**, 直接在 `Docker Desktop` 中指定容器的代理即可. 参见 `Settings` -> `Resources` - `Proxies` - `Containers proxy`
+> 如果需要配置 **HTTP_PROXY/HTTPS_PROXY**, 则安装并使用 `ncat` 来支持
+
+> 由于 `age` 解密不支持命令行传入密码来完成自动解密, 所以安装并使用 `expect` 来支持
 
 <details>
 <summary>gpg aes-128-cbc 加解密示例</summary>
@@ -42,21 +51,28 @@ openssl aes-128-cbc -d -salt -pbkdf2 -in ./test.txt.enc -out ./test.txt -pass en
 </details>
 
 
+**构建参数**
+
+用于构建 `Dev Container` 容器传入, 用来传递个性化信息或密钥信息, 避免后续环境中存在这些不该暴露的信息
+
+- USERNAME: GitHub 的用户名, 用于拉取 **dotfiles** 仓库
+- MY_PAT: GitHub dotfiles 仓库的 `PAT`, 用于拉取 **dotfiles** 仓库及后续解密 **key.txt.age** 密钥文件
+
 **环境变量**
 
-- GITHUB_USERNAME: GitHub 的用户名, 用于拉取 **dotfiles** 仓库
-- GITHUB_PAT: GitHub dotfiles 仓库的 [PAT](https://github.com/settings/personal-access-tokens), 用于拉取 **dotfiles** 仓库及后续解密 **key.txt.age** 密钥文件
-- HTTP_PROXY/HTTPS_PROXY: 代理, 用于安装和更新 [chezmoi](https://chezmoi.io)
+- HTTP_PROXY/HTTPS_PROXY: 代理, 用于安装和更新 `chezmoi`
 - TZ=Asia/Shanghai: 上海时区
 - DEBIAN_FRONTEND=noninteractive: 避免交互式提示
 
 **构建命令**
 
 1. 修改 `APT` 源为阿里云并更新
-2. 安装 [chezmoi](https://chezmoi.io), **ncat**(用于 **ssh** 走代理), age和expect(用于解密key.txt.age文件)
+2. 安装 `chezmoi`, **ncat**(用于 **ssh** 走代理), age和expect(用于解密key.txt.age文件)
 3. 切换到 vscode 用户并初始化 **dotfiles** 仓库
 
 > 后续的软件安装及环境配置均由 **dotfiles** 中的脚本完成
+
+> `chezmoi` 的 `run_once` 脚本中需要包含删除 `PAT` 的步骤, 以免泄漏 `PAT`
 
 ## 构建步骤
 
@@ -67,9 +83,8 @@ openssl aes-128-cbc -d -salt -pbkdf2 -in ./test.txt.enc -out ./test.txt -pass en
 ```Dockerfile
 FROM mcr.microsoft.com/devcontainers/java:8-bookworm
 LABEL authors="Simple"
-ARG GITHUB_USERNAME
-ARG GITHUB_PAT
-ENV GITHUB_USERNAME=${GITHUB_USERNAME} GITHUB_PAT=${GITHUB_PAT}
+ARG MY_PAT
+ARG USERNAME=thesixonenine
 ENV HTTP_PROXY=socks5://host.docker.internal:1080 HTTPS_PROXY=socks5://host.docker.internal:1080
 ENV TZ=Asia/Shanghai DEBIAN_FRONTEND=noninteractive
 
@@ -81,8 +96,7 @@ RUN sed -i -e 's@deb.debian.org@mirrors.aliyun.com@;s@http:@https:@' /etc/apt/so
     rm -rf /var/lib/apt/lists/*
 USER vscode
 RUN git config --global http.https://github.com.proxy $HTTP_PROXY && \
-    chezmoi init https://$GITHUB_USERNAME:$GITHUB_PAT@github.com/$GITHUB_USERNAME/dotfiles.git
-ENTRYPOINT ["bash"]
+    chezmoi init https://$USERNAME:$MY_PAT@github.com/$USERNAME/dotfiles.git
 ```
 
 如果基础镜像不支持通过环境变量 **TZ** 来修改时区, 则可以在更新软件包后安装 `tzdata` 来修改时区
@@ -99,10 +113,11 @@ apt-get install -y tzdata > /dev/null && ln -snf /usr/share/zoneinfo/$TZ /etc/lo
   "build": {
     "dockerfile": "Dockerfile",
     "args": {
-        "GITHUB_USERNAME": "thesixonenine", 
-        "GITHUB_PAT": "${localEnv:GITHUB_PAT}"
+        "USERNAME": "thesixonenine",
+        "MY_PAT": "${localEnv:MY_PAT}"
     }
   },
+  "postStartCommand": "chezmoi update",
   "customizations": { "vscode": { "settings": {
         "extensions.allowed": {
             "microsoft": false,
@@ -114,7 +129,7 @@ apt-get install -y tzdata > /dev/null && ln -snf /usr/share/zoneinfo/$TZ /etc/lo
 
 **Build**
 
-需要在 GitHub 上申请 [PAT](https://github.com/settings/personal-access-tokens), 权限只勾选 dotfiles 仓库的读取权限即可
+需要在 GitHub 上申请 `PAT`, 权限只勾选 dotfiles 仓库的读取权限即可
 
 
 **提前构建**
@@ -136,7 +151,7 @@ devcontainer build --no-cache --workspace-folder . --image-name thesixonenine/de
 直接根据 `Dockerfile` 进行构建
 
 ```shell
-docker build --no-cache --build-arg GITHUB_USERNAME=thesixonenine --build-arg GITHUB_PAT=github_pat_* -t thesixonenine/dev-java:8-bookworm .
+docker build --no-cache --build-arg USERNAME=thesixonenine --build-arg MY_PAT=github_pat_* -t thesixonenine/dev-java:8-bookworm .
 ```
 
 ```shell
