@@ -1,7 +1,7 @@
 ---
 title: "genshin-impact"
 date: 2023-10-23T21:53:15
-lastmod: 2026-03-29T22:15:26
+lastmod: 2026-04-08T10:58:26
 categories: ['Game']
 description: 原神,启动!
 image: "https://act-webstatic.mihoyo.com/event-static/2023/08/15/cc72ddf351003a4a9b618e5f4697dad0_2771553456903788244.jpg"
@@ -60,6 +60,7 @@ image: "https://act-webstatic.mihoyo.com/event-static/2023/08/15/cc72ddf351003a4
 
 |池子|总抽取数量|六星|已抽|
 |---|---|---|---|
+|辟路之人|170|圣聆初雪(59),妮芙(41),怒潮凛冬(62)|8|
 |定向甄选|160|阿斯卡纶(60),阿斯卡纶(37),遥(59)|4|
 |劫尽古今|44|年(16),望(26)|2|
 |中坚寻访|12||12|
