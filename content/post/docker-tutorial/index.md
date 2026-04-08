@@ -149,9 +149,20 @@ docker run -d -p 8000:8000 -p 9000:9000 -p 9443:9443 \
 
 ## often images
 
+
+格式化打印镜像
+
 ```shell
 docker images --format "{{.Repository}}:{{.Tag}} {{.ID}}"
 ```
+
+表格式打印镜像
+
+```shell
+docker images --format "table {{.Repository}}\t{{.Tag}}\t{{.ID}}"
+```
+
+结果
 
 ```text
 mcr.microsoft.com/devcontainers/typescript-node:24-trixie 1c85db47779c
@@ -170,6 +181,37 @@ docker/dockerfile:1.4 1e8a16826fd1
 mysql:5.7.26 e9c354083de7
 ```
 
-```shell
-docker images --format "table {{.Repository}}\t{{.Tag}}\t{{.ID}}"
+
+### MySQL Client
+
+**Dockerfile**
+
+```Dockerfile
+FROM alpine:latest
+LABEL authors="Simple"
+ENV TZ=Asia/Shanghai
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && \
+    apk add --no-cache tzdata mysql-client && \
+    cp /usr/share/zoneinfo/${TZ} /etc/localtime && \
+    echo "${TZ}" > /etc/timezone && \
+    apk del tzdata && \
+    echo -e "[client]\nskip-ssl" > /etc/my.cnf
+
+WORKDIR /work
+ENTRYPOINT ["mariadb"]
 ```
+
+**Build**
+
+```shell
+docker build -t mysql-client:latest .
+```
+
+**Run SQL**
+
+指定 **host** **port** **user** **password** **database** 及要执行的 **SQL**
+
+```shell
+docker run --rm mysql-client --host= --port= --user= --password= --database= -B -e "show tables;"
+```
+

@@ -371,37 +371,3 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim
 ```shell
 rm -rf ~/.config/nvim/.git
 ```
-
-
-## MySQL Client
-
-**Dockerfile**
-
-```Dockerfile
-FROM alpine:latest
-LABEL authors="Simple"
-ENV TZ=Asia/Shanghai
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && \
-    apk add --no-cache tzdata mysql-client && \
-    cp /usr/share/zoneinfo/${TZ} /etc/localtime && \
-    echo "${TZ}" > /etc/timezone && \
-    apk del tzdata && \
-    echo -e "[client]\nskip-ssl" > /etc/my.cnf
-
-WORKDIR /work
-ENTRYPOINT ["mariadb"]
-```
-
-**Build**
-
-```shell
-docker build -t mysql-client:latest .
-```
-
-**Run SQL**
-
-指定 **host** **port** **user** **password** **database** 及要执行的 **SQL**
-
-```shell
-docker run --rm mysql-client --host= --port= --user= --password= --database= -B -e "show tables;"
-```
