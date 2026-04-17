@@ -183,8 +183,8 @@ cd && chezmoi update
 3. 指定git针对 `https://github.com` 进行代理, 以便在 `VSCode` 中使用 `https` 的方式进行 Clone 的时候加快速度
 
 ```shell
-sed -i '10cRUN sed -i '\''s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g'\'' /etc/apk/repositories' /tmp/vsch-simple/bootstrap-image/0.427.0/bootstrap.Dockerfile && \
-sed -i '23cRUN npm config set registry https://registry.npmmirror.com && git config --global http.https://github.com.proxy socks5://host.docker.internal:1080' /tmp/vsch-simple/bootstrap-image/0.427.0/bootstrap.Dockerfile
+sed -i '10cRUN sed -i '\''s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g'\'' /etc/apk/repositories' /tmp/vsch-simple/bootstrap-image/0.442.0/bootstrap.Dockerfile && \
+sed -i '23cRUN npm config set registry https://registry.npmmirror.com && git config --global http.https://github.com.proxy socks5://host.docker.internal:1080' /tmp/vsch-simple/bootstrap-image/0.442.0/bootstrap.Dockerfile
 ```
 
 修改前的 `Dockerfile` 内容如下:
