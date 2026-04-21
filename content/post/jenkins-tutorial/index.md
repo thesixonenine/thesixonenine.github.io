@@ -104,8 +104,8 @@ docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 docker exec jenkins cat /var/jenkins_home/hudson.model.UpdateCenter.xml
 ```
 
-`替换`, 使用华为源(`https://mirrors.huaweicloud.com/jenkins/updates/update-center.json`)
+`替换`, 使用华为源(`https://mirrors.huaweicloud.com/jenkins/update-center.json`)
 
 ```shell
-docker exec jenkins sed -i 's/https:\/\/updates.jenkins.io/https:\/\/mirrors.huaweicloud.com\/jenkins\/updates/g' /var/jenkins_home/hudson.model.UpdateCenter.xml
+docker exec jenkins sed -i 's/https:\/\/updates.jenkins.io/https:\/\/mirrors.huaweicloud.com\/jenkins/g' /var/jenkins_home/hudson.model.UpdateCenter.xml
 ```
