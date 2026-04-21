@@ -1,7 +1,7 @@
 ---
 title: docker-tutorial
 date: 2022-03-22T18:27:00+0800
-lastmod: 2026-02-25T15:04:49
+lastmod: 2026-04-21T09:04:49
 tags: ['Linux']
 categories: ['Docker']
 keywords: docker
@@ -96,16 +96,38 @@ docker run -d --name redis6.2.20 \
 
 ### delete unused data
 
+**delete unused none image**
+
 ```shell
-# delete unused none image
 docker rmi $(docker images -f "dangling=true" -q)
-# powershell
+```
+
+`Powershell`
+
+```powershell
 docker images -f "dangling=true" -q | % { docker rmi $_ }
-# delete unused image container cache
+```
+
+**delete unused, stopped image container cache**
+
+- all stopped containers
+- all networks not used by at least one container
+- all images without at least one container associated to them
+- all build cache
+
+```shell
 docker system prune --all
-# delete unused volume
+```
+
+**delete unused volume**
+
+```shell
 docker volume prune
-# delete build cache
+```
+
+**delete build cache**
+
+```shell
 docker builder prune
 ```
 
@@ -113,9 +135,17 @@ docker builder prune
 
 ```shell
 docker ps -q | xargs docker stop
-# powershell
+```
+
+`Powershell`
+
+```powershell
 docker ps -q | % { docker stop $_ }
-# powershell
+```
+
+`Powershell`
+
+```powershell
 docker ps -q | ForEach-Object { docker stop $_ }
 ```
 
