@@ -29,7 +29,14 @@ var cates []types.ArkNightsCategory
 // 收集每次从官网获取的抽卡数据, 然后合并到本地JSON文件中.
 // https://ak.hypergryph.com/user/headhunting
 func main() {
-	cUrl, _ := ExtractCUrlBash()
+    multiLine := ""
+    // os.Args[0] 是程序路径，os.Args[1] 是第一个参数
+    if len(os.Args) == 2 {
+        multiLine = os.Args[1]
+    } else {
+        multiLine = utils.ReadContinuedLinesStdin("请粘贴cURL命令并按Enter结束:")
+    }
+    cUrl, _ := ExtractCUrlBash(multiLine)
 	if cUrl == nil {
 		return
 	}
@@ -49,8 +56,7 @@ func main() {
 	UpdateGacha(c.Query().Get("uid"))
 }
 
-func ExtractCUrlBash() (*parseCurl.Request, string) {
-	multiLine := utils.ReadContinuedLinesStdin("请粘贴cURL命令并按Enter结束:")
+func ExtractCUrlBash(multiLine string) (*parseCurl.Request, string) {
 	curl, err := parseCurl.Parse(multiLine)
 	if err != nil {
 		log.Printf("\n[%v]解析错误: %v\n", multiLine, err.Error())

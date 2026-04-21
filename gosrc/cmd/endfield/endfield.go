@@ -24,9 +24,16 @@ func main() {
 	// 拿到 https://as.hypergryph.com/user/oauth2/v2/grant 中的 data.token, 可以用浏览器 network 搜索 grant 然后 copy response
 	history := LocalHistoryJSONFile()
 	if newest, b := findNewest(history); b {
-		fmt.Println("最新抽卡记录: " + newest.String())
+		fmt.Println(fmt.Sprintf("本地最新抽卡记录: %s", newest.String()))
 	}
-	StoreGacha(history, Fetch(history, findU8Token("271646071", findOauthToken())))
+    resp := ""
+    // os.Args[0] 是程序路径，os.Args[1] 是第一个参数
+    if len(os.Args) == 2 {
+        resp = os.Args[1]
+    } else {
+        resp = utils.ReadContinuedLinesStdin("请先对[https://as.hypergryph.com/user/oauth2/v2/grant]copy response然后粘贴并按Enter结束:")
+    }
+	StoreGacha(history, Fetch(history, findU8Token("271646071", findOauthToken(resp))))
 }
 
 // Fetch 根据 本地数据及token来查询所有新的数据
@@ -38,7 +45,7 @@ func Fetch(local []types.EndfieldGacha, token string) []types.EndfieldGacha {
             for m, n := range constant.EndfieldCharGachaType {
                 newest := poolNewest[constant.EndfieldCharGachaTypeMap[m]]
                 if newest.Exist() {
-                    fmt.Println(fmt.Sprintf("本地[%s%s]池的最新抽卡记录[%s]", n, v, newest.String()))
+                    fmt.Println(fmt.Sprintf("\n本地[%s%s]池的最新抽卡记录[%s]", n, v, newest.String()))
                 }
                 fmt.Println(fmt.Sprintf("开始获取[%s%s]池", n, v))
                 gachas := FetchWishes([]types.EndfieldGacha{}, newest, token, m, "")
@@ -199,7 +206,7 @@ func LocalHistoryJSONFile() []types.EndfieldGacha {
 func StoreGacha(ist []types.EndfieldGacha, newest []types.EndfieldGacha) {
     l := len(newest)
     if l == 0 {
-        fmt.Println("本次没有查询到新记录")
+        fmt.Println("本次没有查询到任何新记录")
         return
     }
     fmt.Printf("开始合并本次查询到的新记录(%d条)并存储到文件\n", l)
@@ -214,10 +221,9 @@ func StoreGacha(ist []types.EndfieldGacha, newest []types.EndfieldGacha) {
 }
 
 // 查询 oauthToken
-func findOauthToken() string {
-	multiLine := utils.ReadContinuedLinesStdin("请先对[https://as.hypergryph.com/user/oauth2/v2/grant]copy response然后粘贴并按Enter结束:")
+func findOauthToken(resp string) string {
 	m := map[string]map[string]string{}
-	_ = json.Unmarshal([]byte(multiLine), &m)
+	_ = json.Unmarshal([]byte(resp), &m)
 	return m["data"]["token"]
 }
 
