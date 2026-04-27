@@ -314,6 +314,7 @@ npm config set registry https://registry.npmmirror.com
 
 很多时候需要临时在linux中试用一些软件或命令, 需要一个干净的环境, 这时可以直接使用 `mcr.microsoft.com/devcontainers/base:trixie`
 
+use `root`
 
 ```shell
 docker run --rm -it mcr.microsoft.com/devcontainers/base:trixie /bin/zsh
@@ -324,6 +325,21 @@ sed -i -e 's@deb.debian.org@mirrors.aliyun.com@;s@http:@https:@' /etc/apt/source
 apt-get update > /dev/null && apt-get upgrade -y > /dev/null && \
 apt-get install -y vim ncat age expect > /dev/null && \
 sh -c "$(curl -fsLS get.chezmoi.io)" -- -b /bin
+```
+
+use `vscode`
+
+```shell
+docker run --rm -it -u vscode mcr.microsoft.com/devcontainers/base:trixie /bin/zsh
+```
+
+use `sudo`
+
+```shell
+sudo sed -i -e 's@deb.debian.org@mirrors.aliyun.com@;s@http:@https:@' /etc/apt/sources.list.d/debian.sources && \
+sudo apt-get update > /dev/null && sudo apt-get upgrade -y > /dev/null && \
+sudo apt-get install -y vim ncat age expect > /dev/null && \
+sudo sh -c "$(curl -fsLS get.chezmoi.io)" -- -b /bin
 ```
 
 再从主机中复制 `chezmoi` 的初始化命令并执行
