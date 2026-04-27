@@ -342,6 +342,12 @@ sudo apt-get install -y vim ncat age expect > /dev/null && \
 sudo sh -c "$(curl -fsLS get.chezmoi.io)" -- -b /bin
 ```
 
+`Env`
+
+```shell
+export TZ=Asia/Shanghai HTTP_PROXY=http://host.docker.internal:1080 HTTPS_PROXY=http://host.docker.internal:1080
+```
+
 再从主机中复制 `chezmoi` 的初始化命令并执行
 
 
