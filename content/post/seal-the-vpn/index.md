@@ -1,7 +1,7 @@
 ---
 title: seal-the-vpn
 date: 2025-12-10T23:11:21+0800
-lastmod: 2026-04-01T10:47:01
+lastmod: 2026-04-30T15:04:01
 tags: ['Docker']
 categories: ['Docker']
 keywords: vpn
@@ -156,6 +156,9 @@ docker rmi swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/hagb/docker-atrust
 - 端口 `8888` 是 http 代理
 
 
+> 去掉默认的日志卷: `--mount type=tmpfs,destination=/usr/share/sangfor/EasyConnect/resources/logs`
+
+
 ```shell
 docker run --name atrust \
 --device /dev/net/tun \
@@ -164,6 +167,7 @@ docker run --name atrust \
 -e URLWIN=1 \
 -e PING_ADDR_URL=http://192.168.26.50 \
 -e PING_INTERVAL=30 \
+--mount type=tmpfs,destination=/usr/share/sangfor/EasyConnect/resources/logs \
 -v atrust:/root \
 -p 15901:5901 \
 -p 11080:1080 \
@@ -182,6 +186,7 @@ docker run --name atrust `
 -e URLWIN=1 `
 -e PING_ADDR_URL=http://192.168.26.50 `
 -e PING_INTERVAL=30 `
+--mount type=tmpfs,destination=/usr/share/sangfor/EasyConnect/resources/logs `
 -v atrust:/root `
 -p 15901:5901 `
 -p 11080:1080 `
