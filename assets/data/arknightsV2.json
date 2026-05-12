@@ -9698,5 +9698,825 @@
 		"isNew": false,
 		"gachaTs": "1775575338877",
 		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_121_lava",
+		"charName": "炎熔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777608918045",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_181_flower",
+		"charName": "调香师",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611402452",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_237_gravel",
+		"charName": "砾",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611402452",
+		"pos": 1
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_121_lava",
+		"charName": "炎熔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611402452",
+		"pos": 2
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_366_acdrop",
+		"charName": "酸糖",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611402452",
+		"pos": 3
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_235_jesica",
+		"charName": "杰西卡",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611402452",
+		"pos": 4
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_124_kroos",
+		"charName": "克洛丝",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611402452",
+		"pos": 5
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_337_utage",
+		"charName": "宴",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611402452",
+		"pos": 6
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_284_spot",
+		"charName": "斑点",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611402452",
+		"pos": 7
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_4225_tanya",
+		"charName": "裂响",
+		"rarity": 4,
+		"isNew": true,
+		"gachaTs": "1777611402452",
+		"pos": 8
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_212_ansel",
+		"charName": "安赛尔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611402452",
+		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_4130_luton",
+		"charName": "露托",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611466574",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_193_frostl",
+		"charName": "霜叶",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611466574",
+		"pos": 1
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_122_beagle",
+		"charName": "米格鲁",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611466574",
+		"pos": 2
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_440_pinecn",
+		"charName": "松果",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611466574",
+		"pos": 3
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_302_glaze",
+		"charName": "安比尔",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611466574",
+		"pos": 4
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_208_melan",
+		"charName": "玫兰莎",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611466574",
+		"pos": 5
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_141_nights",
+		"charName": "夜烟",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611466574",
+		"pos": 6
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_281_popka",
+		"charName": "泡普卡",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611466574",
+		"pos": 7
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_235_jesica",
+		"charName": "杰西卡",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611466574",
+		"pos": 8
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_208_melan",
+		"charName": "玫兰莎",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611466574",
+		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_124_kroos",
+		"charName": "克洛丝",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611474778",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_141_nights",
+		"charName": "夜烟",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611474778",
+		"pos": 1
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_4130_luton",
+		"charName": "露托",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611474778",
+		"pos": 2
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_208_melan",
+		"charName": "玫兰莎",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611474778",
+		"pos": 3
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_253_greyy",
+		"charName": "格雷伊",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611474778",
+		"pos": 4
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_208_melan",
+		"charName": "玫兰莎",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611474778",
+		"pos": 5
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_208_melan",
+		"charName": "玫兰莎",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611474778",
+		"pos": 6
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_133_mm",
+		"charName": "梅",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611474778",
+		"pos": 7
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_4041_chnut",
+		"charName": "褐果",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611474778",
+		"pos": 8
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611474778",
+		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_4228_closur",
+		"charName": "可露希尔",
+		"rarity": 5,
+		"isNew": true,
+		"gachaTs": "1777611481409",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_278_orchid",
+		"charName": "梓兰",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611481409",
+		"pos": 1
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_452_bstalk",
+		"charName": "豆苗",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611481409",
+		"pos": 2
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611481409",
+		"pos": 3
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_122_beagle",
+		"charName": "米格鲁",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611481409",
+		"pos": 4
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_284_spot",
+		"charName": "斑点",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611481409",
+		"pos": 5
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_289_gyuki",
+		"charName": "缠丸",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611481409",
+		"pos": 6
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_110_deepcl",
+		"charName": "深海色",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611481409",
+		"pos": 7
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_122_beagle",
+		"charName": "米格鲁",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611481409",
+		"pos": 8
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_283_midn",
+		"charName": "月见夜",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611481409",
+		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_271_spikes",
+		"charName": "芳汀",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611491890",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_110_deepcl",
+		"charName": "深海色",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611491890",
+		"pos": 1
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_121_lava",
+		"charName": "炎熔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611491890",
+		"pos": 2
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_452_bstalk",
+		"charName": "豆苗",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611491890",
+		"pos": 3
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_4041_chnut",
+		"charName": "褐果",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611491890",
+		"pos": 4
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_445_wscoot",
+		"charName": "骋风",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611491890",
+		"pos": 5
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_208_melan",
+		"charName": "玫兰莎",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611491890",
+		"pos": 6
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_193_frostl",
+		"charName": "霜叶",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611491890",
+		"pos": 7
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_123_fang",
+		"charName": "芬",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611491890",
+		"pos": 8
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_240_wyvern",
+		"charName": "香草",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611491890",
+		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_282_catap",
+		"charName": "空爆",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611498417",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_4225_tanya",
+		"charName": "裂响",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1777611498417",
+		"pos": 1
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_282_catap",
+		"charName": "空爆",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611498417",
+		"pos": 2
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_4062_totter",
+		"charName": "铅踝",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611498417",
+		"pos": 3
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_133_mm",
+		"charName": "梅",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611498417",
+		"pos": 4
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_4062_totter",
+		"charName": "铅踝",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611498417",
+		"pos": 5
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_4207_branch",
+		"charName": "折桠",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1777611498417",
+		"pos": 6
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_109_fmout",
+		"charName": "远山",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611498417",
+		"pos": 7
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_192_falco",
+		"charName": "翎羽",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611498417",
+		"pos": 8
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611498417",
+		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_196_sunbr",
+		"charName": "古米",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611504779",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_491_humus",
+		"charName": "休谟斯",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611504779",
+		"pos": 1
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_283_midn",
+		"charName": "月见夜",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611504779",
+		"pos": 2
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_290_vigna",
+		"charName": "红豆",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611504779",
+		"pos": 3
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_118_yuki",
+		"charName": "白雪",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611504779",
+		"pos": 4
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_199_yak",
+		"charName": "角峰",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777611504779",
+		"pos": 5
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_1052_kalts2",
+		"charName": "凯尔希·思衡托",
+		"rarity": 5,
+		"isNew": true,
+		"gachaTs": "1777611504779",
+		"pos": 6
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_192_falco",
+		"charName": "翎羽",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611504779",
+		"pos": 7
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_208_melan",
+		"charName": "玫兰莎",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611504779",
+		"pos": 8
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_121_lava",
+		"charName": "炎熔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777611504779",
+		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_150_snakek",
+		"charName": "蛇屠箱",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777689812286",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_236_rope",
+		"charName": "暗索",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777768543196",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_237_gravel",
+		"charName": "砾",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1777886695176",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_122_beagle",
+		"charName": "米格鲁",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1777948239242",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_137_brownb",
+		"charName": "猎蜂",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1778025634487",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1778112235753",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_117_myrrh",
+		"charName": "末药",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1778197823503",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_141_nights",
+		"charName": "夜烟",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1778283642095",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_278_orchid",
+		"charName": "梓兰",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1778375747561",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1778457823419",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_366_acdrop",
+		"charName": "酸糖",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1778537568251",
+		"pos": 0
 	}
 ]
