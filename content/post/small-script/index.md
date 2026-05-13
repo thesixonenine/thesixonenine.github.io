@@ -281,6 +281,12 @@ if (git ls-remote --heads origin | Select-String -Pattern 'refs/heads/feature-br
 
 ## Bash
 
+### 将 HTTP Clone 改为 SSH Clone
+
+```shell
+git remote get-url origin | sed -E 's#https://([^/]+)/#git@\1:#'
+```
+
 ### 检查 SSH 公钥信息
 
 ```shell
