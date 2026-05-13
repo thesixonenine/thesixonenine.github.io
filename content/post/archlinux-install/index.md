@@ -1,16 +1,36 @@
 ---
 title: archlinux-install
 date: 2020-10-08T13:37:34+0800
-lastmod: 2025-11-25T17:59:31+0800
+lastmod: 2026-05-13T10:59:31+0800
 tags: ['Archlinux']
 categories: ['Linux']
 keywords: archlinux
 description: archlinux 安装
 ---
 
+## 制作
+
+### 下载
+
+[官方下载页](https://archlinux.org/download)
+
+[镜像站下载](https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/latest)
+
+### 验证ISO文件
+
+```powershell
+(Get-FileHash -Algorithm SHA256 archlinux-x86_64.iso).Hash -eq ((Invoke-RestMethod 'https://mirror.tuna.tsinghua.edu.cn/archlinux/iso/latest/sha256sums.txt') -split "`r?`n" -match 'archlinux-x86_64.iso' | ForEach-Object {($_ -split '\s+')[0]})
+```
+
+### 制作启动盘
+
+使用 [Ventoy](https://github.com/ventoy/Ventoy) 来制作启动盘
+
 ## 安装
 
-参考[官方Wiki](https://wiki.archlinux.org/index.php/Installation_guide)
+参考[官方Wiki](https://wiki.archlinux.org/title/Installation_guide)
+
+> Arch Linux 的安装镜像不支持安全启动, 需要禁用. 如果你需要, 可以在完成安装后进行设置
 
 ### 设置字体
 
@@ -18,7 +38,16 @@ description: archlinux 安装
 setfont /usr/share/kbd/consolefonts/LatGrkCyr-12×22.psfu.gz
 ```
 
+用下面的字体可以与 [HiDPI](https://wiki.archlinux.org/title/HiDPI#Linux_console_(tty)) 适配
+
+```bash
+setfont ter-132b
+```
+
 ### 连接网络
+
+- 有线网络则直接插入网线
+- 无线网络则使用 [iwctl](https://wiki.archlinux.org/title/Iwctl)
 
 **静态IP**
 
@@ -33,6 +62,13 @@ echo 'Gateway=192.168.137.1' >> eth0.network
 echo 'DNS=223.5.5.5' >> eth0.network
 systemctl reenable systemd-networkd
 ```
+
+有网络后可以使用网络脚本进行快速配置, 也可以继续看下面的步骤
+
+```bash
+curl -fsSL https://github.com/thesixonenine/thesixonenine.github.io/raw/refs/heads/master/static/data/arch-install.sh | /bin/bash
+```
+
 
 ### 更新系统时间
 
