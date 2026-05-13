@@ -32,6 +32,26 @@ description: archlinux 安装
 
 > Arch Linux 的安装镜像不支持安全启动, 需要禁用. 如果你需要, 可以在完成安装后进行设置
 
+### 虚拟机连接
+
+如果是本机的虚拟机安装, 例如 Hyper-v, 可以在通过ISO启动后, 在宿主机通过 SSH 连接.
+
+首先需要保证当前的网络连接设置了共享, 共享的网络适配器默认是 `Default Switch`, 同时虚拟机里设置的网卡也是 `Default Switch`
+
+其次在进入安装命令行后, 看到 `root@archiso` 后执行如下操作
+
+1. 执行 `passwd` 命令设置密码
+2. 执行 `ip a` 查看 IP
+3. 在宿主机上用 `ssh root@IP` 连接并输入密码
+
+此时应该是有网络连接了, 可以通过 `ping` 命令来确认.
+
+可以使用网络脚本进行快速配置, 也可以继续看下面的步骤
+
+```bash
+curl -fsSL https://github.com/thesixonenine/thesixonenine.github.io/raw/refs/heads/master/static/data/arch-install.sh | /bin/bash
+```
+
 ### 设置字体
 
 ```bash
