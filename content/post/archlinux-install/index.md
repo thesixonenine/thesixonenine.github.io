@@ -52,6 +52,12 @@ description: archlinux 安装
 curl -fsSL https://github.com/thesixonenine/thesixonenine.github.io/raw/refs/heads/master/static/data/arch-install.sh | /bin/bash
 ```
 
+如果无法访问, 可以使用cdn链接
+
+```bash
+curl -fsSL https://cdn.jsdelivr.net/gh/thesixonenine/thesixonenine.github.io@master/static/data/arch-install.sh | /bin/bash
+```
+
 ### 设置字体
 
 ```bash
