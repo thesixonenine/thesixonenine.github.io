@@ -14,7 +14,7 @@ echo '::1       localhost' >> /etc/hosts
 
 
 echo 'Root password'
-passwd
+echo "root:123456" | chpasswd
 
 echo 'Boot loader'
 pacman --noconfirm -S grub efibootmgr intel-ucode os-prober
