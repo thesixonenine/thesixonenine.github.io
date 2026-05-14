@@ -91,8 +91,28 @@ systemctl reenable systemd-networkd
 
 有网络后可以使用网络脚本进行快速配置, 也可以继续看下面的步骤
 
+`安装`
+
 ```bash
 curl -fsSL https://github.com/thesixonenine/thesixonenine.github.io/raw/refs/heads/master/static/data/arch-install.sh | /bin/bash
+```
+
+`配置`
+
+```bash
+curl -fsSL https://github.com/thesixonenine/thesixonenine.github.io/raw/refs/heads/master/static/data/arch-setup.sh | /bin/bash
+```
+
+如果无法访问, 可以用镜像
+
+```bash
+curl -fsSL "https://ghfast.top/https://raw.githubusercontent.com/thesixonenine/thesixonenine.github.io/refs/heads/master/static/data/arch-install.sh" | /bin/bash
+```
+
+`配置`
+
+```bash
+curl -fsSL "https://ghfast.top/https://raw.githubusercontent.com/thesixonenine/thesixonenine.github.io/refs/heads/master/static/data/arch-setup.sh" | /bin/bash
 ```
 
 
