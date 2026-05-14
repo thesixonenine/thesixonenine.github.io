@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # Update the system clock
 timedatectl set-ntp true
@@ -68,8 +69,10 @@ lsblk "$DISK"
 fi
 
 echo 'Mount the file systems'
+mount /dev/sda3 /mnt
+mount --mkdir /dev/sda1 /mnt/boot
 echo 'Install essential packages'
-# pacstrap /mnt base linux linux-firmware
+pacstrap /mnt base linux linux-firmware
 echo 'Configure the system...'
 echo 'Fstab'
 genfstab -U /mnt >> /mnt/etc/fstab
