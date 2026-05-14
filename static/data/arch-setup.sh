@@ -31,5 +31,3 @@ echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEfY4AqFEB76gUXJKVifON936yf/MdsOKTsmio
 chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
 echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config
-
-exit
