@@ -101,6 +101,15 @@ mkdir /boot/grub
 grub-mkconfig > /boot/grub/grub.cfg
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 
-pacman --noconfirm -S vim git zsh networkmanager
+pacman --noconfirm -S vim git zsh networkmanager openssh
 systemctl enable NetworkManager
+systemctl enable sshd
+
+mkdir -p ~/.ssh
+echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEfY4AqFEB76gUXJKVifON936yf/MdsOKTsmioQ3HDKi' >> ~/.ssh/authorized_keys
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config
+
 exit
+reboot
