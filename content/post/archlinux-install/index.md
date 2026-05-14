@@ -222,7 +222,7 @@ passwd
 **安装引导程序**
 
 ```bash
-pacman -S grub efibootmgr intel-ucode os-prober
+pacman --noconfirm -S grub efibootmgr intel-ucode os-prober
 ```
 
 **配置GRUB**
@@ -236,7 +236,7 @@ grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 **安装程序**
 
 ```bash
-pacman -S vim git zsh networkmanager
+pacman --noconfirm -S vim git zsh networkmanager
 systemctl enable NetworkManager
 ```
 
