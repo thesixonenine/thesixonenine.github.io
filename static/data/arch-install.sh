@@ -76,5 +76,4 @@ pacstrap /mnt base linux linux-firmware
 echo 'Configure the system...'
 echo 'Fstab'
 genfstab -U /mnt >> /mnt/etc/fstab
-echo 'Chroot'
-arch-chroot /mnt
+echo 'Chroot: arch-chroot /mnt'
