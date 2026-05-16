@@ -1,7 +1,7 @@
 ---
 title: archlinux-install
 date: 2020-10-08T13:37:34+0800
-lastmod: 2026-05-13T10:59:31+0800
+lastmod: 2026-05-16T11:59:31+0800
 tags: ['Archlinux']
 categories: ['Linux']
 keywords: archlinux
@@ -78,14 +78,21 @@ setfont ter-132b
 **静态IP**
 
 ```bash
-cd /etc/systemd/network
-touch eth0.network
-echo '[Match]' >> eth0.network
-echo 'Name=eth0' >> eth0.network
-echo '[Network]' >> eth0.network
-echo 'Address=192.168.137.12' >> eth0.network
-echo 'Gateway=192.168.137.1' >> eth0.network
-echo 'DNS=223.5.5.5' >> eth0.network
+cd /etc/systemd/network && \
+touch eth0.network && \
+tee -a eth0.network <<EOF
+[Match]
+Name=eth0
+[Network]
+Address=192.168.137.12/24
+Gateway=192.168.137.1
+DNS=223.5.5.5
+EOF
+```
+
+重启网络
+
+```bash
 systemctl reenable systemd-networkd
 ```
 
@@ -279,25 +286,44 @@ shutdown -h now
 
 ### 设置网络
 
+
+`查看网络`
+
 ```bash
-# 查看网络
 ip addr
-# 启用网络
+```
+
+`启用网络`
+
+```bash
 ip link set eth0 up
-# 设置静态IP
-cd /etc/systemd/network
-touch eth0.network
-echo '[Match]' >> eth0.network
-echo 'Name=eth0' >> eth0.network
-echo '[Network]' >> eth0.network
-echo 'Address=192.168.137.12/24' >> eth0.network
-echo 'Gateway=192.168.137.1' >> eth0.network
-echo 'DNS=223.5.5.5' >> eth0.network
-systemctl restart systemd-resolved
-systemctl restart systemd-networkd
-systemctl enable systemd-resolved
+```
+
+`设置静态IP`
+
+```bash
+cd /etc/systemd/network && \
+touch eth0.network && \
+tee -a eth0.network <<EOF
+[Match]
+Name=eth0
+[Network]
+Address=192.168.137.12/24
+Gateway=192.168.137.1
+DNS=223.5.5.5
+EOF
+```
+
+`重启并自启动网络`
+
+```bash
+systemctl restart systemd-resolved && \
+systemctl restart systemd-networkd && \
+systemctl enable systemd-resolved && \
 systemctl enable systemd-networkd
 ```
+
+`Wi-Fi`
 
 ```
 # 查看可用网络
