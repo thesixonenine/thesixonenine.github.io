@@ -18,7 +18,7 @@ head /etc/pacman.d/mirrorlist
 
 # Partition the disks
 DISK="/dev/sda"
-EFI_SIZE="512M"
+EFI_SIZE="256M"
 SWAP_SIZE="4G"
 
 if ls "${DISK}"[0-9]* 1>/dev/null 2>&1; then
