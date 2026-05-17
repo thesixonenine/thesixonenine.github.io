@@ -10518,5 +10518,25 @@
 		"isNew": false,
 		"gachaTs": "1778537568251",
 		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_497_ctable",
+		"charName": "晓歌",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1778630542659",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_73_0_1",
+		"poolName": "承诺",
+		"charId": "char_469_indigo",
+		"charName": "深靛",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1778716891347",
+		"pos": 0
 	}
 ]
