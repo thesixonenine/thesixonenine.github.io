@@ -1,7 +1,7 @@
 ---
 title: small-script
 date: 2021-09-17T15:14:17
-lastmod: 2026-01-21T12:03:53+0800
+lastmod: 2026-05-22T10:03:53+0800
 categories: ['Script']
 keywords: Script
 description: 一些实用的脚本命令
@@ -23,6 +23,16 @@ adb shell getprop ro.product.cpu.abi
 (iwr -Uri "https://ghproxy.link/js/src_views_home_HomeView_vue.js" -UseBasicParsing).Content `
   -replace '(?s).*?href(.*?)status-text green-text.*', '$1' `
   -replace '(?s).*>([^<]+)</a>.*', '$1'
+```
+
+### 判断环境变量是否存在
+
+```powershell
+if (Get-ChildItem Env:MYPASS -ErrorAction SilentlyContinue) {
+  Write-Host "环境变量 MYPASS 已配置"
+} else {
+  Write-Host "环境变量 MYPASS 未配置"
+}
 ```
 
 ### AES 加密与解密
