@@ -1,7 +1,7 @@
 ---
 title: archlinux-install
 date: 2020-10-08T13:37:34+0800
-lastmod: 2026-05-16T11:59:31+0800
+lastmod: 2026-05-27T15:59:31+0800
 tags: ['Archlinux']
 categories: ['Linux']
 keywords: archlinux
@@ -382,22 +382,32 @@ sudo whoami
 **注意替换 GITHUB_PAT 变量**
 
 ```bash
-export GITHUB_USERNAME=thesixonenine && \
-export GITHUB_PAT=XXX && \
-export HTTP_PROXY=socks5://192.168.137.1:1080 && \
-export HTTPS_PROXY=socks5://192.168.137.1:1080 && \
+export GH_USERNAME=thesixonenine && \
+export MY_PAT=XXX && \
+export HTTP_PROXY=http://192.168.137.1:1080 && \
+export HTTPS_PROXY=http://192.168.137.1:1080 && \
 export TZ=Asia/Shanghai
+```
+
+```bash
+tee -a .bashrc <<EOF
+export GH_USERNAME=thesixonenine
+export MY_PAT=XXX
+export HTTP_PROXY=http://192.168.137.1:1080
+export HTTPS_PROXY=http://192.168.137.1:1080
+git config --global http.https://github.com.proxy $HTTP_PROXY
+export TZ=Asia/Shanghai
+EOF
 ```
 
 ### 安装并应用dotfiles
 
 ```bash
-sudo pacman -S netcat chezmoi
+sudo pacman -S nmap chezmoi
 ```
 
 ```bash
-git config --global http.https://github.com.proxy $HTTP_PROXY && \
-chezmoi init https://$GITHUB_USERNAME:$GITHUB_PAT@github.com/$GITHUB_USERNAME/dotfiles.git
+chezmoi init https://$GH_USERNAME:$MY_PAT@github.com/$GH_USERNAME/dotfiles.git
 ```
 
 ### 更新dotfiles
