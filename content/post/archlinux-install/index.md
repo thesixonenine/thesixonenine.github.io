@@ -403,7 +403,7 @@ EOF
 ### 安装并应用dotfiles
 
 ```bash
-sudo pacman -S nmap chezmoi
+sudo pacman -S nmap chezmoi age expect
 ```
 
 ```bash
