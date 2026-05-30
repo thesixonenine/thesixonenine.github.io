@@ -1,8 +1,4 @@
-zh-cn:
-  languageName: 中文
-  languagedirection: ltr
+zh:
+  label: 中文
+  direction: ltr
   weight: 1
-# en:
-#   languageName: English
-#   languagedirection: ltr
-#   weight: 2

@@ -1,9 +1,9 @@
 module github.com/CaiJimmy/hugo-theme-stack-starter
 
-go 1.25.1
+go 1.26.3
 
 require (
-	github.com/CaiJimmy/hugo-theme-stack/v3 v3.31.0 // indirect
+	github.com/CaiJimmy/hugo-theme-stack/v4 v4.0.3 // indirect
 	github.com/GoogleChrome/workbox v7.3.0+incompatible // indirect
 	github.com/hugomods/icons v0.6.6 // indirect
 	github.com/hugomods/icons/vendors/bootstrap v0.5.11 // indirect

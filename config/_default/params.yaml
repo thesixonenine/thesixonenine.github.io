@@ -4,9 +4,10 @@ mainSections:
 # Output page's full content in RSS.
 rssFullContent: true
 # 本地
-favicon: /favicon.ico
+favicon: /img/favicon.ico
 # 远程
 # favicon: https://upload-bbs.miyoushe.com/upload/2024/11/25/11629047/fa1ef7a746d7e304e76f1cb8ada0907f_8253852077941386559.png
+SortBy: "default"
 footer:
   since: 2019
   customText: ""
@@ -17,14 +18,9 @@ dateFormat:
 sidebar:
   emoji: 🤞
   subtitle: 念天地之悠悠, 独怆然而涕下
-  avatar:
-    enabled: true
-    # 本地
-    local: true
-    src: img/avatar.png
-    # 远程
-    # local: false
-    # src: https://upload-bbs.miyoushe.com/upload/2024/11/24/11629047/a98db8631cca17174965e21f44b73c5d_3070517789353758609.png
+  avatar: img/avatar.png
+  # 远程
+  # src: https://upload-bbs.miyoushe.com/upload/2024/11/24/11629047/a98db8631cca17174965e21f44b73c5d_3070517789353758609.png
 article:
   math: false
   readingTime: true
@@ -50,16 +46,11 @@ opengraph:
   twitter:
     site: ""
     card: summary_large_image
-defaultImage:
-  opengraph:
-    enabled: false
-    local: false
-    src: ""
 colorScheme:
   toggle: true
   default: auto
 imageProcessing:
-  cover:
+  thumbnail:
     enabled: true
   content:
     enabled: true
