@@ -3,4 +3,4 @@ resources
 *.lock
 .idea
 .vscode
-
+jsconfig.json
