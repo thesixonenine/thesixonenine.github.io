@@ -7,7 +7,7 @@ rssFullContent: true
 favicon: /img/favicon.ico
 # 远程
 # favicon: https://upload-bbs.miyoushe.com/upload/2024/11/25/11629047/fa1ef7a746d7e304e76f1cb8ada0907f_8253852077941386559.png
-SortBy: "default"
+SortBy: "lastmod"
 footer:
   since: 2019
   customText: ""
