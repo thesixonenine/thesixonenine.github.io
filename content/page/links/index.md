@@ -25,9 +25,9 @@ links:
     description: 在线 dig
     website: https://www.diggui.com
     # image: https://www.diggui.com/favicon.ico
-  - title: Subscription Converter
-    description: 订阅地址转换
-    website: https://sub.6i9.qzz.io
+  - title: cURL To One-Line
+    description: curl 多行转单行
+    website: https://one-line.6i9.qzz.io
   - title: 中科大测速
     description: 测试网络延迟/延迟抖动/下载速度/上传速度
     website: https://test.ustc.edu.cn
