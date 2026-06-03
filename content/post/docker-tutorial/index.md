@@ -197,7 +197,7 @@ docker images --format "table {{.Repository}}\t{{.Tag}}\t{{.ID}}"
 ```text
 mcr.microsoft.com/devcontainers/typescript-node:24-trixie 1c85db47779c
 mcr.microsoft.com/devcontainers/javascript-node:24-trixie 4343c225fd9d
-mcr.microsoft.com/devcontainers/java:8-bookworm e8f6adef0f3f
+mcr.microsoft.com/devcontainers/java:8-trixie 
 mcr.microsoft.com/devcontainers/base:trixie 4863c108939a
 mcr.microsoft.com/devcontainers/python:3-trixie 1435048bd360
 mcr.microsoft.com/devcontainers/go:1-trixie 0dda5fbe8ccb

@@ -81,7 +81,7 @@ openssl aes-128-cbc -d -salt -pbkdf2 -in ./test.txt.enc -out ./test.txt -pass en
 **Dockerfile**
 
 ```Dockerfile
-FROM mcr.microsoft.com/devcontainers/java:8-bookworm
+FROM mcr.microsoft.com/devcontainers/java:8-trixie
 LABEL authors="Simple"
 ARG MY_PAT
 ARG USERNAME=thesixonenine
@@ -109,7 +109,7 @@ apt-get install -y tzdata > /dev/null && ln -snf /usr/share/zoneinfo/$TZ /etc/lo
 
 ```json
 {
-  "name": "thesixonenine/dev-java:8-bookworm",
+  "name": "thesixonenine/dev-java:8-trixie",
   "build": {
     "dockerfile": "Dockerfile",
     "args": {
@@ -143,7 +143,7 @@ npm install -g @devcontainers/cli --registry=https://registry.npmmirror.com
 将以上 `Dockerfile` 和 `devcontainer.json` 置于当前目录下的 `.devcontainer` 目录中, 配置环境变量 `GITHUB_PAT` 后在当前目录下执行
 
 ```shell
-devcontainer build --no-cache --workspace-folder . --image-name thesixonenine/dev-java:8-bookworm
+devcontainer build --no-cache --workspace-folder . --image-name thesixonenine/dev-java:8-trixie
 ```
 
 **直接构建**
@@ -151,11 +151,11 @@ devcontainer build --no-cache --workspace-folder . --image-name thesixonenine/de
 直接根据 `Dockerfile` 进行构建
 
 ```shell
-docker build --no-cache --build-arg USERNAME=thesixonenine --build-arg MY_PAT=github_pat_* -t thesixonenine/dev-java:8-bookworm .
+docker build --no-cache --build-arg USERNAME=thesixonenine --build-arg MY_PAT=github_pat_* -t thesixonenine/dev-java:8-trixie .
 ```
 
 ```shell
-docker run --rm -it --user vscode thesixonenine/dev-java:8-bookworm
+docker run --rm -it --user vscode thesixonenine/dev-java:8-trixie
 # update
 cd && chezmoi update
 ```
