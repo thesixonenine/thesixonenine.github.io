@@ -1,7 +1,7 @@
 ---
 title: small-script
 date: 2021-09-17T15:14:17
-lastmod: 2026-05-22T10:03:53+0800
+lastmod: 2026-06-05T16:03:53+0800
 categories: ['Script']
 keywords: Script
 description: 一些实用的脚本命令
@@ -14,6 +14,26 @@ description: 一些实用的脚本命令
 ```shell
 adb shell getprop ro.product.cpu.abi
 ```
+
+## HERE-DOCUMENT
+
+[参考](https://zhuanlan.zhihu.com/p/93993398)
+
+```text
+# 第一行是以可选命令开始, 紧接着是重定向符号 << , 可选 - 和 带引号的界定标识符号 或不带引号的标识符
+# 你可以使用任何字符串作为分隔符, 我们最常用的是 EOF 或者 END
+# 如果使用未带引号的 DELIMITER , 那么传递给命令的 HERE-DOCUMENT 内容里面的 SHELL 变量会被替换掉, 当然可以使用 \${} 来解决
+# << 后面添加 - , 将会导致以 tab 缩进的代码会被忽略掉, 其它符号, 比如空格不会被忽略掉
+# HERE-DOCUMENT 块里面可以包含命令, 变量和任何其它类型的输入
+# 最后一行必须是不带引号的 DELIMITER
+
+tee /etc/docker/daemon.json <<-'EOF'
+{
+  "registry-mirrors": ["https://mirror.aliyuncs.com"]
+}
+EOF
+```
+
 
 ## PowerShell
 
