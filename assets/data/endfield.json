@@ -2,6 +2,20 @@
 	{
 		"poolId": "special_1_3_1",
 		"poolName": "拳出无悔",
+		"charId": "chr_0022_bounda",
+		"charName": "萤石",
+		"weaponId": "",
+		"weaponName": "",
+		"weaponType": "",
+		"rarity": 4,
+		"isNew": false,
+		"isFree": false,
+		"gachaTs": "1780826696593",
+		"seqId": "447"
+	},
+	{
+		"poolId": "special_1_3_1",
+		"poolName": "拳出无悔",
 		"charId": "chr_0023_antal",
 		"charName": "安塔尔",
 		"weaponId": "",

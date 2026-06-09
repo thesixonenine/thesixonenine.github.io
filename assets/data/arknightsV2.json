@@ -10638,5 +10638,505 @@
 		"isNew": false,
 		"gachaTs": "1780293094780",
 		"pos": 9
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_185_frncat",
+		"charName": "慕斯",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876258871",
+		"pos": 0
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_4107_vrdant",
+		"charName": "维荻",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876258871",
+		"pos": 1
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1780876258871",
+		"pos": 2
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_298_susuro",
+		"charName": "苏苏洛",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876258871",
+		"pos": 3
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_121_lava",
+		"charName": "炎熔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1780876258871",
+		"pos": 4
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_337_utage",
+		"charName": "宴",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876258871",
+		"pos": 5
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_110_deepcl",
+		"charName": "深海色",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876258871",
+		"pos": 6
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_347_jaksel",
+		"charName": "杰克",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876258871",
+		"pos": 7
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1780876258871",
+		"pos": 8
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_282_catap",
+		"charName": "空爆",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1780876258871",
+		"pos": 9
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_190_clour",
+		"charName": "红云",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876355294",
+		"pos": 0
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_290_vigna",
+		"charName": "红豆",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876355294",
+		"pos": 1
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_192_falco",
+		"charName": "翎羽",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1780876355294",
+		"pos": 2
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_4041_chnut",
+		"charName": "褐果",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876355294",
+		"pos": 3
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_281_popka",
+		"charName": "泡普卡",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1780876355294",
+		"pos": 4
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_210_stward",
+		"charName": "史都华德",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1780876355294",
+		"pos": 5
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_110_deepcl",
+		"charName": "深海色",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876355294",
+		"pos": 6
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_452_bstalk",
+		"charName": "豆苗",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876355294",
+		"pos": 7
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_272_strong",
+		"charName": "孑",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876355294",
+		"pos": 8
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_1036_fang2",
+		"charName": "历阵锐枪芬",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1780876355294",
+		"pos": 9
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_488_buildr",
+		"charName": "青枳",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1780876365707",
+		"pos": 0
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_278_orchid",
+		"charName": "梓兰",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1780876365707",
+		"pos": 1
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_109_fmout",
+		"charName": "远山",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876365707",
+		"pos": 2
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_282_catap",
+		"charName": "空爆",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1780876365707",
+		"pos": 3
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_117_myrrh",
+		"charName": "末药",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876365707",
+		"pos": 4
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1780876365707",
+		"pos": 5
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1780876365707",
+		"pos": 6
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_301_cutter",
+		"charName": "刻刀",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876365707",
+		"pos": 7
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_278_orchid",
+		"charName": "梓兰",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1780876365707",
+		"pos": 8
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_440_pinecn",
+		"charName": "松果",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876365707",
+		"pos": 9
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_240_wyvern",
+		"charName": "香草",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1780876387828",
+		"pos": 0
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_4147_mitm",
+		"charName": "渡桥",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1780876387828",
+		"pos": 1
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_123_fang",
+		"charName": "芬",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1780876387828",
+		"pos": 2
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_4107_vrdant",
+		"charName": "维荻",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876387828",
+		"pos": 3
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_283_midn",
+		"charName": "月见夜",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1780876387828",
+		"pos": 4
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_366_acdrop",
+		"charName": "酸糖",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876387828",
+		"pos": 5
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_4062_totter",
+		"charName": "铅踝",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876387828",
+		"pos": 6
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_117_myrrh",
+		"charName": "末药",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876387828",
+		"pos": 7
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_122_beagle",
+		"charName": "米格鲁",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1780876387828",
+		"pos": 8
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_347_jaksel",
+		"charName": "杰克",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876387828",
+		"pos": 9
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_1049_catap2",
+		"charName": "雷狼龙S空爆",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1780876397151",
+		"pos": 0
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_347_jaksel",
+		"charName": "杰克",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876397151",
+		"pos": 1
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_133_mm",
+		"charName": "梅",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876397151",
+		"pos": 2
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_298_susuro",
+		"charName": "苏苏洛",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876397151",
+		"pos": 3
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_212_ansel",
+		"charName": "安赛尔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1780876397151",
+		"pos": 4
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_126_shotst",
+		"charName": "流星",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876397151",
+		"pos": 5
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_1048_orchd2",
+		"charName": "焰狐龙梓兰",
+		"rarity": 5,
+		"isNew": true,
+		"gachaTs": "1780876397151",
+		"pos": 6
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_237_gravel",
+		"charName": "砾",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876397151",
+		"pos": 7
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_240_wyvern",
+		"charName": "香草",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1780876397151",
+		"pos": 8
+	},
+	{
+		"poolId": "LINKAGE_74_0_1",
+		"poolName": "幽境狩人",
+		"charId": "char_277_sqrrel",
+		"charName": "阿消",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1780876397151",
+		"pos": 9
 	}
 ]
