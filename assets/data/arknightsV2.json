@@ -11138,5 +11138,605 @@
 		"isNew": false,
 		"gachaTs": "1780876397151",
 		"pos": 9
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_124_kroos",
+		"charName": "克洛丝",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512041842",
+		"pos": 0
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_328_cammou",
+		"charName": "卡达",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512041842",
+		"pos": 1
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_258_podego",
+		"charName": "波登可",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512041842",
+		"pos": 2
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_236_rope",
+		"charName": "暗索",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512041842",
+		"pos": 3
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_133_mm",
+		"charName": "梅",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512041842",
+		"pos": 4
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_347_jaksel",
+		"charName": "杰克",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512041842",
+		"pos": 5
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512041842",
+		"pos": 6
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_123_fang",
+		"charName": "芬",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512041842",
+		"pos": 7
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_4062_totter",
+		"charName": "铅踝",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512041842",
+		"pos": 8
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_1030_noirc2",
+		"charName": "火龙S黑角",
+		"rarity": 4,
+		"isNew": true,
+		"gachaTs": "1781512041842",
+		"pos": 9
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_192_falco",
+		"charName": "翎羽",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512055720",
+		"pos": 0
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_4214_cairn",
+		"charName": "响石",
+		"rarity": 4,
+		"isNew": true,
+		"gachaTs": "1781512055720",
+		"pos": 1
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_137_brownb",
+		"charName": "猎蜂",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512055720",
+		"pos": 2
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_212_ansel",
+		"charName": "安赛尔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512055720",
+		"pos": 3
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_494_vendla",
+		"charName": "刺玫",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1781512055720",
+		"pos": 4
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_133_mm",
+		"charName": "梅",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512055720",
+		"pos": 5
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512055720",
+		"pos": 6
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_124_kroos",
+		"charName": "克洛丝",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512055720",
+		"pos": 7
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_4191_tippi",
+		"charName": "蒂比",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1781512055720",
+		"pos": 8
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_150_snakek",
+		"charName": "蛇屠箱",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512055720",
+		"pos": 9
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_278_orchid",
+		"charName": "梓兰",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512063935",
+		"pos": 0
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_284_spot",
+		"charName": "斑点",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512063935",
+		"pos": 1
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_121_lava",
+		"charName": "炎熔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512063935",
+		"pos": 2
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_212_ansel",
+		"charName": "安赛尔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512063935",
+		"pos": 3
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_253_greyy",
+		"charName": "格雷伊",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512063935",
+		"pos": 4
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_281_popka",
+		"charName": "泡普卡",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512063935",
+		"pos": 5
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_440_pinecn",
+		"charName": "松果",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512063935",
+		"pos": 6
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_150_snakek",
+		"charName": "蛇屠箱",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512063935",
+		"pos": 7
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_289_gyuki",
+		"charName": "缠丸",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512063935",
+		"pos": 8
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_491_humus",
+		"charName": "休谟斯",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512063935",
+		"pos": 9
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_240_wyvern",
+		"charName": "香草",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512071800",
+		"pos": 0
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_208_melan",
+		"charName": "玫兰莎",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512071800",
+		"pos": 1
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_130_doberm",
+		"charName": "杜宾",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512071800",
+		"pos": 2
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_282_catap",
+		"charName": "空爆",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512071800",
+		"pos": 3
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_181_flower",
+		"charName": "调香师",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512071800",
+		"pos": 4
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_192_falco",
+		"charName": "翎羽",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512071800",
+		"pos": 5
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_123_fang",
+		"charName": "芬",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512071800",
+		"pos": 6
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_196_sunbr",
+		"charName": "古米",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512071800",
+		"pos": 7
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_185_frncat",
+		"charName": "慕斯",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512071800",
+		"pos": 8
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_235_jesica",
+		"charName": "杰西卡",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512071800",
+		"pos": 9
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512080010",
+		"pos": 0
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_1030_noirc2",
+		"charName": "火龙S黑角",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1781512080010",
+		"pos": 1
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_283_midn",
+		"charName": "月见夜",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512080010",
+		"pos": 2
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_258_podego",
+		"charName": "波登可",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512080010",
+		"pos": 3
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512080010",
+		"pos": 4
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_126_shotst",
+		"charName": "流星",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512080010",
+		"pos": 5
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_192_falco",
+		"charName": "翎羽",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512080010",
+		"pos": 6
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_283_midn",
+		"charName": "月见夜",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512080010",
+		"pos": 7
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512080010",
+		"pos": 8
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512080010",
+		"pos": 9
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_282_catap",
+		"charName": "空爆",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512105907",
+		"pos": 0
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_4107_vrdant",
+		"charName": "维荻",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512105907",
+		"pos": 1
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_328_cammou",
+		"charName": "卡达",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512105907",
+		"pos": 2
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_4062_totter",
+		"charName": "铅踝",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512105907",
+		"pos": 3
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512105907",
+		"pos": 4
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_208_melan",
+		"charName": "玫兰莎",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512105907",
+		"pos": 5
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_452_bstalk",
+		"charName": "豆苗",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1781512105907",
+		"pos": 6
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_1029_yato2",
+		"charName": "麒麟R夜刀",
+		"rarity": 5,
+		"isNew": true,
+		"gachaTs": "1781512105907",
+		"pos": 7
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1781512105907",
+		"pos": 8
+	},
+	{
+		"poolId": "LINKAGE_74_0_3",
+		"poolName": "砺火成锋",
+		"charId": "char_4171_wulfen",
+		"charName": "钼铅",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1781512105907",
+		"pos": 9
 	}
 ]
