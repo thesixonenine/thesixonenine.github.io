@@ -199,6 +199,23 @@ Where-Object {$_ -match 'Key Content'} |`
 foreach {Write-Host "Password :" $_.Substring(29) "`n"}}
 ```
 
+如果是中文输出
+
+```powershell
+# 查询所有 WIFI 名称
+netsh wlan show profiles | Where-Object {$_ -match '所有用户配置文件'}
+# 查询指定 WIFI 的密码
+netsh wlan show profile name="WIFI_NAME" key=clear |`
+Where-Object {$_ -match '关键内容'}
+# 查询所有 WIFI 的名称及密码
+netsh wlan show profiles |`
+Where-Object {$_ -match '所有用户配置文件'} |`
+foreach {$_.Substring(15) + ""} |`
+foreach {Write-Host "WIFI Name: $_";netsh wlan show profile name="$_" key=clear |`
+Where-Object {$_ -match '关键内容'} |`
+foreach {Write-Host "Password :" $_.Substring(22) "`n"}}
+```
+
 ### 禁用 `Ctrl` + `Space` 切换输入法
 
 将脚本改文件后缀为reg并双击导入
