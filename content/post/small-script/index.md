@@ -37,6 +37,15 @@ EOF
 
 ## PowerShell
 
+### 切换终端编码
+
+```powershell
+# GBK
+chcp 936
+# UTF8
+chcp 65001
+```
+
 ### 查询最新的 ghproxy 地址
 
 ```powershell
