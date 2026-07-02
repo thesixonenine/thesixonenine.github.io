@@ -13,7 +13,7 @@ links:
     website: https://www.itdog.cn/tcping/blog.thesixonenine.site
   - title: 简单导航
     description: 简单导航
-    website: https://thesixonenine.github.io/nav
+    website: https://nav.057293.xyz
   - title: ip.sb
     description: 查询 IP
     website: https://ip.sb
