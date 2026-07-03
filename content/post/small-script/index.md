@@ -337,6 +337,15 @@ if (git ls-remote --heads origin | Select-String -Pattern 'refs/heads/feature-br
 
 ## Bash
 
+### curl 代理
+
+```bash
+# 默认是http
+curl -x 192.168.137.1:1080 https://www.google.com/blank.html
+curl -x socks5://192.168.137.1:1080 https://www.google.com/blank.html
+curl --noproxy "*" https://www.google.com/blank.html
+```
+
 ### 将 HTTP Clone 改为 SSH Clone
 
 ```shell
