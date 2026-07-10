@@ -1,7 +1,7 @@
 ---
 title: small-script
 date: 2021-09-17T15:14:17
-lastmod: 2026-06-05T16:03:53+0800
+lastmod: 2026-07-10T17:23:53+0800
 categories: ['Script']
 keywords: Script
 description: 一些实用的脚本命令
@@ -36,6 +36,18 @@ EOF
 
 
 ## PowerShell
+
+### 删除 Hyper-V 虚拟机的 SSH 公钥
+
+使用 Hyper-V 安装了许多虚拟机, 不管是安装时的liveCD环境的 IP 与公钥(随机), 还是安装好后的系统的 IP 与公钥(没用固定IP也是随机), 都有很大可能重复.
+
+为了避免新建的虚拟机的 IP 与已经删除的虚拟机的 IP 重复但公钥不同导致的 SSH 连接失败, 所以用该命令来删除这些 IP.
+
+功能: 清理你的 known_hosts 文件，删掉其中所有 IP 地址属于 192.168.137.X 网段且主机位(最后一位)大于 50 的 SSH 密钥记录
+
+```powershell
+(Get-Content ~/.ssh/known_hosts) | Where-Object { -not ($_ -match '^192\.168\.137' -and [int]($_ -split '\s+')[0].Split('.')[-1] -gt 50) } | Set-Content ~/.ssh/known_hosts
+```
 
 ### 切换终端编码
 
