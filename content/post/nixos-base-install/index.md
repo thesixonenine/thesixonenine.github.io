@@ -116,6 +116,17 @@ vim /mnt/etc/nixos/configuration.nix
 networking.hostName = "nixos";
 networking.proxy.default = "http://192.168.137.1:1080/";
 networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+# for hyper-v
+networking.interfaces.eth0.ipv4.addresses = [
+{
+address = "192.168.137.20";
+prefixLength = 24;
+}
+];
+networking.defaultGateway = "192.168.137.1";
+networking.nameservers = [ "223.5.5.5" "223.6.6.6" ];
+networking.useDHCP = false;
+
 time.timeZone = "Asia/Shanghai";
 i18n.defaultLocale = "en_US.UTF-8";
 i18n.extraLocaleSettings = {
