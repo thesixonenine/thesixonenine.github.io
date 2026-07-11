@@ -20,7 +20,7 @@ image:
 
 使用 `ip a` 查看 IP, 使用 `passwd` 设置密码, 然后就可以在局域网内通过 SSH 进行远程连接开始安装
 
-### 步骤一: 切换到 root 用户
+### 切换到 root 用户
 
 ```bash
 sudo -i
@@ -151,11 +151,11 @@ programs.zsh.enable = true;
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
 ```
 
+微调硬件配置: `在 subvol 中按disko.nix追加参数, 例如 "compress=zstd:3"`
+
 ```bash
 vim /mnt/etc/nixos/hardware-configuration.nix
 ```
-
-`在 subvol 中按disko.nix追加参数, 例如 "compress=zstd:3"`
 
 ### 安装系统
 
