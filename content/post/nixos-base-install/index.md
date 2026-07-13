@@ -1,7 +1,7 @@
 ---
 title: "nixos-base-install"
 date: 2026-07-10T17:34:40+08:00
-lastmod: 2026-07-10T17:34:40+08:00
+lastmod: 2026-07-13T17:34:40+08:00
 categories: ['Linux']
 tags: ['']
 keywords: NixOS
@@ -110,22 +110,27 @@ nixos-generate-config --root /mnt
 vim /mnt/etc/nixos/configuration.nix
 ```
 
+默认配置如下
+
+```nix
+{ config, lib, pkgs, ... }: {
+  imports = [ ./hardware-configuration.nix ];
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+  networking.networkmanager.enable = true;
+  system.stateVersion = "26.05";
+}
+```
+
 追加到 `configuration.nix`
 
 ```nix
 networking.hostName = "nixos";
 networking.proxy.default = "http://192.168.137.1:1080/";
 networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-# for hyper-v
-networking.interfaces.eth0.ipv4.addresses = [
-{
-address = "192.168.137.20";
-prefixLength = 24;
-}
-];
 networking.defaultGateway = "192.168.137.1";
 networking.nameservers = [ "223.5.5.5" "223.6.6.6" ];
-networking.useDHCP = false;
 
 time.timeZone = "Asia/Shanghai";
 i18n.defaultLocale = "en_US.UTF-8";
@@ -158,6 +163,7 @@ services.openssh = {
   };
 };
 environment.systemPackages = with pkgs; [ vim git curl ];
+environment.variables.EDITOR = "vim";
 programs.zsh.enable = true;
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
 ```
