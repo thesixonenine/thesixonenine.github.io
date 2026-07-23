@@ -1,7 +1,7 @@
 ---
 title: "nixos-base-install"
 date: 2026-07-10T17:34:40+08:00
-lastmod: 2026-07-13T17:34:40+08:00
+lastmod: 2026-07-23T14:04:19+0800
 categories: ['Linux']
 tags: ['']
 keywords: NixOS
@@ -9,24 +9,24 @@ description: NixOS 基础安装
 image: 
 ---
 
-### 从 ISO 文件安装
+## 从 ISO 文件安装
 
 1. 从镜像源下载 ISO 文件
 2. 烧录进U盘并插入电脑选择U盘启动/虚拟机挂载ISO并启动
 
 可选[镜像源](https://mirrorz.org/os/NixOS): https://mirrorz.org/os/NixOS
 
-### 从局域网连接 liveCD 环境
+## 从局域网连接 liveCD 环境
 
 使用 `ip a` 查看 IP, 使用 `passwd` 设置密码, 然后就可以在局域网内通过 SSH 进行远程连接开始安装
 
-### 切换到 root 用户
+## 切换到 root 用户
 
 ```bash
 sudo -i
 ```
 
-### 使用 disko 进行快速分区
+## 使用 disko 进行快速分区
 
 ```bash
 vim disko.nix
@@ -98,13 +98,13 @@ HTTP_PROXY="http://192.168.137.1:1080" HTTPS_PROXY="http://192.168.137.1:1080" \
 nix --extra-experimental-features "nix-command flakes" run github:nix-community/disko/latest -- --mode disko ./disko.nix
 ```
 
-### 生成初始化配置
+## 生成初始化配置
 
 ```bash
 nixos-generate-config --root /mnt
 ```
 
-### 简单配置系统
+## 简单配置系统
 
 ```bash
 vim /mnt/etc/nixos/configuration.nix
@@ -127,7 +127,7 @@ vim /mnt/etc/nixos/configuration.nix
 
 ```nix
 networking.hostName = "nixos";
-networking.proxy.default = "http://192.168.137.1:1080/";
+networking.proxy.default = "http://192.168.137.1:1080";
 networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 networking.defaultGateway = "192.168.137.1";
 networking.nameservers = [ "223.5.5.5" "223.6.6.6" ];
@@ -174,7 +174,7 @@ nix.settings.experimental-features = [ "nix-command" "flakes" ];
 vim /mnt/etc/nixos/hardware-configuration.nix
 ```
 
-### 安装系统
+## 安装系统
 
 ```bash
 sudo NIX_CONFIG="access-tokens = github.com=github_pat_xxx" \
@@ -182,14 +182,22 @@ HTTP_PROXY="http://192.168.137.1:1080" HTTPS_PROXY="http://192.168.137.1:1080" \
 nixos-install
 ```
 
-安装过程会要求输入`全盘加密密码`
+安装过程会要求设置 `磁盘加密密码`
 
-### 关机
+## 关机
 
 ```bash
 shutdown now
 ```
 
-### 重新开机并进入系统
+## 重新开机并进入系统
 
-开机过程会要求输入`全盘加密密码`然后进入命令行, 接着输入用户名和密码进行登录并设置zsh
+开机过程会要求输入 `磁盘加密密码` 然后进入命令行, 接着输入用户名和密码进行登录并设置 `zsh` 
+
+## 日常使用
+
+- 开机并输入加密密码进入 `tty` 环境
+- 用账户密码登录
+- 执行 `start-hyprland` 启动 hyprland 和 noctalia
+
+
