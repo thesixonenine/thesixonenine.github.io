@@ -1,7 +1,7 @@
 ---
 title: small-script
 date: 2021-09-17T15:14:17
-lastmod: 2026-07-10T17:23:53+0800
+lastmod: 2026-07-23T17:39:49+0800
 categories: ['Script']
 keywords: Script
 description: 一些实用的脚本命令
@@ -36,6 +36,12 @@ EOF
 
 
 ## PowerShell
+
+### 快速打开旧版网络连接
+
+```powershell
+ncpa.cpl
+```
 
 ### 删除 Hyper-V 虚拟机的 SSH 公钥
 
