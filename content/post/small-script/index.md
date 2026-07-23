@@ -203,38 +203,56 @@ if ($s -eq 8) {
 # [System.Guid]::NewGuid().toString("B").toUpper()
 ```
 
-### 查询所有 `WIFI` 信息密码
+### 查询所有 `Wi-Fi` 信息密码
+
+**查询所有 Wi-Fi 名称**
 
 ```powershell
-# 查询所有 WIFI 名称
 netsh wlan show profiles | Where-Object {$_ -match 'All User Profile'}
-# 查询指定 WIFI 的密码
-netsh wlan show profile name="WIFI_NAME" key=clear |`
+```
+
+**查询指定 Wi-Fi 的密码**
+
+```powershell
+netsh wlan show profile name="Wi-Fi_NAME" key=clear |`
 Where-Object {$_ -match 'Key Content'}
-# 查询所有 WIFI 的名称及密码
+```
+
+**查询所有 Wi-Fi 的名称及密码**
+
+```powershell
 netsh wlan show profiles |`
 Where-Object {$_ -match 'All User Profile'} |`
 foreach {$_.Substring(27) + ""} |`
-foreach {Write-Host "WIFI Name: $_";netsh wlan show profile name="$_" key=clear |`
+foreach {Write-Host "Wi-Fi Name: $_";netsh wlan show profile name="$_" key=clear |`
 Where-Object {$_ -match 'Key Content'} |`
-foreach {Write-Host "Password :" $_.Substring(29) "`n"}}
+foreach {Write-Host "Password  :" $_.Substring(29) "`n"}}
 ```
 
-如果是中文输出
+如果 `netsh wlan show profiles` 是中文输出
+
+**查询所有 Wi-Fi 名称**
 
 ```powershell
-# 查询所有 WIFI 名称
 netsh wlan show profiles | Where-Object {$_ -match '所有用户配置文件'}
-# 查询指定 WIFI 的密码
-netsh wlan show profile name="WIFI_NAME" key=clear |`
+```
+
+**查询指定 Wi-Fi 的密码**
+
+```powershell
+netsh wlan show profile name="Wi-Fi_NAME" key=clear |`
 Where-Object {$_ -match '关键内容'}
-# 查询所有 WIFI 的名称及密码
+```
+
+**查询所有 Wi-Fi 的名称及密码**
+
+```powershell
 netsh wlan show profiles |`
 Where-Object {$_ -match '所有用户配置文件'} |`
 foreach {$_.Substring(15) + ""} |`
-foreach {Write-Host "WIFI Name: $_";netsh wlan show profile name="$_" key=clear |`
+foreach {Write-Host "Wi-Fi Name: $_";netsh wlan show profile name="$_" key=clear |`
 Where-Object {$_ -match '关键内容'} |`
-foreach {Write-Host "Password :" $_.Substring(22) "`n"}}
+foreach {Write-Host "Password  :" $_.Substring(22) "`n"}}
 ```
 
 ### 禁用 `Ctrl` + `Space` 切换输入法
