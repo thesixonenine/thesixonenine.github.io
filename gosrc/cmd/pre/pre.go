@@ -59,7 +59,7 @@ func fillGenshinImpact() {
     content = content + "\n\n" + buildSR()
     content = content + "\n\n" + buildEndfield()
     content = content + "\n\n" + buildArkNightsV2()
-    content = content + "\n\n" + buildArkNightsV1()
+    // content = content + "\n\n" + buildArkNightsV1()
     filePath := "../content/post/genshin-impact/index.md"
     _ = utils.KeepHeadAndAppend(filePath, 9, content)
 }
@@ -107,6 +107,18 @@ func buildArkNightsV2() string {
 	var tableBuilder strings.Builder
 	tableBuilder.WriteString("## 明日方舟\n\n|池子|总抽取数量|六星|已抽|\n|---|---|---|---|\n")
 
+    v1 := buildArkNightsV1()
+    sp := []string{}
+    for s := range strings.SplitSeq(v1, "\n") {
+        if strings.HasPrefix(s, "|") {
+            // 黄票和公招
+            if strings.HasPrefix(s, "|高级凭证兑换") || strings.HasPrefix(s, "|公招") {
+                tableBuilder.WriteString(s + "\n")
+            } else {
+                sp = append(sp, s)
+            }
+        }
+    }
     // 按出现顺序的倒序输出池子
     slices.Reverse(poolOrder)
 	for _, name := range poolOrder {
@@ -115,8 +127,11 @@ func buildArkNightsV2() string {
 		sixStarStr := strings.Join(p.SixStars, ",")
 		tableBuilder.WriteString(fmt.Sprintf("|%s|%d|%s|%d|\n", p.Name, p.Count, sixStarStr, p.PityCount))
 	}
-
-	return tableBuilder.String()
+    // 之前的记录
+    v1a := sp[2:]
+    slices.Reverse(v1a)
+    tableBuilder.WriteString(strings.Join(v1a, "\n") + "\n")
+    return tableBuilder.String()
 }
 
 func buildArkNightsV1() string {
