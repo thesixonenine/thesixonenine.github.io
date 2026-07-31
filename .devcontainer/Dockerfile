@@ -9,7 +9,7 @@ ARG VERSION=latest
 ARG USERNAME=thesixonenine
 ARG MY_PAT
 ENV MY_PAT=${MY_PAT}
-ENV HTTP_PROXY=socks5://host.docker.internal:1080 HTTPS_PROXY=socks5://host.docker.internal:1080 GOPROXY=https://goproxy.cn,direct
+ENV HTTP_PROXY=http://host.docker.internal:1080 HTTPS_PROXY=http://host.docker.internal:1080 GOPROXY=https://goproxy.cn,direct
 ENV TZ=Asia/Shanghai DEBIAN_FRONTEND=noninteractive
 
 # Download Hugo
