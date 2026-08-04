@@ -1,7 +1,7 @@
 ---
 title: "nixos-base-install"
 date: 2026-07-10T17:34:40+08:00
-lastmod: 2026-07-23T14:04:19+0800
+lastmod: 2026-08-04T16:04:19+0800
 categories: ['Linux']
 tags: ['']
 keywords: NixOS
@@ -18,7 +18,7 @@ image:
 
 ## 从局域网连接 liveCD 环境
 
-使用 `ip a` 查看 IP, 使用 `passwd` 设置密码, 然后就可以在局域网内通过 SSH 进行远程连接开始安装
+使用 `ip a` 查看 IP, 使用 `passwd` 设置密码, 然后就可以在局域网内通过 `ssh nixos@192.168.137.124` 进行远程连接开始安装
 
 ## 切换到 root 用户
 
