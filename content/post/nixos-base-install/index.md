@@ -90,6 +90,60 @@ vim disko.nix
 }
 ```
 
+`disko-without-luks.nix`
+
+```nix
+{
+  disko.devices = {
+    disk.main = {
+      type = "disk";
+      device = "/dev/sda";
+      content = {
+        type = "gpt";
+        partitions = {
+          ESP = {
+            priority = 1;
+            size = "512M";
+            type = "EF00";
+            content = {
+              type = "filesystem";
+              format = "vfat";
+              mountpoint = "/boot";
+              mountOptions = [ "umask=0077" ];
+            };
+          };
+          root = {
+            size = "100%";
+            content = {
+              type = "btrfs";
+              extraArgs = [ "-f" ];
+              subvolumes = {
+                "@root" = {
+                  mountpoint = "/";
+                  mountOptions = [ "compress=zstd:3" "noatime" "space_cache=v2" ];
+                };
+                "@home" = {
+                  mountpoint = "/home";
+                  mountOptions = [ "compress=zstd:3" "noatime" "space_cache=v2" ];
+                };
+                "@nix" = {
+                  mountpoint = "/nix";
+                  mountOptions = [ "compress-force=zstd:3" "noatime" ];
+                };
+                "@snapshots" = {
+                  mountpoint = "/.snapshots";
+                  mountOptions = [ "compress=zstd:3" "noatime" ];
+                };
+              };
+            };
+          };
+        };
+      };
+    };
+  };
+}
+```
+
 执行分区
 
 ```bash
@@ -127,10 +181,9 @@ vim /mnt/etc/nixos/configuration.nix
 
 ```nix
 networking.hostName = "nixos";
-networking.proxy.default = "http://192.168.137.1:1080";
-networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-networking.defaultGateway = "192.168.137.1";
 networking.nameservers = [ "223.5.5.5" "223.6.6.6" ];
+networking.defaultGateway = "192.168.137.1";
+networking.proxy.default = "http://192.168.137.1:1080";
 
 time.timeZone = "Asia/Shanghai";
 i18n.defaultLocale = "en_US.UTF-8";
@@ -155,9 +208,7 @@ users.users."simple" = {
 };
 services.openssh = {
   enable = true;
-  ports = [ 22 ];
   settings = {
-    PasswordAuthentication = true;
     PermitRootLogin = "no";
     AllowUsers = [ "simple" ];
   };
@@ -182,7 +233,7 @@ HTTP_PROXY="http://192.168.137.1:1080" HTTPS_PROXY="http://192.168.137.1:1080" \
 nixos-install
 ```
 
-安装过程会要求设置 `磁盘加密密码`
+如果使用了 `luks` 则安装过程会要求设置 `磁盘加密密码`
 
 ## 关机
 
@@ -192,7 +243,7 @@ shutdown now
 
 ## 重新开机并进入系统
 
-开机过程会要求输入 `磁盘加密密码` 然后进入命令行, 接着输入用户名和密码进行登录并设置 `zsh` 
+开机(如果使用了 `luks` 则会要求输入 `磁盘加密密码` )进入命令行, 接着输入用户名和密码进行登录并设置 `zsh` 
 
 ## 日常使用
 
