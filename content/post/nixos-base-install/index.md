@@ -233,6 +233,14 @@ HTTP_PROXY="http://192.168.137.1:1080" HTTPS_PROXY="http://192.168.137.1:1080" \
 nixos-install
 ```
 
+`for flake`
+
+```bash
+sudo NIX_CONFIG="access-tokens = github.com=github_pat_xxx" \
+HTTP_PROXY="http://192.168.137.1:1080" HTTPS_PROXY="http://192.168.137.1:1080" \
+nixos-install --flake '/mnt/etc/nixos#nixos'
+```
+
 如果使用了 `luks` 则安装过程会要求设置 `磁盘加密密码`
 
 ## 关机
