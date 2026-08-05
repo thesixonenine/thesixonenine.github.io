@@ -1,18 +1,20 @@
 ---
 title: "nixos-base-install"
 date: 2026-07-10T17:34:40+08:00
-lastmod: 2026-08-04T16:04:19+0800
+lastmod: 2026-08-05T16:52:19+0800
 categories: ['Linux']
 tags: ['']
 keywords: NixOS
-description: NixOS 基础安装
+description: 基于 disko 的 NixOS 基础安装(无 Flake)
 image: 
 ---
+
+参考 [disko](https://github.com/nix-community/disko/blob/master/docs/quickstart.md) 和 [NixOS Manual](https://nixos.org/manual/nixos/stable/#sec-installation-manual)
 
 ## 从 ISO 文件安装
 
 1. 从镜像源下载 ISO 文件
-2. 烧录进U盘并插入电脑选择U盘启动/虚拟机挂载ISO并启动
+2. 烧录进U盘并插入电脑选择U盘启动/虚拟机挂载ISO并启动(都需要关闭安全启动)
 
 可选[镜像源](https://mirrorz.org/os/NixOS): https://mirrorz.org/os/NixOS
 
@@ -155,16 +157,12 @@ nix --extra-experimental-features "nix-command flakes" run github:nix-community/
 ## 生成初始化配置
 
 ```bash
-nixos-generate-config --root /mnt
+nixos-generate-config --no-filesystems --root /mnt
 ```
 
 ## 简单配置系统
 
-```bash
-vim /mnt/etc/nixos/configuration.nix
-```
-
-默认配置如下
+只需要编辑 `/mnt/etc/nixos/configuration.nix`, 其默认配置如下
 
 ```nix
 { config, lib, pkgs, ... }: {
@@ -177,12 +175,47 @@ vim /mnt/etc/nixos/configuration.nix
 }
 ```
 
-追加到 `configuration.nix`
+配置流程如下
+
+- 将 `disko.nix` 文件移动到 `/mnt/etc/nixos/` 下
+- 在 `/mnt/etc/nixos/configuration.nix` 中引入 `disko` NixOS module 和 `disko.nix`
+- 在 `/mnt/etc/nixos/configuration.nix` 中追加其他必要配置
+
+
+**移动 `disko.nix`**
+
+```bash
+cp disko.nix /mnt/etc/nixos/
+```
+
+开始编辑 `/mnt/etc/nixos/configuration.nix`
+
+```bash
+vim /mnt/etc/nixos/configuration.nix
+```
+
+**引入 disko 配置**
+
+```nix
+imports =
+ [
+   ./hardware-configuration.nix
+   "${builtins.fetchTarball "https://github.com/nix-community/disko/archive/master.tar.gz"}/module.nix"
+   ./disko.nix
+ ];
+```
+
+**追加其他必要配置到 `configuration.nix`**
+
+- 网络代理
+- 时区与语言
+- 新建用户及其密码, 密钥, 默认shell等等
+- 必要软件如vim, git, curl等
+- 启用 Flake 特性(后续用 Flake 进行管理)
+
 
 ```nix
 networking.hostName = "nixos";
-networking.nameservers = [ "223.5.5.5" "223.6.6.6" ];
-networking.defaultGateway = "192.168.137.1";
 networking.proxy.default = "http://192.168.137.1:1080";
 
 time.timeZone = "Asia/Shanghai";
@@ -219,12 +252,6 @@ programs.zsh.enable = true;
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
 ```
 
-微调硬件配置: `在 subvol 中按disko.nix追加参数, 例如 "compress=zstd:3"`
-
-```bash
-vim /mnt/etc/nixos/hardware-configuration.nix
-```
-
 ## 安装系统
 
 ```bash
@@ -249,11 +276,15 @@ nixos-install --flake '/mnt/etc/nixos#nixos'
 shutdown now
 ```
 
+电脑拔掉U盘/虚拟机卸载ISO
+
 ## 重新开机并进入系统
 
-开机(如果使用了 `luks` 则会要求输入 `磁盘加密密码` )进入命令行, 接着输入用户名和密码进行登录并设置 `zsh` 
+开机并设置从 `systemd-bootx64.efi` 启动 (如果使用了 `luks` 则会要求输入 `磁盘加密密码` )进入命令行, 接着输入用户名和密码进行登录并设置 `zsh`
 
-## 日常使用
+简单安装就到这里, 后续会继续优化, 包括: 切换到 `Flake`, 使用 `home-manager`, 安装 `hyprland` / `niri`, `noctalia` 等等, 以此构建可正常使用的 NixOS
+
+**后续日常使用目标**
 
 - 开机并输入加密密码进入 `tty` 环境
 - 用账户密码登录
