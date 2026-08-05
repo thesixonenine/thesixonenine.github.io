@@ -1,7 +1,7 @@
 ---
 title: "devcontainer"
 date: 2025-09-10T11:19:26
-lastmod: 2026-04-02T12:00:21
+lastmod: 2026-08-05T14:54:21
 categories: ['Docker']
 keywords: devcontainer
 description: Dev Container
@@ -170,7 +170,9 @@ cd && chezmoi update
 4. 选择新建命名的卷并输入名称, 与仓库名称相同即可
 5. 按 `Enter` 确认使用默认的目录名称, 即与仓库名称相同
 
-此时开始构建, 构建过程中需要从指定镜像开始, 例如 `/tmp/vsch-simple/bootstrap-image/0.427.0/bootstrap.Dockerfile`
+此时开始构建, 构建开始会从临时容器 `vsc-volume-bootstrap:latest` 中进行 clone, 这里如果用 ssh 的方式 clone, 则会因为没有挂载宿主机的 `~/.ssh/config` 而不会走宿主机的代理, 最简单的解决方案是对 Docker 容器设置代理
+
+然后再从指定镜像开始, 例如 `/tmp/vsch-simple/bootstrap-image/0.427.0/bootstrap.Dockerfile`
 
 > `0.427.0` 是指 `Dev Containers` 插件的版本, Identifier 是 `ms-vscode-remote.remote-containers`
 
