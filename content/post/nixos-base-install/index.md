@@ -213,6 +213,7 @@ imports =
 - 必要软件如vim, git, curl等
 - 启用 Flake 特性(后续用 Flake 进行管理)
 
+所有配置参考[官方手册](https://nixos.org/manual/nixos/stable/options)
 
 ```nix
 networking.hostName = "nixos";
@@ -233,7 +234,6 @@ i18n.extraLocaleSettings = {
 };
 users.users."simple" = {
   isNormalUser = true;
-  shell = pkgs.zsh;
   description = "Simple";
   initialPassword = "1";
   extraGroups = [ "wheel" "networkmanager" ];
@@ -248,7 +248,6 @@ services.openssh = {
 };
 environment.systemPackages = with pkgs; [ vim git curl ];
 environment.variables.EDITOR = "vim";
-programs.zsh.enable = true;
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
 ```
 
