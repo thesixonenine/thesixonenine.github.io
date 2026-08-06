@@ -1,7 +1,7 @@
 ---
 title: "nixos-base-install"
 date: 2026-07-10T17:34:40+08:00
-lastmod: 2026-08-05T16:52:19+0800
+lastmod: 2026-08-06T10:32:19+0800
 categories: ['Linux']
 tags: ['']
 keywords: NixOS
@@ -270,19 +270,87 @@ nixos-install --flake '/mnt/etc/nixos#nixos'
 
 如果使用了 `luks` 则安装过程会要求设置 `磁盘加密密码`
 
-## 关机
+## 重启并进入系统
+
+关机
 
 ```bash
-shutdown now
+sudo shutdown now
 ```
 
 电脑拔掉U盘/虚拟机卸载ISO
 
-## 重新开机并进入系统
-
 开机并设置从 `systemd-bootx64.efi` 启动 (如果使用了 `luks` 则会要求输入 `磁盘加密密码` )进入命令行, 接着输入用户名和密码进行登录并设置 `zsh`
 
 简单安装就到这里, 后续会继续优化, 包括: 切换到 `Flake`, 使用 `home-manager`, 安装 `hyprland` / `niri`, `noctalia` 等等, 以此构建可正常使用的 NixOS
+
+## 静态IP配置(可选)
+
+- 编辑静态 IP 的配置
+- 如果是安装完成进入系统后编辑则需要生成新世代
+- 在安装时编辑后第一次进入系统/生成新世代后进入系统
+- 停止已有连接,启动配置连接,删除已停止连接
+
+编辑 `configuration.nix`, 可以是在安装时编辑(`/mnt/etc/nixos/configuration.nix`), 也可以在安装完成进入系统后编辑(`/etc/nixos/configuration.nix`)
+
+```bash
+vim /etc/nixos/configuration.nix
+```
+
+追加如下内容
+
+```nix
+  networking.networkmanager.ensureProfiles.profiles = {
+    "eth0" = {
+      connection = {
+        id = "eth0";
+        uuid = "9f6f3a52-1b88-4b0d-a2d0-8b7e3b4c9a01";
+        type = "ethernet";
+        interface-name = "eth0";
+        autoconnect = true;
+      };
+      ipv4 = {
+        method = "manual";
+        address1 = "192.168.137.20/24,192.168.137.1";
+        dns = "223.5.5.5;223.6.6.6;";
+      };
+      ipv6.method = "disabled";
+      ethernet = {};
+    };
+  };
+```
+
+如果是安装时编辑则继续安装并重启进入系统, 否则还需要执行如下命令生成新世代并重启进入系统
+
+```bash
+sudo NIX_CONFIG="access-tokens = github.com=github_pat_xxx" \
+HTTP_PROXY="http://192.168.137.1:1080" HTTPS_PROXY="http://192.168.137.1:1080" \
+nixos-rebuild switch
+```
+
+查看现有连接
+
+```bash
+nmcli -f NAME,UUID,FILENAME connection show
+```
+
+停止已有连接
+
+```bash
+nmcli connection down "Wired connection 1"
+```
+
+启动配置连接
+
+```bash
+nmcli connection up eth0
+```
+
+删除已停止连接
+
+```bash
+nmcli connection delete "Wired connection 1"
+```
 
 **后续日常使用目标**
 
