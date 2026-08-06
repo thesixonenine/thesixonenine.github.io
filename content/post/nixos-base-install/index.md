@@ -294,7 +294,7 @@ sudo shutdown now
 编辑 `configuration.nix`, 可以是在安装时编辑(`/mnt/etc/nixos/configuration.nix`), 也可以在安装完成进入系统后编辑(`/etc/nixos/configuration.nix`)
 
 ```bash
-vim /etc/nixos/configuration.nix
+sudo vim /etc/nixos/configuration.nix
 ```
 
 追加如下内容
@@ -331,25 +331,25 @@ nixos-rebuild switch
 查看现有连接
 
 ```bash
-nmcli -f NAME,UUID,FILENAME connection show
+sudo nmcli -f NAME,UUID,FILENAME connection show
 ```
 
 停止已有连接
 
 ```bash
-nmcli connection down "Wired connection 1"
+sudo nmcli connection down "Wired connection 1"
 ```
 
 启动配置连接
 
 ```bash
-nmcli connection up eth0
+sudo nmcli connection up eth0
 ```
 
 删除已停止连接
 
 ```bash
-nmcli connection delete "Wired connection 1"
+sudo nmcli connection delete "Wired connection 1"
 ```
 
 **后续日常使用目标**
