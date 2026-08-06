@@ -178,7 +178,7 @@ nixos-generate-config --no-filesystems --root /mnt
 配置流程如下
 
 - 将 `disko.nix` 文件移动到 `/mnt/etc/nixos/` 下
-- 在 `/mnt/etc/nixos/configuration.nix` 中引入 `disko` NixOS module 和 `disko.nix`
+- 在 `/mnt/etc/nixos/configuration.nix` 中引入 `disko` NixOS module 和 `disko.nix` (后续使用 Flake 管理后将恢复为只引入硬件配置)
 - 在 `/mnt/etc/nixos/configuration.nix` 中追加其他必要配置
 
 
@@ -194,7 +194,7 @@ cp disko.nix /mnt/etc/nixos/
 vim /mnt/etc/nixos/configuration.nix
 ```
 
-**引入 disko 配置**
+**引入 disko 配置**, 后续使用 Flake 管理后将恢复为只引入 `hardware-configuration.nix`
 
 ```nix
 imports =
