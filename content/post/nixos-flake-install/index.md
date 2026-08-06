@@ -9,6 +9,9 @@ description: 使用 Flake 管理 NixOS
 image: 
 ---
 
+## 切换到 Flake 管理
+
+
 > 之前的基础安装已经启用了 Flake 特性, 所以现在直接切换到 Flake 管理
 
 新增并编辑 `flake.nix`
@@ -65,21 +68,13 @@ imports = [ ./hardware-configuration.nix ];
 更新 lock 文件
 
 ```bash
-cd /etc/nixos
-```
-
-```bash
-sudo NIX_CONFIG="access-tokens = github.com=github_pat_xxx" \
-HTTP_PROXY="http://192.168.137.1:1080" HTTPS_PROXY="http://192.168.137.1:1080" \
-nix flake update
+sudo nix flake update --flake /etc/nixos
 ```
 
 生成新世代
 
 ```bash
-sudo NIX_CONFIG="access-tokens = github.com=github_pat_xxx" \
-HTTP_PROXY="http://192.168.137.1:1080" HTTPS_PROXY="http://192.168.137.1:1080" \
-nixos-rebuild switch --flake /etc/nixos#nixos
+sudo nixos-rebuild switch
 ```
 
 关机再开机/重启, 选择新的世代进入系统
@@ -100,3 +95,143 @@ sudo reboot
 - `configuration.nix`: 基础配置
 - `hardware-configuration.nix`: 硬件信息
 
+## 使用 Home Manager
+
+[官方文档](https://nix-community.github.io/home-manager/index.html)
+
+作为 Flake NixOS module 进行[安装](https://nix-community.github.io/home-manager/nix-flakes/nixos.html)
+
+新增并编辑 `home.nix`
+
+```bash
+sudo vim /etc/nixos/home.nix
+```
+
+写入用户及其软件配置
+
+所有配置参考[官方手册](https://nix-community.github.io/home-manager/options)
+
+```nix
+{ config, pkgs, ... }: {
+  home.username = "simple";
+  home.homeDirectory = "/home/simple";
+
+  home.packages = with pkgs;[
+    fastfetch nnn
+    zip xz unzip
+    ripgrep eza fzf jq
+    aria2 socat nmap lsof
+  ];
+
+  programs.git = {
+    enable = true;
+    settings = {
+      user.name = "Simple";
+      user.email = "thesixonenine@outlook.com";
+    };
+  };
+
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    autosuggestion.enable = true;
+    shellAliases = {
+      nv = "nvim";
+      ".." = "cd ..";
+      ll = "ls -ahl";
+    };
+  };
+  home.stateVersion = "26.05";
+}
+```
+
+编辑 `/etc/nixos/flake.nix` 引入 home-manager
+
+```bash
+sudo vim /etc/nixos/flake.nix
+```
+
+编辑前
+
+```nix
+{
+  description = "My NixOS Flake";
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    disko.url = "github:nix-community/disko";
+  };
+  outputs = inputs@{ self, nixpkgs, disko, ... }: {
+    # Define a system called "nixos"
+    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      specialArgs = { inherit inputs; };
+      modules = [
+        ./configuration.nix
+        disko.nixosModules.disko
+        ./disko.nix
+      ];
+    };
+  };
+}
+```
+
+编辑后
+
+```nix
+{
+  description = "My NixOS Flake";
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    disko.url = "github:nix-community/disko";
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+  };
+  outputs = inputs@{ self, nixpkgs, disko, home-manager, ... }: {
+    # Define a system called "nixos"
+    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      specialArgs = { inherit inputs; };
+      modules = [
+        ./configuration.nix
+        disko.nixosModules.disko
+        ./disko.nix
+        home-manager.nixosModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.extraSpecialArgs = { inherit inputs; };
+          home-manager.users.simple = ./home.nix;
+        }
+      ];
+    };
+  };
+}
+```
+
+生成新世代
+
+```bash
+sudo nixos-rebuild switch
+```
+
+## 常用命令
+
+### 更新 flake.lock
+
+```bash
+sudo nix flake update --flake /etc/nixos
+```
+
+### 生成新世代
+
+```bash
+sudo nixos-rebuild switch
+```
+
+关机
+
+```bash
+sudo shutdown now
+```

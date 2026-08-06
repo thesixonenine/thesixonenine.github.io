@@ -211,6 +211,7 @@ imports =
 - 时区与语言
 - 新建用户及其密码, 密钥, 默认shell等等
 - 必要软件如vim, git, curl等
+- 设置 GitHub PAT(公共仓库只读即可), 避免被 GitHub 限制以及后续命令的简洁
 - 启用 Flake 特性(后续用 Flake 进行管理)
 
 所有配置参考[官方手册](https://nixos.org/manual/nixos/stable/options)
@@ -249,9 +250,13 @@ services.openssh = {
 environment.systemPackages = with pkgs; [ vim git curl ];
 environment.variables.EDITOR = "vim";
 nix.settings.experimental-features = [ "nix-command" "flakes" ];
+# 注意修改为自己的 GitHub PAT
+nix.settings.access-tokens = [ "github.com=github_pat_xxx" ];
 ```
 
 ## 安装系统
+
+> 仅在执行安装命令时需要手动指定 GitHub PAT 和 代理, 后续命令不再需要指定这两个参数, 因为在上一步简单配置中已经指定了 `nix.settings.access-tokens` 和 `networking.proxy.default`
 
 ```bash
 sudo NIX_CONFIG="access-tokens = github.com=github_pat_xxx" \
@@ -322,9 +327,7 @@ sudo vim /etc/nixos/configuration.nix
 如果是安装时编辑则继续安装并重启进入系统, 否则还需要执行如下命令生成新世代并重启进入系统
 
 ```bash
-sudo NIX_CONFIG="access-tokens = github.com=github_pat_xxx" \
-HTTP_PROXY="http://192.168.137.1:1080" HTTPS_PROXY="http://192.168.137.1:1080" \
-nixos-rebuild switch
+sudo nixos-rebuild switch
 ```
 
 > 之前已经配置了 `users.users."simple".extraGroups = [ "wheel" "networkmanager" ];`, 所以下面的 `nmcli` 命令均不需要 `sudo`
