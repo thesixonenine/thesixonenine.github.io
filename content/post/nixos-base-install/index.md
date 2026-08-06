@@ -328,28 +328,30 @@ HTTP_PROXY="http://192.168.137.1:1080" HTTPS_PROXY="http://192.168.137.1:1080" \
 nixos-rebuild switch
 ```
 
+> 之前已经配置了 `users.users."simple".extraGroups = [ "wheel" "networkmanager" ];`, 所以下面的 `nmcli` 命令均不需要 `sudo`
+
 查看现有连接
 
 ```bash
-sudo nmcli -f NAME,UUID,FILENAME connection show
+nmcli -f NAME,UUID,FILENAME connection show
 ```
 
 停止已有连接
 
 ```bash
-sudo nmcli connection down "Wired connection 1"
+nmcli connection down "Wired connection 1"
 ```
 
 启动配置连接
 
 ```bash
-sudo nmcli connection up eth0
+nmcli connection up eth0
 ```
 
 删除已停止连接
 
 ```bash
-sudo nmcli connection delete "Wired connection 1"
+nmcli connection delete "Wired connection 1"
 ```
 
 **后续日常使用目标**
