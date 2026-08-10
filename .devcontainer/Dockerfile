@@ -15,7 +15,7 @@ ENV TZ=Asia/Shanghai DEBIAN_FRONTEND=noninteractive
 # Download Hugo
 RUN sed -i -e 's@deb.debian.org@mirrors.aliyun.com@;s@http:@https:@' /etc/apt/sources.list.d/debian.sources && \
     apt-get update > /dev/null && apt-get upgrade -y > /dev/null && \
-    apt-get install -y ncat age expect ca-certificates openssl git curl && \
+    apt-get install -y ncat age expect ca-certificates openssl git curl eza fd-find ripgrep bat && \
     sh -c "$(curl -fsLS get.chezmoi.io)" && \
     chsh -s /usr/bin/zsh node && \
     rm -rf /var/lib/apt/lists/* && \
