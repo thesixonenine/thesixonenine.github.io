@@ -5,6 +5,8 @@ var ZZZGachaType = map[string]string{
 	"1": "常驻频段",
 	"2": "独家频段",
 	"5": "邦布频段",
+	"102": "独家重映",
+	"103": "音擎回响",
 }
 var SRGachaType = map[string]string{
 	"11": "角色活动跃迁",
