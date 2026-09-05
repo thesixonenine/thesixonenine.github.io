@@ -12978,5 +12978,405 @@
 		"isNew": false,
 		"gachaTs": "1786666059738",
 		"pos": 0
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_4107_vrdant",
+		"charName": "维荻",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571557755",
+		"pos": 0
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_4219_yukari",
+		"charName": "岳羽由加莉",
+		"rarity": 4,
+		"isNew": true,
+		"gachaTs": "1788571557755",
+		"pos": 1
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_4041_chnut",
+		"charName": "褐果",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571557755",
+		"pos": 2
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_210_stward",
+		"charName": "史都华德",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1788571557755",
+		"pos": 3
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_4208_wintim",
+		"charName": "冬时",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571557755",
+		"pos": 4
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_137_brownb",
+		"charName": "猎蜂",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571557755",
+		"pos": 5
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_452_bstalk",
+		"charName": "豆苗",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571557755",
+		"pos": 6
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_126_shotst",
+		"charName": "流星",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571557755",
+		"pos": 7
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_4130_luton",
+		"charName": "露托",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571557755",
+		"pos": 8
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_4218_aigis",
+		"charName": "埃癸斯",
+		"rarity": 4,
+		"isNew": true,
+		"gachaTs": "1788571557755",
+		"pos": 9
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_190_clour",
+		"charName": "红云",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571573072",
+		"pos": 0
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_149_scave",
+		"charName": "清道夫",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571573072",
+		"pos": 1
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_151_myrtle",
+		"charName": "桃金娘",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571573072",
+		"pos": 2
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_491_humus",
+		"charName": "休谟斯",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571573072",
+		"pos": 3
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_290_vigna",
+		"charName": "红豆",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571573072",
+		"pos": 4
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_381_bubble",
+		"charName": "泡泡",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571573072",
+		"pos": 5
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_137_brownb",
+		"charName": "猎蜂",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571573072",
+		"pos": 6
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1788571573072",
+		"pos": 7
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_281_popka",
+		"charName": "泡普卡",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1788571573072",
+		"pos": 8
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_133_mm",
+		"charName": "梅",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571573072",
+		"pos": 9
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_137_brownb",
+		"charName": "猎蜂",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571587767",
+		"pos": 0
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_124_kroos",
+		"charName": "克洛丝",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1788571587767",
+		"pos": 1
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_122_beagle",
+		"charName": "米格鲁",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1788571587767",
+		"pos": 2
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_281_popka",
+		"charName": "泡普卡",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1788571587767",
+		"pos": 3
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_130_doberm",
+		"charName": "杜宾",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571587767",
+		"pos": 4
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1788571587767",
+		"pos": 5
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1788571587767",
+		"pos": 6
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_328_cammou",
+		"charName": "卡达",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571587767",
+		"pos": 7
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_4041_chnut",
+		"charName": "褐果",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571587767",
+		"pos": 8
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_337_utage",
+		"charName": "宴",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571587767",
+		"pos": 9
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_253_greyy",
+		"charName": "格雷伊",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571595160",
+		"pos": 0
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_4178_alanna",
+		"charName": "阿兰娜",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1788571595160",
+		"pos": 1
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_283_midn",
+		"charName": "月见夜",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1788571595160",
+		"pos": 2
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_110_deepcl",
+		"charName": "深海色",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571595160",
+		"pos": 3
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_487_bobb",
+		"charName": "波卜",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1788571595160",
+		"pos": 4
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_123_fang",
+		"charName": "芬",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1788571595160",
+		"pos": 5
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1788571595160",
+		"pos": 6
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_290_vigna",
+		"charName": "红豆",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1788571595160",
+		"pos": 7
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1788571595160",
+		"pos": 8
+	},
+	{
+		"poolId": "LINKAGE_77_0_1",
+		"poolName": "石白深蓝之夜",
+		"charId": "char_4217_makoto",
+		"charName": "结城理",
+		"rarity": 5,
+		"isNew": true,
+		"gachaTs": "1788571595160",
+		"pos": 9
 	}
 ]
