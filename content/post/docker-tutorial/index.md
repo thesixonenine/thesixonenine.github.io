@@ -177,6 +177,24 @@ docker run -d -p 8000:8000 -p 9000:9000 -p 9443:9443 \
 	portainer/portainer-ce:2.11.1
 ```
 
+
+## proxy
+
+
+```bash
+sudo tee /etc/docker/daemon.json <<-EOF
+{
+  "proxies": {
+    "http-proxy": "${HTTP_PROXY}",
+    "https-proxy": "${HTTP_PROXY}",
+    "no-proxy": "localhost,127.0.0.1"
+  }
+}
+EOF
+sudo systemctl daemon-reload && \
+sudo systemctl restart docker
+```
+
 ## often images
 
 
