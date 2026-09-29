@@ -94,6 +94,36 @@ docker run -d --name redis6.2.20 \
     redis-server --requirepass 12345678
 ```
 
+
+### jenkins install
+
+```shell
+version: '3.8'
+services:
+  jenkins:
+    image: jenkins/jenkins:lts-jdk21
+    container_name: jenkins
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    dns:
+      - 223.5.5.5
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - /usr/bin/docker:/bin/docker
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /etc/localtime:/etc/localtime
+    environment:
+      - TZ: Asia/Shanghai
+      - JAVA_OPTS: "-Djava.awt.headless=true -Xmx1024m"
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 4G
+```
+
 ### delete unused data
 
 **delete unused none image**
