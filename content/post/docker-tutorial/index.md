@@ -229,6 +229,15 @@ sudo systemctl daemon-reload && \
 sudo systemctl restart docker
 ```
 
+如果使用 `systemd`, 还可以直接配置环境(`/etc/systemd/system/docker.service.d/http-proxy.conf`)而不维护 `/etc/docker/daemon.json`
+
+```bash
+[Service]
+Environment="HTTP_PROXY=http://172.30.0.1:1080"
+Environment="HTTPS_PROXY=http://172.30.0.1:1080"
+Environment="NO_PROXY=localhost,127.0.0.1,::1"
+```
+
 `for docker run`
 
 ```bash
