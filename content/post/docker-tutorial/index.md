@@ -210,6 +210,7 @@ docker run -d -p 8000:8000 -p 9000:9000 -p 9443:9443 \
 
 ## proxy
 
+`for docker pull`
 
 ```bash
 sudo tee /etc/docker/daemon.json <<-EOF
@@ -221,8 +222,28 @@ sudo tee /etc/docker/daemon.json <<-EOF
   }
 }
 EOF
+```
+
+```bash
 sudo systemctl daemon-reload && \
 sudo systemctl restart docker
+```
+
+`for docker run`
+
+```bash
+tee ~/.docker/config.json <<-EOF
+{
+  "proxies": {
+    "default": {
+      "httpProxy": "${HTTP_PROXY}",
+      "httpsProxy": "${HTTP_PROXY}",
+      "allProxy": "${HTTP_PROXY}",
+      "noProxy": "localhost,127.0.0.1,::1"
+    }
+  }
+}
+EOF
 ```
 
 ## often images
