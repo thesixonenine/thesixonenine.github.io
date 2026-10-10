@@ -168,10 +168,18 @@ irm https://get.activated.win | iex
 基本命令
 
 ```shell
-# 安装
-wsl --install Ubuntu
 # 查看版本
 wsl --version
+# 查看可安装的版本
+wsl --list --online
+# 安装
+wsl --install Ubuntu
+# 安装并指定位置
+wsl --install -d Ubuntu --location 'F:\hyper-v\wsl\'
+# 查看已安装的版本
+wsl --list
+# 停止
+wsl --shutdown
 # 删除
 wsl --unregister Ubuntu
 # 帮助
@@ -189,6 +197,16 @@ memory=8GB
 swap=0
 # default: true
 localhostForwarding=true
+```
+
+`/etc/wsl.conf`
+
+```shell
+[boot]
+systemd=true
+[interop]
+enabled=false
+appendWindowsPath=false
 ```
 
 ```shell
@@ -237,6 +255,8 @@ function proxy_on {
 
     echo "代理已设置 ${host}:${port}"
 }
+# default proxy_on
+proxy_on
 function proxy_off {
     unset HTTP_PROXY HTTPS_PROXY ALL_PROXY
     unset http_proxy https_proxy all_proxy
@@ -257,40 +277,32 @@ echo "if [ -f ~/.shellrc ]; then source ~/.shellrc ; fi" >> ~/.bashrc
 ```shell
 # func
 function git-proxy-set {
-proxy_ip=$(ip route show | grep -i default | awk '{ print $3}')
-if [ -d ./.git ]; then
-    git config http.proxy http://${proxy_ip}:1080
-else
-    git config --global http.proxy http://${proxy_ip}:1080
-fi
+  if [ -d ./.git ]; then
+    git config http.proxy "$HTTP_PROXY"
+  else
+    git config --global http.proxy "$HTTP_PROXY"
+  fi
 }
 function git-proxy-unset {
-if [ -d ./.git ]; then
+  if [ -d ./.git ]; then
     git config --unset http.proxy
-else
+  else
     git config --global --unset http.proxy
-fi
+  fi
 }
 function git-proxy-get {
-if [ -d ./.git ]; then
+  if [ -d ./.git ]; then
     git config http.proxy
-else
+  else
     git config --global http.proxy
-fi
+  fi
 }
 function git-proxy-command {
-    echo "git-proxy-set git-proxy-unset git-proxy-get"
+  echo "git-proxy-set git-proxy-unset git-proxy-get"
 }
 
 # enable passphrase prompt for gpg
 export GPG_TTY=$(tty)
-
-# env
-JAVA_HOME=/home/simple/software/jdk8u432-b06
-MAVEN_HOME=/home/simple/software/apache-maven-3.9.9
-PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH
-
-BOOKMARKS=/home/simple/gitee/Bookmarks
 
 # homebrew
 # ref: https://mirrors.ustc.edu.cn/help/brew.git.html#homebrew-linuxbrew
@@ -336,7 +348,7 @@ git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTO
 
 ### Install Software
 
-#### neovim & lazyvim
+#### Neovim & LazyVim
 
 ```shell
 brew install fzf neovim
@@ -345,7 +357,7 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim
 
 [配置字体](https://www.nerdfonts.com/)(Hack)并在 Windows Terminal 中选定
 
-#### Configure Git
+#### Git
 
 ```shell
 # 安装 Git
@@ -405,29 +417,59 @@ git config commit.gpgsign true
 ```
 
 
-#### docker
+#### Docker
 
 [官方文档](https://docs.docker.com/engine/install/ubuntu)
 
 [源安装](https://mirrors.ustc.edu.cn/help/docker-ce.html)
+
+`Install using the apt repository`
+
+```shell
+#!/usr/bin/env bash
+# Add Docker's official GPG key:
+sudo apt update
+sudo apt install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Add the repository to Apt sources:
+sudo tee /etc/apt/sources.list.d/docker.sources <<EOF
+Types: deb
+URIs: https://download.docker.com/linux/ubuntu
+Suites: $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}")
+Components: stable
+Architectures: $(dpkg --print-architecture)
+Signed-By: /etc/apt/keyrings/docker.asc
+EOF
+
+sudo apt update
+```
+
+Install or Upgrade
+
+```shell
+sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
+`Install using the convenience script`
 
 ```shell
 # 下载安装脚本
 curl --proxy 172.26.112.1:1080 -fsSL https://get.docker.com -o get-docker.sh
 # 执行安装
 sudo DOWNLOAD_URL=https://mirrors.ustc.edu.cn/docker-ce sh get-docker.sh
-
-# https://docs.docker.com/engine/install/linux-postinstall
-# 添加用户组
-sudo groupadd docker
-sudo usermod -aG docker $USER
-# 退出重启
-logout
-# 查看版本
-docker version
 ```
 
-配置仓库镜像,阿里云个人镜像加速地址
+`Add your user to the docker group`
+
+```shell
+sudo groupadd docker
+sudo usermod -aG docker $USER
+```
+
+配置仓库镜像, 阿里云个人镜像加速地址
 
 ```shell
 sudo tee /etc/docker/daemon.json <<-'EOF'
@@ -470,6 +512,16 @@ docker push registry.cn-chengdu.aliyuncs.com/NAMESPACE/REPO:[镜像版本号]
 docker pull PROXY_DOMAIN/library/ubuntu:latest
 docker tag PROXY_DOMAIN/library/ubuntu:latest ubuntu:latest
 docker rmi PROXY_DOMAIN/library/ubuntu:latest
+```
+
+`Uninstall Docker Engine`
+
+```shell
+sudo apt purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras
+sudo rm -rf /var/lib/docker
+sudo rm -rf /var/lib/containerd
+sudo rm /etc/apt/sources.list.d/docker.sources
+sudo rm /etc/apt/keyrings/docker.asc
 ```
 
 ## Configure Environment
