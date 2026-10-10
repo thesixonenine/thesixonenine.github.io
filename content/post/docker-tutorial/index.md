@@ -233,6 +233,12 @@ sudo systemctl daemon-reload && \
 sudo systemctl restart docker
 ```
 
+`for docker pull test`
+
+```bash
+docker pull alpine:latest
+```
+
 如果使用 `systemd`, 还可以直接配置环境(`/etc/systemd/system/docker.service.d/http-proxy.conf`)而不维护 `/etc/docker/daemon.json`
 
 ```bash
@@ -257,6 +263,17 @@ tee ~/.docker/config.json <<-EOF
   }
 }
 EOF
+```
+
+`for docker run test`
+
+```bash
+docker run --rm alpine sh -c 'env | grep -i proxy'
+```
+
+```bash
+docker run --rm alpine sh -c "apk add --no-cache curl >/dev/null && \
+  curl -vI --connect-timeout 5 https://g.co"
 ```
 
 ## often images
