@@ -221,7 +221,7 @@ function proxy_on {
         echo "端口号必须是 1-65535 之间的整数"
         return 1
     fi
-    host=$(ip route show | grep -i default | awk '{ print $3}')
+    host=$(ip route show default | awk '/default/ {print $3; exit}')
     if [ -z "$host" ]; then
         echo "无法获取 Windows 主机 IP"
         return 1
