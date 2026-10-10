@@ -211,6 +211,38 @@ sudo sed -i 's/http:/https:/g' /etc/apt/sources.list.d/ubuntu.sources
 sudo apt update
 ```
 
+### Configure Proxy
+
+```bash
+function proxy_on {
+    local host
+    local port="${1:-1080}"
+    if ! [[ "$port" =~ ^[0-9]+$ ]] || (( port < 1 || port > 65535 )); then
+        echo "端口号必须是 1-65535 之间的整数"
+        return 1
+    fi
+    host=$(ip route show | grep -i default | awk '{ print $3}')
+    if [ -z "$host" ]; then
+        echo "无法获取 Windows 主机 IP"
+        return 1
+    fi
+
+    export HTTP_PROXY="http://${host}:${port}"
+    export HTTPS_PROXY="http://${host}:${port}"
+    export ALL_PROXY="http://${host}:${port}"
+
+    export http_proxy="$HTTP_PROXY"
+    export https_proxy="$HTTPS_PROXY"
+    export all_proxy="$ALL_PROXY"
+
+    echo "代理已设置 ${host}:${port}"
+}
+function proxy_off {
+    unset HTTP_PROXY HTTPS_PROXY ALL_PROXY
+    unset http_proxy https_proxy all_proxy
+}
+```
+
 ### Configure .shellrc
 
 将shell配置追加到当前使用的shell

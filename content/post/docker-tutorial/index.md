@@ -210,6 +210,10 @@ docker run -d -p 8000:8000 -p 9000:9000 -p 9443:9443 \
 
 ## proxy
 
+[官方文档](https://docs.docker.com/engine/daemon/proxy)或[反代文档](https://docker.057293.xyz/engine/daemon/proxy)
+
+如果是 `Windows` 则直接安装 `Docker Desktop` 并配置代理
+
 `for docker pull`
 
 ```bash
