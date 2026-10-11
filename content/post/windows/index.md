@@ -248,6 +248,7 @@ function proxy_on {
     export HTTP_PROXY="http://${host}:${port}"
     export HTTPS_PROXY="http://${host}:${port}"
     export ALL_PROXY="http://${host}:${port}"
+    export NO_PROXY="localhost,127.0.0.1"
 
     export http_proxy="$HTTP_PROXY"
     export https_proxy="$HTTPS_PROXY"
@@ -258,7 +259,7 @@ function proxy_on {
 # default proxy_on
 proxy_on
 function proxy_off {
-    unset HTTP_PROXY HTTPS_PROXY ALL_PROXY
+    unset HTTP_PROXY HTTPS_PROXY ALL_PROXY NO_PROXY
     unset http_proxy https_proxy all_proxy
 }
 ```
