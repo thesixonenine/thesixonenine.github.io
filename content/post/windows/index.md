@@ -357,6 +357,44 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim
 
 [配置字体](https://www.nerdfonts.com/)(Hack)并在 Windows Terminal 中选定
 
+#### Chezmoi
+
+准备必要的软件
+
+```shell
+sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install -y ncat age expect
+```
+
+apt 安装
+
+```shell
+sudo apt install chezmoi
+```
+
+脚本安装
+
+```shell
+sh -c "$(curl -fsLS get.chezmoi.io)" -- -b $HOME/.local/bin
+```
+
+追加到 PATH
+
+```shell
+export PATH="$HOME/.local/bin:$PATH"
+```
+
+初始化
+
+```shell
+chezmoi init https://$USERNAME:$MY_PAT@github.com/$USERNAME/dotfiles.git
+```
+
+更新
+
+```shell
+chezmoi update
+```
+
 #### Git
 
 ```shell
