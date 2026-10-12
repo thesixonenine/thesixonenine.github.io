@@ -272,7 +272,8 @@ docker run --rm alpine sh -c 'env | grep -i proxy'
 ```
 
 ```bash
-docker run --rm alpine sh -c "apk add --no-cache curl >/dev/null && \
+docker run --rm alpine sh -c "sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && \
+  apk add --no-cache curl >/dev/null && \
   curl -vI --connect-timeout 5 https://g.co"
 ```
 
