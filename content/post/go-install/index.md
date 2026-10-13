@@ -38,3 +38,15 @@ go env -w GOPROXY=https://proxy.golang.org,direct
 # 打印go版本
 go version
 ```
+
+### gopls
+
+```bash
+go install -v golang.org/x/tools/gopls@latest
+```
+
+### delve
+
+```bash
+go install -v github.com/go-delve/delve/cmd/dlv@latest
+```
