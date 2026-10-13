@@ -13568,5 +13568,605 @@
 		"isNew": false,
 		"gachaTs": "1789275609413",
 		"pos": 0
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_283_midn",
+		"charName": "月见夜",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1791904675245",
+		"pos": 0
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_281_popka",
+		"charName": "泡普卡",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1791904675245",
+		"pos": 1
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_4208_wintim",
+		"charName": "冬时",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904675245",
+		"pos": 2
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_133_mm",
+		"charName": "梅",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904675245",
+		"pos": 3
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_446_aroma",
+		"charName": "阿罗玛",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1791904675245",
+		"pos": 4
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_258_podego",
+		"charName": "波登可",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904675245",
+		"pos": 5
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_347_jaksel",
+		"charName": "杰克",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904675245",
+		"pos": 6
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_117_myrrh",
+		"charName": "末药",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904675245",
+		"pos": 7
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_277_sqrrel",
+		"charName": "阿消",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904675245",
+		"pos": 8
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_493_firwhl",
+		"charName": "火哨",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1791904675245",
+		"pos": 9
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_493_firwhl",
+		"charName": "火哨",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1791904707533",
+		"pos": 0
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_190_clour",
+		"charName": "红云",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904707533",
+		"pos": 1
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_440_pinecn",
+		"charName": "松果",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904707533",
+		"pos": 2
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_183_skgoat",
+		"charName": "地灵",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904707533",
+		"pos": 3
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_381_bubble",
+		"charName": "泡泡",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904707533",
+		"pos": 4
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_212_ansel",
+		"charName": "安赛尔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1791904707533",
+		"pos": 5
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_484_robrta",
+		"charName": "罗比菈塔",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904707533",
+		"pos": 6
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_183_skgoat",
+		"charName": "地灵",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904707533",
+		"pos": 7
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_366_acdrop",
+		"charName": "酸糖",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904707533",
+		"pos": 8
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_150_snakek",
+		"charName": "蛇屠箱",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904707533",
+		"pos": 9
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1791904715242",
+		"pos": 0
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_237_gravel",
+		"charName": "砾",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904715242",
+		"pos": 1
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_281_popka",
+		"charName": "泡普卡",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1791904715242",
+		"pos": 2
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_347_jaksel",
+		"charName": "杰克",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904715242",
+		"pos": 3
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_130_doberm",
+		"charName": "杜宾",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904715242",
+		"pos": 4
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1791904715242",
+		"pos": 5
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_289_gyuki",
+		"charName": "缠丸",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904715242",
+		"pos": 6
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_341_sntlla",
+		"charName": "寒檀",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1791904715242",
+		"pos": 7
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_210_stward",
+		"charName": "史都华德",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1791904715242",
+		"pos": 8
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_4121_zuole",
+		"charName": "左乐",
+		"rarity": 5,
+		"isNew": true,
+		"gachaTs": "1791904715242",
+		"pos": 9
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_381_bubble",
+		"charName": "泡泡",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904727854",
+		"pos": 0
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_121_lava",
+		"charName": "炎熔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1791904727854",
+		"pos": 1
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1791904727854",
+		"pos": 2
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_118_yuki",
+		"charName": "白雪",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904727854",
+		"pos": 3
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_302_glaze",
+		"charName": "安比尔",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904727854",
+		"pos": 4
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_4130_luton",
+		"charName": "露托",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904727854",
+		"pos": 5
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1791904727854",
+		"pos": 6
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_117_myrrh",
+		"charName": "末药",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904727854",
+		"pos": 7
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_236_rope",
+		"charName": "暗索",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904727854",
+		"pos": 8
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_271_spikes",
+		"charName": "芳汀",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904727854",
+		"pos": 9
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_124_kroos",
+		"charName": "克洛丝",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1791904735033",
+		"pos": 0
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_240_wyvern",
+		"charName": "香草",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1791904735033",
+		"pos": 1
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_283_midn",
+		"charName": "月见夜",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1791904735033",
+		"pos": 2
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_190_clour",
+		"charName": "红云",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904735033",
+		"pos": 3
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1791904735033",
+		"pos": 4
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_141_nights",
+		"charName": "夜烟",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904735033",
+		"pos": 5
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_199_yak",
+		"charName": "角峰",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904735033",
+		"pos": 6
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_208_melan",
+		"charName": "玫兰莎",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1791904735033",
+		"pos": 7
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_4140_lasher",
+		"charName": "衡沙",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1791904735033",
+		"pos": 8
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_212_ansel",
+		"charName": "安赛尔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1791904735033",
+		"pos": 9
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_118_yuki",
+		"charName": "白雪",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904741365",
+		"pos": 0
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_212_ansel",
+		"charName": "安赛尔",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1791904741365",
+		"pos": 1
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_366_acdrop",
+		"charName": "酸糖",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904741365",
+		"pos": 2
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_4130_luton",
+		"charName": "露托",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904741365",
+		"pos": 3
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_347_jaksel",
+		"charName": "杰克",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904741365",
+		"pos": 4
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_4237_jcinta",
+		"charName": "嘉辛塔",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1791904741365",
+		"pos": 5
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_298_susuro",
+		"charName": "苏苏洛",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1791904741365",
+		"pos": 6
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_122_beagle",
+		"charName": "米格鲁",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1791904741365",
+		"pos": 7
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_283_midn",
+		"charName": "月见夜",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1791904741365",
+		"pos": 8
+	},
+	{
+		"poolId": "SINGLE_78_0_1",
+		"poolName": "海渊巡游",
+		"charId": "char_4231_clemnt",
+		"charName": "克莱门莎",
+		"rarity": 5,
+		"isNew": true,
+		"gachaTs": "1791904741365",
+		"pos": 9
 	}
 ]
