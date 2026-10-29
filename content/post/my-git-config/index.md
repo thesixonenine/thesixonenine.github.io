@@ -94,3 +94,61 @@ git config gpg.format ssh && `
 git config gpg.ssh.allowedSignersFile ~/.ssh/allowed_signers && `
 git config pull.rebase true
 ```
+
+## gitattributes
+
+```txt
+# reset gitattribute
+# git rm --cached -r
+# git reset --hard
+
+* text=auto eol=lf
+
+# lang
+*.java text eol=lf
+*.go text eol=lf
+*.groovy text eol=lf
+*.gradle text eol=lf
+*.kt text eol=lf
+*.kts text eol=lf
+*.rs text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.nix text eol=lf
+*.svg text eol=lf
+
+# config
+*.xml text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.properties text eol=lf
+/.gitattributes text eol=lf
+/.gitignore text eol=lf
+*.json text eol=lf
+*.jsonc text eol=lf
+*.pro text eol=lf
+
+# framework
+bun.lock text eol=lf
+Cargo.lock text eol=lf
+
+# document
+*.md text eol=lf
+
+# Linux start script should use lf
+/gradlew text eol=lf
+
+# These are Windows script files and should use crlf
+*.bat text eol=crlf
+
+# binary
+*.jar binary
+*.png binary
+*.ico binary
+*.icns binary
+```
