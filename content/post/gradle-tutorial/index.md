@@ -110,5 +110,11 @@ println("[Gradle Mirror] Loaded")
 check mirrors
 
 ```bash
-./gradlew clean build --refresh-dependencies --info
+./gradlew --no-build-cache --no-configuration-cache
+```
+
+or
+
+```bash
+./gradlew build --refresh-dependencies --info 2>&1 | grep -E 'aliyun|mavenCentral|Downloading'
 ```
