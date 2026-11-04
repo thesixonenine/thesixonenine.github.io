@@ -1,7 +1,7 @@
 ---
 title: gradle-tutorial
 date: 2026-11-04T14:13:28
-lastmod: 2026-11-04T14:13:28
+lastmod: 2026-11-04T16:26:18
 tags: ['Java']
 categories: ['Java']
 keywords: Gradle
@@ -14,7 +14,7 @@ description: gradle tutorial
 - `GRADLE_USER_HOME`: 默认为 `~/.gradle`
 
 
-## 代理
+## Proxy
 
 [官方文档](https://docs.gradle.org/current/userguide/networking.html#networking_gradle)
 
@@ -39,7 +39,7 @@ org.gradle.configuration-cache=true
 systemProp.file.encoding=UTF-8
 ```
 
-## 镜像
+## Mirror
 
 推荐在 `GRADLE_USER_HOME` 下增加配置来提前设置镜像源
 
@@ -103,4 +103,12 @@ gradle.beforeSettings {
     }
 }
 println("[Gradle Mirror] Loaded")
+```
+
+## Command
+
+check mirrors
+
+```bash
+./gradlew clean build --refresh-dependencies --info
 ```
