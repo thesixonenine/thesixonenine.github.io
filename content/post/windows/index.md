@@ -186,6 +186,27 @@ wsl --unregister Ubuntu
 wsl --help
 ```
 
+`Install from .wsl file`
+
+Download `.wsl` file From [Ubuntu](https://ubuntu.com/download/wsl) or [mirror.nju.edu.cn](https://mirror.nju.edu.cn/ubuntu-releases/releases/resolute/)
+
+Install
+
+```powershell
+wsl.exe --install `
+  --from-file D:\Downloads\ubuntu-26.04.1-wsl-amd64.wsl `
+  --name Ubuntu2 `
+  --location D:\WSL\Ubuntu2
+```
+
+StartUp
+
+```powershell
+wsl.exe -d Ubuntu2
+```
+
+`Config`
+
 ```toml
 # C:\Users\simple\.wslconfig
 [wsl2]
