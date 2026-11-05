@@ -39,6 +39,12 @@ org.gradle.configuration-cache=true
 systemProp.file.encoding=UTF-8
 ```
 
+或者设置 `GRADLE_OPTS` 环境变量, 这里可以解析 `HTTP_PROXY` 环境得到 `Host` 和 `Port` 并追加到 `~/.zshrc` 中
+
+```bash
+export GRADLE_OPTS="$GRADLE_OPTS -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=1080 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=1080"
+```
+
 ## Mirror
 
 推荐在 `GRADLE_USER_HOME` 下增加配置来提前设置镜像源
@@ -107,7 +113,7 @@ println("[Gradle Mirror] Loaded")
 
 ## Command
 
-check mirrors
+### check mirrors
 
 ```bash
 ./gradlew --no-build-cache --no-configuration-cache
@@ -117,4 +123,16 @@ or
 
 ```bash
 ./gradlew build --refresh-dependencies --info 2>&1 | grep -E 'aliyun|mavenCentral|Downloading'
+```
+
+### use mirror to download gradle wrapper
+
+```bash
+find . -name 'gradle-wrapper.properties' -exec sed -i 's/services\.gradle\.org\/distributions/mirrors.cloud.tencent.com\/gradle/g' {} +
+```
+
+revert
+
+```bash
+find . -name 'gradle-wrapper.properties' -exec sed -i 's/mirrors\.cloud\.tencent\.com\/gradle/services.gradle.org\/distributions/g' {} +
 ```
