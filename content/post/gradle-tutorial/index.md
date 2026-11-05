@@ -8,10 +8,11 @@ keywords: Gradle
 description: gradle tutorial
 ---
 
-`只推荐使用 Gradle Wrapper`
+`只推荐使用 Gradle Wrapper`, 使用时需要先下载 Gradle, 然后再下载依赖
 
 
 - `GRADLE_USER_HOME`: 默认为 `~/.gradle`
+- `GRADLE_OPTS`: 影响 Wrapper 下载 Gradle
 
 
 ## Proxy
@@ -19,6 +20,8 @@ description: gradle tutorial
 [官方文档](https://docs.gradle.org/current/userguide/networking.html#networking_gradle)
 
 推荐在 `GRADLE_USER_HOME` 下增加配置来设置代理
+
+**影响 Wrapper 下载 Gradle 和 Daemon 下载依赖**
 
 `~/.gradle/gradle.properties`
 
@@ -40,6 +43,8 @@ systemProp.file.encoding=UTF-8
 ```
 
 或者设置 `GRADLE_OPTS` 环境变量, 这里可以解析 `HTTP_PROXY` 环境得到 `Host` 和 `Port` 并追加到 `~/.zshrc` 中
+
+**影响 Wrapper 下载 Gradle**
 
 ```bash
 export GRADLE_OPTS="$GRADLE_OPTS -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=1080 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=1080"
