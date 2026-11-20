@@ -18,21 +18,17 @@ jobs:
       contents: write
     
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+      - uses: actions/checkout@v7
         with:
-          hugo-version: 0.136.5
+          submodules: recursive
+      - uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 0.170.1
           extended: true
-
       - name: Update theme
-        run: hugo mod get -u github.com/CaiJimmy/hugo-theme-stack/v3
-
+        run: hugo mod get -u github.com/CaiJimmy/hugo-theme-stack/v4
       - name: Tidy go.mod, go.sum
         run: hugo mod tidy
-
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "CI: Update theme"
