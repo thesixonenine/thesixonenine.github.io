@@ -284,8 +284,8 @@
         "amount": 36439,
         "status": "已付款",
         "payTime": "2023-12-20",
-        "qing": 36439,
-        "yang": 0
+        "qing": 0,
+        "yang": 36439
     },
 	{
         "name": "TATA木门定金",
