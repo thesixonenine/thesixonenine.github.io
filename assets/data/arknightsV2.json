@@ -15078,5 +15078,135 @@
 		"isNew": false,
 		"gachaTs": "1793503690718",
 		"pos": 9
+	},
+	{
+		"poolId": "LIMITED_79_0_1",
+		"poolName": "将雪投火",
+		"charId": "char_209_ardign",
+		"charName": "卡缇",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1793577439306",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_79_0_1",
+		"poolName": "将雪投火",
+		"charId": "char_192_falco",
+		"charName": "翎羽",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1793663909107",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_79_0_1",
+		"poolName": "将雪投火",
+		"charId": "char_4245_alga",
+		"charName": "奥尔佳",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1793750588716",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_79_0_1",
+		"poolName": "将雪投火",
+		"charId": "char_123_fang",
+		"charName": "芬",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1793836797126",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_79_0_1",
+		"poolName": "将雪投火",
+		"charId": "char_141_nights",
+		"charName": "夜烟",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1793921743429",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_79_0_1",
+		"poolName": "将雪投火",
+		"charId": "char_237_gravel",
+		"charName": "砾",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1794018770065",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_79_0_1",
+		"poolName": "将雪投火",
+		"charId": "char_290_vigna",
+		"charName": "红豆",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1794103663353",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_79_0_1",
+		"poolName": "将雪投火",
+		"charId": "char_199_yak",
+		"charName": "角峰",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1794182536067",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_79_0_1",
+		"poolName": "将雪投火",
+		"charId": "char_337_utage",
+		"charName": "宴",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1794268907008",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_79_0_1",
+		"poolName": "将雪投火",
+		"charId": "char_118_yuki",
+		"charName": "白雪",
+		"rarity": 3,
+		"isNew": false,
+		"gachaTs": "1794355397809",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_79_0_1",
+		"poolName": "将雪投火",
+		"charId": "char_120_hibisc",
+		"charName": "芙蓉",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1794441830858",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_79_0_1",
+		"poolName": "将雪投火",
+		"charId": "char_4245_alga",
+		"charName": "奥尔佳",
+		"rarity": 4,
+		"isNew": false,
+		"gachaTs": "1794528205522",
+		"pos": 0
+	},
+	{
+		"poolId": "LIMITED_79_0_1",
+		"poolName": "将雪投火",
+		"charId": "char_122_beagle",
+		"charName": "米格鲁",
+		"rarity": 2,
+		"isNew": false,
+		"gachaTs": "1794619873028",
+		"pos": 0
 	}
 ]
