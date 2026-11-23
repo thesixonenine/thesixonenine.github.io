@@ -5,5 +5,8 @@
   "preview_urls": false,
   "assets": {
     "directory": "./public"
+  },
+  "vars": {
+    "HUGO_VERSION": "extended_0.170.1"
   }
 }
