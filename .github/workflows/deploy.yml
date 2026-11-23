@@ -23,7 +23,7 @@ jobs:
           go-version: "^1.27.1"
       - uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "latest"
+          hugo-version: "0.170.1"
           dart-sass-version: '1.108.2'
           extended: true
       - name: Build
